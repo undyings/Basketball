@@ -1,0 +1,156 @@
+﻿Виртуальные объекты вместо ORM
+
+Концепция Object-Relational Mapping (ORM) построена вокруг идеи - преобразования исходного состояния из базы данных в объекты, изменения состояния в объектах и дальнейшего обратного преобразования из объектов в базу данных. С точки зрения геттерного подхода сама эта идея порочна, т.к. требует двунаправленного преобразования. При геттерном подходе всегда изменяется исходное состояние, а производное состояние автоматически рассчитывается на основе исходного.
+
+Вместо ORM геттерный подход использует концепцию виртуальных объектов.
+
+1) Простейший виртуальный объект строится на основе одной таблицы данных
+
+TableLink - обертка над DataTable, хранящая коллекцию RowLink
+RowLink - обертка над DataRow, предоставляющая типизированный доступ к ячейкам таблицы.
+
+Тип храняющийся в таблице описывается следующим образом:
+
+  public class MessageType
+  {
+    // для каждой колонки таблицы задается свой FieldBlank
+    public readonly static FieldBlank<int> Id = new FieldBlank<int>("Id", IntLongConverter.Default);
+    public readonly static FieldBlank<int> ArticleId = new FieldBlank<int>("ArticleId", IntLongConverter.Default);
+    public readonly static FieldBlank<int> UserId = new FieldBlank<int>("UserId", IntLongConverter.Default);
+    public readonly static FieldBlank<int?> WhomId = new FieldBlank<int?>("WhomId", IntNullableLongConverter.Default);
+    public readonly static FieldBlank<string> Content = new FieldBlank<string>("Content");
+    public readonly static FieldBlank<DateTime> CreateTime = new FieldBlank<DateTime>("CreateTime");
+
+    // индексы, позволяющие искать строки в TableLink по соответствующему ключу
+    public readonly static SingleIndexBlank MessageById = new SingleIndexBlank("MessageById", Id);
+    public readonly static MultiIndexBlank MessagesByArticleId = new MultiIndexBlank(
+      "MessagesByArticleId", ArticleId);
+    public readonly static MultiIndexBlank MessagesByUserId = new MultiIndexBlank(
+      "MessagesByUserId", UserId);
+  }
+
+    // метод для загрузки комментариев
+    public static TableLink LoadMessageLink(IDataLayer messageConnection, 
+      string conditionWithoutWhere, params DbParameter[] conditionParameters)
+    {
+      return TableLink.Load(messageConnection,
+        new FieldBlank[]
+        {
+          MessageType.Id, MessageType.ArticleId, MessageType.UserId,
+          MessageType.WhomId, MessageType.Content,
+          MessageType.CreateTime, MessageType.ModifyTime
+        },
+        new IndexBlank[]
+        {
+          MessageType.MessageById,
+          MessageType.MessagesByUserId
+        }, "",
+        "Select id, article_id, user_id, whom_id, content, create_time, modify_time From message",
+        conditionWithoutWhere,
+        conditionParameters
+      );
+
+// загружаем комментарии для статьи
+TableLink messageLink = LoadMessageLink(messageConnection, "article_id = @articleId", new DbParameter("articleId", articleId);
+// получаем все комментарии
+RowLink[] allMessages = messageLink.AllRows;
+// или находим комментарий по его идентификатору
+RowLink whom = messageLink.FindRow(MessageType.MessageById, whomId.Value);
+// получаем поле комментария
+int userId = whom.Get(MessageType.UserId);
+// изменяем состояние комментария
+whom.Set(MessageType.Content, content);
+// сохраняем изменения в базу данных
+messageLink.UpdateTable();
+
+
+2) Виртуальные объекты для произвольных структур данных
+
+2.1) Для хранения произвольной объектной модели используется структура из трех таблиц:
+
+Таблица объектов:
+
+          "CREATE TABLE light_object (
+              obj_id    integer PRIMARY KEY NOT NULL,
+              type_id   integer NOT NULL,
+              xml_ids   text,
+              act_from  datetime,
+              act_till  datetime
+            );
+
+Таблица свойств:
+
+          "CREATE TABLE light_property (
+              prop_id     integer PRIMARY KEY NOT NULL,
+              obj_id      integer NOT NULL,
+              type_id     integer NOT NULL,
+              prop_index  integer NOT NULL DEFAULT 0,
+              prop_value  text
+            );
+
+Таблица связей родителей с детьми:
+
+          "CREATE TABLE light_link (
+              link_id     integer PRIMARY KEY NOT NULL,
+              parent_id   integer NOT NULL,
+              type_id     integer NOT NULL,
+              link_index  integer NOT NULL,
+              child_id    integer NOT NULL,
+              act_from    datetime,
+              act_till    datetime
+            );
+
+Такая структура таблиц позволяет хранить практически любую объектную модель достаточно оптимальным с точки зрения быстродействия образом.
+
+2.2) Объектная модель загружается в виде Box. Каждый следующий тип Box наследует предыдущий:
+
+ObjectHeadBox - хранит только заголовки объектов из таблицы light_object
+ObjectBox - также хранит свойства объектов из таблицы light_property
+ParentBox - также хранит ссылки на детей объектов из таблицы light_link
+KinBox - также хранит ссылки на родителей объектов из таблицы light_link
+
+Имея box и идентификатор объекта можно создать объект:
+
+//Загружаем все статьи 
+// Вместо DataCondition.ForTypes(ArticleType.Article) может быть любое sql-условие (в виде строки) для таблицы light_object
+ObjectBox articleBox = new ObjectBox(FabricConnection, DataCondition.ForTypes(ArticleType.Article));
+//Создаем объект для конкретной статьи
+LightObject article = new LightObject(articleBox, articleId);
+//Изменяем состояние объекта
+article.Set(ArticleType.Author, "Иванов");
+//Сохраняем изменения в базу данных
+articleBox.Update();
+
+Каждому типу Box соответствует свой тип объекта:
+
+ObjectHeadBox - LightHead
+ObjectBox - LightObject
+ParentBox - LightParent
+KinBox - LightKin
+
+Тип объекта описывается следующим образом:
+ 
+  // товар
+  public class FabricType
+  {
+    // тип объекта для ячейки таблицы light_object.type_id
+    public const int Fabric = 3000;
+
+    // хранится в light_object.xml_ids
+    public readonly static XmlDisplayName DisplayName = new XmlDisplayName();
+
+    // свойства хранятся в таблице light_property. Каждое свойство в отдельной строке таблицы.
+    public readonly static RowPropertyBlank<int> Price = DataBox.Create(3101, DataBox.IntValue);
+    public readonly static RowPropertyBlank<string> Annotation = DataBox.Create(3102, DataBox.StringValue);
+    public readonly static RowPropertyBlank<string> Description = DataBox.Create(3103, DataBox.StringValue);
+
+    // ссылки на подвиды товара, хранятся в таблице light_link
+    public readonly static LinkKindBlank VarietyTypeLink = new LinkKindBlank(3500);
+  }
+
+Благодаря этому, хотя данные в памяти фактически хранятся в DataTable, доступ к ним типизирован. Например:
+
+LightParent fabric;
+string annotation = fabric.Get(FabricType.Annotation);
+fabric.Set(FabricType.Price, 1990);
+int[] varietyIds = fabric.AllChildIds(FabricType.VarietyTypeLink); // получили идентификаторы всех подвидов этого товара
