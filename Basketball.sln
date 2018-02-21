@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basketball", "Basketball\Basketball.csproj", "{1F0EBF64-A03F-4A08-A4A6-5811908CE87D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Libraries", "_Libraries", "{DFC23CF5-A330-488A-B6F6-D49DBA288A62}"
+	ProjectSection(SolutionItems) = preProject
+		_Libraries\Commune.Basis.dll = _Libraries\Commune.Basis.dll
+		_Libraries\Commune.Data.dll = _Libraries\Commune.Data.dll
+		_Libraries\Commune.Diagnostics.dll = _Libraries\Commune.Diagnostics.dll
+		_Libraries\Commune.Html.dll = _Libraries\Commune.Html.dll
+		_Libraries\Commune.Task.dll = _Libraries\Commune.Task.dll
+		_Libraries\Newtonsoft.Json.dll = _Libraries\Newtonsoft.Json.dll
+		_Libraries\NitroBolt.Functional.dll = _Libraries\NitroBolt.Functional.dll
+		_Libraries\NitroBolt.Wui.dll = _Libraries\NitroBolt.Wui.dll
+		_Libraries\Shop.Engine.dll = _Libraries\Shop.Engine.dll
+		_Libraries\System.Collections.Immutable.dll = _Libraries\System.Collections.Immutable.dll
+		_Libraries\System.Data.SQLite.dll = _Libraries\System.Data.SQLite.dll
+		_Libraries\System.Net.Http.Formatting.dll = _Libraries\System.Net.Http.Formatting.dll
+		_Libraries\System.Web.Http.dll = _Libraries\System.Web.Http.dll
+		_Libraries\System.Web.Http.WebHost.dll = _Libraries\System.Web.Http.WebHost.dll
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1F0EBF64-A03F-4A08-A4A6-5811908CE87D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F0EBF64-A03F-4A08-A4A6-5811908CE87D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F0EBF64-A03F-4A08-A4A6-5811908CE87D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F0EBF64-A03F-4A08-A4A6-5811908CE87D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

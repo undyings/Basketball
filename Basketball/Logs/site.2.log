@@ -1,0 +1,33 @@
+<!--================================================================================-->
+
+<LogStarting time='12.01.2018 13:43:12.926'/>
+
+<Message time='12.01.2018 13:43:14.240'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='12.01.2018 13:43:14.494'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='12.01.2018 13:44:11.918'>
+  <Text>System.OutOfMemoryException: Выдано исключение типа "System.OutOfMemoryException".</Text>
+</Message>
+
+<Message time='12.01.2018 13:46:12.693'>
+  <Text>System.OutOfMemoryException: Выдано исключение типа "System.OutOfMemoryException".
+   в System.Collections.Generic.List`1.set_Capacity(Int32 value)
+   в System.Collections.Generic.List`1.EnsureCapacity(Int32 min)
+   в System.Collections.Generic.List`1.Add(T item)
+   в Basketball.BasketballHlp.GetLinks(String content) в d:\Projects\Basketball\Basketball\BasketballHlp.cs:строка 116
+   в Basketball.BasketballHlp.PreViewComment(String content) в d:\Projects\Basketball\Basketball\BasketballHlp.cs:строка 40</Text>
+</Message>
+
+<Message time='12.01.2018 13:47:43.375'>
+  <Text>System.Threading.ThreadAbortException: Поток находился в процессе прерывания.
+   в System.Threading.WaitHandle.WaitOneNative(SafeHandle waitableSafeHandle, UInt32 millisecondsTimeout, Boolean hasThreadAffinity, Boolean exitContext)
+   в System.Threading.WaitHandle.InternalWaitOne(SafeHandle waitableSafeHandle, Int64 millisecondsTimeout, Boolean hasThreadAffinity, Boolean exitContext)
+   в System.Threading.WaitHandle.WaitOne(Int32 millisecondsTimeout, Boolean exitContext)
+   в Commune.Task.BackgroundPullThread.ThreadHandler()</Text>
+</Message>
+
