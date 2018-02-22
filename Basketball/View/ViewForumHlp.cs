@@ -185,6 +185,7 @@ namespace Basketball
 
                 MessageHlp.InsertMessage(context.ForumConnection, addTopic.Id, currentUser.Id, null, text);
 
+                context.UpdateLastComments(true);
                 context.Forum.ForSection(section.Id).Update();
 
                 state.BlockHint = "";

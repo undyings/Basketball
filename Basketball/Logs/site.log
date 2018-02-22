@@ -1248,3 +1248,3315 @@
   <Text>Process: id = 8184 cpu = 00:05:04.9687500, page = 108mb peak = 146mb, virtual = 795mb peak = 805mb, topics = 24</Text>
 </Message>
 
+<!--================================================================================-->
+
+<LogStarting time='21.02.2018 16:09:54.036'/>
+
+<Message time='21.02.2018 16:09:55.762'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='21.02.2018 16:09:57.483'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='21.02.2018 16:09:57.795'>
+  <Text>Process: id = 8184 cpu = 00:05:06.7656250, page = 100mb peak = 146mb, virtual = 784mb peak = 805mb, topics = 0</Text>
+</Message>
+
+<Message time='21.02.2018 16:10:17.523'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "name": "loginData",
+    "id": "loginData",
+    "authLogin": "undyings",
+    "authPassword": "rjotq2",
+    "command": "user_login",
+    "container": "loginData"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 7466.4000000339,
+    "button": 0,
+    "clientX": 1217,
+    "clientY": 34,
+    "screenX": 1217,
+    "screenY": 100,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='21.02.2018 16:10:19.476'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "command": "topic_add"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 9786.49999992922,
+    "button": 0,
+    "clientX": 76,
+    "clientY": 176,
+    "screenX": 76,
+    "screenY": 242,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='21.02.2018 16:10:27.040'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "name": "addTopicData",
+    "id": "addTopicData",
+    "addTopicTitle": "Исходные коды проекта",
+    "addTopicText": "выаы",
+    "command": "save_topic_add",
+    "container": "addTopicData"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 17314.100000075996,
+    "button": 0,
+    "clientX": 73,
+    "clientY": 341,
+    "screenX": 73,
+    "screenY": 407,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='21.02.2018 16:12:57.533'>
+  <Text>sitemap.xml успешно обновлен</Text>
+</Message>
+
+<Message time='21.02.2018 16:17:47.957'>
+  <Text>Çàâåðøåí ïîòîê ñ ìåòêîé 'Service'</Text>
+</Message>
+
+<Message time='21.02.2018 16:17:48.043'>
+  <Text>Process: id = 8184 cpu = 00:05:08.8125000, page = 101mb peak = 146mb, virtual = 787mb peak = 805mb, topics = 24</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='21.02.2018 16:17:59.518'/>
+
+<Message time='21.02.2018 16:18:00.498'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='21.02.2018 16:18:00.724'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='21.02.2018 16:18:00.744'>
+  <Text>Process: id = 8184 cpu = 00:05:10.3906250, page = 100mb peak = 146mb, virtual = 791mb peak = 805mb, topics = 0</Text>
+</Message>
+
+<Message time='21.02.2018 16:18:15.125'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "command": "topic_add"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 22106.600000057369,
+    "button": 0,
+    "clientX": 73,
+    "clientY": 174,
+    "screenX": 73,
+    "screenY": 240,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='21.02.2018 16:18:21.988'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "name": "addTopicData",
+    "id": "addTopicData",
+    "addTopicTitle": "Проверочная тема",
+    "addTopicText": "в",
+    "command": "save_topic_add",
+    "container": "addTopicData"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 29049.800000153482,
+    "button": 0,
+    "clientX": 65,
+    "clientY": 341,
+    "screenX": 65,
+    "screenY": 407,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='21.02.2018 16:18:34.505'>
+  <Text>Çàâåðøåí ïîòîê ñ ìåòêîé 'Service'</Text>
+</Message>
+
+<Message time='21.02.2018 16:18:34.507'>
+  <Text>Process: id = 8184 cpu = 00:05:12.0468750, page = 102mb peak = 146mb, virtual = 792mb peak = 805mb, topics = 10</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='22.02.2018 10:26:35.705'/>
+
+<Message time='22.02.2018 10:26:37.788'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='22.02.2018 10:26:39.080'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='22.02.2018 10:26:39.292'>
+  <Text>Process: id = 8184 cpu = 00:05:13.4687500, page = 95mb peak = 146mb, virtual = 783mb peak = 805mb, topics = 0</Text>
+</Message>
+
+<Message time='22.02.2018 10:27:20.582'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "command": "news_add"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 5308.3000001497567,
+    "button": 0,
+    "clientX": 153,
+    "clientY": 182,
+    "screenX": 649,
+    "screenY": 315,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='22.02.2018 10:29:39.057'>
+  <Text>sitemap.xml успешно обновлен</Text>
+</Message>
+
+<Message time='22.02.2018 10:32:52.067'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "command": "news_add"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 4503.59999993816,
+    "button": 0,
+    "clientX": 167,
+    "clientY": 282,
+    "screenX": 670,
+    "screenY": 325,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='22.02.2018 11:26:39.096'>
+  <Text>Process: id = 8184 cpu = 00:05:15.5156250, page = 106mb peak = 146mb, virtual = 784mb peak = 805mb, topics = 24</Text>
+</Message>
+
+<Message time='22.02.2018 12:26:39.149'>
+  <Text>Process: id = 8184 cpu = 00:05:15.5937500, page = 106mb peak = 146mb, virtual = 786mb peak = 805mb, topics = 24</Text>
+</Message>
+
+<Message time='22.02.2018 12:49:40.256'>
+  <Text>Çàâåðøåí ïîòîê ñ ìåòêîé 'Service'</Text>
+</Message>
+
+<Message time='22.02.2018 12:49:40.289'>
+  <Text>Process: id = 8184 cpu = 00:05:15.6406250, page = 106mb peak = 146mb, virtual = 787mb peak = 805mb, topics = 24</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='22.02.2018 16:55:44.690'/>
+
+<Message time='22.02.2018 16:55:49.410'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='22.02.2018 16:55:50.783'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='22.02.2018 16:55:50.874'>
+  <Text>Process: id = 8184 cpu = 00:05:16.9687500, page = 105mb peak = 146mb, virtual = 789mb peak = 805mb, topics = 0</Text>
+</Message>
+
+<Message time='22.02.2018 16:56:29.070'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "name": "loginData",
+    "id": "loginData",
+    "authLogin": "undyings",
+    "authPassword": "rjotq2",
+    "command": "user_login",
+    "container": "loginData"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 8902.500000083819,
+    "button": 0,
+    "clientX": 1220,
+    "clientY": 35,
+    "screenX": 1220,
+    "screenY": 101,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='22.02.2018 16:56:31.209'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "command": "news_edit"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 11206.400000024587,
+    "button": 0,
+    "clientX": 90,
+    "clientY": 296,
+    "screenX": 90,
+    "screenY": 362,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='22.02.2018 16:56:41.271'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "name": "addTagData",
+    "id": "addTagData",
+    "addTag": "нба",
+    "command": "tag_add",
+    "container": "addTagData"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 21302.300000097603,
+    "button": 0,
+    "clientX": 277,
+    "clientY": 457,
+    "screenX": 277,
+    "screenY": 523,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='22.02.2018 16:57:20.771'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "command": "news_edit"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 2100.3999998793006,
+    "button": 0,
+    "clientX": 87,
+    "clientY": 89,
+    "screenX": 87,
+    "screenY": 155,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='22.02.2018 16:58:00.563'>
+  <Text>Çàâåðøåí ïîòîê ñ ìåòêîé 'Service'</Text>
+</Message>
+
+<Message time='22.02.2018 16:58:00.582'>
+  <Text>Process: id = 8184 cpu = 00:05:18.6718750, page = 107mb peak = 146mb, virtual = 792mb peak = 805mb, topics = 24</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='22.02.2018 16:58:03.262'/>
+
+<Message time='22.02.2018 16:58:04.825'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='22.02.2018 16:58:05.044'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='22.02.2018 16:58:05.174'>
+  <Text>Process: id = 8184 cpu = 00:05:19.8750000, page = 105mb peak = 146mb, virtual = 794mb peak = 805mb, topics = 0</Text>
+</Message>
+
+<Message time='22.02.2018 16:58:08.105'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "command": "news_edit"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 6412.1000000741333,
+    "button": 0,
+    "clientX": 99,
+    "clientY": 191,
+    "screenX": 99,
+    "screenY": 257,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='22.02.2018 16:58:15.331'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "name": "addTagData",
+    "id": "addTagData",
+    "addTag": "нба",
+    "command": "tag_add",
+    "container": "addTagData"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 13708.09999993071,
+    "button": 0,
+    "clientX": 272,
+    "clientY": 354,
+    "screenX": 272,
+    "screenY": 420,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='22.02.2018 16:58:40.008'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "name": "addTagData",
+    "id": "addTagData",
+    "addTag": "Гильермо Эрнангомес",
+    "command": "tag_add",
+    "container": "addTagData"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 38371.700000017881,
+    "button": 0,
+    "clientX": 285,
+    "clientY": 368,
+    "screenX": 285,
+    "screenY": 434,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='22.02.2018 16:58:45.662'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "name": "editNewsData",
+    "id": "editNewsData",
+    "editNewsTitle": "Гильермо Эрнангомес попросил «Никс» обменять его ",
+    "editNewsOriginName": "https://vk.com/eurobasket_news",
+    "editNewsOriginUrl": "",
+    "addTag": "Гильермо Эрнангомес",
+    "editNewsText": "&lt;p&gt;Центровой &amp;laquo;Нью-Йорка&amp;raquo; Гильермо Эрнангомес попросил клуб обменять его перед дедлайном, сообщает инсайдер Yahoo! Sports Шэмс Чарания.&amp;nbsp;&lt;br /&gt;\n&lt;br /&gt;\nЭрнангомес, который в прошлом сезоне попал в первую символическую пятерку новичков НБА, в нынешнем розыгрыше потерял место в ротации.&lt;/p&gt;\n",
+    "command": "save_news_edit",
+    "container": "editNewsData",
+    "id1": "100384"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 44036.000000080094,
+    "button": 0,
+    "clientX": 126,
+    "clientY": 399,
+    "screenX": 126,
+    "screenY": 465,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='22.02.2018 16:58:48.011'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "command": "news_edit"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 46395.900000119582,
+    "button": 0,
+    "clientX": 89,
+    "clientY": 94,
+    "screenX": 89,
+    "screenY": 160,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='22.02.2018 17:00:16.176'>
+  <Text>Çàâåðøåí ïîòîê ñ ìåòêîé 'Service'</Text>
+</Message>
+
+<Message time='22.02.2018 17:00:16.177'>
+  <Text>Process: id = 8184 cpu = 00:05:21.4531250, page = 109mb peak = 146mb, virtual = 795mb peak = 805mb, topics = 11</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='22.02.2018 17:00:19.299'/>
+
+<Message time='22.02.2018 17:00:19.997'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='22.02.2018 17:00:20.227'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='22.02.2018 17:00:20.250'>
+  <Text>Process: id = 8184 cpu = 00:05:22.7968750, page = 112mb peak = 146mb, virtual = 798mb peak = 805mb, topics = 0</Text>
+</Message>
+
+<Message time='22.02.2018 17:00:23.747'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "command": "news_edit"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 2714.3000001087785,
+    "button": 0,
+    "clientX": 91,
+    "clientY": 288,
+    "screenX": 91,
+    "screenY": 354,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='22.02.2018 17:01:55.207'>
+  <Text>Çàâåðøåí ïîòîê ñ ìåòêîé 'Service'</Text>
+</Message>
+
+<Message time='22.02.2018 17:01:55.209'>
+  <Text>Process: id = 8184 cpu = 00:05:24.2656250, page = 114mb peak = 146mb, virtual = 800mb peak = 805mb, topics = 11</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='22.02.2018 17:01:59.362'/>
+
+<Message time='22.02.2018 17:02:00.196'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='22.02.2018 17:02:00.500'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='22.02.2018 17:02:00.523'>
+  <Text>Process: id = 8184 cpu = 00:05:26.0468750, page = 114mb peak = 146mb, virtual = 801mb peak = 805mb, topics = 0</Text>
+</Message>
+
+<Message time='22.02.2018 17:02:04.207'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "command": "news_edit"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 5426.3000001665205,
+    "button": 0,
+    "clientX": 67,
+    "clientY": 184,
+    "screenX": 67,
+    "screenY": 250,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='22.02.2018 17:02:11.556'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "name": "addTagData",
+    "id": "addTagData",
+    "addTag": "нба",
+    "command": "tag_add",
+    "container": "addTagData"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 12826.200000010431,
+    "button": 0,
+    "clientX": 257,
+    "clientY": 295,
+    "screenX": 257,
+    "screenY": 361,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='22.02.2018 17:02:23.235'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "name": "addTagData",
+    "id": "addTagData",
+    "addTag": "Гильермо Эрнангомес",
+    "command": "tag_add",
+    "container": "addTagData"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 24514.600000111386,
+    "button": 0,
+    "clientX": 254,
+    "clientY": 325,
+    "screenX": 254,
+    "screenY": 391,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='22.02.2018 17:02:37.593'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "name": "addTagData",
+    "id": "addTagData",
+    "addTag": "Никс",
+    "command": "tag_add",
+    "container": "addTagData"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 38874.300000024959,
+    "button": 0,
+    "clientX": 272,
+    "clientY": 304,
+    "screenX": 272,
+    "screenY": 370,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='22.02.2018 17:02:49.276'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "name": "editNewsData",
+    "id": "editNewsData",
+    "editNewsTitle": "Гильермо Эрнангомес попросил «Никс» обменять его ",
+    "editNewsOriginName": "https://vk.com/eurobasket_news",
+    "editNewsOriginUrl": "",
+    "addTag": "Никс",
+    "editNewsText": "&lt;p&gt;Центровой &amp;laquo;Нью-Йорка&amp;raquo; Гильермо Эрнангомес попросил клуб обменять его перед дедлайном, сообщает инсайдер Yahoo! Sports Шэмс Чарания.&amp;nbsp;&lt;br /&gt;\n&lt;br /&gt;\nЭрнангомес, который в прошлом сезоне попал в первую символическую пятерку новичков НБА, в нынешнем розыгрыше потерял место в ротации.&lt;/p&gt;\n",
+    "command": "save_news_edit",
+    "container": "editNewsData",
+    "id1": "100384"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 50546.500000171363,
+    "button": 0,
+    "clientX": 142,
+    "clientY": 338,
+    "screenX": 142,
+    "screenY": 404,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='22.02.2018 17:02:51.266'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "command": "news_edit"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 52546.300000045449,
+    "button": 0,
+    "clientX": 100,
+    "clientY": 86,
+    "screenX": 100,
+    "screenY": 152,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='22.02.2018 17:02:54.824'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "command": "news_edit"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 1416.8999998364598,
+    "button": 0,
+    "clientX": 89,
+    "clientY": 89,
+    "screenX": 89,
+    "screenY": 155,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='22.02.2018 17:03:11.503'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "command": "news_edit"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 1685.0000000558794,
+    "button": 0,
+    "clientX": 94,
+    "clientY": 92,
+    "screenX": 94,
+    "screenY": 158,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='22.02.2018 17:03:24.542'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "name": "addTagData",
+    "id": "addTagData",
+    "addTag": "Гильермо Эрнангомес",
+    "command": "tag_add",
+    "container": "addTagData"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 14732.499999925494,
+    "button": 0,
+    "clientX": 261,
+    "clientY": 374,
+    "screenX": 261,
+    "screenY": 440,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='22.02.2018 17:03:26.243'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "name": "editNewsData",
+    "id": "editNewsData",
+    "editNewsTitle": "Гильермо Эрнангомес попросил «Никс» обменять его ",
+    "editNewsOriginName": "https://vk.com/eurobasket_news",
+    "editNewsOriginUrl": "",
+    "addTag": "Гильермо Эрнангомес",
+    "editNewsText": "&lt;p&gt;Центровой &amp;laquo;Нью-Йорка&amp;raquo; Гильермо Эрнангомес попросил клуб обменять его перед дедлайном, сообщает инсайдер Yahoo! Sports Шэмс Чарания.&amp;nbsp;&lt;br /&gt;\n&lt;br /&gt;\nЭрнангомес, который в прошлом сезоне попал в первую символическую пятерку новичков НБА, в нынешнем розыгрыше потерял место в ротации.&lt;/p&gt;\n",
+    "command": "save_news_edit",
+    "container": "editNewsData",
+    "id1": "100384"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 16429.100000066683,
+    "button": 0,
+    "clientX": 138,
+    "clientY": 412,
+    "screenX": 138,
+    "screenY": 478,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='22.02.2018 17:03:27.905'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "command": "news_edit"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 18100.199999986216,
+    "button": 0,
+    "clientX": 86,
+    "clientY": 92,
+    "screenX": 86,
+    "screenY": 158,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='22.02.2018 17:03:31.454'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "command": "news_edit"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 1476.5000001061708,
+    "button": 0,
+    "clientX": 84,
+    "clientY": 89,
+    "screenX": 84,
+    "screenY": 155,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='22.02.2018 17:03:42.308'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "command": "tag_remove",
+    "id1": "0"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 12340.300000039861,
+    "button": 0,
+    "clientX": 174,
+    "clientY": 449,
+    "screenX": 174,
+    "screenY": 515,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='22.02.2018 17:04:40.544'>
+  <Text>Çàâåðøåí ïîòîê ñ ìåòêîé 'Service'</Text>
+</Message>
+
+<Message time='22.02.2018 17:04:40.546'>
+  <Text>Process: id = 8184 cpu = 00:05:28.5468750, page = 127mb peak = 146mb, virtual = 802mb peak = 805mb, topics = 11</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='22.02.2018 17:04:43.566'/>
+
+<Message time='22.02.2018 17:04:44.224'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='22.02.2018 17:04:44.453'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='22.02.2018 17:04:44.464'>
+  <Text>Process: id = 8184 cpu = 00:05:29.8750000, page = 127mb peak = 146mb, virtual = 805mb peak = 805mb, topics = 0</Text>
+</Message>
+
+<Message time='22.02.2018 17:04:47.104'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "command": "news_edit"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 3834.4000000506639,
+    "button": 0,
+    "clientX": 82,
+    "clientY": 84,
+    "screenX": 82,
+    "screenY": 150,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='22.02.2018 17:04:56.104'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "command": "tag_remove",
+    "id1": "0"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 12882.500000065193,
+    "button": 0,
+    "clientX": 173,
+    "clientY": 452,
+    "screenX": 173,
+    "screenY": 518,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='22.02.2018 17:04:57.173'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "name": "editNewsData",
+    "id": "editNewsData",
+    "editNewsTitle": "Гильермо Эрнангомес попросил «Никс» обменять его ",
+    "editNewsOriginName": "https://vk.com/eurobasket_news",
+    "editNewsOriginUrl": "",
+    "addTag": "",
+    "editNewsText": "&lt;p&gt;Центровой &amp;laquo;Нью-Йорка&amp;raquo; Гильермо Эрнангомес попросил клуб обменять его перед дедлайном, сообщает инсайдер Yahoo! Sports Шэмс Чарания.&amp;nbsp;&lt;br /&gt;\n&lt;br /&gt;\nЭрнангомес, который в прошлом сезоне попал в первую символическую пятерку новичков НБА, в нынешнем розыгрыше потерял место в ротации.&lt;/p&gt;\n",
+    "command": "save_news_edit",
+    "container": "editNewsData",
+    "id1": "100384"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 13947.099999990314,
+    "button": 0,
+    "clientX": 140,
+    "clientY": 486,
+    "screenX": 140,
+    "screenY": 552,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='22.02.2018 17:04:58.610'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "command": "news_edit"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 15394.49999993667,
+    "button": 0,
+    "clientX": 105,
+    "clientY": 94,
+    "screenX": 105,
+    "screenY": 160,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='22.02.2018 17:05:05.376'>
+  <Text>Çàâåðøåí ïîòîê ñ ìåòêîé 'Service'</Text>
+</Message>
+
+<Message time='22.02.2018 17:05:05.378'>
+  <Text>Process: id = 8184 cpu = 00:05:31.8593750, page = 136mb peak = 146mb, virtual = 807mb peak = 807mb, topics = 11</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='22.02.2018 17:05:09.939'/>
+
+<Message time='22.02.2018 17:05:10.632'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='22.02.2018 17:05:10.942'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='22.02.2018 17:05:10.953'>
+  <Text>Process: id = 8184 cpu = 00:05:33.2812500, page = 140mb peak = 146mb, virtual = 808mb peak = 809mb, topics = 0</Text>
+</Message>
+
+<Message time='22.02.2018 17:05:13.448'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "command": "news_edit"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 3859.5000000204891,
+    "button": 0,
+    "clientX": 96,
+    "clientY": 85,
+    "screenX": 96,
+    "screenY": 151,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='22.02.2018 17:05:45.944'>
+  <Text>Çàâåðøåí ïîòîê ñ ìåòêîé 'Service'</Text>
+</Message>
+
+<Message time='22.02.2018 17:05:45.973'>
+  <Text>Process: id = 8184 cpu = 00:05:34.8906250, page = 146mb peak = 147mb, virtual = 809mb peak = 810mb, topics = 11</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='22.02.2018 17:05:48.937'/>
+
+<Message time='22.02.2018 17:05:49.653'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='22.02.2018 17:05:49.889'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='22.02.2018 17:05:49.899'>
+  <Text>Process: id = 8184 cpu = 00:05:36.5000000, page = 126mb peak = 147mb, virtual = 794mb peak = 810mb, topics = 0</Text>
+</Message>
+
+<Message time='22.02.2018 17:05:52.408'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "command": "news_edit"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 3723.1000000610948,
+    "button": 0,
+    "clientX": 98,
+    "clientY": 93,
+    "screenX": 98,
+    "screenY": 159,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='22.02.2018 17:06:21.114'>
+  <Text>Çàâåðøåí ïîòîê ñ ìåòêîé 'Service'</Text>
+</Message>
+
+<Message time='22.02.2018 17:06:21.116'>
+  <Text>Process: id = 8184 cpu = 00:05:38.1718750, page = 127mb peak = 147mb, virtual = 795mb peak = 810mb, topics = 11</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='22.02.2018 17:06:23.723'/>
+
+<Message time='22.02.2018 17:06:24.308'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='22.02.2018 17:06:24.575'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='22.02.2018 17:06:24.583'>
+  <Text>Process: id = 8184 cpu = 00:05:39.5312500, page = 125mb peak = 147mb, virtual = 793mb peak = 810mb, topics = 0</Text>
+</Message>
+
+<Message time='22.02.2018 17:06:27.079'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "command": "news_edit"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 3106.7999999504536,
+    "button": 0,
+    "clientX": 105,
+    "clientY": 99,
+    "screenX": 105,
+    "screenY": 165,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='22.02.2018 17:07:44.145'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "name": "addTagData",
+    "id": "addTagData",
+    "addTag": "нба",
+    "command": "tag_add",
+    "container": "addTagData"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 80218.20000000298,
+    "button": 0,
+    "clientX": 264,
+    "clientY": 300,
+    "screenX": 264,
+    "screenY": 366,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='22.02.2018 17:07:47.105'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "name": "addTagData",
+    "id": "addTagData",
+    "addTag": "Гильермо Эрнангомес",
+    "command": "tag_add",
+    "container": "addTagData"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 83186.199999880046,
+    "button": 0,
+    "clientX": 277,
+    "clientY": 328,
+    "screenX": 277,
+    "screenY": 394,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='22.02.2018 17:07:52.078'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "name": "addTagData",
+    "id": "addTagData",
+    "addTag": "нба",
+    "command": "tag_add",
+    "container": "addTagData"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 88162.400000030175,
+    "button": 0,
+    "clientX": 251,
+    "clientY": 328,
+    "screenX": 251,
+    "screenY": 394,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='22.02.2018 17:07:59.882'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "name": "addTagData",
+    "id": "addTagData",
+    "addTag": "Нью-Йорк Никс",
+    "command": "tag_add",
+    "container": "addTagData"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 95961.999999824911,
+    "button": 0,
+    "clientX": 253,
+    "clientY": 329,
+    "screenX": 253,
+    "screenY": 395,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='22.02.2018 17:08:02.625'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "command": "tag_remove",
+    "id1": "1"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 98706.000000005588,
+    "button": 0,
+    "clientX": 217,
+    "clientY": 307,
+    "screenX": 217,
+    "screenY": 373,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='22.02.2018 17:08:06.815'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "command": "tag_remove",
+    "id1": "1"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 102898.09999987483,
+    "button": 0,
+    "clientX": 219,
+    "clientY": 305,
+    "screenX": 219,
+    "screenY": 371,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='22.02.2018 17:09:12.071'>
+  <Text>Çàâåðøåí ïîòîê ñ ìåòêîé 'Service'</Text>
+</Message>
+
+<Message time='22.02.2018 17:09:12.073'>
+  <Text>Process: id = 8184 cpu = 00:05:41.3593750, page = 127mb peak = 147mb, virtual = 794mb peak = 810mb, topics = 11</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='22.02.2018 17:09:15.164'/>
+
+<Message time='22.02.2018 17:09:15.816'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='22.02.2018 17:09:16.065'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='22.02.2018 17:09:16.074'>
+  <Text>Process: id = 8184 cpu = 00:05:42.7500000, page = 129mb peak = 147mb, virtual = 797mb peak = 810mb, topics = 0</Text>
+</Message>
+
+<Message time='22.02.2018 17:09:18.509'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "command": "news_edit"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 3099.9000000301749,
+    "button": 0,
+    "clientX": 101,
+    "clientY": 91,
+    "screenX": 101,
+    "screenY": 157,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='22.02.2018 17:09:23.231'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "name": "addTagData",
+    "id": "addTagData",
+    "addTag": "нба",
+    "command": "tag_add",
+    "container": "addTagData"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 7867.80000012368,
+    "button": 0,
+    "clientX": 293,
+    "clientY": 303,
+    "screenX": 293,
+    "screenY": 369,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='22.02.2018 17:09:25.831'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "name": "addTagData",
+    "id": "addTagData",
+    "addTag": "Гильермо Эрнангомес",
+    "command": "tag_add",
+    "container": "addTagData"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 10476.000000024214,
+    "button": 0,
+    "clientX": 268,
+    "clientY": 331,
+    "screenX": 268,
+    "screenY": 397,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='22.02.2018 17:09:33.282'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "name": "addTagData",
+    "id": "addTagData",
+    "addTag": "Нью-Йорк Никс",
+    "command": "tag_add",
+    "container": "addTagData"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 17923.799999989569,
+    "button": 0,
+    "clientX": 286,
+    "clientY": 326,
+    "screenX": 286,
+    "screenY": 392,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='22.02.2018 17:09:36.400'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "command": "tag_remove",
+    "id1": "0"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 21044.100000057369,
+    "button": 0,
+    "clientX": 73,
+    "clientY": 306,
+    "screenX": 73,
+    "screenY": 372,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='22.02.2018 17:09:48.728'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "command": "tag_remove",
+    "id1": "0"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 33371.599999954924,
+    "button": 0,
+    "clientX": 175,
+    "clientY": 306,
+    "screenX": 175,
+    "screenY": 372,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='22.02.2018 17:09:57.320'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "name": "addTagData",
+    "id": "addTagData",
+    "addTag": "нба",
+    "command": "tag_add",
+    "container": "addTagData"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 41963.500000070781,
+    "button": 0,
+    "clientX": 280,
+    "clientY": 335,
+    "screenX": 280,
+    "screenY": 401,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='22.02.2018 17:10:00.025'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "name": "addTagData",
+    "id": "addTagData",
+    "addTag": "Гильермо Эрнангомес",
+    "command": "tag_add",
+    "container": "addTagData"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 44668.300000019372,
+    "button": 0,
+    "clientX": 254,
+    "clientY": 321,
+    "screenX": 254,
+    "screenY": 387,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='22.02.2018 17:10:01.458'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "name": "editNewsData",
+    "id": "editNewsData",
+    "editNewsTitle": "Гильермо Эрнангомес попросил «Никс» обменять его ",
+    "editNewsOriginName": "https://vk.com/eurobasket_news",
+    "editNewsOriginUrl": "",
+    "addTag": "Гильермо Эрнангомес",
+    "editNewsText": "&lt;p&gt;Центровой &amp;laquo;Нью-Йорка&amp;raquo; Гильермо Эрнангомес попросил клуб обменять его перед дедлайном, сообщает инсайдер Yahoo! Sports Шэмс Чарания.&amp;nbsp;&lt;br /&gt;\n&lt;br /&gt;\nЭрнангомес, который в прошлом сезоне попал в первую символическую пятерку новичков НБА, в нынешнем розыгрыше потерял место в ротации.&lt;/p&gt;\n",
+    "command": "save_news_edit",
+    "container": "editNewsData",
+    "id1": "100384"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 46091.500000096858,
+    "button": 0,
+    "clientX": 101,
+    "clientY": 359,
+    "screenX": 101,
+    "screenY": 425,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='22.02.2018 17:10:03.015'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "command": "news_edit"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 47659.500000067055,
+    "button": 0,
+    "clientX": 95,
+    "clientY": 89,
+    "screenX": 95,
+    "screenY": 155,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='22.02.2018 17:10:06.763'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "command": "news_edit"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 1684.499999973923,
+    "button": 0,
+    "clientX": 92,
+    "clientY": 92,
+    "screenX": 92,
+    "screenY": 158,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='22.02.2018 17:11:24.474'>
+  <Text>Çàâåðøåí ïîòîê ñ ìåòêîé 'Service'</Text>
+</Message>
+
+<Message time='22.02.2018 17:11:24.476'>
+  <Text>Process: id = 8184 cpu = 00:05:45.0625000, page = 127mb peak = 147mb, virtual = 798mb peak = 810mb, topics = 11</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='22.02.2018 17:11:27.889'/>
+
+<Message time='22.02.2018 17:11:28.501'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='22.02.2018 17:11:28.760'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='22.02.2018 17:11:28.770'>
+  <Text>Process: id = 8184 cpu = 00:05:46.5625000, page = 129mb peak = 147mb, virtual = 800mb peak = 810mb, topics = 0</Text>
+</Message>
+
+<Message time='22.02.2018 17:11:31.555'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "command": "news_edit"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 3068.7000001780689,
+    "button": 0,
+    "clientX": 87,
+    "clientY": 98,
+    "screenX": 87,
+    "screenY": 164,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='22.02.2018 17:11:36.708'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "name": "addTagData",
+    "id": "addTagData",
+    "addTag": "нба",
+    "command": "tag_add",
+    "container": "addTagData"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 8268.3000001125038,
+    "button": 0,
+    "clientX": 258,
+    "clientY": 376,
+    "screenX": 258,
+    "screenY": 442,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='22.02.2018 17:11:42.826'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "name": "addTagData",
+    "id": "addTagData",
+    "addTag": "Нью-Йорк Никс",
+    "command": "tag_add",
+    "container": "addTagData"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 14388.400000054389,
+    "button": 0,
+    "clientX": 275,
+    "clientY": 382,
+    "screenX": 275,
+    "screenY": 448,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='22.02.2018 17:11:44.161'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "name": "editNewsData",
+    "id": "editNewsData",
+    "editNewsTitle": "Гильермо Эрнангомес попросил «Никс» обменять его ",
+    "editNewsOriginName": "https://vk.com/eurobasket_news",
+    "editNewsOriginUrl": "",
+    "addTag": "Нью-Йорк Никс",
+    "editNewsText": "&lt;p&gt;Центровой &amp;laquo;Нью-Йорка&amp;raquo; Гильермо Эрнангомес попросил клуб обменять его перед дедлайном, сообщает инсайдер Yahoo! Sports Шэмс Чарания.&amp;nbsp;&lt;br /&gt;\n&lt;br /&gt;\nЭрнангомес, который в прошлом сезоне попал в первую символическую пятерку новичков НБА, в нынешнем розыгрыше потерял место в ротации.&lt;/p&gt;\n",
+    "command": "save_news_edit",
+    "container": "editNewsData",
+    "id1": "100384"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 15716.300000203773,
+    "button": 0,
+    "clientX": 111,
+    "clientY": 409,
+    "screenX": 111,
+    "screenY": 475,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='22.02.2018 17:11:45.998'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "command": "news_edit"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 17564.300000201911,
+    "button": 0,
+    "clientX": 97,
+    "clientY": 82,
+    "screenX": 97,
+    "screenY": 148,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='22.02.2018 17:11:49.084'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "command": "news_edit"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 1692.0000000391156,
+    "button": 0,
+    "clientX": 76,
+    "clientY": 88,
+    "screenX": 76,
+    "screenY": 154,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='22.02.2018 17:11:52.896'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "command": "tag_remove",
+    "id1": "1"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 5516.1000001244247,
+    "button": 0,
+    "clientX": 217,
+    "clientY": 283,
+    "screenX": 217,
+    "screenY": 349,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='22.02.2018 17:11:54.071'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "name": "editNewsData",
+    "id": "editNewsData",
+    "editNewsTitle": "Гильермо Эрнангомес попросил «Никс» обменять его ",
+    "editNewsOriginName": "https://vk.com/eurobasket_news",
+    "editNewsOriginUrl": "",
+    "addTag": "",
+    "editNewsText": "&lt;p&gt;Центровой &amp;laquo;Нью-Йорка&amp;raquo; Гильермо Эрнангомес попросил клуб обменять его перед дедлайном, сообщает инсайдер Yahoo! Sports Шэмс Чарания.&amp;nbsp;&lt;br /&gt;\n&lt;br /&gt;\nЭрнангомес, который в прошлом сезоне попал в первую символическую пятерку новичков НБА, в нынешнем розыгрыше потерял место в ротации.&lt;/p&gt;\n",
+    "command": "save_news_edit",
+    "container": "editNewsData",
+    "id1": "100384"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 6684.3000000808388,
+    "button": 0,
+    "clientX": 129,
+    "clientY": 337,
+    "screenX": 129,
+    "screenY": 403,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='22.02.2018 17:11:56.963'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "command": "news_edit"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 1524.3999999947846,
+    "button": 0,
+    "clientX": 73,
+    "clientY": 92,
+    "screenX": 73,
+    "screenY": 158,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='22.02.2018 17:12:32.911'>
+  <Text>Çàâåðøåí ïîòîê ñ ìåòêîé 'Service'</Text>
+</Message>
+
+<Message time='22.02.2018 17:12:32.913'>
+  <Text>Process: id = 8184 cpu = 00:05:48.6562500, page = 131mb peak = 147mb, virtual = 801mb peak = 810mb, topics = 11</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='22.02.2018 17:12:35.438'/>
+
+<Message time='22.02.2018 17:12:36.071'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='22.02.2018 17:12:36.320'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='22.02.2018 17:12:36.334'>
+  <Text>Process: id = 8184 cpu = 00:05:50.0312500, page = 133mb peak = 147mb, virtual = 803mb peak = 810mb, topics = 0</Text>
+</Message>
+
+<Message time='22.02.2018 17:12:43.292'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "command": "news_add"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 3058.3999999798834,
+    "button": 0,
+    "clientX": 181,
+    "clientY": 392,
+    "screenX": 181,
+    "screenY": 458,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='22.02.2018 17:12:59.972'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "name": "addTagData",
+    "id": "addTagData",
+    "addTag": "нба",
+    "command": "tag_add",
+    "container": "addTagData"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 19786.199999973178,
+    "button": 0,
+    "clientX": 265,
+    "clientY": 379,
+    "screenX": 265,
+    "screenY": 445,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='22.02.2018 17:13:27.899'>
+  <Text>Çàâåðøåí ïîòîê ñ ìåòêîé 'Service'</Text>
+</Message>
+
+<Message time='22.02.2018 17:13:27.900'>
+  <Text>Process: id = 8184 cpu = 00:05:51.6875000, page = 136mb peak = 147mb, virtual = 803mb peak = 810mb, topics = 24</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='22.02.2018 17:13:30.695'/>
+
+<Message time='22.02.2018 17:13:31.323'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='22.02.2018 17:13:31.550'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='22.02.2018 17:13:31.557'>
+  <Text>Process: id = 8184 cpu = 00:05:53.0312500, page = 120mb peak = 147mb, virtual = 793mb peak = 810mb, topics = 0</Text>
+</Message>
+
+<Message time='22.02.2018 17:13:36.165'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "command": "news_add"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 4228.0999999493361,
+    "button": 0,
+    "clientX": 191,
+    "clientY": 190,
+    "screenX": 191,
+    "screenY": 256,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='22.02.2018 17:13:46.828'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "name": "addTagData",
+    "id": "addTagData",
+    "addTag": "нба",
+    "command": "tag_add",
+    "container": "addTagData"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 14940.100000007078,
+    "button": 0,
+    "clientX": 275,
+    "clientY": 477,
+    "screenX": 275,
+    "screenY": 543,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='22.02.2018 17:13:49.350'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "name": "addTagData",
+    "id": "addTagData",
+    "addTag": "Гильермо Эрнангомес",
+    "command": "tag_add",
+    "container": "addTagData"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 17467.999999877065,
+    "button": 0,
+    "clientX": 307,
+    "clientY": 512,
+    "screenX": 307,
+    "screenY": 578,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='22.02.2018 17:13:50.383'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "name": "addNewsData",
+    "id": "addNewsData",
+    "addNewsTitle": "Проверка тегов",
+    "addNewsOriginName": "",
+    "addNewsOriginUrl": "",
+    "addTag": "Гильермо Эрнангомес",
+    "addNewsText": "&lt;p&gt;Теги&lt;/p&gt;\n",
+    "command": "save_news_add",
+    "container": "addNewsData"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 18491.900000022724,
+    "button": 0,
+    "clientX": 125,
+    "clientY": 540,
+    "screenX": 125,
+    "screenY": 606,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='22.02.2018 17:13:55.420'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "command": "news_edit"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 1595.2999999281019,
+    "button": 0,
+    "clientX": 102,
+    "clientY": 250,
+    "screenX": 102,
+    "screenY": 316,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='22.02.2018 17:16:31.550'>
+  <Text>sitemap.xml успешно обновлен</Text>
+</Message>
+
+<Message time='22.02.2018 17:27:58.959'>
+  <Text>Çàâåðøåí ïîòîê ñ ìåòêîé 'Service'</Text>
+</Message>
+
+<Message time='22.02.2018 17:27:58.961'>
+  <Text>Process: id = 8184 cpu = 00:05:55.1875000, page = 124mb peak = 147mb, virtual = 791mb peak = 810mb, topics = 25</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='22.02.2018 17:28:00.609'/>
+
+<Message time='22.02.2018 17:28:01.299'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='22.02.2018 17:28:01.571'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='22.02.2018 17:28:01.584'>
+  <Text>Process: id = 8184 cpu = 00:05:56.6250000, page = 124mb peak = 147mb, virtual = 794mb peak = 810mb, topics = 0</Text>
+</Message>
+
+<Message time='22.02.2018 17:28:40.530'>
+  <Text>Çàâåðøåí ïîòîê ñ ìåòêîé 'Service'</Text>
+</Message>
+
+<Message time='22.02.2018 17:28:40.532'>
+  <Text>Process: id = 8184 cpu = 00:05:58.4218750, page = 127mb peak = 147mb, virtual = 794mb peak = 810mb, topics = 24</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='22.02.2018 17:28:42.099'/>
+
+<Message time='22.02.2018 17:28:42.923'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='22.02.2018 17:28:43.231'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='22.02.2018 17:28:43.242'>
+  <Text>Process: id = 8184 cpu = 00:05:59.9843750, page = 124mb peak = 147mb, virtual = 797mb peak = 810mb, topics = 0</Text>
+</Message>
+
+<Message time='22.02.2018 18:28:43.234'>
+  <Text>Process: id = 8184 cpu = 00:06:02, page = 109mb peak = 147mb, virtual = 790mb peak = 810mb, topics = 50</Text>
+</Message>
+
+<Message time='22.02.2018 18:30:35.727'>
+  <Text>Çàâåðøåí ïîòîê ñ ìåòêîé 'Service'</Text>
+</Message>
+
+<Message time='22.02.2018 18:30:35.729'>
+  <Text>Process: id = 8184 cpu = 00:06:02, page = 109mb peak = 147mb, virtual = 792mb peak = 810mb, topics = 50</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='22.02.2018 19:01:55.622'/>
+
+<Message time='22.02.2018 19:01:56.176'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='22.02.2018 19:01:56.507'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='22.02.2018 19:01:56.514'>
+  <Text>Process: id = 8184 cpu = 00:06:02.8437500, page = 105mb peak = 147mb, virtual = 788mb peak = 810mb, topics = 0</Text>
+</Message>
+
+<Message time='22.02.2018 19:04:56.537'>
+  <Text>sitemap.xml успешно обновлен</Text>
+</Message>
+
+<Message time='22.02.2018 20:01:56.510'>
+  <Text>Process: id = 8184 cpu = 00:06:04.4531250, page = 108mb peak = 147mb, virtual = 785mb peak = 810mb, topics = 50</Text>
+</Message>
+
+<Message time='22.02.2018 20:12:48.108'>
+  <Text>Çàâåðøåí ïîòîê ñ ìåòêîé 'Service'</Text>
+</Message>
+
+<Message time='22.02.2018 20:12:48.110'>
+  <Text>Process: id = 8184 cpu = 00:06:04.4687500, page = 109mb peak = 147mb, virtual = 788mb peak = 810mb, topics = 50</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='22.02.2018 20:13:01.940'/>
+
+<Message time='22.02.2018 20:13:02.515'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='22.02.2018 20:13:02.789'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='22.02.2018 20:13:02.797'>
+  <Text>Process: id = 8184 cpu = 00:06:05.7187500, page = 110mb peak = 147mb, virtual = 792mb peak = 810mb, topics = 0</Text>
+</Message>
+
+<Message time='22.02.2018 20:15:51.708'>
+  <Text>Process: id = 8184 cpu = 00:06:07.4531250, page = 112mb peak = 147mb, virtual = 793mb peak = 810mb, topics = 50</Text>
+</Message>
+
+<Message time='22.02.2018 20:15:51.708'>
+  <Text>Çàâåðøåí ïîòîê ñ ìåòêîé 'Service'</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='22.02.2018 20:15:56.338'/>
+
+<Message time='22.02.2018 20:15:57.134'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='22.02.2018 20:15:57.366'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='22.02.2018 20:15:57.391'>
+  <Text>Process: id = 8184 cpu = 00:06:08.9531250, page = 114mb peak = 147mb, virtual = 796mb peak = 810mb, topics = 0</Text>
+</Message>
+
+<Message time='22.02.2018 20:18:09.528'>
+  <Text>Process: id = 8184 cpu = 00:06:10.4218750, page = 115mb peak = 147mb, virtual = 797mb peak = 810mb, topics = 11</Text>
+</Message>
+
+<Message time='22.02.2018 20:18:09.529'>
+  <Text>Çàâåðøåí ïîòîê ñ ìåòêîé 'Service'</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='22.02.2018 20:18:12.099'/>
+
+<Message time='22.02.2018 20:18:12.826'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='22.02.2018 20:18:13.031'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='22.02.2018 20:18:13.041'>
+  <Text>Process: id = 8184 cpu = 00:06:11.9531250, page = 112mb peak = 147mb, virtual = 799mb peak = 810mb, topics = 0</Text>
+</Message>
+
+<Message time='22.02.2018 20:18:13.374'>
+  <Text>Tags: 100396</Text>
+</Message>
+
+<Message time='22.02.2018 20:18:14.432'>
+  <Text>Tags: 100396</Text>
+</Message>
+
+<Message time='22.02.2018 20:19:37.672'>
+  <Text>Çàâåðøåí ïîòîê ñ ìåòêîé 'Service'</Text>
+</Message>
+
+<Message time='22.02.2018 20:19:37.675'>
+  <Text>Process: id = 8184 cpu = 00:06:13.1718750, page = 117mb peak = 147mb, virtual = 799mb peak = 810mb, topics = 11</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='22.02.2018 20:19:40.705'/>
+
+<Message time='22.02.2018 20:19:41.591'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='22.02.2018 20:19:42.143'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='22.02.2018 20:19:42.168'>
+  <Text>Process: id = 8184 cpu = 00:06:14.8750000, page = 121mb peak = 147mb, virtual = 802mb peak = 810mb, topics = 0</Text>
+</Message>
+
+<Message time='22.02.2018 20:19:42.954'>
+  <Text>Tags: 100396</Text>
+</Message>
+
+<Message time='22.02.2018 20:19:43.732'>
+  <Text>Tags: 100396</Text>
+</Message>
+
+<Message time='22.02.2018 20:20:35.563'>
+  <Text>Çàâåðøåí ïîòîê ñ ìåòêîé 'Service'</Text>
+</Message>
+
+<Message time='22.02.2018 20:20:35.565'>
+  <Text>Process: id = 8184 cpu = 00:06:16.2812500, page = 122mb peak = 147mb, virtual = 802mb peak = 810mb, topics = 11</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='22.02.2018 20:20:38.026'/>
+
+<Message time='22.02.2018 20:20:38.843'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='22.02.2018 20:20:39.118'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='22.02.2018 20:20:39.128'>
+  <Text>Process: id = 8184 cpu = 00:06:17.7656250, page = 114mb peak = 147mb, virtual = 793mb peak = 810mb, topics = 0</Text>
+</Message>
+
+<Message time='22.02.2018 20:20:39.527'>
+  <Text>Tags: 100396</Text>
+</Message>
+
+<Message time='22.02.2018 20:20:40.319'>
+  <Text>Tags: 100396</Text>
+</Message>
+
+<Message time='22.02.2018 20:23:39.152'>
+  <Text>sitemap.xml успешно обновлен</Text>
+</Message>
+
+<Message time='22.02.2018 20:25:24.570'>
+  <Text>Çàâåðøåí ïîòîê ñ ìåòêîé 'Service'</Text>
+</Message>
+
+<Message time='22.02.2018 20:25:24.572'>
+  <Text>Process: id = 8184 cpu = 00:06:19.2031250, page = 117mb peak = 147mb, virtual = 794mb peak = 810mb, topics = 11</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='22.02.2018 20:25:28.097'/>
+
+<Message time='22.02.2018 20:25:28.994'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='22.02.2018 20:25:29.219'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='22.02.2018 20:25:29.235'>
+  <Text>Process: id = 8184 cpu = 00:06:20.7343750, page = 114mb peak = 147mb, virtual = 793mb peak = 810mb, topics = 0</Text>
+</Message>
+
+<Message time='22.02.2018 20:25:29.624'>
+  <Text>Tags: 100396</Text>
+</Message>
+
+<Message time='22.02.2018 20:25:30.418'>
+  <Text>Tags: 100396</Text>
+</Message>
+
+<Message time='22.02.2018 20:25:44.276'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "name": "loginData",
+    "id": "loginData",
+    "authLogin": "undyings",
+    "authPassword": "rjotq2",
+    "command": "user_login",
+    "container": "loginData"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 7250,
+    "button": 0,
+    "clientX": 1205,
+    "clientY": 33,
+    "screenX": 1205,
+    "screenY": 99,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='22.02.2018 20:25:46.094'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "command": "news_edit"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 9113.79999993369,
+    "button": 0,
+    "clientX": 101,
+    "clientY": 347,
+    "screenX": 101,
+    "screenY": 413,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='22.02.2018 20:25:54.472'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "name": "addTagData",
+    "id": "addTagData",
+    "addTag": "100396",
+    "command": "tag_add",
+    "container": "addTagData"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 17473.499999847263,
+    "button": 0,
+    "clientX": 271,
+    "clientY": 416,
+    "screenX": 271,
+    "screenY": 482,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='22.02.2018 20:25:56.192'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "name": "editNewsData",
+    "id": "editNewsData",
+    "editNewsTitle": "Анонс матчей дня в НБА",
+    "editNewsOriginName": "http://basketball.ru.com/",
+    "editNewsOriginUrl": "",
+    "addTag": "100396",
+    "editNewsText": "&lt;p&gt;&lt;strong&gt;НБА. Регулярный сезон.&lt;/strong&gt;&lt;/p&gt;\n\n&lt;h3&gt;Индиана - Вашингтон - 03:00 мск.&lt;/h3&gt;\n\n&lt;h3&gt;Детройт - Портленд - 03:00 мск.&lt;/h3&gt;\n\n&lt;h3&gt;Майами - Орландо - 03:30 мск.&lt;/h3&gt;\n\n&lt;h3&gt;Новый Орлеан - Юта - 04:00 мск.&lt;/h3&gt;\n\n&lt;h3&gt;Денвер &amp;ndash; Шарлотт - 05:00 мск.&lt;/h3&gt;\n\n&lt;h3&gt;Сакраменто &amp;ndash; Чикаго - 06:00 мск.&lt;/h3&gt;\n\n&lt;h3&gt;Клипперс - Даллас - 06:30 мск.&lt;/h3&gt;\n",
+    "command": "save_news_edit",
+    "container": "editNewsData",
+    "id1": "100383"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 19201.799999922514,
+    "button": 0,
+    "clientX": 129,
+    "clientY": 470,
+    "screenX": 129,
+    "screenY": 536,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='22.02.2018 20:26:11.755'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "command": "news_edit"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 34777.800000039861,
+    "button": 0,
+    "clientX": 84,
+    "clientY": 235,
+    "screenX": 84,
+    "screenY": 301,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='22.02.2018 20:26:54.784'>
+  <Text>Çàâåðøåí ïîòîê ñ ìåòêîé 'Service'</Text>
+</Message>
+
+<Message time='22.02.2018 20:26:54.786'>
+  <Text>Process: id = 8184 cpu = 00:06:22.9531250, page = 117mb peak = 147mb, virtual = 795mb peak = 810mb, topics = 24</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='22.02.2018 20:26:58.490'/>
+
+<Message time='22.02.2018 20:26:59.287'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='22.02.2018 20:26:59.526'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='22.02.2018 20:26:59.534'>
+  <Text>Process: id = 8184 cpu = 00:06:24.3906250, page = 116mb peak = 147mb, virtual = 797mb peak = 810mb, topics = 0</Text>
+</Message>
+
+<Message time='22.02.2018 20:27:01.852'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "command": "news_edit"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 2218.0999999400228,
+    "button": 0,
+    "clientX": 102,
+    "clientY": 258,
+    "screenX": 102,
+    "screenY": 324,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='22.02.2018 20:27:04.159'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "command": "tag_remove",
+    "id1": "0"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 4602.5000000372529,
+    "button": 0,
+    "clientX": 88,
+    "clientY": 414,
+    "screenX": 88,
+    "screenY": 480,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='22.02.2018 20:27:09.891'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "name": "addTagData",
+    "id": "addTagData",
+    "addTag": "НБА",
+    "command": "tag_add",
+    "container": "addTagData"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 10338.400000007823,
+    "button": 0,
+    "clientX": 250,
+    "clientY": 405,
+    "screenX": 250,
+    "screenY": 471,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='22.02.2018 20:27:18.981'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "name": "editNewsData",
+    "id": "editNewsData",
+    "editNewsTitle": "Анонс матчей дня в НБА",
+    "editNewsOriginName": "http://basketball.ru.com/",
+    "editNewsOriginUrl": "",
+    "addTag": "НБА",
+    "editNewsText": "&lt;p&gt;&lt;strong&gt;НБА. Регулярный сезон.&lt;/strong&gt;&lt;/p&gt;\n\n&lt;h3&gt;Индиана - Вашингтон - 03:00 мск.&lt;/h3&gt;\n\n&lt;h3&gt;Детройт - Портленд - 03:00 мск.&lt;/h3&gt;\n\n&lt;h3&gt;Майами - Орландо - 03:30 мск.&lt;/h3&gt;\n\n&lt;h3&gt;Новый Орлеан - Юта - 04:00 мск.&lt;/h3&gt;\n\n&lt;h3&gt;Денвер &amp;ndash; Шарлотт - 05:00 мск.&lt;/h3&gt;\n\n&lt;h3&gt;Сакраменто &amp;ndash; Чикаго - 06:00 мск.&lt;/h3&gt;\n\n&lt;h3&gt;Клипперс - Даллас - 06:30 мск.&lt;/h3&gt;\n",
+    "command": "save_news_edit",
+    "container": "editNewsData",
+    "id1": "100383"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 19418.199999956414,
+    "button": 0,
+    "clientX": 73,
+    "clientY": 367,
+    "screenX": 73,
+    "screenY": 433,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='22.02.2018 20:27:32.266'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "command": "news_edit"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 1262.4999999534339,
+    "button": 0,
+    "clientX": 84,
+    "clientY": 318,
+    "screenX": 84,
+    "screenY": 384,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='22.02.2018 20:27:41.141'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "name": "addTagData",
+    "id": "addTagData",
+    "addTag": "НБА",
+    "command": "tag_add",
+    "container": "addTagData"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 10142.599999904633,
+    "button": 0,
+    "clientX": 253,
+    "clientY": 308,
+    "screenX": 253,
+    "screenY": 374,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='22.02.2018 20:27:42.978'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "name": "editNewsData",
+    "id": "editNewsData",
+    "editNewsTitle": "Гильермо Эрнангомес попросил «Никс» обменять его ",
+    "editNewsOriginName": "https://vk.com/eurobasket_news",
+    "editNewsOriginUrl": "",
+    "addTag": "НБА",
+    "editNewsText": "&lt;p&gt;Центровой &amp;laquo;Нью-Йорка&amp;raquo; Гильермо Эрнангомес попросил клуб обменять его перед дедлайном, сообщает инсайдер Yahoo! Sports Шэмс Чарания.&amp;nbsp;&lt;br /&gt;\n&lt;br /&gt;\nЭрнангомес, который в прошлом сезоне попал в первую символическую пятерку новичков НБА, в нынешнем розыгрыше потерял место в ротации.&lt;/p&gt;\n",
+    "command": "save_news_edit",
+    "container": "editNewsData",
+    "id1": "100384"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 11976.399999810383,
+    "button": 0,
+    "clientX": 124,
+    "clientY": 337,
+    "screenX": 124,
+    "screenY": 403,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='22.02.2018 20:27:45.024'>
+  <Text>Tags: 100402</Text>
+</Message>
+
+<Message time='22.02.2018 20:27:45.229'>
+  <Text>Tags: 100402</Text>
+</Message>
+
+<Message time='22.02.2018 20:47:12.933'>
+  <Text>Çàâåðøåí ïîòîê ñ ìåòêîé 'Service'</Text>
+</Message>
+
+<Message time='22.02.2018 20:47:12.934'>
+  <Text>Process: id = 8184 cpu = 00:06:27.0781250, page = 116mb peak = 147mb, virtual = 791mb peak = 810mb, topics = 24</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='22.02.2018 20:47:16.085'/>
+
+<Message time='22.02.2018 20:47:16.674'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='22.02.2018 20:47:16.946'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='22.02.2018 20:47:16.957'>
+  <Text>Process: id = 8184 cpu = 00:06:28.3437500, page = 111mb peak = 147mb, virtual = 793mb peak = 810mb, topics = 0</Text>
+</Message>
+
+<Message time='22.02.2018 20:47:18.237'>
+  <Text>Tags: 100402</Text>
+</Message>
+
+<Message time='22.02.2018 20:47:19.021'>
+  <Text>Tags: 100402</Text>
+</Message>
+
+<Message time='22.02.2018 20:57:45.017'>
+  <Text>Çàâåðøåí ïîòîê ñ ìåòêîé 'Service'</Text>
+</Message>
+
+<Message time='22.02.2018 20:57:45.020'>
+  <Text>Process: id = 8184 cpu = 00:06:30.4843750, page = 118mb peak = 147mb, virtual = 791mb peak = 810mb, topics = 150</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='22.02.2018 20:57:47.708'/>
+
+<Message time='22.02.2018 20:57:48.363'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='22.02.2018 20:57:48.602'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='22.02.2018 20:57:48.612'>
+  <Text>Process: id = 8184 cpu = 00:06:31.8750000, page = 119mb peak = 147mb, virtual = 793mb peak = 810mb, topics = 0</Text>
+</Message>
+
+<Message time='22.02.2018 21:00:31.162'>
+  <Text>Çàâåðøåí ïîòîê ñ ìåòêîé 'Service'</Text>
+</Message>
+
+<Message time='22.02.2018 21:00:31.164'>
+  <Text>Process: id = 8184 cpu = 00:06:33.6562500, page = 121mb peak = 147mb, virtual = 794mb peak = 810mb, topics = 24</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='22.02.2018 21:00:32.856'/>
+
+<Message time='22.02.2018 21:00:33.626'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='22.02.2018 21:00:33.909'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='22.02.2018 21:00:33.918'>
+  <Text>Process: id = 8184 cpu = 00:06:35.0937500, page = 119mb peak = 147mb, virtual = 797mb peak = 810mb, topics = 0</Text>
+</Message>
+
+<Message time='22.02.2018 21:01:00.542'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "name": "loginData",
+    "id": "loginData",
+    "authLogin": "undyings",
+    "authPassword": "rjotq2",
+    "command": "user_login",
+    "container": "loginData"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 21282.099999953061,
+    "button": 0,
+    "clientX": 1211,
+    "clientY": 34,
+    "screenX": 1211,
+    "screenY": 100,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='22.02.2018 21:01:03.071'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "command": "news_add"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 23857.800000114366,
+    "button": 0,
+    "clientX": 173,
+    "clientY": 217,
+    "screenX": 173,
+    "screenY": 283,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='22.02.2018 21:02:01.655'>
+  <Text>Çàâåðøåí ïîòîê ñ ìåòêîé 'Service'</Text>
+</Message>
+
+<Message time='22.02.2018 21:02:01.657'>
+  <Text>Process: id = 8184 cpu = 00:06:36.9843750, page = 127mb peak = 147mb, virtual = 797mb peak = 810mb, topics = 24</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='22.02.2018 22:00:45.236'/>
+
+<Message time='22.02.2018 22:00:46.113'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='22.02.2018 22:00:46.769'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='22.02.2018 22:00:46.809'>
+  <Text>Process: id = 8184 cpu = 00:06:38.3906250, page = 110mb peak = 147mb, virtual = 785mb peak = 810mb, topics = 0</Text>
+</Message>
+
+<Message time='22.02.2018 22:03:46.753'>
+  <Text>sitemap.xml успешно обновлен</Text>
+</Message>
+
+<Message time='22.02.2018 23:00:46.800'>
+  <Text>Process: id = 8184 cpu = 00:06:40.3906250, page = 116mb peak = 147mb, virtual = 786mb peak = 810mb, topics = 24</Text>
+</Message>
+
+<Message time='22.02.2018 23:55:31.328'>
+  <Text>Çàâåðøåí ïîòîê ñ ìåòêîé 'Service'</Text>
+</Message>
+
+<Message time='22.02.2018 23:55:31.330'>
+  <Text>Process: id = 8184 cpu = 00:06:40.4531250, page = 116mb peak = 147mb, virtual = 788mb peak = 810mb, topics = 24</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='22.02.2018 23:55:47.103'/>
+
+<Message time='22.02.2018 23:55:47.667'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='22.02.2018 23:55:47.896'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='22.02.2018 23:55:47.983'>
+  <Text>Process: id = 8184 cpu = 00:06:41.7031250, page = 118mb peak = 147mb, virtual = 791mb peak = 810mb, topics = 0</Text>
+</Message>
+
+<Message time='22.02.2018 23:58:46.041'>
+  <Text>Çàâåðøåí ïîòîê ñ ìåòêîé 'Service'</Text>
+</Message>
+
+<Message time='22.02.2018 23:58:46.043'>
+  <Text>Process: id = 8184 cpu = 00:06:43.2812500, page = 119mb peak = 147mb, virtual = 793mb peak = 810mb, topics = 24</Text>
+</Message>
+

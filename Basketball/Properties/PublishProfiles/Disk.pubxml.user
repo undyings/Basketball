@@ -10,7 +10,7 @@
   </PropertyGroup>
   <ItemGroup>
     <File Include="bin/Basketball.dll">
-      <publishTime>02/18/2018 14:19:29</publishTime>
+      <publishTime>02/22/2018 23:55:30</publishTime>
     </File>
     <File Include="bin/Commune.Basis.dll">
       <publishTime>12/27/2017 16:13:44</publishTime>
@@ -31,61 +31,61 @@
       <publishTime>12/29/2017 17:51:16</publishTime>
     </File>
     <File Include="bin/Newtonsoft.Json.dll">
-      <publishTime>01/06/2016 19:34:56</publishTime>
+      <publishTime>06/01/2016 19:34:56</publishTime>
     </File>
     <File Include="bin/NitroBolt.Functional.dll">
-      <publishTime>07/03/2016 13:35:12</publishTime>
+      <publishTime>03/07/2016 13:35:12</publishTime>
     </File>
     <File Include="bin/NitroBolt.Wui.dll">
       <publishTime>09/26/2017 15:01:22</publishTime>
     </File>
     <File Include="bin/Shop.Engine.dll">
-      <publishTime>02/11/2018 14:53:16</publishTime>
+      <publishTime>02/22/2018 14:51:25</publishTime>
     </File>
     <File Include="bin/System.Collections.Immutable.dll">
-      <publishTime>07/03/2016 13:35:12</publishTime>
+      <publishTime>03/07/2016 13:35:12</publishTime>
     </File>
     <File Include="bin/System.Data.SQLite.dll">
       <publishTime>01/20/2011 10:52:16</publishTime>
     </File>
     <File Include="bin/System.Net.Http.Formatting.dll">
-      <publishTime>07/03/2016 14:01:52</publishTime>
+      <publishTime>03/07/2016 14:01:52</publishTime>
     </File>
     <File Include="bin/System.Web.Http.dll">
-      <publishTime>07/03/2016 14:01:52</publishTime>
+      <publishTime>03/07/2016 14:01:52</publishTime>
     </File>
     <File Include="bin/System.Web.Http.WebHost.dll">
-      <publishTime>07/03/2016 14:01:52</publishTime>
+      <publishTime>03/07/2016 14:01:52</publishTime>
     </File>
     <File Include="Css/fileuploader.css">
-      <publishTime>09/06/2016 17:21:38</publishTime>
+      <publishTime>06/09/2016 17:21:38</publishTime>
     </File>
     <File Include="Css/font-awesome.css">
-      <publishTime>01/07/2017 17:47:48</publishTime>
+      <publishTime>07/01/2017 17:47:48</publishTime>
     </File>
     <File Include="Css/static.css">
       <publishTime>01/10/2018 16:24:46</publishTime>
     </File>
     <File Include="Fonts/fontawesome-webfont.eot">
-      <publishTime>01/07/2017 17:47:46</publishTime>
+      <publishTime>07/01/2017 17:47:46</publishTime>
     </File>
     <File Include="Fonts/fontawesome-webfont.svg">
-      <publishTime>01/07/2017 17:47:46</publishTime>
+      <publishTime>07/01/2017 17:47:46</publishTime>
     </File>
     <File Include="Fonts/fontawesome-webfont.ttf">
-      <publishTime>01/07/2017 17:47:46</publishTime>
+      <publishTime>07/01/2017 17:47:46</publishTime>
     </File>
     <File Include="Fonts/fontawesome-webfont.woff">
-      <publishTime>01/07/2017 17:47:46</publishTime>
+      <publishTime>07/01/2017 17:47:46</publishTime>
     </File>
     <File Include="Fonts/fontawesome-webfont.woff2">
-      <publishTime>01/07/2017 17:47:46</publishTime>
+      <publishTime>07/01/2017 17:47:46</publishTime>
     </File>
     <File Include="Global.asax">
       <publishTime>01/03/2018 18:47:48</publishTime>
     </File>
     <File Include="Scripts/fileuploader.js">
-      <publishTime>09/06/2016 17:21:28</publishTime>
+      <publishTime>06/09/2016 17:21:28</publishTime>
     </File>
     <File Include="Scripts/NitroBolt.Wui.2.0.13.js">
       <publishTime>07/03/2016 13:35:28</publishTime>

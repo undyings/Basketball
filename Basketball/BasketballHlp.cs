@@ -13,6 +13,18 @@ namespace Basketball
 {
   public class BasketballHlp
   {
+    public static LightHead[] TagForTopic(ObjectHeadBox tagBox, LightKin topic)
+    {
+      int[] tagIds = topic.AllChildIds(TopicType.TagLinks);
+      List<LightHead> tags = new List<LightHead>(tagIds.Length);
+      foreach (int tagId in tagIds)
+      {
+        if (tagBox.ObjectById.Exist(tagId))
+          tags.Add(new LightHead(tagBox, tagId));
+      }
+      return tags.ToArray();
+    }
+
     public static bool IsDuplicate(TopicStorage topic, int currentUserId, string content)
     {
       RowLink[] messageRows = topic.MessageLink.AllRows;

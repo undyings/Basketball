@@ -164,6 +164,22 @@ namespace Basketball
       }
     }
 
+    readonly RawCache<ObjectHeadBox> tagsCache;
+    public ObjectHeadBox Tags
+    {
+      get
+      {
+        lock (lockObj)
+          return tagsCache.Result;
+      }
+    }
+    long tagChangeTick = 0;
+    public void UpdateTags()
+    {
+      lock (lockObj)
+        tagChangeTick++;
+    }
+
     public readonly TopicStorageCache NewsStorages;
     public readonly TopicStorageCache ArticleStorages;
     public readonly ForumStorageCache Forum;
@@ -358,6 +374,14 @@ namespace Basketball
           return lastComments.ToArray();
         },
         delegate { return forumCommentChangeTick; }
+      );
+
+      this.tagsCache = new Cache<ObjectHeadBox, long>(
+        delegate
+        {
+          return new ObjectHeadBox(fabricConnection, DataCondition.ForTypes(TagType.Tag) + " order by xml_ids asc");
+        },
+        delegate { return tagChangeTick; }
       );
     }
 

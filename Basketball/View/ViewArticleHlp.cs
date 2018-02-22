@@ -110,7 +110,7 @@ namespace Basketball
           new HPanel(
             items
           ),
-          ViewJumpHlp.JumpBar("stati", context.Articles.AllObjectIds.Length, articleCountOnPage, pageNumber)
+          ViewJumpHlp.JumpBar("/stati", context.Articles.AllObjectIds.Length, articleCountOnPage, pageNumber)
         )
       );
     }

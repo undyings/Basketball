@@ -120,7 +120,7 @@ namespace Basketball
       );
     }
 
-    static void InsertMessageAndUpdate(IDataLayer commentConnection, TopicStorage topic, 
+    public static void InsertMessageAndUpdate(IDataLayer commentConnection, TopicStorage topic, 
       LightObject currentUser, int? whomId, string content)
     {
       MessageHlp.InsertMessage(commentConnection, topic.TopicId, currentUser.Id, whomId, content);

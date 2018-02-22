@@ -30,10 +30,19 @@ namespace Basketball
   public class TopicType : NewsType
   {
     public const int Topic = 5020;
+
+    public readonly static LinkKindBlank TagLinks = new LinkKindBlank(5600);
   }
 
   public class ForumSectionType : SectionType
   {
     public readonly static LinkKindBlank TopicLinks = new LinkKindBlank(17600);
+  }
+
+  public class TagType
+  {
+    public const int Tag = 5030;
+
+    public readonly static XmlDisplayName DisplayName = new XmlDisplayName();
   }
 }

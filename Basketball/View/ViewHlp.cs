@@ -75,6 +75,12 @@ namespace Basketball
             title = topic.Topic.Get(TopicType.Title);
             return ViewForumHlp.GetTopicView(state, currentUser, topic);
           }
+        case "tags":
+          {
+            int? tagId = httpContext.GetUInt("tag");
+            int pageNumber = httpContext.GetUInt("page") ?? 0;
+            return ViewNewsHlp.GetTagListView(state, currentUser, tagId, pageNumber);
+          }
         case "user":
           {
             LightObject user = context.UserStorage.FindUser(id ?? -1);
@@ -94,7 +100,10 @@ namespace Basketball
             switch (designKind)
             {
               case "news":
-                return ViewNewsHlp.GetNewsListView(state, currentUser, pageNumber);
+                {
+                  int[] allNewsIds = context.News.AllObjectIds;
+                  return ViewNewsHlp.GetNewsListView(state, currentUser, pageNumber);
+                }
               case "articles":
                 return ViewArticleHlp.GetArticleListView(state, currentUser, pageNumber);
               case "forum":
@@ -102,7 +111,7 @@ namespace Basketball
               case "forumSection":
                 return ViewForumHlp.GetForumSectionView(state, currentUser, section);
               default:
-                return new HPanel();
+                return null;
             }
           }
         case "passwordreset":

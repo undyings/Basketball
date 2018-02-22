@@ -35,11 +35,17 @@ namespace Basketball
       string editHint = "news_add";
       if (state.BlockHint == editHint)
       {
+        if (state.Tag == null)
+          state.Tag = new List<string>();
+
         editBlock = new HPanel(
           Decor.PropertyEdit("addNewsTitle", "Заголовок новости"),
-          HtmlHlp.CKEditorCreate("addNewsText", "", "300px", true),
+          new HPanel(
+            HtmlHlp.CKEditorCreate("addNewsText", "", "300px", true)
+          ),
           Decor.PropertyEdit("addNewsOriginName", "Источник"),
           Decor.PropertyEdit("addNewsOriginUrl", "Ссылка"),
+          ViewTagHlp.GetEditTagsPanel(context.Tags, state.Tag as List<string>),
           Decor.Button("Добавить новость").CKEditorOnUpdateAll().MarginTop(10)
             .Event("save_news_add", "addNewsData",
               delegate (JsonData json)
@@ -57,21 +63,24 @@ namespace Basketball
                 if (!operation.Validate(text, "Не задан текст"))
                   return;
 
-                ObjectBox editBox = new ObjectBox(context.FabricConnection, "1=0");
+                ParentBox editBox = new ParentBox(context.FabricConnection, "1=0");
 
                 int addNewsId = editBox.CreateObject(NewsType.News, NewsType.Title.CreateXmlIds(title), DateTime.UtcNow);
-                LightObject editNews = new LightObject(editBox, addNewsId);
+                LightParent editNews = new LightParent(editBox, addNewsId);
 
                 editNews.Set(NewsType.PublisherId, currentUser.Id);
                 editNews.Set(NewsType.Text, text);
                 editNews.Set(NewsType.OriginName, originName);
                 editNews.Set(NewsType.OriginUrl, originUrl);
 
+                ViewTagHlp.SaveTags(context, state, editNews);
+
                 editBox.Update();
 
                 context.UpdateNews();
 
                 state.BlockHint = "";
+                state.Tag = null;
               }
             )
         ).EditContainer("addNewsData").Padding(5, 10).MarginTop(10).Background(Decor.pageBackground);
@@ -83,6 +92,7 @@ namespace Basketball
         addButton = Decor.Button("Добавить").MarginLeft(10)
           .Event("news_add", "", delegate
             {
+              state.Tag = null;
               state.SetBlockHint(editHint);
             }
           );
@@ -104,28 +114,77 @@ namespace Basketball
       );
     }
 
-    public static IHtmlControl GetNewsListView(SiteState state, LightObject currentUser, int pageNumber)
+    static IHtmlControl[] GetNewsItems(SiteState state, int[] allNewsIds, int pageNumber)
     {
-      int[] allNewsIds = context.News.AllObjectIds;
       int pageCount = BinaryHlp.RoundUp(allNewsIds.Length, newsCountOnPage);
       int curPos = pageNumber * newsCountOnPage;
       if (curPos < 0 || curPos >= allNewsIds.Length)
-        return new HPanel();
+        return null;
 
       int[] newsIds = ArrayHlp.GetRange(allNewsIds, curPos, Math.Min(newsCountOnPage, allNewsIds.Length - curPos));
       LightHead[] newsList = ArrayHlp.Convert(newsIds, delegate (int id)
       { return new LightHead(context.News, id); }
       );
 
-      IHtmlControl[] items = GetNewsItems(state, newsList);
+      return GetNewsItems(state, newsList);
+    }
 
+    public static IHtmlControl GetTagListView(SiteState state, LightObject currentUser, int? tagId, int pageNumber)
+    {
+      if (tagId == null)
+        return null;
+
+      RowLink tagRow = context.Tags.ObjectById.AnyRow(tagId.Value);
+      if (tagRow == null)
+        return null;
+
+      string tagDisplay = TagType.DisplayName.Get(tagRow);
+
+      int[] newsIds = ViewTagHlp.GetNewsIdsForTag(context.FabricConnection, tagId.Value);
+
+      IHtmlControl[] items = GetNewsItems(state, newsIds, pageNumber);
+      if (items == null)
+        return null;
+
+      string urlWithoutPageIndex = string.Format("/tags?tag={0}", tagId.Value);
       return new HPanel(
-        Decor.Title("Новости").MarginBottom(0),
+        Decor.Title("Теги"),
+        Decor.Subtitle(string.Format("Тег — {0}", tagDisplay)).MarginTop(5),
         new HPanel(
           new HPanel(
             items
           ),
-          ViewJumpHlp.JumpBar("novosti", context.News.AllObjectIds.Length, newsCountOnPage, pageNumber)
+          ViewJumpHlp.JumpBar(urlWithoutPageIndex, newsIds.Length, newsCountOnPage, pageNumber)
+        )
+      );
+    }
+
+    public static IHtmlControl GetNewsListView(SiteState state, LightObject currentUser, int pageNumber)
+    {
+      //int pageCount = BinaryHlp.RoundUp(allNewsIds.Length, newsCountOnPage);
+      //int curPos = pageNumber * newsCountOnPage;
+      //if (curPos < 0 || curPos >= allNewsIds.Length)
+      //  return null;
+
+      //int[] newsIds = ArrayHlp.GetRange(allNewsIds, curPos, Math.Min(newsCountOnPage, allNewsIds.Length - curPos));
+      //LightHead[] newsList = ArrayHlp.Convert(newsIds, delegate (int id)
+      //{ return new LightHead(context.News, id); }
+      //);
+
+      int[] allNewsIds = context.News.AllObjectIds;
+      IHtmlControl[] items = GetNewsItems(state, allNewsIds, pageNumber);
+      if (items == null)
+        return null;
+
+      //string title = StringHlp.IsEmpty(tag) ? "Новости" : "Теги";
+      return new HPanel(
+        Decor.Title("Новости"),
+        //Decor.Subtitle(string.Format("Тег — {0}", tag)),
+        new HPanel(
+          new HPanel(
+            items
+          ),
+          ViewJumpHlp.JumpBar("/novosti", allNewsIds.Length, newsCountOnPage, pageNumber)
         )
       );
     }
@@ -230,6 +289,7 @@ namespace Basketball
           new HLink(UrlHlp.ShopUrl("user", publisherId), publisher?.Get(UserType.Login))
         ),
         new HLink(news.Get(NewsType.OriginUrl), news.Get(NewsType.OriginName)),
+        ViewTagHlp.GetViewTagsPanel(context.Tags, topic.Topic),
         editPanel,
         moderatorPanel,
         ViewCommentHlp.GetCommentsPanel(context.MessageConnection, state, currentUser, topic)
@@ -288,12 +348,18 @@ namespace Basketball
           deletePanel = DeleteTopicPanel(state, topic);
         }
 
+        if (state.Tag == null)
+          state.Tag = ViewTagHlp.GetTopicDisplayTags(context.Tags, topic.Topic);
+
         redoPanel = new HPanel(
           deletePanel,
           Decor.PropertyEdit("editNewsTitle", "Заголовок новости", news.Get(NewsType.Title)),
-          HtmlHlp.CKEditorCreate("editNewsText", news.Get(NewsType.Text), "300px", true),
+          new HPanel(
+            HtmlHlp.CKEditorCreate("editNewsText", news.Get(NewsType.Text), "300px", true)
+          ),
           Decor.PropertyEdit("editNewsOriginName", "Источник", news.Get(NewsType.OriginName)),
           Decor.PropertyEdit("editNewsOriginUrl", "Ссылка", news.Get(NewsType.OriginUrl)),
+          ViewTagHlp.GetEditTagsPanel(context.Tags, state.Tag as List<string>),
           Decor.Button("Изменить новость").CKEditorOnUpdateAll().MarginTop(10)
             .Event("save_news_edit", "editNewsData",
               delegate (JsonData json)
@@ -310,7 +376,7 @@ namespace Basketball
                 if (!operation.Validate(text, "Не задан текст"))
                   return;
 
-                LightObject editNews = DataBox.LoadObject(context.FabricConnection, NewsType.News, news.Id);
+                LightKin editNews = DataBox.LoadKin(context.FabricConnection, NewsType.News, news.Id);
 
                 editNews.SetWithoutCheck(NewsType.Title, title);
 
@@ -319,6 +385,8 @@ namespace Basketball
                 editNews.Set(NewsType.OriginUrl, originUrl);
 
                 editNews.Set(ObjectType.ActTill, DateTime.UtcNow);
+
+                ViewTagHlp.SaveTags(context, state, editNews);
 
                 editNews.Box.Update();
 
@@ -341,7 +409,7 @@ namespace Basketball
             }
           ),
         redoPanel
-      ).MarginTop(5);
+      ).MarginTop(10);
     }
 
     public static IHtmlControl DeleteTopicPanel(SiteState state, TopicStorage topic)

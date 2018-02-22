@@ -17,15 +17,23 @@ namespace Basketball
       get { return (BasketballContext)SiteContext.Default; }
     }
 
-    static string JumpPageUrl(string pageKind, int pageIndex)
+    static string JumpPageUrl(string urlWithoutPageIndex, int pageIndex)
     {
       if (pageIndex == 0)
-        return string.Format("/{0}", pageKind);
+        return urlWithoutPageIndex;
 
-      return string.Format("/{0}?page={1}", pageKind, pageIndex);
+      if (urlWithoutPageIndex.Contains("?"))
+        return string.Format("{0}&page={1}", urlWithoutPageIndex, pageIndex);
+
+      return string.Format("{0}?page={1}", urlWithoutPageIndex, pageIndex);
+
+      //if (pageIndex == 0)
+      //  return string.Format("/{0}", pageKind);
+
+      //return string.Format("/{0}?page={1}", pageKind, pageIndex);
     }
 
-    public static IHtmlControl JumpBar(string pageKind, int allItemCount, int itemCountOnPage, int pageIndex)
+    public static IHtmlControl JumpBar(string urlWithoutPageIndex, int allItemCount, int itemCountOnPage, int pageIndex)
     {
       int pageCount = BinaryHlp.RoundUp(allItemCount, itemCountOnPage);
 
@@ -37,19 +45,19 @@ namespace Basketball
       if (pageIndex > 0)
       {
         items.Add(
-          new HLink(JumpPageUrl(pageKind, pageIndex - 1), "назад").FontBold().MarginRight(10)
+          new HLink(JumpPageUrl(urlWithoutPageIndex, pageIndex - 1), "назад").FontBold().MarginRight(10)
         );
       }
 
       for (int i = startIndex; i < endIndex; ++i)
       {
-        items.Add(ViewJumpHlp.JumpElement(pageKind, i, i == pageIndex, i == startIndex));
+        items.Add(ViewJumpHlp.JumpElement(urlWithoutPageIndex, i, i == pageIndex, i == startIndex));
       }
 
       if (pageIndex < pageCount - 1)
       {
         items.Add(
-          new HLink(JumpPageUrl(pageKind, pageIndex + 1), "далее").FontBold().MarginLeft(10)
+          new HLink(JumpPageUrl(urlWithoutPageIndex, pageIndex + 1), "далее").FontBold().MarginLeft(10)
         );
       }
 
@@ -58,11 +66,11 @@ namespace Basketball
       ).MarginTop(25).MarginLeft(5);
     }
 
-    static IHtmlControl JumpElement(string pageKind, int pageIndex, bool isSelected, bool isFirst)
+    static IHtmlControl JumpElement(string urlWithoutPageIndex, int pageIndex, bool isSelected, bool isFirst)
     {
       IHtmlControl jumpItem = null;
       if (!isSelected)
-        jumpItem = new HLink(JumpPageUrl(pageKind, pageIndex), (pageIndex + 1).ToString());
+        jumpItem = new HLink(JumpPageUrl(urlWithoutPageIndex, pageIndex), (pageIndex + 1).ToString());
       else
         jumpItem = new HLabel(pageIndex + 1).FontBold();
 

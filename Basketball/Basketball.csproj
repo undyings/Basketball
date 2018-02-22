@@ -139,6 +139,7 @@
     <Compile Include="View\ViewJumpHlp.cs" />
     <Compile Include="View\ViewNewsHlp.cs" />
     <Compile Include="View\ViewRightColumnHlp.cs" />
+    <Compile Include="View\TagHlp.cs" />
     <Compile Include="View\ViewUserHlp.cs" />
     <Compile Include="View\ViewHlp.cs" />
     <Compile Include="WebApiConfig.cs" />

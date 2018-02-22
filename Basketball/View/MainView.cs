@@ -38,7 +38,7 @@ namespace Basketball
 
         LinkInfo link = null;
         if (kind == "news" || kind == "user" || (kind == "novosti" && id != null) || 
-          kind == "article" || kind == "topic")
+          kind == "article" || kind == "topic" || kind == "tags")
         {
           link = new LinkInfo("", kind, id);
         }
