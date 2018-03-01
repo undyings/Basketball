@@ -64,7 +64,6 @@ namespace Basketball
 
         foreach (JsonData json in jsons)
         {
-          Logger.AddMessage("Json: {0}", json);
           try
           {
             if (state.IsRattling(json))

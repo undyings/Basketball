@@ -13,6 +13,30 @@ namespace Basketball
 {
   public class BasketballHlp
   {
+    //hack нельзя использовать рекурсивное удаление, из-за того, что теги сделаны детьми новостей
+    public static void DeleteTopic(IDataLayer dbConnection, int objectId)
+    {
+      dbConnection.GetScalar("",
+        "Delete From light_link Where child_id = @objectId",
+        new DbParameter("objectId", objectId)
+      );
+
+      dbConnection.GetScalar("",
+        "Delete From light_link Where parent_id = @objectId",
+        new DbParameter("objectId", objectId)
+      );
+
+      dbConnection.GetScalar("",
+        "Delete From light_property Where obj_id = @objectId",
+        new DbParameter("objectId", objectId)
+      );
+
+      dbConnection.GetScalar("",
+        "Delete From light_object Where obj_id = @objectId",
+        new DbParameter("objectId", objectId)
+      );
+    }
+
     public static LightHead[] TagForTopic(ObjectHeadBox tagBox, LightKin topic)
     {
       int[] tagIds = topic.AllChildIds(TopicType.TagLinks);

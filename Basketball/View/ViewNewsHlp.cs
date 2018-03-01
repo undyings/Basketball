@@ -43,9 +43,9 @@ namespace Basketball
           new HPanel(
             HtmlHlp.CKEditorCreate("addNewsText", "", "300px", true)
           ),
+          ViewTagHlp.GetEditTagsPanel(state, context.Tags, state.Tag as List<string>),
           Decor.PropertyEdit("addNewsOriginName", "Источник"),
           Decor.PropertyEdit("addNewsOriginUrl", "Ссылка"),
-          ViewTagHlp.GetEditTagsPanel(context.Tags, state.Tag as List<string>),
           Decor.Button("Добавить новость").CKEditorOnUpdateAll().MarginTop(10)
             .Event("save_news_add", "addNewsData",
               delegate (JsonData json)
@@ -129,8 +129,11 @@ namespace Basketball
       return GetNewsItems(state, newsList);
     }
 
-    public static IHtmlControl GetTagListView(SiteState state, LightObject currentUser, int? tagId, int pageNumber)
+    public static IHtmlControl GetTagListView(SiteState state, LightObject currentUser, 
+      int? tagId, int pageNumber, out string title)
     {
+      title = "";
+
       if (tagId == null)
         return null;
 
@@ -139,6 +142,8 @@ namespace Basketball
         return null;
 
       string tagDisplay = TagType.DisplayName.Get(tagRow);
+
+      title = string.Format("Теги - {0} - basketball.ru.com", tagDisplay);
 
       int[] newsIds = ViewTagHlp.GetNewsIdsForTag(context.FabricConnection, tagId.Value);
 
@@ -357,9 +362,9 @@ namespace Basketball
           new HPanel(
             HtmlHlp.CKEditorCreate("editNewsText", news.Get(NewsType.Text), "300px", true)
           ),
+          ViewTagHlp.GetEditTagsPanel(state, context.Tags, state.Tag as List<string>),
           Decor.PropertyEdit("editNewsOriginName", "Источник", news.Get(NewsType.OriginName)),
           Decor.PropertyEdit("editNewsOriginUrl", "Ссылка", news.Get(NewsType.OriginUrl)),
-          ViewTagHlp.GetEditTagsPanel(context.Tags, state.Tag as List<string>),
           Decor.Button("Изменить новость").CKEditorOnUpdateAll().MarginTop(10)
             .Event("save_news_edit", "editNewsData",
               delegate (JsonData json)
@@ -422,13 +427,15 @@ namespace Basketball
               return;
 
             MessageHlp.DeleteTopicMessages(context.MessageConnection, topic.Topic.Id);
-            DataBox.DeleteParentObject(context.FabricConnection, topic.Topic.Id);
+            BasketballHlp.DeleteTopic(context.FabricConnection, topic.TopicId);
 
             topic.UpdateTopic();
             topic.UpdateMessages();
             context.UpdateLastComments(false);
             context.UpdateNews();
             context.UpdateArticles();
+
+            state.RedirectUrl = "/";
           }
         )
       ).Align(false);

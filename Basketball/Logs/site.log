@@ -4560,3 +4560,1459 @@
   <Text>Process: id = 8184 cpu = 00:06:43.2812500, page = 119mb peak = 147mb, virtual = 793mb peak = 810mb, topics = 24</Text>
 </Message>
 
+<!--================================================================================-->
+
+<LogStarting time='23.02.2018 09:11:04.996'/>
+
+<Message time='23.02.2018 09:11:05.859'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='23.02.2018 09:11:06.276'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='23.02.2018 09:11:06.309'>
+  <Text>Process: id = 8184 cpu = 00:06:44.2343750, page = 120mb peak = 147mb, virtual = 791mb peak = 810mb, topics = 0</Text>
+</Message>
+
+<Message time='23.02.2018 09:13:54.648'>
+  <Text>Çàâåðøåí ïîòîê ñ ìåòêîé 'Service'</Text>
+</Message>
+
+<Message time='23.02.2018 09:13:54.650'>
+  <Text>Process: id = 8184 cpu = 00:06:45.4687500, page = 122mb peak = 147mb, virtual = 794mb peak = 810mb, topics = 24</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='23.02.2018 09:14:02.859'/>
+
+<Message time='23.02.2018 09:14:03.496'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='23.02.2018 09:14:03.701'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='23.02.2018 09:14:03.709'>
+  <Text>Process: id = 8184 cpu = 00:06:46.7187500, page = 125mb peak = 147mb, virtual = 798mb peak = 810mb, topics = 0</Text>
+</Message>
+
+<Message time='23.02.2018 09:14:15.993'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "name": "loginData",
+    "id": "loginData",
+    "authLogin": "undyings",
+    "authPassword": "rjotq2",
+    "command": "user_login",
+    "container": "loginData"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 13891.199999954552,
+    "button": 0,
+    "clientX": 1220,
+    "clientY": 40,
+    "screenX": 1220,
+    "screenY": 106,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='23.02.2018 09:14:18.672'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "command": "news_add"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 16619.299999903888,
+    "button": 0,
+    "clientX": 167,
+    "clientY": 309,
+    "screenX": 167,
+    "screenY": 375,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='23.02.2018 09:15:02.422'>
+  <Text>Çàâåðøåí ïîòîê ñ ìåòêîé 'Service'</Text>
+</Message>
+
+<Message time='23.02.2018 09:15:02.425'>
+  <Text>Process: id = 8184 cpu = 00:06:48.3125000, page = 128mb peak = 147mb, virtual = 799mb peak = 810mb, topics = 24</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='23.02.2018 09:15:06.670'/>
+
+<Message time='23.02.2018 09:15:07.379'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='23.02.2018 09:15:07.646'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='23.02.2018 09:15:07.667'>
+  <Text>Process: id = 8184 cpu = 00:06:49.9687500, page = 126mb peak = 147mb, virtual = 801mb peak = 810mb, topics = 0</Text>
+</Message>
+
+<Message time='23.02.2018 09:15:19.226'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "command": "news_add"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 2765.5000002123415,
+    "button": 0,
+    "clientX": 163,
+    "clientY": 406,
+    "screenX": 163,
+    "screenY": 472,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='23.02.2018 09:15:58.332'>
+  <Text>Çàâåðøåí ïîòîê ñ ìåòêîé 'Service'</Text>
+</Message>
+
+<Message time='23.02.2018 09:15:58.334'>
+  <Text>Process: id = 8184 cpu = 00:06:51.2500000, page = 132mb peak = 147mb, virtual = 802mb peak = 810mb, topics = 24</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='23.02.2018 09:16:00.428'/>
+
+<Message time='23.02.2018 09:16:01.071'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='23.02.2018 09:16:01.305'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='23.02.2018 09:16:01.315'>
+  <Text>Process: id = 8184 cpu = 00:06:52.5781250, page = 135mb peak = 147mb, virtual = 804mb peak = 810mb, topics = 0</Text>
+</Message>
+
+<Message time='23.02.2018 09:16:04.680'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "command": "news_add"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 3108.1999999005347,
+    "button": 0,
+    "clientX": 181,
+    "clientY": 414,
+    "screenX": 181,
+    "screenY": 480,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='23.02.2018 09:16:49.065'>
+  <Text>Çàâåðøåí ïîòîê ñ ìåòêîé 'Service'</Text>
+</Message>
+
+<Message time='23.02.2018 09:16:49.066'>
+  <Text>Process: id = 8184 cpu = 00:06:54.4531250, page = 140mb peak = 147mb, virtual = 804mb peak = 810mb, topics = 24</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='23.02.2018 09:16:51.790'/>
+
+<Message time='23.02.2018 09:16:52.457'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='23.02.2018 09:16:52.707'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='23.02.2018 09:16:52.717'>
+  <Text>Process: id = 8184 cpu = 00:06:55.8906250, page = 142mb peak = 147mb, virtual = 807mb peak = 810mb, topics = 0</Text>
+</Message>
+
+<Message time='23.02.2018 09:17:22.183'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "command": "news_add"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 29397.900000214577,
+    "button": 0,
+    "clientX": 195,
+    "clientY": 319,
+    "screenX": 195,
+    "screenY": 385,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='23.02.2018 09:17:33.458'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "command": "news_edit"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 2402.2000001277775,
+    "button": 0,
+    "clientX": 82,
+    "clientY": 291,
+    "screenX": 82,
+    "screenY": 357,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='23.02.2018 09:17:46.531'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "name": "addTagData",
+    "id": "addTagData",
+    "addTag": "Суперлига",
+    "command": "tag_add",
+    "container": "addTagData"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 15482.100000139326,
+    "button": 0,
+    "clientX": 497,
+    "clientY": 180,
+    "screenX": 497,
+    "screenY": 246,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='23.02.2018 09:19:29.979'>
+  <Text>Çàâåðøåí ïîòîê ñ ìåòêîé 'Service'</Text>
+</Message>
+
+<Message time='23.02.2018 09:19:29.982'>
+  <Text>Process: id = 8184 cpu = 00:06:58.0468750, page = 125mb peak = 147mb, virtual = 791mb peak = 810mb, topics = 24</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='23.02.2018 09:19:32.459'/>
+
+<Message time='23.02.2018 09:19:33.090'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='23.02.2018 09:19:33.355'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='23.02.2018 09:19:33.368'>
+  <Text>Process: id = 8184 cpu = 00:06:59.3750000, page = 116mb peak = 147mb, virtual = 793mb peak = 810mb, topics = 0</Text>
+</Message>
+
+<Message time='23.02.2018 09:19:35.822'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "command": "news_edit"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 2906.3999999780208,
+    "button": 0,
+    "clientX": 115,
+    "clientY": 240,
+    "screenX": 115,
+    "screenY": 306,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='23.02.2018 09:19:46.212'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "name": "addTagData",
+    "id": "addTagData",
+    "addTag": "Результаты матчей",
+    "command": "tag_add",
+    "container": "addTagData"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 13346.599999815226,
+    "button": 0,
+    "clientX": 494,
+    "clientY": 324,
+    "screenX": 494,
+    "screenY": 390,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='23.02.2018 09:22:33.375'>
+  <Text>sitemap.xml успешно обновлен</Text>
+</Message>
+
+<Message time='23.02.2018 09:23:44.729'>
+  <Text>Çàâåðøåí ïîòîê ñ ìåòêîé 'Service'</Text>
+</Message>
+
+<Message time='23.02.2018 09:23:44.731'>
+  <Text>Process: id = 8184 cpu = 00:07:01.0937500, page = 118mb peak = 147mb, virtual = 794mb peak = 810mb, topics = 10</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='23.02.2018 09:23:46.276'/>
+
+<Message time='23.02.2018 09:23:46.887'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='23.02.2018 09:23:47.210'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='23.02.2018 09:23:47.218'>
+  <Text>Process: id = 8184 cpu = 00:07:02.4062500, page = 120mb peak = 147mb, virtual = 797mb peak = 810mb, topics = 0</Text>
+</Message>
+
+<Message time='23.02.2018 09:23:51.044'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "command": "news_edit"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 2195.9999999962747,
+    "button": 0,
+    "clientX": 79,
+    "clientY": 237,
+    "screenX": 79,
+    "screenY": 303,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='23.02.2018 09:24:32.192'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "name": "addTagData",
+    "id": "addTagData",
+    "addTag_0": "Иркут, Зенит-Фарм, ",
+    "command": "tag_add",
+    "container": "addTagData"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 43395.699999993667,
+    "button": 0,
+    "clientX": 498,
+    "clientY": 325,
+    "screenX": 498,
+    "screenY": 391,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='23.02.2018 09:24:32.198'>
+  <Text>Tag: Иркут</Text>
+</Message>
+
+<Message time='23.02.2018 09:24:32.199'>
+  <Text>Tag:  Зенит-Фарм</Text>
+</Message>
+
+<Message time='23.02.2018 09:24:32.199'>
+  <Text>Tag:  </Text>
+</Message>
+
+<Message time='23.02.2018 09:26:11.391'>
+  <Text>Çàâåðøåí ïîòîê ñ ìåòêîé 'Service'</Text>
+</Message>
+
+<Message time='23.02.2018 09:26:11.393'>
+  <Text>Process: id = 8184 cpu = 00:07:04, page = 121mb peak = 147mb, virtual = 798mb peak = 810mb, topics = 10</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='23.02.2018 09:26:14.863'/>
+
+<Message time='23.02.2018 09:26:15.689'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='23.02.2018 09:26:15.934'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='23.02.2018 09:26:15.945'>
+  <Text>Process: id = 8184 cpu = 00:07:05.4531250, page = 123mb peak = 147mb, virtual = 800mb peak = 810mb, topics = 0</Text>
+</Message>
+
+<Message time='23.02.2018 09:26:19.477'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "command": "news_edit"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 2347.8000001050532,
+    "button": 0,
+    "clientX": 91,
+    "clientY": 241,
+    "screenX": 91,
+    "screenY": 307,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='23.02.2018 09:26:38.653'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "name": "addTagData",
+    "id": "addTagData",
+    "addTag_0": "Суперлига, Зенит-Фарм, Иркут, ",
+    "command": "tag_add",
+    "container": "addTagData"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 21580.000000074506,
+    "button": 0,
+    "clientX": 502,
+    "clientY": 417,
+    "screenX": 502,
+    "screenY": 483,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='23.02.2018 09:26:58.369'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "name": "addTagData",
+    "id": "addTagData",
+    "addTag_1": "Результаты матчей",
+    "command": "tag_add",
+    "container": "addTagData"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 41307.700000004843,
+    "button": 0,
+    "clientX": 494,
+    "clientY": 443,
+    "screenX": 494,
+    "screenY": 509,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='23.02.2018 09:27:00.581'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "name": "editNewsData",
+    "id": "editNewsData",
+    "editNewsTitle": "Суперлига. Результаты матчей",
+    "addTag_2": "",
+    "editNewsOriginName": "",
+    "editNewsOriginUrl": "https://russiabasket.ru/competitions/35/superliga-1",
+    "editNewsText": "&lt;p&gt;Спартак-Приморье &amp;mdash; Зенит-Фарм 78:64&lt;/p&gt;\n\n&lt;p&gt;СП: Кривошеев (26 + 9 подборов), Бутянковс (17 + 12 подборов), Заряжко (13 + 6 перехватов), Смыгин (11 + 9 подборов + 3 перехвата), Савельев (6 + 5 передач)&lt;/p&gt;\n\n&lt;p&gt;ЗФ: Саврасов (16), Туманов (12 + 10 подборов), Юрчик (8 + 7 подборов)&lt;/p&gt;\n\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n\n&lt;p&gt;Иркут &amp;mdash; Спартак 91:81&lt;/p&gt;\n\n&lt;p&gt;И: Федюшин (33 + 9 подборов), Андреев (16 + 8 передач), Анисимов (14 + 6 подборов + 5 передач + 3 перехвата), Карпачёв (12 + 10 подборов + 4 перехвата)&lt;/p&gt;\n\n&lt;p&gt;С: Гевин (25 + 9 передач), Семёнов (13 + 13 подборов), Хлопонин (13), Пекович (12 + 7 подборов + 5 потерь, 5 фолов), Карванен (5 + 6 подборов, 5 фолов)&lt;/p&gt;\n\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n\n&lt;p&gt;положение команд:&lt;/p&gt;\n\n&lt;p&gt;Спартак-Приморье 23-6&lt;/p&gt;\n\n&lt;p&gt;БК Самара 22-6&lt;/p&gt;\n\n&lt;p&gt;ТЕМП-СУМЗ-УГМК 19-9&lt;/p&gt;\n\n&lt;p&gt;ЦСКА-2 17-10&lt;/p&gt;\n\n&lt;p&gt;Университет-Югра 17-10&lt;/p&gt;\n\n&lt;p&gt;Урал 17-11&lt;/p&gt;\n\n&lt;p&gt;БК Новосибирск 16-11&lt;/p&gt;\n\n&lt;p&gt;Иркут 14-13&lt;/p&gt;\n\n&lt;p&gt;МБА 11-15&lt;/p&gt;\n\n&lt;p&gt;Химки-Подмосковье 11-16&lt;/p&gt;\n\n&lt;p&gt;Купол-Родники 10-17&lt;/p&gt;\n\n&lt;p&gt;Спартак 7-19&lt;/p&gt;\n\n&lt;p&gt;Зенит-Фарм 4-23&lt;/p&gt;\n\n&lt;p&gt;БК Рязань 3-24&lt;/p&gt;\n",
+    "command": "save_news_edit",
+    "container": "editNewsData",
+    "id1": "100392"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 43509.300000034273,
+    "button": 0,
+    "clientX": 114,
+    "clientY": 256,
+    "screenX": 114,
+    "screenY": 322,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='23.02.2018 09:27:33.049'>
+  <Text>Çàâåðøåí ïîòîê ñ ìåòêîé 'Service'</Text>
+</Message>
+
+<Message time='23.02.2018 09:27:33.052'>
+  <Text>Process: id = 8184 cpu = 00:07:07.3125000, page = 127mb peak = 147mb, virtual = 801mb peak = 810mb, topics = 10</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='23.02.2018 09:33:48.630'/>
+
+<Message time='23.02.2018 09:33:48.917'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='23.02.2018 09:33:49.149'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='23.02.2018 09:33:49.161'>
+  <Text>Process: id = 8184 cpu = 00:07:08.1250000, page = 125mb peak = 147mb, virtual = 800mb peak = 810mb, topics = 0</Text>
+</Message>
+
+<Message time='23.02.2018 09:33:49.618'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "command": "news_edit"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 451200.79999999143,
+    "button": 0,
+    "clientX": 70,
+    "clientY": 174,
+    "screenX": 603,
+    "screenY": 307,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='23.02.2018 09:34:56.529'>
+  <Text>Çàâåðøåí ïîòîê ñ ìåòêîé 'Service'</Text>
+</Message>
+
+<Message time='23.02.2018 09:34:56.531'>
+  <Text>Process: id = 8184 cpu = 00:07:09.3125000, page = 129mb peak = 147mb, virtual = 801mb peak = 810mb, topics = 10</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='23.02.2018 09:34:59.216'/>
+
+<Message time='23.02.2018 09:34:59.851'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='23.02.2018 09:35:00.099'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='23.02.2018 09:35:00.185'>
+  <Text>Process: id = 8184 cpu = 00:07:10.5468750, page = 134mb peak = 147mb, virtual = 805mb peak = 810mb, topics = 0</Text>
+</Message>
+
+<Message time='23.02.2018 09:35:03.002'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "command": "news_edit"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 3337.9999999888241,
+    "button": 0,
+    "clientX": 111,
+    "clientY": 236,
+    "screenX": 111,
+    "screenY": 302,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='23.02.2018 09:36:22.917'>
+  <Text>Çàâåðøåí ïîòîê ñ ìåòêîé 'Service'</Text>
+</Message>
+
+<Message time='23.02.2018 09:36:22.919'>
+  <Text>Process: id = 8184 cpu = 00:07:12.5625000, page = 135mb peak = 147mb, virtual = 806mb peak = 810mb, topics = 10</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='23.02.2018 09:36:25.514'/>
+
+<Message time='23.02.2018 09:36:26.154'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='23.02.2018 09:36:26.393'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='23.02.2018 09:36:26.404'>
+  <Text>Process: id = 8184 cpu = 00:07:13.9687500, page = 137mb peak = 147mb, virtual = 808mb peak = 810mb, topics = 0</Text>
+</Message>
+
+<Message time='23.02.2018 09:36:29.301'>
+  <Text>Json: {
+  "value": "",
+  "checked": false,
+  "data": {
+    "command": "news_edit"
+  },
+  "event": {
+    "type": "click",
+    "bubbles": true,
+    "cancelable": true,
+    "eventPhase": 2,
+    "timeStamp": 2500.2999999560416,
+    "button": 0,
+    "clientX": 100,
+    "clientY": 341,
+    "screenX": 100,
+    "screenY": 407,
+    "which": 1,
+    "altKey": false,
+    "ctrlKey": false,
+    "metaKey": false,
+    "shiftKey": false
+  }
+}</Text>
+</Message>
+
+<Message time='23.02.2018 10:36:27.074'>
+  <Text>Process: id = 8184 cpu = 00:07:15.9843750, page = 117mb peak = 147mb, virtual = 790mb peak = 810mb, topics = 24</Text>
+</Message>
+
+<Message time='23.02.2018 10:44:54.575'>
+  <Text>Çàâåðøåí ïîòîê ñ ìåòêîé 'Service'</Text>
+</Message>
+
+<Message time='23.02.2018 10:44:54.709'>
+  <Text>Process: id = 8184 cpu = 00:07:16.0625000, page = 117mb peak = 147mb, virtual = 789mb peak = 810mb, topics = 24</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='23.02.2018 10:46:52.750'/>
+
+<Message time='23.02.2018 10:46:55.193'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='23.02.2018 10:46:55.722'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='23.02.2018 10:46:55.827'>
+  <Text>Process: id = 8184 cpu = 00:07:17.2812500, page = 116mb peak = 147mb, virtual = 790mb peak = 810mb, topics = 0</Text>
+</Message>
+
+<Message time='23.02.2018 10:47:45.523'>
+  <Text>Çàâåðøåí ïîòîê ñ ìåòêîé 'Service'</Text>
+</Message>
+
+<Message time='23.02.2018 10:47:45.538'>
+  <Text>Process: id = 8184 cpu = 00:07:18.8437500, page = 119mb peak = 147mb, virtual = 795mb peak = 810mb, topics = 24</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='23.02.2018 11:47:28.927'/>
+
+<Message time='23.02.2018 11:47:29.699'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='23.02.2018 11:47:30.174'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='23.02.2018 11:47:30.194'>
+  <Text>Process: id = 8184 cpu = 00:07:20.0468750, page = 115mb peak = 147mb, virtual = 792mb peak = 810mb, topics = 0</Text>
+</Message>
+
+<Message time='23.02.2018 11:50:30.238'>
+  <Text>sitemap.xml успешно обновлен</Text>
+</Message>
+
+<Message time='23.02.2018 12:47:30.178'>
+  <Text>Process: id = 8184 cpu = 00:07:21.9375000, page = 120mb peak = 147mb, virtual = 794mb peak = 810mb, topics = 11</Text>
+</Message>
+
+<Message time='23.02.2018 13:47:30.178'>
+  <Text>Process: id = 8184 cpu = 00:07:22.0937500, page = 112mb peak = 147mb, virtual = 787mb peak = 810mb, topics = 11</Text>
+</Message>
+
+<Message time='23.02.2018 14:47:30.179'>
+  <Text>Process: id = 8184 cpu = 00:07:22.2656250, page = 103mb peak = 147mb, virtual = 787mb peak = 810mb, topics = 11</Text>
+</Message>
+
+<Message time='23.02.2018 15:47:30.177'>
+  <Text>Process: id = 8184 cpu = 00:07:22.5312500, page = 104mb peak = 147mb, virtual = 788mb peak = 810mb, topics = 11</Text>
+</Message>
+
+<Message time='23.02.2018 16:47:30.177'>
+  <Text>Process: id = 8184 cpu = 00:07:22.5781250, page = 104mb peak = 147mb, virtual = 788mb peak = 810mb, topics = 11</Text>
+</Message>
+
+<Message time='23.02.2018 23:23:19.404'>
+  <Text>Process: id = 8184 cpu = 00:07:22.5937500, page = 104mb peak = 147mb, virtual = 788mb peak = 810mb, topics = 11</Text>
+</Message>
+
+<Message time='24.02.2018 00:23:19.390'>
+  <Text>Process: id = 8184 cpu = 00:07:22.6562500, page = 104mb peak = 147mb, virtual = 788mb peak = 810mb, topics = 11</Text>
+</Message>
+
+<Message time='24.02.2018 05:13:39.773'>
+  <Text>Process: id = 8184 cpu = 00:07:22.6562500, page = 104mb peak = 147mb, virtual = 789mb peak = 810mb, topics = 11</Text>
+</Message>
+
+<Message time='24.02.2018 06:13:39.791'>
+  <Text>Process: id = 8184 cpu = 00:07:25.6406250, page = 104mb peak = 147mb, virtual = 789mb peak = 810mb, topics = 11</Text>
+</Message>
+
+<Message time='24.02.2018 08:41:33.499'>
+  <Text>Process: id = 8184 cpu = 00:07:25.6875000, page = 104mb peak = 147mb, virtual = 789mb peak = 810mb, topics = 11</Text>
+</Message>
+
+<Message time='24.02.2018 09:41:33.533'>
+  <Text>Process: id = 8184 cpu = 00:07:25.7343750, page = 104mb peak = 147mb, virtual = 789mb peak = 810mb, topics = 11</Text>
+</Message>
+
+<Message time='24.02.2018 10:41:33.487'>
+  <Text>Process: id = 8184 cpu = 00:07:25.7812500, page = 104mb peak = 147mb, virtual = 789mb peak = 810mb, topics = 11</Text>
+</Message>
+
+<Message time='24.02.2018 14:12:46.503'>
+  <Text>Process: id = 8184 cpu = 00:07:25.8281250, page = 104mb peak = 147mb, virtual = 789mb peak = 810mb, topics = 11</Text>
+</Message>
+
+<Message time='24.02.2018 15:12:46.504'>
+  <Text>Process: id = 8184 cpu = 00:07:25.9062500, page = 104mb peak = 147mb, virtual = 789mb peak = 810mb, topics = 11</Text>
+</Message>
+
+<Message time='24.02.2018 16:12:46.503'>
+  <Text>Process: id = 8184 cpu = 00:07:26.1093750, page = 104mb peak = 147mb, virtual = 789mb peak = 810mb, topics = 11</Text>
+</Message>
+
+<Message time='24.02.2018 17:52:14.546'>
+  <Text>Process: id = 8184 cpu = 00:07:26.1406250, page = 103mb peak = 147mb, virtual = 786mb peak = 810mb, topics = 11</Text>
+</Message>
+
+<Message time='24.02.2018 18:52:14.436'>
+  <Text>Process: id = 8184 cpu = 00:07:26.1875000, page = 103mb peak = 147mb, virtual = 786mb peak = 810mb, topics = 11</Text>
+</Message>
+
+<Message time='24.02.2018 19:52:14.437'>
+  <Text>Process: id = 8184 cpu = 00:07:26.2656250, page = 103mb peak = 147mb, virtual = 786mb peak = 810mb, topics = 11</Text>
+</Message>
+
+<Message time='24.02.2018 20:52:14.462'>
+  <Text>Process: id = 8184 cpu = 00:07:26.3281250, page = 103mb peak = 147mb, virtual = 787mb peak = 810mb, topics = 11</Text>
+</Message>
+
+<Message time='24.02.2018 21:52:14.437'>
+  <Text>Process: id = 8184 cpu = 00:07:26.3750000, page = 104mb peak = 147mb, virtual = 787mb peak = 810mb, topics = 11</Text>
+</Message>
+
+<Message time='24.02.2018 22:52:14.437'>
+  <Text>Process: id = 8184 cpu = 00:07:26.4218750, page = 104mb peak = 147mb, virtual = 787mb peak = 810mb, topics = 11</Text>
+</Message>
+
+<Message time='25.02.2018 09:19:46.388'>
+  <Text>Process: id = 8184 cpu = 00:07:26.4531250, page = 103mb peak = 147mb, virtual = 786mb peak = 810mb, topics = 11</Text>
+</Message>
+
+<Message time='25.02.2018 10:19:46.412'>
+  <Text>Process: id = 8184 cpu = 00:07:26.7343750, page = 104mb peak = 147mb, virtual = 787mb peak = 810mb, topics = 24</Text>
+</Message>
+
+<Message time='25.02.2018 11:19:46.389'>
+  <Text>Process: id = 8184 cpu = 00:07:27.0312500, page = 103mb peak = 147mb, virtual = 786mb peak = 810mb, topics = 24</Text>
+</Message>
+
+<Message time='25.02.2018 12:19:46.389'>
+  <Text>Process: id = 8184 cpu = 00:07:28.5781250, page = 103mb peak = 147mb, virtual = 786mb peak = 810mb, topics = 24</Text>
+</Message>
+
+<Message time='25.02.2018 13:19:46.388'>
+  <Text>Process: id = 8184 cpu = 00:07:28.6406250, page = 104mb peak = 147mb, virtual = 787mb peak = 810mb, topics = 24</Text>
+</Message>
+
+<Message time='25.02.2018 14:19:46.390'>
+  <Text>Process: id = 8184 cpu = 00:07:29.8437500, page = 104mb peak = 147mb, virtual = 788mb peak = 810mb, topics = 24</Text>
+</Message>
+
+<Message time='27.02.2018 16:02:57.745'>
+  <Text>Process: id = 8184 cpu = 00:07:30.7656250, page = 106mb peak = 147mb, virtual = 788mb peak = 810mb, topics = 24</Text>
+</Message>
+
+<Message time='27.02.2018 17:02:57.743'>
+  <Text>Process: id = 8184 cpu = 00:07:30.9843750, page = 107mb peak = 147mb, virtual = 788mb peak = 810mb, topics = 24</Text>
+</Message>
+
+<Message time='27.02.2018 17:19:43.285'>
+  <Text>Çàâåðøåí ïîòîê ñ ìåòêîé 'Service'</Text>
+</Message>
+
+<Message time='27.02.2018 17:19:43.287'>
+  <Text>Process: id = 8184 cpu = 00:07:30.9843750, page = 107mb peak = 147mb, virtual = 789mb peak = 810mb, topics = 24</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='27.02.2018 17:20:00.185'/>
+
+<Message time='27.02.2018 17:20:01.426'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='27.02.2018 17:20:01.899'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='27.02.2018 17:20:02.018'>
+  <Text>Process: id = 8184 cpu = 00:07:32.2031250, page = 101mb peak = 147mb, virtual = 794mb peak = 810mb, topics = 0</Text>
+</Message>
+
+<Message time='27.02.2018 17:21:39.538'>
+  <Text>Çàâåðøåí ïîòîê ñ ìåòêîé 'Service'</Text>
+</Message>
+
+<Message time='27.02.2018 17:21:39.542'>
+  <Text>Process: id = 8184 cpu = 00:07:34.2812500, page = 109mb peak = 147mb, virtual = 796mb peak = 810mb, topics = 24</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='27.02.2018 17:21:44.909'/>
+
+<Message time='27.02.2018 17:21:45.520'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='27.02.2018 17:21:45.748'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='27.02.2018 17:21:45.828'>
+  <Text>Process: id = 8184 cpu = 00:07:35.4375000, page = 107mb peak = 147mb, virtual = 798mb peak = 810mb, topics = 0</Text>
+</Message>
+
+<Message time='27.02.2018 17:22:33.312'>
+  <Text>Çàâåðøåí ïîòîê ñ ìåòêîé 'Service'</Text>
+</Message>
+
+<Message time='27.02.2018 17:22:33.382'>
+  <Text>Process: id = 8184 cpu = 00:07:37.1406250, page = 122mb peak = 147mb, virtual = 799mb peak = 810mb, topics = 24</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='27.02.2018 18:22:08.255'/>
+
+<Message time='27.02.2018 18:22:09.760'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='27.02.2018 18:22:10.583'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='27.02.2018 18:22:10.684'>
+  <Text>Process: id = 8184 cpu = 00:07:38.3437500, page = 106mb peak = 147mb, virtual = 786mb peak = 810mb, topics = 0</Text>
+</Message>
+
+<Message time='27.02.2018 18:25:10.771'>
+  <Text>sitemap.xml успешно обновлен</Text>
+</Message>
+
+<Message time='27.02.2018 20:35:58.565'>
+  <Text>Process: id = 8184 cpu = 00:07:40.1562500, page = 111mb peak = 147mb, virtual = 785mb peak = 810mb, topics = 11</Text>
+</Message>
+
+<Message time='27.02.2018 21:35:58.565'>
+  <Text>Process: id = 8184 cpu = 00:07:40.5937500, page = 112mb peak = 147mb, virtual = 786mb peak = 810mb, topics = 11</Text>
+</Message>
+
+<Message time='27.02.2018 22:35:58.563'>
+  <Text>Process: id = 8184 cpu = 00:07:40.8593750, page = 112mb peak = 147mb, virtual = 787mb peak = 810mb, topics = 11</Text>
+</Message>
+
+<Message time='27.02.2018 23:35:58.588'>
+  <Text>Process: id = 8184 cpu = 00:07:40.9843750, page = 112mb peak = 147mb, virtual = 788mb peak = 810mb, topics = 11</Text>
+</Message>
+
+<Message time='28.02.2018 00:35:58.565'>
+  <Text>Process: id = 8184 cpu = 00:07:41.0781250, page = 112mb peak = 147mb, virtual = 788mb peak = 810mb, topics = 11</Text>
+</Message>
+
+<Message time='28.02.2018 09:03:57.841'>
+  <Text>Process: id = 8184 cpu = 00:07:41.0781250, page = 112mb peak = 147mb, virtual = 788mb peak = 810mb, topics = 11</Text>
+</Message>
+
+<Message time='28.02.2018 10:03:57.873'>
+  <Text>Process: id = 8184 cpu = 00:07:41.1406250, page = 112mb peak = 147mb, virtual = 788mb peak = 810mb, topics = 11</Text>
+</Message>
+
+<Message time='28.02.2018 11:03:57.841'>
+  <Text>Process: id = 8184 cpu = 00:07:41.2343750, page = 112mb peak = 147mb, virtual = 788mb peak = 810mb, topics = 11</Text>
+</Message>
+
+<Message time='28.02.2018 12:03:57.842'>
+  <Text>Process: id = 8184 cpu = 00:07:41.4531250, page = 112mb peak = 147mb, virtual = 788mb peak = 810mb, topics = 11</Text>
+</Message>
+
+<Message time='28.02.2018 13:03:57.842'>
+  <Text>Process: id = 8184 cpu = 00:07:41.7500000, page = 112mb peak = 147mb, virtual = 788mb peak = 810mb, topics = 11</Text>
+</Message>
+
+<Message time='28.02.2018 14:03:57.841'>
+  <Text>Process: id = 8184 cpu = 00:07:41.7656250, page = 112mb peak = 147mb, virtual = 788mb peak = 810mb, topics = 11</Text>
+</Message>
+
+<Message time='28.02.2018 15:50:22.388'>
+  <Text>Process: id = 8184 cpu = 00:07:41.7656250, page = 112mb peak = 147mb, virtual = 789mb peak = 810mb, topics = 11</Text>
+</Message>
+
+<Message time='28.02.2018 16:50:22.348'>
+  <Text>Process: id = 8184 cpu = 00:07:41.8437500, page = 112mb peak = 147mb, virtual = 788mb peak = 810mb, topics = 11</Text>
+</Message>
+
+<Message time='28.02.2018 17:50:22.491'>
+  <Text>Process: id = 8184 cpu = 00:07:42.1093750, page = 112mb peak = 147mb, virtual = 788mb peak = 810mb, topics = 11</Text>
+</Message>
+
+<Message time='28.02.2018 18:50:22.400'>
+  <Text>Process: id = 8184 cpu = 00:07:42.2500000, page = 112mb peak = 147mb, virtual = 788mb peak = 810mb, topics = 11</Text>
+</Message>
+
+<Message time='28.02.2018 19:50:22.393'>
+  <Text>Process: id = 8184 cpu = 00:07:42.3750000, page = 112mb peak = 147mb, virtual = 788mb peak = 810mb, topics = 11</Text>
+</Message>
+
+<Message time='28.02.2018 20:50:22.388'>
+  <Text>Process: id = 8184 cpu = 00:07:42.4375000, page = 112mb peak = 147mb, virtual = 789mb peak = 810mb, topics = 11</Text>
+</Message>
+
+<Message time='28.02.2018 21:50:22.395'>
+  <Text>Process: id = 8184 cpu = 00:07:42.5000000, page = 112mb peak = 147mb, virtual = 788mb peak = 810mb, topics = 11</Text>
+</Message>
+
+<Message time='28.02.2018 22:50:22.372'>
+  <Text>Process: id = 8184 cpu = 00:07:42.6562500, page = 112mb peak = 147mb, virtual = 789mb peak = 810mb, topics = 11</Text>
+</Message>
+
+<Message time='28.02.2018 23:50:22.394'>
+  <Text>Process: id = 8184 cpu = 00:07:43.0312500, page = 112mb peak = 147mb, virtual = 789mb peak = 810mb, topics = 11</Text>
+</Message>
+
+<Message time='01.03.2018 07:26:08.281'>
+  <Text>Process: id = 8184 cpu = 00:07:43.1093750, page = 112mb peak = 147mb, virtual = 789mb peak = 810mb, topics = 11</Text>
+</Message>
+
+<Message time='01.03.2018 08:26:08.281'>
+  <Text>Process: id = 8184 cpu = 00:07:43.1562500, page = 112mb peak = 147mb, virtual = 789mb peak = 810mb, topics = 11</Text>
+</Message>
+
+<Message time='01.03.2018 09:26:08.335'>
+  <Text>Process: id = 8184 cpu = 00:07:43.1875000, page = 112mb peak = 147mb, virtual = 789mb peak = 810mb, topics = 11</Text>
+</Message>
+
+<Message time='01.03.2018 10:26:08.354'>
+  <Text>Process: id = 8184 cpu = 00:07:43.4218750, page = 112mb peak = 147mb, virtual = 789mb peak = 810mb, topics = 11</Text>
+</Message>
+
+<Message time='01.03.2018 11:26:08.284'>
+  <Text>Process: id = 8184 cpu = 00:07:43.5625000, page = 112mb peak = 147mb, virtual = 789mb peak = 810mb, topics = 11</Text>
+</Message>
+
+<Message time='01.03.2018 12:26:08.309'>
+  <Text>Process: id = 8184 cpu = 00:07:43.6093750, page = 112mb peak = 147mb, virtual = 789mb peak = 810mb, topics = 11</Text>
+</Message>
+
+<Message time='01.03.2018 13:26:08.366'>
+  <Text>Process: id = 8184 cpu = 00:07:43.6562500, page = 112mb peak = 147mb, virtual = 789mb peak = 810mb, topics = 11</Text>
+</Message>
+
+<Message time='01.03.2018 14:26:08.284'>
+  <Text>Process: id = 8184 cpu = 00:07:43.7031250, page = 112mb peak = 147mb, virtual = 789mb peak = 810mb, topics = 11</Text>
+</Message>
+
+<Message time='01.03.2018 15:26:08.310'>
+  <Text>Process: id = 8184 cpu = 00:07:43.7656250, page = 112mb peak = 147mb, virtual = 789mb peak = 810mb, topics = 11</Text>
+</Message>
+
+<Message time='01.03.2018 16:09:15.824'>
+  <Text>Çàâåðøåí ïîòîê ñ ìåòêîé 'Service'</Text>
+</Message>
+
+<Message time='01.03.2018 16:09:15.916'>
+  <Text>Process: id = 8184 cpu = 00:07:43.8437500, page = 112mb peak = 147mb, virtual = 790mb peak = 810mb, topics = 11</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='01.03.2018 16:09:34.881'/>
+
+<Message time='01.03.2018 16:09:39.522'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='01.03.2018 16:09:40.657'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='01.03.2018 16:09:40.711'>
+  <Text>Process: id = 8184 cpu = 00:07:45.1562500, page = 114mb peak = 147mb, virtual = 793mb peak = 810mb, topics = 0</Text>
+</Message>
+
+<Message time='01.03.2018 16:11:29.146'>
+  <Text>Çàâåðøåí ïîòîê ñ ìåòêîé 'Service'</Text>
+</Message>
+
+<Message time='01.03.2018 16:11:29.177'>
+  <Text>Process: id = 8184 cpu = 00:07:47.0156250, page = 117mb peak = 147mb, virtual = 797mb peak = 810mb, topics = 24</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='01.03.2018 16:11:31.101'/>
+
+<Message time='01.03.2018 16:11:32.508'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='01.03.2018 16:11:32.836'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='01.03.2018 16:11:32.910'>
+  <Text>Process: id = 8184 cpu = 00:07:48.2343750, page = 119mb peak = 147mb, virtual = 799mb peak = 810mb, topics = 0</Text>
+</Message>
+
+<Message time='01.03.2018 16:14:32.864'>
+  <Text>sitemap.xml успешно обновлен</Text>
+</Message>
+
+<Message time='01.03.2018 16:37:42.882'>
+  <Text>Process: id = 8184 cpu = 00:07:51.5468750, page = 128mb peak = 147mb, virtual = 794mb peak = 810mb, topics = 26</Text>
+</Message>
+
+<Message time='01.03.2018 16:37:42.882'>
+  <Text>Çàâåðøåí ïîòîê ñ ìåòêîé 'Service'</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='01.03.2018 16:37:48.507'/>
+
+<Message time='01.03.2018 16:37:49.116'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='01.03.2018 16:37:49.353'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='01.03.2018 16:37:49.359'>
+  <Text>Process: id = 8184 cpu = 00:07:52.8906250, page = 118mb peak = 147mb, virtual = 795mb peak = 810mb, topics = 0</Text>
+</Message>
+
+<Message time='01.03.2018 16:45:27.882'>
+  <Text>Çàâåðøåí ïîòîê ñ ìåòêîé 'Service'</Text>
+</Message>
+
+<Message time='01.03.2018 16:45:27.884'>
+  <Text>Process: id = 8184 cpu = 00:07:54.3906250, page = 124mb peak = 147mb, virtual = 797mb peak = 810mb, topics = 24</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='01.03.2018 16:45:30.613'/>
+
+<Message time='01.03.2018 16:45:31.253'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='01.03.2018 16:45:31.507'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='01.03.2018 16:45:31.514'>
+  <Text>Process: id = 8184 cpu = 00:07:55.5937500, page = 126mb peak = 147mb, virtual = 800mb peak = 810mb, topics = 0</Text>
+</Message>
+
+<Message time='01.03.2018 16:45:52.113'>
+  <Text>System.Data.SQLite.SQLiteException (0x80004005): SQLite error
+near "Delect": syntax error
+   в System.Data.SQLite.SQLite3.Prepare(SQLiteConnection cnn, String strSql, SQLiteStatement previous, UInt32 timeoutMS, String&amp; strRemain)
+   в System.Data.SQLite.SQLiteCommand.BuildNextCommand()
+   в System.Data.SQLite.SQLiteCommand.GetStatement(Int32 index)
+   в System.Data.SQLite.SQLiteDataReader.NextResult()
+   в System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   в System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   в System.Data.SQLite.SQLiteCommand.ExecuteScalar()
+   в Commune.Data.SQLiteHlp.GetScalar(String query, SQLiteConnection dbConnection, DbParameter[] parameters)
+   в Commune.Data.SQLiteDataLayer.GetScalar(String database, String query, DbParameter[] parameters)
+   в Basketball.BasketballHlp.DeleteTopic(IDataLayer dbConnection, Int32 objectId) в d:\Projects\Basketball\Basketball\BasketballHlp.cs:строка 24
+   в Basketball.ViewNewsHlp.&lt;&gt;c__DisplayClass15_0.&lt;DeleteTopicPanel&gt;b__0(JsonData &lt;obj&gt;) в d:\Projects\Basketball\Basketball\View\ViewNewsHlp.cs:строка 430
+   в Commune.Html.HtmlExt.&lt;&gt;c__DisplayClass10_0.&lt;InnerEvent&gt;b__0(Object[] ids, JsonData json)
+   в NitroBolt.Wui.hevent.Execute(JsonData jsonData)
+   в Basketball.MainView.&lt;&gt;c__DisplayClass2_0.&lt;HViewCreator&gt;b__0(Object _state, JsonData[] jsons, HttpRequestMessage context) в d:\Projects\Basketball\Basketball\View\MainView.cs:строка 95</Text>
+</Message>
+
+<Message time='01.03.2018 16:46:19.896'>
+  <Text>Çàâåðøåí ïîòîê ñ ìåòêîé 'Service'</Text>
+</Message>
+
+<Message time='01.03.2018 16:46:19.898'>
+  <Text>Process: id = 8184 cpu = 00:07:57.2343750, page = 128mb peak = 147mb, virtual = 801mb peak = 810mb, topics = 24</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='01.03.2018 16:46:23.060'/>
+
+<Message time='01.03.2018 16:46:23.727'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='01.03.2018 16:46:23.965'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='01.03.2018 16:46:23.973'>
+  <Text>Process: id = 8184 cpu = 00:07:58.6093750, page = 125mb peak = 147mb, virtual = 803mb peak = 810mb, topics = 0</Text>
+</Message>
+
+<Message time='01.03.2018 16:47:29.436'>
+  <Text>Çàâåðøåí ïîòîê ñ ìåòêîé 'Service'</Text>
+</Message>
+
+<Message time='01.03.2018 16:47:29.438'>
+  <Text>Process: id = 8184 cpu = 00:08:00.6875000, page = 134mb peak = 147mb, virtual = 804mb peak = 810mb, topics = 25</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='01.03.2018 16:47:32.748'/>
+
+<Message time='01.03.2018 16:47:33.418'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='01.03.2018 16:47:33.683'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='01.03.2018 16:47:33.691'>
+  <Text>Process: id = 8184 cpu = 00:08:02.1093750, page = 130mb peak = 147mb, virtual = 807mb peak = 810mb, topics = 0</Text>
+</Message>
+
+<Message time='01.03.2018 16:48:35.846'>
+  <Text>System.NullReferenceException: Ссылка на объект не указывает на экземпляр объекта.
+   в NitroBolt.Wui.HBuilderHelper2.&lt;RoundPage&gt;d__0.MoveNext()
+   в NitroBolt.Wui.HBuilderHelper2.FindEvent(HElement page, JsonData json, Boolean isStrongBinding)
+   в Basketball.MainView.&lt;&gt;c__DisplayClass2_0.&lt;HViewCreator&gt;b__0(Object _state, JsonData[] jsons, HttpRequestMessage context) в d:\Projects\Basketball\Basketball\View\MainView.cs:строка 90</Text>
+</Message>
+
+<Message time='01.03.2018 16:51:29.023'>
+  <Text>Çàâåðøåí ïîòîê ñ ìåòêîé 'Service'</Text>
+</Message>
+
+<Message time='01.03.2018 16:51:29.025'>
+  <Text>Process: id = 8184 cpu = 00:08:05.0781250, page = 151mb peak = 164mb, virtual = 795mb peak = 810mb, topics = 53</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='01.03.2018 17:19:21.295'/>
+
+<Message time='01.03.2018 17:19:24.862'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='01.03.2018 17:19:25.222'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='01.03.2018 17:19:25.237'>
+  <Text>Process: id = 2632 cpu = 00:00:01.9687500, page = 55mb peak = 55mb, virtual = 747mb peak = 747mb, topics = 0</Text>
+</Message>
+
+<Message time='01.03.2018 17:20:22.980'>
+  <Text>Çàâåðøåí ïîòîê ñ ìåòêîé 'Service'</Text>
+</Message>
+
+<Message time='01.03.2018 17:20:22.982'>
+  <Text>Process: id = 2632 cpu = 00:00:04.1406250, page = 85mb peak = 86mb, virtual = 763mb peak = 763mb, topics = 64</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='01.03.2018 17:20:27.099'/>
+
+<Message time='01.03.2018 17:20:27.789'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='01.03.2018 17:20:28.056'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='01.03.2018 17:20:28.064'>
+  <Text>Process: id = 2632 cpu = 00:00:05.6093750, page = 84mb peak = 86mb, virtual = 764mb peak = 765mb, topics = 0</Text>
+</Message>
+
+<Message time='01.03.2018 17:23:28.060'>
+  <Text>sitemap.xml успешно обновлен</Text>
+</Message>
+
+<Message time='01.03.2018 17:29:19.087'>
+  <Text>Çàâåðøåí ïîòîê ñ ìåòêîé 'Service'</Text>
+</Message>
+
+<Message time='01.03.2018 17:29:19.089'>
+  <Text>Process: id = 2632 cpu = 00:00:07.5312500, page = 105mb peak = 106mb, virtual = 775mb peak = 776mb, topics = 67</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='01.03.2018 17:29:22.527'/>
+
+<Message time='01.03.2018 17:29:23.260'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='01.03.2018 17:29:23.475'>
+  <Text>Выполняем стартовый скрипт: Update light_object Set obj_id = 100651 Where obj_id = 101371;
+Update light_link Set child_id = 100651 Where child_id = 101371;</Text>
+</Message>
+
+<Message time='01.03.2018 17:29:23.585'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='01.03.2018 17:29:23.592'>
+  <Text>Process: id = 2632 cpu = 00:00:08.9687500, page = 104mb peak = 106mb, virtual = 777mb peak = 778mb, topics = 0</Text>
+</Message>
+
+<Message time='01.03.2018 17:30:14.237'>
+  <Text>Çàâåðøåí ïîòîê ñ ìåòêîé 'Service'</Text>
+</Message>
+
+<Message time='01.03.2018 17:30:14.238'>
+  <Text>Process: id = 2632 cpu = 00:00:11.0625000, page = 107mb peak = 117mb, virtual = 772mb peak = 778mb, topics = 63</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='01.03.2018 18:30:06.306'/>
+
+<Message time='01.03.2018 18:30:07.070'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='01.03.2018 18:30:07.616'>
+  <Text>Выполняем стартовый скрипт: Update light_object Set obj_id = 100651 Where obj_id = 101371;
+Update light_link Set child_id = 100651 Where child_id = 101371;</Text>
+</Message>
+
+<Message time='01.03.2018 18:30:07.709'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='01.03.2018 18:30:07.749'>
+  <Text>Process: id = 2632 cpu = 00:00:11.9375000, page = 94mb peak = 117mb, virtual = 764mb peak = 778mb, topics = 0</Text>
+</Message>
+
+<Message time='01.03.2018 18:33:07.718'>
+  <Text>sitemap.xml успешно обновлен</Text>
+</Message>
+
+<Message time='01.03.2018 19:30:07.745'>
+  <Text>Process: id = 2632 cpu = 00:00:13.4687500, page = 96mb peak = 117mb, virtual = 764mb peak = 778mb, topics = 23</Text>
+</Message>
+
+<Message time='01.03.2018 20:30:07.744'>
+  <Text>Process: id = 2632 cpu = 00:00:13.5000000, page = 92mb peak = 117mb, virtual = 764mb peak = 778mb, topics = 23</Text>
+</Message>
+
+<Message time='01.03.2018 21:30:07.744'>
+  <Text>Process: id = 2632 cpu = 00:00:13.6406250, page = 89mb peak = 117mb, virtual = 765mb peak = 778mb, topics = 23</Text>
+</Message>
+

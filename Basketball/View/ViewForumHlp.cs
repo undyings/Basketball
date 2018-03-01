@@ -253,12 +253,14 @@ namespace Basketball
                   return;
                 
                 MessageHlp.DeleteTopicMessages(context.ForumConnection, topic.Topic.Id);
-                DataBox.DeleteParentObject(context.FabricConnection, topic.Topic.Id);
+                BasketballHlp.DeleteTopic(context.FabricConnection, topic.TopicId);
 
                 topic.UpdateTopic();
                 topic.UpdateMessages();
                 context.UpdateLastComments(true);
                 context.Forum.ForSection(forumSection.Id).Update();
+
+                state.RedirectUrl = "/";
               }
             )
           ).Align(false),

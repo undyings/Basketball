@@ -79,7 +79,7 @@ namespace Basketball
           {
             int? tagId = httpContext.GetUInt("tag");
             int pageNumber = httpContext.GetUInt("page") ?? 0;
-            return ViewNewsHlp.GetTagListView(state, currentUser, tagId, pageNumber);
+            return ViewNewsHlp.GetTagListView(state, currentUser, tagId, pageNumber, out title);
           }
         case "user":
           {

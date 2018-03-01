@@ -10,19 +10,19 @@
   </PropertyGroup>
   <ItemGroup>
     <File Include="bin/Basketball.dll">
-      <publishTime>02/22/2018 23:55:30</publishTime>
+      <publishTime>01/03/2018 17:29:19</publishTime>
     </File>
     <File Include="bin/Commune.Basis.dll">
       <publishTime>12/27/2017 16:13:44</publishTime>
     </File>
     <File Include="bin/Commune.Data.dll">
-      <publishTime>01/05/2018 16:40:03</publishTime>
+      <publishTime>03/01/2018 16:37:05</publishTime>
     </File>
     <File Include="bin/Commune.Diagnostics.dll">
       <publishTime>08/17/2017 20:20:52</publishTime>
     </File>
     <File Include="bin/Commune.Html.dll">
-      <publishTime>02/11/2018 14:52:48</publishTime>
+      <publishTime>02/27/2018 17:21:20</publishTime>
     </File>
     <File Include="bin/Commune.Task.dll">
       <publishTime>07/19/2016 22:14:32</publishTime>

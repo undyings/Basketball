@@ -70,6 +70,14 @@ namespace Basketball
         Shop.Engine.Site.DirectPageLinks = true;
         //Shop.Engine.Site.AddFolderForNews = true;
 
+        string scriptPath = Path.Combine(appPath, "ExecuteScript.sql");
+        if (File.Exists(scriptPath))
+        {
+          string script = File.ReadAllText(scriptPath);
+          Logger.AddMessage("Выполняем стартовый скрипт: {0}", script);
+          fabricConnection.GetScalar("", script);
+        }
+
         SiteContext.Default = new BasketballContext(
           appPath, sectionEditorSelector, unitEditorSelector,
           userConnection, fabricConnection, messageConnection, forumConnection

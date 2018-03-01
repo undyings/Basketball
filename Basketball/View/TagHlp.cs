@@ -63,7 +63,7 @@ namespace Basketball
       ).MarginTop(10);
     }
 
-    public static IHtmlControl GetEditTagsPanel(ObjectHeadBox tagBox, List<string> tags)
+    public static IHtmlControl GetEditTagsPanel(SiteState state, ObjectHeadBox tagBox, List<string> tags)
     {
       if (tags == null)
         return null;
@@ -87,34 +87,45 @@ namespace Basketball
               },
               index
             )
-          ).InlineBlock().Margin(5)
+          ).InlineBlock().MarginTop(5).MarginRight(5)
         );
       }
+
+      string addTagName = string.Format("addTag_{0}", state.OperationCounter);
 
       return new HPanel(
         new HPanel(
           tagElements.ToArray()
-        ),
+        ).MarginBottom(5),
         new HPanel(
-          new HTextEdit("addTag"),
+          new HTextEdit(addTagName).Width(400).MarginRight(5).MarginBottom(5)
+            .MediaSmartfon(new HStyle().Width("100%")),
           //new HComboEdit<int>("addTag", -1, delegate(int tagId)
           //  {
           //    return TagType.DisplayName.Get(tagBox, tagId);
           //  },
           //  tagBox.AllObjectIds
           //),            
-          Decor.Button("Добавить тэг").MarginLeft(5).VAlign(-1)
+          Decor.Button("Добавить тэг").VAlign(-1).MarginBottom(5)
             .Event("tag_add", "addTagData",
             delegate (JsonData json)
             {
-              string addTag = json.GetText("addTag");
+              string addTag = json.GetText(addTagName);
               if (StringHlp.IsEmpty(addTag))
                 return;
 
               if (tags.Contains(addTag))
                 return;
 
-              tags.Add(addTag);
+              string[] newTags = addTag.Split(',');
+              foreach (string rawTag in newTags)
+              {
+                string tag = rawTag.Trim();
+                if (!StringHlp.IsEmpty(tag))
+                  tags.Add(tag);
+              }
+
+              state.OperationCounter++;
             })
         ).EditContainer("addTagData")
       ).MarginTop(5);
