@@ -8,6 +8,7 @@ using Commune.Html;
 using Commune.Data;
 using Shop.Engine;
 using System.Data;
+using System.Text;
 
 namespace Basketball
 {
@@ -42,19 +43,34 @@ namespace Basketball
       return newsIds;
     }
 
-    public static IHtmlControl GetViewTagsPanel(ObjectHeadBox tagBox, LightParent topic)
+    static RowLink[] GetTagRows(ObjectHeadBox tagBox, int[] tagIds)
+    {
+      List<RowLink> tagRows = new List<RowLink>(tagIds.Length);
+      foreach (int tagId in tagIds)
+      {
+        RowLink tagRow = tagBox.ObjectById.AnyRow(tagId);
+        if (tagRow != null)
+          tagRows.Add(tagRow);     
+      }
+      return tagRows.ToArray();
+    }
+
+    public static IHtmlControl GetViewTagsPanel(ObjectHeadBox tagBox, LightParent topic, out string tagsDisplay)
     {
       List<IHtmlControl> elements = new List<IHtmlControl>();
       elements.Add(new HLabel("Теги:").FontBold().MarginRight(5));
       int[] tagIds = topic.AllChildIds(TopicType.TagLinks);
-      foreach (int tagId in tagIds)
-      {
-        RowLink tagRow = tagBox.ObjectById.AnyRow(tagId);
-        if (tagRow == null)
-          continue;
 
+      RowLink[] tagRows = GetTagRows(tagBox, tagIds);
+
+      tagsDisplay = StringHlp.Join(", ", tagRows, delegate (RowLink row)
+        { return TagType.DisplayName.Get(row); }
+      );
+
+      foreach (RowLink tagRow in tagRows)
+      {
         elements.Add(
-          new HLink(TagUrl(tagId, 0), TagType.DisplayName.Get(tagRow)).MarginRight(5)
+          new HLink(TagUrl(tagRow.Get(ObjectType.ObjectId), 0), TagType.DisplayName.Get(tagRow)).MarginRight(5)
         );
       }
 

@@ -13,6 +13,20 @@ namespace Basketball
 {
   public class BasketballHlp
   {
+    //public static string GetDescriptionForNews(LightKin topic)
+    //{
+    //  string text = topic.Get(NewsType.Text);
+    //  if (StringHlp.IsEmpty(text))
+    //    return "";
+
+    //  int startIndex = text.IndexOf("<p>");
+    //  int endIndex = text.IndexOf("</p>", startIndex);
+    //  if (startIndex < 0 || endIndex < 0)
+    //    return "";
+
+    //  return text.Substring(startIndex + 3, endIndex - startIndex - 3).Replace("&laquo;", "«").Replace("&raquo;", "»");
+    //}
+
     //hack нельзя использовать рекурсивное удаление, из-за того, что теги сделаны детьми новостей
     public static void DeleteTopic(IDataLayer dbConnection, int objectId)
     {

@@ -51,23 +51,42 @@ namespace Basketball
               return null;
             TopicStorage topicStorage = context.NewsStorages.ForTopic(id ?? 0);
             LightKin topic = topicStorage.Topic;
+            string tagsDisplay;
+            IHtmlControl view = ViewNewsHlp.GetNewsView(state, currentUser, topicStorage, out tagsDisplay);
+
             title = topic.Get(NewsType.Title);
+            string postfix = "";
+            if (!StringHlp.IsEmpty(tagsDisplay))
+              postfix = ". ";
+            description = string.Format("{0}{1}Живое обсуждение баскетбольных событий на basketball.ru.com",
+              tagsDisplay, postfix
+            );
 
             string logoUrl = settings.FullUrl("/images/logo.gif");
             schema = new SchemaOrg("NewsArticle", settings.FullUrl(UrlHlp.ShopUrl("news", id)),
-              title, new string[] { logoUrl } , topic.Get(ObjectType.ActFrom), topic.Get(ObjectType.ActTill),
+              title, new string[] { logoUrl }, topic.Get(ObjectType.ActFrom), topic.Get(ObjectType.ActTill),
               topic.Get(TopicType.OriginName), settings.Organization,
-              logoUrl, ""
+              logoUrl, description
             );
-            return ViewNewsHlp.GetNewsView(state, currentUser, topicStorage);
+
+            return view;
           }
         case "article":
           {
             if (!context.Articles.ObjectById.Exist(id))
               return null;
-            TopicStorage topic = context.ArticleStorages.ForTopic(id ?? 0);
-            title = topic.Topic.Get(ArticleType.Title);
-            return ViewArticleHlp.GetArticleView(state, currentUser, topic);
+            TopicStorage topicStorage = context.ArticleStorages.ForTopic(id ?? 0);
+            LightKin topic = topicStorage.Topic;
+            title = topic.Get(ArticleType.Title);
+            description = topic.Get(ArticleType.Annotation);
+
+            string logoUrl = settings.FullUrl("/images/logo.gif");
+            schema = new SchemaOrg("Article", settings.FullUrl(UrlHlp.ShopUrl("article", id)),
+              title, new string[] { logoUrl }, topic.Get(ObjectType.ActFrom), topic.Get(ObjectType.ActTill),
+              topic.Get(TopicType.OriginName), settings.Organization,
+              logoUrl, description
+            );
+            return ViewArticleHlp.GetArticleView(state, currentUser, topicStorage);
           }
         case "topic":
           {
@@ -79,7 +98,7 @@ namespace Basketball
           {
             int? tagId = httpContext.GetUInt("tag");
             int pageNumber = httpContext.GetUInt("page") ?? 0;
-            return ViewNewsHlp.GetTagListView(state, currentUser, tagId, pageNumber, out title);
+            return ViewNewsHlp.GetTagListView(state, currentUser, tagId, pageNumber, out title, out description);
           }
         case "user":
           {

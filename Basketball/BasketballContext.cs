@@ -214,43 +214,6 @@ namespace Basketball
         TimeSpan.FromMinutes(15)
       );
 
-      Pull.StartTask(Labels.Service, 
-        SiteTasks.SitemapXmlChecker(this, rootPath,
-          delegate (LinkInfo[] sectionlinks)
-          {
-            List<LightLink> allLinks = new List<LightLink>();
-            allLinks.AddRange(
-              ArrayHlp.Convert(sectionlinks, delegate (LinkInfo link)
-              {
-                return new LightLink(link.Directory, null);
-              })
-            );
-
-            foreach (int articleId in Articles.AllObjectIds)
-            {
-              LightHead article = new LightHead(Articles, articleId);
-              allLinks.Add(
-                new LightLink(UrlHlp.ShopUrl("article", articleId),
-                  article.Get(ObjectType.ActTill) ?? article.Get(ObjectType.ActFrom)
-                )
-              );
-            }
-
-            foreach (int newsId in News.AllObjectIds)
-            {
-              LightHead news = new LightHead(News, newsId);
-              allLinks.Add(
-                new LightLink(UrlHlp.ShopUrl("news", newsId),
-                  news.Get(ObjectType.ActTill) ?? news.Get(ObjectType.ActFrom)
-                )
-              );
-            }
-
-            return allLinks.ToArray();
-          }
-        )
-      );
-
       this.newsCache = new Cache<Tuple<ObjectHeadBox, LightHead[]>, long>(
         delegate
         {
@@ -382,6 +345,51 @@ namespace Basketball
           return new ObjectHeadBox(fabricConnection, DataCondition.ForTypes(TagType.Tag) + " order by xml_ids asc");
         },
         delegate { return tagChangeTick; }
+      );
+      Pull.StartTask(Labels.Service,
+        SiteTasks.SitemapXmlChecker(this, rootPath,
+          delegate (LinkInfo[] sectionlinks)
+          {
+            List<LightLink> allLinks = new List<LightLink>();
+            allLinks.AddRange(
+              ArrayHlp.Convert(sectionlinks, delegate (LinkInfo link)
+              {
+                return new LightLink(link.Directory, null);
+              })
+            );
+
+            foreach (int articleId in Articles.AllObjectIds)
+            {
+              LightHead article = new LightHead(Articles, articleId);
+              allLinks.Add(
+                new LightLink(UrlHlp.ShopUrl("article", articleId),
+                  article.Get(ObjectType.ActTill) ?? article.Get(ObjectType.ActFrom)
+                )
+              );
+            }
+
+            foreach (int newsId in News.AllObjectIds)
+            {
+              LightHead news = new LightHead(News, newsId);
+              allLinks.Add(
+                new LightLink(UrlHlp.ShopUrl("news", newsId),
+                  news.Get(ObjectType.ActTill) ?? news.Get(ObjectType.ActFrom)
+                )
+              );
+            }
+
+            //foreach (int tagId in Tags.AllObjectIds)
+            //{
+            //  LightHead tag = new LightHead(Tags, tagId);
+            //  allLinks.Add(
+            //    new LightLink(string.Format("/tags?tag={0}", tagId)
+            //    )
+            //  );
+            //}
+
+            return allLinks.ToArray();
+          }
+        )
       );
     }
 

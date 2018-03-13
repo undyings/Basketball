@@ -130,9 +130,10 @@ namespace Basketball
     }
 
     public static IHtmlControl GetTagListView(SiteState state, LightObject currentUser, 
-      int? tagId, int pageNumber, out string title)
+      int? tagId, int pageNumber, out string title, out string description)
     {
       title = "";
+      description = "";
 
       if (tagId == null)
         return null;
@@ -143,7 +144,8 @@ namespace Basketball
 
       string tagDisplay = TagType.DisplayName.Get(tagRow);
 
-      title = string.Format("Теги - {0} - basketball.ru.com", tagDisplay);
+      title = string.Format("{0} - все новости на basketball.ru.com", tagDisplay);
+      description = string.Format("{0} - все новости. Живое обсуждение баскетбольных событий на basketball.ru.com", tagDisplay);
 
       int[] newsIds = ViewTagHlp.GetNewsIdsForTag(context.FabricConnection, tagId.Value);
 
@@ -153,8 +155,8 @@ namespace Basketball
 
       string urlWithoutPageIndex = string.Format("/tags?tag={0}", tagId.Value);
       return new HPanel(
-        Decor.Title("Теги"),
-        Decor.Subtitle(string.Format("Тег — {0}", tagDisplay)).MarginTop(5),
+        Decor.Title(tagDisplay), //.Color(Decor.subtitleColor),
+        //Decor.Subtitle(string.Format("Тег — {0}", tagDisplay)).MarginTop(5),
         new HPanel(
           new HPanel(
             items
@@ -271,7 +273,8 @@ namespace Basketball
       return items.ToArray();
     }
 
-    public static IHtmlControl GetNewsView(SiteState state, LightObject currentUser, TopicStorage topic)
+    public static IHtmlControl GetNewsView(SiteState state, LightObject currentUser, TopicStorage topic,
+      out string tagsDisplay)
     {
       LightObject news = topic.Topic;
 
@@ -294,7 +297,7 @@ namespace Basketball
           new HLink(UrlHlp.ShopUrl("user", publisherId), publisher?.Get(UserType.Login))
         ),
         new HLink(news.Get(NewsType.OriginUrl), news.Get(NewsType.OriginName)),
-        ViewTagHlp.GetViewTagsPanel(context.Tags, topic.Topic),
+        ViewTagHlp.GetViewTagsPanel(context.Tags, topic.Topic, out tagsDisplay),
         editPanel,
         moderatorPanel,
         ViewCommentHlp.GetCommentsPanel(context.MessageConnection, state, currentUser, topic)
