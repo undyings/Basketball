@@ -126,6 +126,7 @@ namespace Basketball
         int commentCount = context.ArticleStorages.ForTopic(article.Id).MessageLink.AllRows.Length;
         string articleUrl = UrlHlp.ShopUrl("article", article.Id);
         string imageUrl = UrlHlp.ImageUrl(article.Id, false);
+        string author = article.Get(ArticleType.Author);
 
         string annotationWithLink = string.Format(
           "{0} <a href='{1}'><img src='/images/full.gif'></img></a>",
@@ -148,6 +149,7 @@ namespace Basketball
               ),
               new HPanel(
                 new HPanel(
+                  new HLabel(string.Format("{0},", author)).MarginRight(5).Hide(StringHlp.IsEmpty(author)),
                   new HLabel(article.Get(ArticleType.OriginName)),
                   new HLabel("//").MarginLeft(5).MarginRight(5),
                   new HLabel(localTime.ToString("dd MMMM yyyy"))
@@ -198,7 +200,7 @@ namespace Basketball
         //new HLabel(localTime.ToString(Decor.timeFormat)).Block().FontBold(),
         new HTextView(article.Get(NewsType.Text)),
         new HLabel("Автор:").MarginRight(5).Hide(StringHlp.IsEmpty(author)), 
-        new HLabel(article.Get(ArticleType.Author)).FontBold().MarginRight(5).Hide(StringHlp.IsEmpty(author)),
+        new HLabel(author).FontBold().MarginRight(5).Hide(StringHlp.IsEmpty(author)),
         new HLabel("|").MarginRight(5).Hide(StringHlp.IsEmpty(author)),
         new HLink(article.Get(NewsType.OriginUrl), article.Get(NewsType.OriginName)),
         new HPanel(

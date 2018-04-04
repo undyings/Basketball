@@ -274,9 +274,11 @@ namespace Basketball
     }
 
     public static IHtmlControl GetNewsView(SiteState state, LightObject currentUser, TopicStorage topic,
-      out string tagsDisplay)
+      out string description)
     {
       LightObject news = topic.Topic;
+
+      description = BasketballHlp.GetDescriptionForNews(news);
 
       DateTime localTime = (news.Get(ObjectType.ActFrom) ?? DateTime.UtcNow).ToLocalTime();
       int publisherId = news.Get(NewsType.PublisherId);
@@ -297,7 +299,7 @@ namespace Basketball
           new HLink(UrlHlp.ShopUrl("user", publisherId), publisher?.Get(UserType.Login))
         ),
         new HLink(news.Get(NewsType.OriginUrl), news.Get(NewsType.OriginName)),
-        ViewTagHlp.GetViewTagsPanel(context.Tags, topic.Topic, out tagsDisplay),
+        ViewTagHlp.GetViewTagsPanel(context.Tags, topic.Topic),
         editPanel,
         moderatorPanel,
         ViewCommentHlp.GetCommentsPanel(context.MessageConnection, state, currentUser, topic)

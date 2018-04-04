@@ -63,7 +63,7 @@ namespace Basketball
         );
 
         EditorSelector unitEditorSelector = new EditorSelector(
-          new UnitTunes("reclame", "Рекламный блок").Thumb().ImageAlt().Link()
+          new UnitTunes("reclame", "Рекламный блок").Thumb().ImageAlt().Link().Annotation()
         );
 
         Shop.Engine.Site.Novosti = "news";

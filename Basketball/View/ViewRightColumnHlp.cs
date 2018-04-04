@@ -42,10 +42,11 @@ namespace Basketball
           {
             return new HPanel(
               new HLink(unit.Get(UnitType.Link),
-                new HImage(UrlHlp.ImageUrl(unit.Id, true)).Alt(unit.Get(UnitType.ImageAlt))
+                new HImage(UrlHlp.ImageUrl(unit.Id, true))
+                  .Alt(unit.Get(UnitType.ImageAlt)).Title(unit.Get(UnitType.Annotation))
               ).TargetBlank(),
               DecorEdit.AdminUnitRedoIcon(state.EditMode, unit.Id)
-            ).PositionRelative();
+            ).PositionRelative().MarginBottom(5);
           },
           new HRowStyle()
         ),

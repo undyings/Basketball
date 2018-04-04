@@ -13,19 +13,63 @@ namespace Basketball
 {
   public class BasketballHlp
   {
-    //public static string GetDescriptionForNews(LightKin topic)
-    //{
-    //  string text = topic.Get(NewsType.Text);
-    //  if (StringHlp.IsEmpty(text))
-    //    return "";
+    public static string GetDescriptionForNews(LightObject topic)
+    {
+      try
+      {
+        string text = topic.Get(NewsType.Text);
+        if (StringHlp.IsEmpty(text))
+          return "";
 
-    //  int startIndex = text.IndexOf("<p>");
-    //  int endIndex = text.IndexOf("</p>", startIndex);
-    //  if (startIndex < 0 || endIndex < 0)
-    //    return "";
+        int endIndex1 = text.IndexOf("</p>");
+        int endIndex2 = text.IndexOf("</h3>");
 
-    //  return text.Substring(startIndex + 3, endIndex - startIndex - 3).Replace("&laquo;", "«").Replace("&raquo;", "»");
-    //}
+        if (endIndex1 < 0 && endIndex2 < 0)
+          return "";
+
+        int endIndex;
+        if (endIndex1 < 0 || endIndex2 < 0)
+          endIndex = Math.Max(endIndex1, endIndex2);
+        else
+          endIndex = Math.Min(endIndex1, endIndex2);
+
+        StringBuilder builder = new StringBuilder();
+        string rawDescription = text.Substring(0, endIndex);
+
+        bool openBracket = false;
+        int currentIndex = 0;
+        while (currentIndex < rawDescription.Length)
+        {
+          int startIndex = currentIndex;
+
+          if (openBracket)
+          {
+            openBracket = false;
+            currentIndex = rawDescription.IndexOf('>', currentIndex) + 1;
+            if (currentIndex == 0)
+              break;
+            continue;
+          }
+
+          openBracket = true;
+          currentIndex = rawDescription.IndexOf('<', currentIndex);
+          if (currentIndex < 0)
+            currentIndex = rawDescription.Length;
+
+          builder.Append(rawDescription.Substring(startIndex, currentIndex - startIndex).Trim('\n'));
+          continue;
+        }
+
+        return builder.ToString().Replace("&laquo;", "«").Replace("&raquo;", "»").Replace("&quot;", "'");
+      }
+      catch (Exception ex)
+      {
+        Logger.WriteException(ex, "TopicId: {0}", topic?.Id);
+        return "";
+      }
+
+      //return text.Substring(startIndex + 3, endIndex - startIndex - 3).Replace("&laquo;", "«").Replace("&raquo;", "»");
+    }
 
     //hack нельзя использовать рекурсивное удаление, из-за того, что теги сделаны детьми новостей
     public static void DeleteTopic(IDataLayer dbConnection, int objectId)

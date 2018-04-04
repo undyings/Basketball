@@ -55,7 +55,7 @@ namespace Basketball
       return tagRows.ToArray();
     }
 
-    public static IHtmlControl GetViewTagsPanel(ObjectHeadBox tagBox, LightParent topic, out string tagsDisplay)
+    public static IHtmlControl GetViewTagsPanel(ObjectHeadBox tagBox, LightParent topic)
     {
       List<IHtmlControl> elements = new List<IHtmlControl>();
       elements.Add(new HLabel("Теги:").FontBold().MarginRight(5));
@@ -63,9 +63,9 @@ namespace Basketball
 
       RowLink[] tagRows = GetTagRows(tagBox, tagIds);
 
-      tagsDisplay = StringHlp.Join(", ", tagRows, delegate (RowLink row)
-        { return TagType.DisplayName.Get(row); }
-      );
+      //tagsDisplay = StringHlp.Join(", ", tagRows, delegate (RowLink row)
+      //  { return TagType.DisplayName.Get(row); }
+      //);
 
       foreach (RowLink tagRow in tagRows)
       {

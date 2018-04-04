@@ -51,16 +51,17 @@ namespace Basketball
               return null;
             TopicStorage topicStorage = context.NewsStorages.ForTopic(id ?? 0);
             LightKin topic = topicStorage.Topic;
-            string tagsDisplay;
-            IHtmlControl view = ViewNewsHlp.GetNewsView(state, currentUser, topicStorage, out tagsDisplay);
+            //string tagsDisplay;
+            IHtmlControl view = ViewNewsHlp.GetNewsView(state, currentUser, topicStorage, out description);
 
             title = topic.Get(NewsType.Title);
-            string postfix = "";
-            if (!StringHlp.IsEmpty(tagsDisplay))
-              postfix = ". ";
-            description = string.Format("{0}{1}Живое обсуждение баскетбольных событий на basketball.ru.com",
-              tagsDisplay, postfix
-            );
+
+            //string postfix = "";
+            //if (!StringHlp.IsEmpty(tagsDisplay))
+            //  postfix = ". ";
+            //description = string.Format("{0}{1}Живое обсуждение баскетбольных событий на basketball.ru.com",
+            //  tagsDisplay, postfix
+            //);
 
             string logoUrl = settings.FullUrl("/images/logo.gif");
             schema = new SchemaOrg("NewsArticle", settings.FullUrl(UrlHlp.ShopUrl("news", id)),
