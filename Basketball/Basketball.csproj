@@ -115,6 +115,7 @@
     <Content Include="Global.asax" />
     <Content Include="Scripts\fileuploader.js" />
     <Content Include="Scripts\NitroBolt.Wui.2.0.14.js" />
+    <Content Include="Scripts\NitroBolt.Wui.2.0.48.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

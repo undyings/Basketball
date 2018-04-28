@@ -164,15 +164,25 @@ namespace Basketball
       }
     }
 
-    readonly RawCache<ObjectHeadBox> tagsCache;
+    readonly RawCache<Tuple<ObjectHeadBox, Dictionary<string, int>>> tagsCache;
     public ObjectHeadBox Tags
     {
       get
       {
         lock (lockObj)
-          return tagsCache.Result;
+          return tagsCache.Result.Item1;
       }
     }
+
+    public Dictionary<string, int> TagIdByKey
+    {
+      get
+      {
+        lock (lockObj)
+          return tagsCache.Result.Item2;
+      }
+    }
+
     long tagChangeTick = 0;
     public void UpdateTags()
     {
@@ -339,13 +349,48 @@ namespace Basketball
         delegate { return forumCommentChangeTick; }
       );
 
-      this.tagsCache = new Cache<ObjectHeadBox, long>(
+      this.tagsCache = new Cache<Tuple<ObjectHeadBox, Dictionary<string, int>>, long>(
         delegate
         {
-          return new ObjectHeadBox(fabricConnection, DataCondition.ForTypes(TagType.Tag) + " order by xml_ids asc");
+          ObjectHeadBox tagBox = new ObjectHeadBox(fabricConnection, DataCondition.ForTypes(TagType.Tag) + " order by xml_ids asc");
+
+          Dictionary<string, int> tagIdByKey = new Dictionary<string, int>();
+          foreach (int tagId in tagBox.AllObjectIds)
+          {
+            string tagName = TagType.DisplayName.Get(tagBox, tagId);
+            if (StringHlp.IsEmpty(tagName))
+              continue;
+
+            string tagKey = tagName.ToLower();
+            tagIdByKey[tagKey] = tagId;
+          }
+
+          //Logger.AddMessage("Tags: {0}", tagBox.AllObjectIds.Length);
+
+          //Dictionary<string, int> tagByKey = new Dictionary<string, int>();
+          //foreach (int tagId in tagBox.AllObjectIds)
+          //{
+          //  string tagName = TagType.DisplayName.Get(tagBox, tagId);
+          //  string tagKey = tagName.ToLower();
+
+          //  //Logger.AddMessage("Tag: {0}, {1}", tagName, tagKey);
+          //  if (tagByKey.ContainsKey(tagKey))
+          //  {
+          //    int tagId2 = tagByKey[tagKey];
+          //    Logger.AddMessage("Дубль тега: {0}, {1}, {2}, {3}, {4}", 
+          //      tagKey, tagId2, tagId, TagType.DisplayName.Get(tagBox, tagId2), tagName);
+          //    continue;
+          //  }
+
+          //  tagByKey[tagKey] = tagId;
+
+          //}
+
+          return _.Tuple(tagBox, tagIdByKey);
         },
         delegate { return tagChangeTick; }
       );
+
       Pull.StartTask(Labels.Service,
         SiteTasks.SitemapXmlChecker(this, rootPath,
           delegate (LinkInfo[] sectionlinks)

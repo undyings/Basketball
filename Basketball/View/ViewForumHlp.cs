@@ -67,7 +67,7 @@ namespace Basketball
                     lastMessage?.Get(MessageType.CreateTime).ToLocalTime().ToString(Decor.timeFormat)
                   ).MarginLeft(7).MarginRight(7),
                   new HLink(
-                    string.Format("{0}#reply{1}", UrlHlp.ShopUrl("topic", lastTopic?.TopicId), lastMessage?.Get(MessageType.Id)),
+                    string.Format("{0}?page=last#bottom", UrlHlp.ShopUrl("topic", lastTopic?.TopicId)),
                     new HImage("/images/full.gif")
                   ).Hide(lastMessage == null)
                 ).MarginBottom(7)
@@ -113,7 +113,7 @@ namespace Basketball
 
             return new HPanel(
               new HPanel(
-                new HLink(UrlHlp.ShopUrl("topic", topic.Id),
+                new HLink(string.Format("{0}?page=last", UrlHlp.ShopUrl("topic", topic.Id)),
                   topic.Get(TopicType.Title)
                 ).FontBold()
               ).RelativeWidth(55).Padding(8, 5, 9, 5).BorderRight(Decor.columnBorder)
@@ -135,7 +135,7 @@ namespace Basketball
                   lastMessage?.Get(MessageType.CreateTime).ToLocalTime().ToString(Decor.timeFormat)
                 ).MarginLeft(7).MarginRight(7),
                 new HLink(
-                  string.Format("{0}#reply{1}", UrlHlp.ShopUrl("topic", topic.Id), lastMessage?.Get(MessageType.Id)),
+                  string.Format("{0}?page=last#bottom", UrlHlp.ShopUrl("topic", topic.Id)),
                   new HImage("/images/full.gif")
                 )
               ).RelativeWidth(35).Padding(0, 5)
@@ -207,7 +207,10 @@ namespace Basketball
       ).MarginTop(5).MarginBottom(10);
     }
 
-    public static IHtmlControl GetTopicView(SiteState state, LightObject currentUser, TopicStorage topic)
+    public const int forumMessageCountOnPage = 20;
+
+    public static IHtmlControl GetTopicView(SiteState state, 
+      LightObject currentUser, TopicStorage topic, int pageNumber)
     {
       if (topic == null || topic.Topic == null)
         return null;
@@ -222,6 +225,12 @@ namespace Basketball
       if (state.ModeratorMode)
         editPanel = GetTopicRedoPanel(state, currentUser, forumSection, topic);
 
+      RowLink[] allMessages = topic.MessageLink.AllRows;
+      RowLink[] pageMessages = ViewJumpHlp.GetPageItems(allMessages, forumMessageCountOnPage, pageNumber);
+
+      if (pageMessages == null)
+        return null;
+
       return new HPanel(
         Decor.Title(topic.Topic.Get(TopicType.Title)).MarginBottom(15),
         new HPanel(
@@ -232,7 +241,13 @@ namespace Basketball
           )
         ).MarginBottom(10),
         editPanel,
-        ViewCommentHlp.GetCommentsPanel(context.ForumConnection, state, currentUser, topic)
+        ViewJumpHlp.JumpBar(string.Format("/topic/{0}", topic.TopicId),
+          allMessages.Length, forumMessageCountOnPage, pageNumber
+        ).MarginBottom(5),          
+        ViewCommentHlp.GetCommentsPanel(context.ForumConnection, state, currentUser, topic, pageMessages),
+        ViewJumpHlp.JumpBar(string.Format("/topic/{0}", topic.TopicId),
+          allMessages.Length, forumMessageCountOnPage, pageNumber
+        ).MarginTop(10)
       );
     }
 

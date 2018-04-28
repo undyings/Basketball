@@ -10,19 +10,19 @@
   </PropertyGroup>
   <ItemGroup>
     <File Include="bin/Basketball.dll">
-      <publishTime>04/04/2018 17:21:54</publishTime>
+      <publishTime>04/28/2018 16:49:39</publishTime>
     </File>
     <File Include="bin/Commune.Basis.dll">
       <publishTime>03/13/2018 15:41:01</publishTime>
     </File>
     <File Include="bin/Commune.Data.dll">
-      <publishTime>01/05/2018 16:40:03</publishTime>
+      <publishTime>03/21/2018 17:37:04</publishTime>
     </File>
     <File Include="bin/Commune.Diagnostics.dll">
       <publishTime>03/13/2018 15:21:06</publishTime>
     </File>
     <File Include="bin/Commune.Html.dll">
-      <publishTime>03/13/2018 15:41:02</publishTime>
+      <publishTime>04/27/2018 17:10:44</publishTime>
     </File>
     <File Include="bin/Commune.Task.dll">
       <publishTime>03/13/2018 15:41:02</publishTime>
@@ -37,10 +37,10 @@
       <publishTime>07/03/2016 13:35:12</publishTime>
     </File>
     <File Include="bin/NitroBolt.Wui.dll">
-      <publishTime>09/26/2017 15:01:22</publishTime>
+      <publishTime>04/26/2018 14:26:50</publishTime>
     </File>
     <File Include="bin/Shop.Engine.dll">
-      <publishTime>03/13/2018 16:37:01</publishTime>
+      <publishTime>04/24/2018 15:30:54</publishTime>
     </File>
     <File Include="bin/System.Collections.Immutable.dll">
       <publishTime>07/03/2016 13:35:12</publishTime>
@@ -93,8 +93,14 @@
     <File Include="Scripts/NitroBolt.Wui.2.0.14.js">
       <publishTime>09/29/2017 17:28:35</publishTime>
     </File>
+    <File Include="Scripts/NitroBolt.Wui.2.0.41.js">
+      <publishTime>04/20/2018 20:40:21</publishTime>
+    </File>
+    <File Include="Scripts/NitroBolt.Wui.2.0.48.js">
+      <publishTime>04/28/2018 16:44:06</publishTime>
+    </File>
     <File Include="Web.config">
-      <publishTime>01/07/2018 13:34:23</publishTime>
+      <publishTime>04/26/2018 18:09:05</publishTime>
     </File>
   </ItemGroup>
 </Project>

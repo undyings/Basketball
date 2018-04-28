@@ -180,13 +180,26 @@ namespace Basketball
       List<int> tagIds = new List<int>();
       foreach (string tag in tags)
       {
-        string xmlIds = TagType.DisplayName.CreateXmlIds(tag);
-        RowLink tagRow = context.Tags.ObjectByXmlIds.AnyRow(xmlIds);
-        if (tagRow != null)
-        {
-          tagIds.Add(tagRow.Get(ObjectType.ObjectId));
+        if (StringHlp.IsEmpty(tag))
           continue;
+
+        string tagKey = tag.ToLower();
+        {
+          int tagId;
+          if (context.TagIdByKey.TryGetValue(tagKey, out tagId))
+          {
+            tagIds.Add(tagId);
+            continue;
+          }
         }
+
+        string xmlIds = TagType.DisplayName.CreateXmlIds(tag);
+        //RowLink tagRow = context.Tags.ObjectByXmlIds.AnyRow(xmlIds);
+        //if (tagRow != null)
+        //{
+        //  tagIds.Add(tagRow.Get(ObjectType.ObjectId));
+        //  continue;
+        //}
 
         if (editBox == null)
           editBox = new ObjectHeadBox(context.FabricConnection, "1=0");

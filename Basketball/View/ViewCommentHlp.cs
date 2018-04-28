@@ -20,7 +20,7 @@ namespace Basketball
     readonly static HBuilder h = null;
 
     public static IHtmlControl GetCommentsPanel(IDataLayer commentConnection,
-      SiteState state, LightObject currentUser, TopicStorage topic)
+      SiteState state, LightObject currentUser, TopicStorage topic, RowLink[] pageMessages)
     {
       HPanel addPanel = null;
       if (currentUser != null)
@@ -42,27 +42,17 @@ namespace Basketball
 
                 InsertMessageAndUpdate(commentConnection, topic, currentUser, null, content);
 
-                //MessageHlp.InsertMessage(commentConnection, topic.TopicId, currentUser.Id, null, content);
-                //topic.UpdateMessages();
-
-                //context.UpdateLastComments(commentConnection == context.ForumConnection);
-
-                ////hack
-                //if (commentConnection == context.ForumConnection)
-                //{
-                //  context.FabricConnection.GetScalar("",
-                //    "Update light_object Set act_till=@modifyTime Where obj_id=@topicId",
-                //    new DbParameter("modifyTime", DateTime.UtcNow),
-                //    new DbParameter("topicId", topic.TopicId)
-                //  );
-
-                //  int? sectionId = topic.Topic.GetParentId(ForumSectionType.TopicLinks);
-
-                //  if (sectionId != null)
-                //    context.Forum.ForSection(sectionId.Value).Update();
-                //}
-
                 state.BlockHint = "";
+
+                //// hack чтобы на форуме при добавлении комментария показывалась последняя страница
+                //if (topic.Topic.Get(ObjectType.TypeId) == TopicType.Topic)
+                //{
+                //  if (pageMessages.Length == ViewForumHlp.forumMessageCountOnPage)
+                //  {
+
+                //    state.RedirectUrl = "";
+                //  }
+                //}
               }
             ),
             new HElementControl(
@@ -89,10 +79,10 @@ namespace Basketball
 
       Dictionary<int, string> htmlRepresentByMessageId = topic.HtmlRepresentByMessageId;
 
-      RowLink[] allMessages = topic.MessageLink.AllRows;
+      //RowLink[] allMessages = topic.MessageLink.AllRows;
       RowLink bottomMessage = null;
-      if (allMessages.Length > 0)
-        bottomMessage = allMessages[Math.Max(0, allMessages.Length - 4)];
+      if (pageMessages.Length > 0)
+        bottomMessage = pageMessages[Math.Max(0, pageMessages.Length - 4)];
 
       return new HPanel(
         new HAnchor("comments"),
@@ -103,7 +93,7 @@ namespace Basketball
             .BoxSizing().Width(100).Padding(7, 5, 5, 5),
           new HLabel("Сообщение").Block().Padding(7, 5, 5, 5).BorderLeft(Decor.columnBorder)
         ).PositionRelative().Align(null).PaddingLeft(100).Background("#dddddd").FontBold(),
-        new HGrid<RowLink>(topic.MessageLink.AllRows, delegate (RowLink comment)
+        new HGrid<RowLink>(pageMessages, delegate (RowLink comment)
           {
             IHtmlControl commentBlock = ViewCommentHlp.GetCommentBlock(
               commentConnection, state, currentUser, topic, htmlRepresentByMessageId, comment
@@ -256,6 +246,8 @@ namespace Basketball
         );
       }
 
+      string topicType = topic.Topic.Get(ObjectType.TypeId) == NewsType.News ? "news" : "article";
+
       string anchor = string.Format("reply{0}", commentId);
       return new HXPanel(
         new HAnchor(anchor),
@@ -275,7 +267,8 @@ namespace Basketball
           new HPanel(
             new HLabel(localTime.ToString("dd.MM.yyyy HH:mm")).MarginRight(5)
               .MediaTablet(new HStyle().MarginBottom(5)),
-            new HLink(string.Format("/news/{0}#{1}", topic.TopicId, anchor), "#").TextDecoration("none"),
+            new HLink(string.Format("/{0}/{1}#{2}", topicType, topic.TopicId, anchor), "#").TextDecoration("none")
+              .Hide(commentConnection == context.ForumConnection),
             deleteElement
           ).Align(false).FontSize("90%").Color(Decor.minorColor),
           whomBlock,

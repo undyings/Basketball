@@ -116,14 +116,19 @@ namespace Basketball
 
     static IHtmlControl[] GetNewsItems(SiteState state, int[] allNewsIds, int pageNumber)
     {
-      int pageCount = BinaryHlp.RoundUp(allNewsIds.Length, newsCountOnPage);
-      int curPos = pageNumber * newsCountOnPage;
-      if (curPos < 0 || curPos >= allNewsIds.Length)
+      //int pageCount = BinaryHlp.RoundUp(allNewsIds.Length, newsCountOnPage);
+      //int curPos = pageNumber * newsCountOnPage;
+      //if (curPos < 0 || curPos >= allNewsIds.Length)
+      //  return null;
+
+      //int[] newsIds = ArrayHlp.GetRange(allNewsIds, curPos, Math.Min(newsCountOnPage, allNewsIds.Length - curPos));
+
+      int[] newsIds = ViewJumpHlp.GetPageItems(allNewsIds, newsCountOnPage, pageNumber);
+      if (newsIds == null)
         return null;
 
-      int[] newsIds = ArrayHlp.GetRange(allNewsIds, curPos, Math.Min(newsCountOnPage, allNewsIds.Length - curPos));
       LightHead[] newsList = ArrayHlp.Convert(newsIds, delegate (int id)
-      { return new LightHead(context.News, id); }
+        { return new LightHead(context.News, id); }
       );
 
       return GetNewsItems(state, newsList);
@@ -302,7 +307,7 @@ namespace Basketball
         ViewTagHlp.GetViewTagsPanel(context.Tags, topic.Topic),
         editPanel,
         moderatorPanel,
-        ViewCommentHlp.GetCommentsPanel(context.MessageConnection, state, currentUser, topic)
+        ViewCommentHlp.GetCommentsPanel(context.MessageConnection, state, currentUser, topic, topic.MessageLink.AllRows)
       );
     }
 

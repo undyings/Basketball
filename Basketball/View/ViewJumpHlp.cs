@@ -17,6 +17,16 @@ namespace Basketball
       get { return (BasketballContext)SiteContext.Default; }
     }
 
+    public static T[] GetPageItems<T>(T[] allItems, int itemCountOnPage, int pageNumber)
+    {
+      int pageCount = BinaryHlp.RoundUp(allItems.Length, itemCountOnPage);
+      int curPos = pageNumber * itemCountOnPage;
+      if (curPos < 0 || curPos >= allItems.Length)
+        return null;
+
+      return ArrayHlp.GetRange(allItems, curPos, Math.Min(itemCountOnPage, allItems.Length - curPos));
+    }
+
     static string JumpPageUrl(string urlWithoutPageIndex, int pageIndex)
     {
       if (pageIndex == 0)
@@ -26,11 +36,6 @@ namespace Basketball
         return string.Format("{0}&page={1}", urlWithoutPageIndex, pageIndex);
 
       return string.Format("{0}?page={1}", urlWithoutPageIndex, pageIndex);
-
-      //if (pageIndex == 0)
-      //  return string.Format("/{0}", pageKind);
-
-      //return string.Format("/{0}?page={1}", pageKind, pageIndex);
     }
 
     public static IHtmlControl JumpBar(string urlWithoutPageIndex, int allItemCount, int itemCountOnPage, int pageIndex)

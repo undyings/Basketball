@@ -208,7 +208,7 @@ namespace Basketball
           new HLink(UrlHlp.ShopUrl("user", publisherId), publisher?.Get(UserType.Login))
         ).MarginTop(5),
         editPanel,
-        ViewCommentHlp.GetCommentsPanel(context.MessageConnection, state, currentUser, topic)
+        ViewCommentHlp.GetCommentsPanel(context.MessageConnection, state, currentUser, topic, topic.MessageLink.AllRows)
       );
     }
 

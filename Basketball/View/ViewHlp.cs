@@ -93,7 +93,22 @@ namespace Basketball
           {
             TopicStorage topic = context.Forum.TopicsStorages.ForTopic(id ?? 0);
             title = topic.Topic.Get(TopicType.Title);
-            return ViewForumHlp.GetTopicView(state, currentUser, topic);
+
+            int pageNumber = 0;
+            {
+              string pageArg = httpContext.Get("page");
+              int messageCount = topic.MessageLink.AllRows.Length;
+              if (pageArg == "last" && messageCount > 0)
+              {
+                pageNumber = BinaryHlp.RoundUp(messageCount, ViewForumHlp.forumMessageCountOnPage) - 1;
+              }
+              else
+              {
+                pageNumber = ConvertHlp.ToInt(pageArg) ?? 0;
+              }
+            }
+
+            return ViewForumHlp.GetTopicView(state, currentUser, topic, pageNumber);
           }
         case "tags":
           {
@@ -289,6 +304,37 @@ namespace Basketball
           )
         )
       ).EditContainer("registerData");
+    }
+
+    public static IHtmlControl GetFooterView(bool isMain)
+    {
+      return new HPanel(
+        new HPanel(
+          new HLink("#top",
+            new HLabel("Наверх").FontBold(),
+            new HBefore().ContentIcon(10, 15).BackgroundImage(UrlHlp.ImageUrl("footer_upstair.png"))
+            .VAlign(-3).MarginRight(5)
+          ),
+          new HPanel(
+            new HLabel("Создание сайта —").MarginRight(5).Color("#646565"),
+            new HLink("http://webkrokus.ru", "КРОКУС").TargetBlank()
+          ).PositionAbsolute().Top(0).Right(10)
+            .MediaSmartfon(new HStyle().Right(5))
+        ).PositionRelative().WidthLimit("", isMain ? "930px" : "1020px")
+      ).Align(true).Background(Decor.panelBackground)
+        .MarginLeft(12).MarginRight(12).PaddingLeft(25).PaddingBottom(26)
+        .MediaTablet(new HStyle().PaddingLeft(10).MarginLeft(0).MarginRight(0));
+
+      //return new HPanel(
+      //  new HPanel(
+      //    new HLabel("Создание сайта –").Block(),
+      //    new HPanel(
+      //      new HLabel("web-студия").MarginRight(5),
+      //      new HLabel("Крокус")
+      //    )
+      //  ).InlineBlock().Align(true).MarginTop(10).MarginRight(30)
+      //).Align(false).Height(60).PositionRelative().Background(Decor.menuBackground)
+      //.Color(Decor.menuColor).LineHeight(16);
     }
   }
 }

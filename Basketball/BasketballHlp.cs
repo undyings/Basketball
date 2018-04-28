@@ -21,17 +21,26 @@ namespace Basketball
         if (StringHlp.IsEmpty(text))
           return "";
 
-        int endIndex1 = text.IndexOf("</p>");
-        int endIndex2 = text.IndexOf("</h3>");
+        int[] endIndices = new int[] {
+          text.IndexOf("</p>"), text.IndexOf("</h3>"), text.IndexOf("<br")
+        };
 
-        if (endIndex1 < 0 && endIndex2 < 0)
+        int endIndex = -1;
+        foreach (int index in endIndices)
+        {
+          if (index < 0)
+            continue;
+          if (endIndex < 0 || index < endIndex)
+            endIndex = index;
+        }
+
+        //if (topic.Id == 102001)
+        //{
+        //  Logger.AddMessage("EndIndices: {0}, {1}, {2}, {3}", text, endIndices[0], endIndices[1], endIndices[2]);
+        //}
+
+        if (endIndex < 0)
           return "";
-
-        int endIndex;
-        if (endIndex1 < 0 || endIndex2 < 0)
-          endIndex = Math.Max(endIndex1, endIndex2);
-        else
-          endIndex = Math.Min(endIndex1, endIndex2);
 
         StringBuilder builder = new StringBuilder();
         string rawDescription = text.Substring(0, endIndex);
@@ -60,7 +69,10 @@ namespace Basketball
           continue;
         }
 
-        return builder.ToString().Replace("&laquo;", "«").Replace("&raquo;", "»").Replace("&quot;", "'");
+        string description = builder.ToString();
+
+        return description.Replace("&laquo;", "«").Replace("&raquo;", "»")
+          .Replace("&quot;", "").Replace("&nbsp;", " ");
       }
       catch (Exception ex)
       {

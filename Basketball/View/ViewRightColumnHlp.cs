@@ -67,13 +67,13 @@ namespace Basketball
             if (topic == null || topic.Topic == null)
               return new HPanel();
 
-            string url = UrlHlp.ShopUrl("topic", topic?.TopicId);
+            string url = string.Format("{0}?page=last", UrlHlp.ShopUrl("topic", topic?.TopicId));
 
             int userId = comment.Get(MessageType.UserId);
             LightObject user = context.UserStorage.FindUser(userId);
 
             DateTime localTime = comment.Get(MessageType.CreateTime).ToLocalTime();
-            string replyUrl = string.Format("{0}#reply{1}", url, comment.Get(MessageType.Id));
+            string replyUrl = string.Format("{0}#bottom", url);
 
             return new HPanel(
               new HPanel(

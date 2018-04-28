@@ -6998,3 +6998,4969 @@ Update light_link Set child_id = 100651 Where child_id = 101371;</Text>
   <Text>Process: id = 7280 cpu = 00:00:19.6406250, page = 84mb peak = 87mb, virtual = 765mb peak = 770mb, topics = 23</Text>
 </Message>
 
+<!--================================================================================-->
+
+<LogStarting time='04.04.2018 18:07:36.681'/>
+
+<Message time='04.04.2018 18:07:37.038'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='04.04.2018 18:07:37.308'>
+  <Text>Выполняем стартовый скрипт: Update light_object Set obj_id = 100651 Where obj_id = 101371;
+Update light_link Set child_id = 100651 Where child_id = 101371;</Text>
+</Message>
+
+<Message time='04.04.2018 18:07:37.377'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='04.04.2018 18:07:37.407'>
+  <Text>Process: id = 7280 cpu = 00:00:20.5781250, page = 81mb peak = 87mb, virtual = 764mb peak = 770mb, topics = 0</Text>
+</Message>
+
+<Message time='04.04.2018 18:10:37.709'>
+  <Text>sitemap.xml успешно обновлен</Text>
+</Message>
+
+<Message time='04.04.2018 19:07:37.406'>
+  <Text>Process: id = 7280 cpu = 00:00:21.8281250, page = 80mb peak = 89mb, virtual = 763mb peak = 770mb, topics = 10</Text>
+</Message>
+
+<Message time='04.04.2018 20:07:37.404'>
+  <Text>Process: id = 7280 cpu = 00:00:24.9218750, page = 80mb peak = 89mb, virtual = 763mb peak = 770mb, topics = 10</Text>
+</Message>
+
+<Message time='04.04.2018 21:07:37.404'>
+  <Text>Process: id = 7280 cpu = 00:00:25.2812500, page = 80mb peak = 89mb, virtual = 764mb peak = 770mb, topics = 10</Text>
+</Message>
+
+<Message time='04.04.2018 22:07:37.403'>
+  <Text>Process: id = 7280 cpu = 00:00:25.2812500, page = 80mb peak = 89mb, virtual = 764mb peak = 770mb, topics = 10</Text>
+</Message>
+
+<Message time='04.04.2018 23:07:37.406'>
+  <Text>Process: id = 7280 cpu = 00:00:25.2968750, page = 80mb peak = 89mb, virtual = 763mb peak = 770mb, topics = 10</Text>
+</Message>
+
+<Message time='05.04.2018 00:07:37.409'>
+  <Text>Process: id = 7280 cpu = 00:00:25.3125000, page = 80mb peak = 89mb, virtual = 763mb peak = 770mb, topics = 10</Text>
+</Message>
+
+<Message time='05.04.2018 01:07:37.412'>
+  <Text>Process: id = 7280 cpu = 00:00:25.3125000, page = 80mb peak = 89mb, virtual = 764mb peak = 770mb, topics = 10</Text>
+</Message>
+
+<Message time='05.04.2018 10:34:50.259'>
+  <Text>Process: id = 7280 cpu = 00:00:25.3125000, page = 80mb peak = 89mb, virtual = 764mb peak = 770mb, topics = 10</Text>
+</Message>
+
+<Message time='05.04.2018 11:34:50.330'>
+  <Text>Process: id = 7280 cpu = 00:00:25.7187500, page = 80mb peak = 89mb, virtual = 764mb peak = 770mb, topics = 10</Text>
+</Message>
+
+<Message time='05.04.2018 12:34:50.258'>
+  <Text>Process: id = 7280 cpu = 00:00:26.1093750, page = 80mb peak = 89mb, virtual = 764mb peak = 770mb, topics = 10</Text>
+</Message>
+
+<Message time='05.04.2018 13:34:50.260'>
+  <Text>Process: id = 7280 cpu = 00:00:26.1406250, page = 80mb peak = 89mb, virtual = 764mb peak = 770mb, topics = 10</Text>
+</Message>
+
+<Message time='05.04.2018 14:34:50.275'>
+  <Text>Process: id = 7280 cpu = 00:00:26.1406250, page = 80mb peak = 89mb, virtual = 765mb peak = 770mb, topics = 10</Text>
+</Message>
+
+<Message time='05.04.2018 15:34:50.300'>
+  <Text>Process: id = 7280 cpu = 00:00:26.2656250, page = 80mb peak = 89mb, virtual = 764mb peak = 770mb, topics = 10</Text>
+</Message>
+
+<Message time='05.04.2018 16:34:50.261'>
+  <Text>Process: id = 7280 cpu = 00:00:26.3593750, page = 80mb peak = 89mb, virtual = 764mb peak = 770mb, topics = 10</Text>
+</Message>
+
+<Message time='05.04.2018 17:34:50.267'>
+  <Text>Process: id = 7280 cpu = 00:00:26.4531250, page = 80mb peak = 89mb, virtual = 765mb peak = 770mb, topics = 10</Text>
+</Message>
+
+<Message time='05.04.2018 18:34:50.261'>
+  <Text>Process: id = 7280 cpu = 00:00:26.4687500, page = 80mb peak = 89mb, virtual = 765mb peak = 770mb, topics = 10</Text>
+</Message>
+
+<Message time='05.04.2018 19:34:50.261'>
+  <Text>Process: id = 7280 cpu = 00:00:26.5000000, page = 80mb peak = 89mb, virtual = 764mb peak = 770mb, topics = 10</Text>
+</Message>
+
+<Message time='05.04.2018 20:34:50.261'>
+  <Text>Process: id = 7280 cpu = 00:00:26.5468750, page = 80mb peak = 89mb, virtual = 764mb peak = 770mb, topics = 10</Text>
+</Message>
+
+<Message time='05.04.2018 20:38:00.717'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='05.04.2018 20:38:00.848'>
+  <Text>Process: id = 7280 cpu = 00:00:26.5625000, page = 80mb peak = 89mb, virtual = 766mb peak = 770mb, topics = 10</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='05.04.2018 20:38:21.395'/>
+
+<Message time='05.04.2018 20:38:25.238'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='05.04.2018 20:38:26.273'>
+  <Text>Выполняем стартовый скрипт: Update light_object Set obj_id = 100651 Where obj_id = 101371;
+Update light_link Set child_id = 100651 Where child_id = 101371;</Text>
+</Message>
+
+<Message time='05.04.2018 20:38:26.490'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='05.04.2018 20:38:26.582'>
+  <Text>Process: id = 7280 cpu = 00:00:27.7968750, page = 76mb peak = 89mb, virtual = 768mb peak = 770mb, topics = 0</Text>
+</Message>
+
+<Message time='05.04.2018 20:41:26.487'>
+  <Text>sitemap.xml успешно обновлен</Text>
+</Message>
+
+<Message time='05.04.2018 20:44:48.787'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='05.04.2018 20:44:48.789'>
+  <Text>Process: id = 7280 cpu = 00:00:29.1562500, page = 81mb peak = 89mb, virtual = 769mb peak = 770mb, topics = 23</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='05.04.2018 20:44:53.708'/>
+
+<Message time='05.04.2018 20:44:55.175'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='05.04.2018 20:44:55.349'>
+  <Text>Выполняем стартовый скрипт: Update light_object Set obj_id = 100651 Where obj_id = 101371;
+Update light_link Set child_id = 100651 Where child_id = 101371;</Text>
+</Message>
+
+<Message time='05.04.2018 20:44:55.390'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='05.04.2018 20:44:55.401'>
+  <Text>Process: id = 7280 cpu = 00:00:30.4687500, page = 81mb peak = 89mb, virtual = 771mb peak = 772mb, topics = 0</Text>
+</Message>
+
+<Message time='05.04.2018 20:45:36.995'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='05.04.2018 20:45:36.997'>
+  <Text>Process: id = 7280 cpu = 00:00:31.8750000, page = 91mb peak = 92mb, virtual = 772mb peak = 773mb, topics = 23</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='05.04.2018 20:45:40.177'/>
+
+<Message time='05.04.2018 20:45:40.874'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='05.04.2018 20:45:41.122'>
+  <Text>Выполняем стартовый скрипт: Update light_object Set obj_id = 100651 Where obj_id = 101371;
+Update light_link Set child_id = 100651 Where child_id = 101371;</Text>
+</Message>
+
+<Message time='05.04.2018 20:45:41.233'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='05.04.2018 20:45:41.273'>
+  <Text>Process: id = 7280 cpu = 00:00:33.4218750, page = 92mb peak = 92mb, virtual = 775mb peak = 776mb, topics = 0</Text>
+</Message>
+
+<Message time='05.04.2018 20:46:24.846'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='05.04.2018 20:46:24.849'>
+  <Text>Process: id = 7280 cpu = 00:00:35.1875000, page = 103mb peak = 104mb, virtual = 775mb peak = 777mb, topics = 23</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='05.04.2018 20:46:27.388'/>
+
+<Message time='05.04.2018 20:46:28.068'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='05.04.2018 20:46:28.273'>
+  <Text>Выполняем стартовый скрипт: Update light_object Set obj_id = 100651 Where obj_id = 101371;
+Update light_link Set child_id = 100651 Where child_id = 101371;</Text>
+</Message>
+
+<Message time='05.04.2018 20:46:28.332'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='05.04.2018 20:46:28.344'>
+  <Text>Process: id = 7280 cpu = 00:00:36.6562500, page = 102mb peak = 104mb, virtual = 778mb peak = 779mb, topics = 0</Text>
+</Message>
+
+<Message time='05.04.2018 20:47:18.575'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='05.04.2018 20:47:18.578'>
+  <Text>Process: id = 7280 cpu = 00:00:38.3906250, page = 110mb peak = 110mb, virtual = 778mb peak = 780mb, topics = 23</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='05.04.2018 20:47:21.411'/>
+
+<Message time='05.04.2018 20:47:22.070'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='05.04.2018 20:47:22.316'>
+  <Text>Выполняем стартовый скрипт: Update light_object Set obj_id = 100651 Where obj_id = 101371;
+Update light_link Set child_id = 100651 Where child_id = 101371;</Text>
+</Message>
+
+<Message time='05.04.2018 20:47:22.397'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='05.04.2018 20:47:22.411'>
+  <Text>Process: id = 7280 cpu = 00:00:39.7968750, page = 111mb peak = 111mb, virtual = 781mb peak = 782mb, topics = 0</Text>
+</Message>
+
+<Message time='05.04.2018 20:47:41.254'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='05.04.2018 20:47:41.256'>
+  <Text>Process: id = 7280 cpu = 00:00:41.5000000, page = 124mb peak = 125mb, virtual = 781mb peak = 782mb, topics = 23</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='05.04.2018 20:47:43.856'/>
+
+<Message time='05.04.2018 20:47:44.477'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='05.04.2018 20:47:44.701'>
+  <Text>Выполняем стартовый скрипт: Update light_object Set obj_id = 100651 Where obj_id = 101371;
+Update light_link Set child_id = 100651 Where child_id = 101371;</Text>
+</Message>
+
+<Message time='05.04.2018 20:47:44.747'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='05.04.2018 20:47:44.771'>
+  <Text>Process: id = 7280 cpu = 00:00:42.8281250, page = 120mb peak = 127mb, virtual = 784mb peak = 784mb, topics = 0</Text>
+</Message>
+
+<Message time='05.04.2018 20:47:59.314'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='05.04.2018 20:47:59.316'>
+  <Text>Process: id = 7280 cpu = 00:00:44.5156250, page = 108mb peak = 127mb, virtual = 774mb peak = 793mb, topics = 23</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='05.04.2018 20:48:02.891'/>
+
+<Message time='05.04.2018 20:48:03.521'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='05.04.2018 20:48:03.755'>
+  <Text>Выполняем стартовый скрипт: Update light_object Set obj_id = 100651 Where obj_id = 101371;
+Update light_link Set child_id = 100651 Where child_id = 101371;</Text>
+</Message>
+
+<Message time='05.04.2018 20:48:03.806'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='05.04.2018 20:48:03.825'>
+  <Text>Process: id = 7280 cpu = 00:00:45.9375000, page = 103mb peak = 127mb, virtual = 776mb peak = 793mb, topics = 0</Text>
+</Message>
+
+<Message time='05.04.2018 20:48:14.540'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='05.04.2018 20:48:14.542'>
+  <Text>Process: id = 7280 cpu = 00:00:47.5937500, page = 109mb peak = 127mb, virtual = 776mb peak = 793mb, topics = 23</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='05.04.2018 20:48:17.133'/>
+
+<Message time='05.04.2018 20:48:17.770'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='05.04.2018 20:48:17.995'>
+  <Text>Выполняем стартовый скрипт: Update light_object Set obj_id = 100651 Where obj_id = 101371;
+Update light_link Set child_id = 100651 Where child_id = 101371;</Text>
+</Message>
+
+<Message time='05.04.2018 20:48:18.041'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='05.04.2018 20:48:18.061'>
+  <Text>Process: id = 7280 cpu = 00:00:48.8906250, page = 107mb peak = 127mb, virtual = 779mb peak = 793mb, topics = 0</Text>
+</Message>
+
+<Message time='05.04.2018 20:48:36.723'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='05.04.2018 20:48:36.726'>
+  <Text>Process: id = 7280 cpu = 00:00:50.6250000, page = 114mb peak = 127mb, virtual = 780mb peak = 793mb, topics = 23</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='05.04.2018 20:48:39.049'/>
+
+<Message time='05.04.2018 20:48:39.705'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='05.04.2018 20:48:39.919'>
+  <Text>Выполняем стартовый скрипт: Update light_object Set obj_id = 100651 Where obj_id = 101371;
+Update light_link Set child_id = 100651 Where child_id = 101371;</Text>
+</Message>
+
+<Message time='05.04.2018 20:48:39.971'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='05.04.2018 20:48:39.982'>
+  <Text>Process: id = 7280 cpu = 00:00:52.0781250, page = 113mb peak = 127mb, virtual = 783mb peak = 793mb, topics = 0</Text>
+</Message>
+
+<Message time='05.04.2018 20:49:28.153'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='05.04.2018 20:49:28.156'>
+  <Text>Process: id = 7280 cpu = 00:00:53.9375000, page = 118mb peak = 127mb, virtual = 783mb peak = 793mb, topics = 23</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='05.04.2018 20:49:30.192'/>
+
+<Message time='05.04.2018 20:49:30.874'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='05.04.2018 20:49:31.079'>
+  <Text>Выполняем стартовый скрипт: Update light_object Set obj_id = 100651 Where obj_id = 101371;
+Update light_link Set child_id = 100651 Where child_id = 101371;</Text>
+</Message>
+
+<Message time='05.04.2018 20:49:31.130'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='05.04.2018 20:49:31.141'>
+  <Text>Process: id = 7280 cpu = 00:00:55.3281250, page = 118mb peak = 127mb, virtual = 786mb peak = 793mb, topics = 0</Text>
+</Message>
+
+<Message time='05.04.2018 20:49:43.169'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='05.04.2018 20:49:43.172'>
+  <Text>Process: id = 7280 cpu = 00:00:57.0781250, page = 126mb peak = 127mb, virtual = 785mb peak = 793mb, topics = 23</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='05.04.2018 20:49:45.713'/>
+
+<Message time='05.04.2018 20:49:46.391'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='05.04.2018 20:49:46.622'>
+  <Text>Выполняем стартовый скрипт: Update light_object Set obj_id = 100651 Where obj_id = 101371;
+Update light_link Set child_id = 100651 Where child_id = 101371;</Text>
+</Message>
+
+<Message time='05.04.2018 20:49:46.679'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='05.04.2018 20:49:46.696'>
+  <Text>Process: id = 7280 cpu = 00:00:58.6093750, page = 126mb peak = 127mb, virtual = 788mb peak = 793mb, topics = 0</Text>
+</Message>
+
+<Message time='05.04.2018 20:49:58.316'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='05.04.2018 20:49:58.319'>
+  <Text>Process: id = 7280 cpu = 00:01:00.4843750, page = 111mb peak = 131mb, virtual = 774mb peak = 793mb, topics = 23</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='05.04.2018 20:50:00.896'/>
+
+<Message time='05.04.2018 20:50:01.522'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='05.04.2018 20:50:01.748'>
+  <Text>Выполняем стартовый скрипт: Update light_object Set obj_id = 100651 Where obj_id = 101371;
+Update light_link Set child_id = 100651 Where child_id = 101371;</Text>
+</Message>
+
+<Message time='05.04.2018 20:50:01.804'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='05.04.2018 20:50:01.816'>
+  <Text>Process: id = 7280 cpu = 00:01:02.0156250, page = 103mb peak = 131mb, virtual = 777mb peak = 793mb, topics = 0</Text>
+</Message>
+
+<Message time='05.04.2018 20:56:18.765'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='05.04.2018 20:56:18.768'>
+  <Text>Process: id = 7280 cpu = 00:01:03.7968750, page = 109mb peak = 131mb, virtual = 776mb peak = 793mb, topics = 23</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='05.04.2018 20:56:21.351'/>
+
+<Message time='05.04.2018 20:56:22.143'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='05.04.2018 20:56:22.369'>
+  <Text>Выполняем стартовый скрипт: Update light_object Set obj_id = 100651 Where obj_id = 101371;
+Update light_link Set child_id = 100651 Where child_id = 101371;</Text>
+</Message>
+
+<Message time='05.04.2018 20:56:22.430'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='05.04.2018 20:56:22.448'>
+  <Text>Process: id = 7280 cpu = 00:01:05.4218750, page = 108mb peak = 131mb, virtual = 779mb peak = 793mb, topics = 0</Text>
+</Message>
+
+<Message time='05.04.2018 20:57:20.614'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='05.04.2018 20:57:20.616'>
+  <Text>Process: id = 7280 cpu = 00:01:06.9843750, page = 113mb peak = 131mb, virtual = 780mb peak = 793mb, topics = 23</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='05.04.2018 20:57:22.774'/>
+
+<Message time='05.04.2018 20:57:23.576'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='05.04.2018 20:57:23.803'>
+  <Text>Выполняем стартовый скрипт: Update light_object Set obj_id = 100651 Where obj_id = 101371;
+Update light_link Set child_id = 100651 Where child_id = 101371;</Text>
+</Message>
+
+<Message time='05.04.2018 20:57:23.867'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='05.04.2018 20:57:23.885'>
+  <Text>Process: id = 7280 cpu = 00:01:08.6718750, page = 113mb peak = 131mb, virtual = 783mb peak = 793mb, topics = 0</Text>
+</Message>
+
+<Message time='05.04.2018 20:59:01.046'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='05.04.2018 20:59:01.048'>
+  <Text>Process: id = 7280 cpu = 00:01:10.4531250, page = 110mb peak = 131mb, virtual = 775mb peak = 793mb, topics = 23</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='05.04.2018 20:59:03.709'/>
+
+<Message time='05.04.2018 20:59:04.391'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='05.04.2018 20:59:04.602'>
+  <Text>Выполняем стартовый скрипт: Update light_object Set obj_id = 100651 Where obj_id = 101371;
+Update light_link Set child_id = 100651 Where child_id = 101371;</Text>
+</Message>
+
+<Message time='05.04.2018 20:59:04.796'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='05.04.2018 20:59:04.809'>
+  <Text>Process: id = 7280 cpu = 00:01:12.0468750, page = 104mb peak = 131mb, virtual = 777mb peak = 793mb, topics = 0</Text>
+</Message>
+
+<Message time='05.04.2018 20:59:50.658'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='05.04.2018 20:59:50.661'>
+  <Text>Process: id = 7280 cpu = 00:01:13.5000000, page = 106mb peak = 131mb, virtual = 773mb peak = 793mb, topics = 23</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='05.04.2018 20:59:53.205'/>
+
+<Message time='05.04.2018 20:59:53.885'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='05.04.2018 20:59:54.105'>
+  <Text>Выполняем стартовый скрипт: Update light_object Set obj_id = 100651 Where obj_id = 101371;
+Update light_link Set child_id = 100651 Where child_id = 101371;</Text>
+</Message>
+
+<Message time='05.04.2018 20:59:54.164'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='05.04.2018 20:59:54.182'>
+  <Text>Process: id = 7280 cpu = 00:01:15.0312500, page = 106mb peak = 131mb, virtual = 776mb peak = 793mb, topics = 0</Text>
+</Message>
+
+<Message time='05.04.2018 21:00:15.711'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='05.04.2018 21:00:15.713'>
+  <Text>Process: id = 7280 cpu = 00:01:16.7656250, page = 111mb peak = 131mb, virtual = 777mb peak = 793mb, topics = 23</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='05.04.2018 21:00:17.540'/>
+
+<Message time='05.04.2018 21:00:18.366'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='05.04.2018 21:00:18.578'>
+  <Text>Выполняем стартовый скрипт: Update light_object Set obj_id = 100651 Where obj_id = 101371;
+Update light_link Set child_id = 100651 Where child_id = 101371;</Text>
+</Message>
+
+<Message time='05.04.2018 21:00:18.625'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='05.04.2018 21:00:18.637'>
+  <Text>Process: id = 7280 cpu = 00:01:18.3437500, page = 109mb peak = 131mb, virtual = 780mb peak = 793mb, topics = 0</Text>
+</Message>
+
+<Message time='05.04.2018 21:01:08.009'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='05.04.2018 21:01:08.011'>
+  <Text>Process: id = 7280 cpu = 00:01:20.1093750, page = 115mb peak = 131mb, virtual = 780mb peak = 793mb, topics = 23</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='05.04.2018 21:01:10.269'/>
+
+<Message time='05.04.2018 21:01:11.002'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='05.04.2018 21:01:11.221'>
+  <Text>Выполняем стартовый скрипт: Update light_object Set obj_id = 100651 Where obj_id = 101371;
+Update light_link Set child_id = 100651 Where child_id = 101371;</Text>
+</Message>
+
+<Message time='05.04.2018 21:01:11.287'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='05.04.2018 21:01:11.308'>
+  <Text>Process: id = 7280 cpu = 00:01:21.8281250, page = 115mb peak = 131mb, virtual = 783mb peak = 793mb, topics = 0</Text>
+</Message>
+
+<Message time='05.04.2018 21:02:08.610'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='05.04.2018 21:02:08.612'>
+  <Text>Process: id = 7280 cpu = 00:01:23.5625000, page = 120mb peak = 131mb, virtual = 791mb peak = 793mb, topics = 23</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='05.04.2018 21:02:10.559'/>
+
+<Message time='05.04.2018 21:02:11.369'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='05.04.2018 21:02:11.583'>
+  <Text>Выполняем стартовый скрипт: Update light_object Set obj_id = 100651 Where obj_id = 101371;
+Update light_link Set child_id = 100651 Where child_id = 101371;</Text>
+</Message>
+
+<Message time='05.04.2018 21:02:11.642'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='05.04.2018 21:02:11.652'>
+  <Text>Process: id = 7280 cpu = 00:01:25.0937500, page = 119mb peak = 131mb, virtual = 794mb peak = 795mb, topics = 0</Text>
+</Message>
+
+<Message time='05.04.2018 21:02:35.977'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='05.04.2018 21:02:35.979'>
+  <Text>Process: id = 7280 cpu = 00:01:26.8437500, page = 126mb peak = 131mb, virtual = 795mb peak = 796mb, topics = 23</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='05.04.2018 21:02:37.955'/>
+
+<Message time='05.04.2018 21:02:38.724'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='05.04.2018 21:02:38.946'>
+  <Text>Выполняем стартовый скрипт: Update light_object Set obj_id = 100651 Where obj_id = 101371;
+Update light_link Set child_id = 100651 Where child_id = 101371;</Text>
+</Message>
+
+<Message time='05.04.2018 21:02:39.000'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='05.04.2018 21:02:39.016'>
+  <Text>Process: id = 7280 cpu = 00:01:28.5781250, page = 103mb peak = 131mb, virtual = 785mb peak = 796mb, topics = 0</Text>
+</Message>
+
+<Message time='05.04.2018 21:04:10.558'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='05.04.2018 21:04:10.560'>
+  <Text>Process: id = 7280 cpu = 00:01:30.6562500, page = 110mb peak = 131mb, virtual = 786mb peak = 796mb, topics = 23</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='05.04.2018 21:04:13.696'/>
+
+<Message time='05.04.2018 21:04:14.368'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='05.04.2018 21:04:14.592'>
+  <Text>Выполняем стартовый скрипт: Update light_object Set obj_id = 100651 Where obj_id = 101371;
+Update light_link Set child_id = 100651 Where child_id = 101371;</Text>
+</Message>
+
+<Message time='05.04.2018 21:04:14.646'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='05.04.2018 21:04:14.679'>
+  <Text>Process: id = 7280 cpu = 00:01:32.2656250, page = 109mb peak = 131mb, virtual = 788mb peak = 796mb, topics = 0</Text>
+</Message>
+
+<Message time='05.04.2018 21:08:33.980'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='05.04.2018 21:08:33.982'>
+  <Text>Process: id = 7280 cpu = 00:01:34.0937500, page = 108mb peak = 131mb, virtual = 783mb peak = 796mb, topics = 23</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='05.04.2018 21:08:38.675'/>
+
+<Message time='05.04.2018 21:08:39.424'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='05.04.2018 21:08:39.649'>
+  <Text>Выполняем стартовый скрипт: Update light_object Set obj_id = 100651 Where obj_id = 101371;
+Update light_link Set child_id = 100651 Where child_id = 101371;</Text>
+</Message>
+
+<Message time='05.04.2018 21:08:39.713'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='05.04.2018 21:08:39.728'>
+  <Text>Process: id = 7280 cpu = 00:01:35.7031250, page = 103mb peak = 131mb, virtual = 785mb peak = 796mb, topics = 0</Text>
+</Message>
+
+<Message time='05.04.2018 21:08:53.562'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='05.04.2018 21:08:53.564'>
+  <Text>Process: id = 7280 cpu = 00:01:37.4062500, page = 109mb peak = 131mb, virtual = 785mb peak = 796mb, topics = 23</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='05.04.2018 21:08:55.848'/>
+
+<Message time='05.04.2018 21:08:56.593'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='05.04.2018 21:08:56.856'>
+  <Text>Выполняем стартовый скрипт: Update light_object Set obj_id = 100651 Where obj_id = 101371;
+Update light_link Set child_id = 100651 Where child_id = 101371;</Text>
+</Message>
+
+<Message time='05.04.2018 21:08:56.925'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='05.04.2018 21:08:56.937'>
+  <Text>Process: id = 7280 cpu = 00:01:39.0625000, page = 108mb peak = 131mb, virtual = 788mb peak = 796mb, topics = 0</Text>
+</Message>
+
+<Message time='05.04.2018 21:14:34.623'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='05.04.2018 21:14:34.625'>
+  <Text>Process: id = 7280 cpu = 00:01:41.0156250, page = 99mb peak = 131mb, virtual = 783mb peak = 796mb, topics = 23</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='05.04.2018 21:14:37.306'/>
+
+<Message time='05.04.2018 21:14:38.085'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='05.04.2018 21:14:38.309'>
+  <Text>Выполняем стартовый скрипт: Update light_object Set obj_id = 100651 Where obj_id = 101371;
+Update light_link Set child_id = 100651 Where child_id = 101371;</Text>
+</Message>
+
+<Message time='05.04.2018 21:14:38.370'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='05.04.2018 21:14:38.381'>
+  <Text>Process: id = 7280 cpu = 00:01:42.6250000, page = 95mb peak = 131mb, virtual = 785mb peak = 796mb, topics = 0</Text>
+</Message>
+
+<Message time='05.04.2018 21:14:57.841'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='05.04.2018 21:14:57.843'>
+  <Text>Process: id = 7280 cpu = 00:01:44.2812500, page = 100mb peak = 131mb, virtual = 785mb peak = 796mb, topics = 23</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='05.04.2018 21:14:59.795'/>
+
+<Message time='05.04.2018 21:15:00.661'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='05.04.2018 21:15:00.856'>
+  <Text>Выполняем стартовый скрипт: Update light_object Set obj_id = 100651 Where obj_id = 101371;
+Update light_link Set child_id = 100651 Where child_id = 101371;</Text>
+</Message>
+
+<Message time='05.04.2018 21:15:00.911'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='05.04.2018 21:15:00.922'>
+  <Text>Process: id = 7280 cpu = 00:01:45.7968750, page = 99mb peak = 131mb, virtual = 788mb peak = 796mb, topics = 0</Text>
+</Message>
+
+<Message time='05.04.2018 21:17:14.241'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='05.04.2018 21:17:14.243'>
+  <Text>Process: id = 7280 cpu = 00:01:47.5468750, page = 105mb peak = 131mb, virtual = 789mb peak = 796mb, topics = 23</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='05.04.2018 21:17:16.058'/>
+
+<Message time='05.04.2018 21:17:16.732'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='05.04.2018 21:17:16.999'>
+  <Text>Выполняем стартовый скрипт: Update light_object Set obj_id = 100651 Where obj_id = 101371;
+Update light_link Set child_id = 100651 Where child_id = 101371;</Text>
+</Message>
+
+<Message time='05.04.2018 21:17:17.332'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='05.04.2018 21:17:17.368'>
+  <Text>Process: id = 7280 cpu = 00:01:49.2500000, page = 105mb peak = 131mb, virtual = 792mb peak = 796mb, topics = 0</Text>
+</Message>
+
+<Message time='05.04.2018 21:18:49.616'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='05.04.2018 21:18:49.618'>
+  <Text>Process: id = 7280 cpu = 00:01:50.7187500, page = 119mb peak = 131mb, virtual = 792mb peak = 796mb, topics = 23</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='05.04.2018 21:18:51.766'/>
+
+<Message time='05.04.2018 21:18:52.556'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='05.04.2018 21:18:52.801'>
+  <Text>Выполняем стартовый скрипт: Update light_object Set obj_id = 100651 Where obj_id = 101371;
+Update light_link Set child_id = 100651 Where child_id = 101371;</Text>
+</Message>
+
+<Message time='05.04.2018 21:18:52.865'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='05.04.2018 21:18:52.876'>
+  <Text>Process: id = 7280 cpu = 00:01:52.3125000, page = 120mb peak = 131mb, virtual = 795mb peak = 796mb, topics = 0</Text>
+</Message>
+
+<Message time='05.04.2018 21:19:22.011'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='05.04.2018 21:19:22.013'>
+  <Text>Process: id = 7280 cpu = 00:01:53.9531250, page = 108mb peak = 131mb, virtual = 783mb peak = 796mb, topics = 23</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='05.04.2018 21:19:23.844'/>
+
+<Message time='05.04.2018 21:19:24.617'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='05.04.2018 21:19:24.856'>
+  <Text>Выполняем стартовый скрипт: Update light_object Set obj_id = 100651 Where obj_id = 101371;
+Update light_link Set child_id = 100651 Where child_id = 101371;</Text>
+</Message>
+
+<Message time='05.04.2018 21:19:24.920'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='05.04.2018 21:19:24.938'>
+  <Text>Process: id = 7280 cpu = 00:01:55.4687500, page = 107mb peak = 131mb, virtual = 785mb peak = 796mb, topics = 0</Text>
+</Message>
+
+<Message time='05.04.2018 21:20:06.589'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='05.04.2018 21:20:06.605'>
+  <Text>Process: id = 7280 cpu = 00:01:57.1718750, page = 111mb peak = 131mb, virtual = 786mb peak = 796mb, topics = 23</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='05.04.2018 21:20:08.413'/>
+
+<Message time='05.04.2018 21:20:09.163'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='05.04.2018 21:20:09.437'>
+  <Text>Выполняем стартовый скрипт: Update light_object Set obj_id = 100651 Where obj_id = 101371;
+Update light_link Set child_id = 100651 Where child_id = 101371;</Text>
+</Message>
+
+<Message time='05.04.2018 21:20:09.514'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='05.04.2018 21:20:09.531'>
+  <Text>Process: id = 7280 cpu = 00:01:58.7343750, page = 111mb peak = 131mb, virtual = 789mb peak = 796mb, topics = 0</Text>
+</Message>
+
+<Message time='05.04.2018 21:20:42.152'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='05.04.2018 21:20:42.152'>
+  <Text>Process: id = 7280 cpu = 00:02:00.3906250, page = 116mb peak = 131mb, virtual = 789mb peak = 796mb, topics = 23</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='05.04.2018 21:20:43.960'/>
+
+<Message time='05.04.2018 21:20:44.590'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='05.04.2018 21:20:44.848'>
+  <Text>Выполняем стартовый скрипт: Update light_object Set obj_id = 100651 Where obj_id = 101371;
+Update light_link Set child_id = 100651 Where child_id = 101371;</Text>
+</Message>
+
+<Message time='05.04.2018 21:20:45.030'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='05.04.2018 21:20:45.050'>
+  <Text>Process: id = 7280 cpu = 00:02:01.9531250, page = 116mb peak = 131mb, virtual = 792mb peak = 796mb, topics = 0</Text>
+</Message>
+
+<Message time='05.04.2018 21:22:59.062'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='05.04.2018 21:22:59.062'>
+  <Text>Process: id = 7280 cpu = 00:02:03.8281250, page = 122mb peak = 131mb, virtual = 792mb peak = 796mb, topics = 23</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='05.04.2018 21:23:00.871'/>
+
+<Message time='05.04.2018 21:23:01.688'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='05.04.2018 21:23:01.910'>
+  <Text>Выполняем стартовый скрипт: Update light_object Set obj_id = 100651 Where obj_id = 101371;
+Update light_link Set child_id = 100651 Where child_id = 101371;</Text>
+</Message>
+
+<Message time='05.04.2018 21:23:01.976'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='05.04.2018 21:23:01.989'>
+  <Text>Process: id = 7280 cpu = 00:02:05.2968750, page = 124mb peak = 131mb, virtual = 795mb peak = 796mb, topics = 0</Text>
+</Message>
+
+<Message time='05.04.2018 21:27:06.192'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='05.04.2018 21:27:06.194'>
+  <Text>Process: id = 7280 cpu = 00:02:07.9687500, page = 117mb peak = 131mb, virtual = 784mb peak = 797mb, topics = 23</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='05.04.2018 21:27:08.565'/>
+
+<Message time='05.04.2018 21:27:09.140'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='05.04.2018 21:27:09.320'>
+  <Text>Выполняем стартовый скрипт: Update light_object Set obj_id = 100651 Where obj_id = 101371;
+Update light_link Set child_id = 100651 Where child_id = 101371;</Text>
+</Message>
+
+<Message time='05.04.2018 21:27:09.367'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='05.04.2018 21:27:09.377'>
+  <Text>Process: id = 7280 cpu = 00:02:09.3281250, page = 108mb peak = 131mb, virtual = 786mb peak = 797mb, topics = 0</Text>
+</Message>
+
+<Message time='05.04.2018 21:27:27.122'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='05.04.2018 21:27:27.138'>
+  <Text>Process: id = 7280 cpu = 00:02:10.6406250, page = 111mb peak = 131mb, virtual = 786mb peak = 797mb, topics = 11</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='05.04.2018 21:27:28.901'/>
+
+<Message time='05.04.2018 21:27:29.602'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='05.04.2018 21:27:29.833'>
+  <Text>Выполняем стартовый скрипт: Update light_object Set obj_id = 100651 Where obj_id = 101371;
+Update light_link Set child_id = 100651 Where child_id = 101371;</Text>
+</Message>
+
+<Message time='05.04.2018 21:27:29.924'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='05.04.2018 21:27:29.969'>
+  <Text>Process: id = 7280 cpu = 00:02:12.2500000, page = 111mb peak = 131mb, virtual = 788mb peak = 797mb, topics = 0</Text>
+</Message>
+
+<Message time='05.04.2018 21:28:02.967'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='05.04.2018 21:28:02.969'>
+  <Text>Process: id = 7280 cpu = 00:02:13.8593750, page = 115mb peak = 131mb, virtual = 789mb peak = 797mb, topics = 11</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='05.04.2018 21:28:05.608'/>
+
+<Message time='05.04.2018 21:28:06.314'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='05.04.2018 21:28:06.565'>
+  <Text>Выполняем стартовый скрипт: Update light_object Set obj_id = 100651 Where obj_id = 101371;
+Update light_link Set child_id = 100651 Where child_id = 101371;</Text>
+</Message>
+
+<Message time='05.04.2018 21:28:06.609'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='05.04.2018 21:28:06.630'>
+  <Text>Process: id = 7280 cpu = 00:02:15.2968750, page = 114mb peak = 131mb, virtual = 792mb peak = 797mb, topics = 0</Text>
+</Message>
+
+<Message time='05.04.2018 21:29:41.330'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='05.04.2018 21:29:41.330'>
+  <Text>Process: id = 7280 cpu = 00:02:17.3593750, page = 107mb peak = 131mb, virtual = 784mb peak = 797mb, topics = 23</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='05.04.2018 21:29:43.755'/>
+
+<Message time='05.04.2018 21:29:44.555'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='05.04.2018 21:29:44.768'>
+  <Text>Выполняем стартовый скрипт: Update light_object Set obj_id = 100651 Where obj_id = 101371;
+Update light_link Set child_id = 100651 Where child_id = 101371;</Text>
+</Message>
+
+<Message time='05.04.2018 21:29:44.819'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='05.04.2018 21:29:44.828'>
+  <Text>Process: id = 7280 cpu = 00:02:18.9062500, page = 103mb peak = 131mb, virtual = 786mb peak = 797mb, topics = 0</Text>
+</Message>
+
+<Message time='05.04.2018 21:30:00.914'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='05.04.2018 21:30:00.930'>
+  <Text>Process: id = 7280 cpu = 00:02:20.4375000, page = 106mb peak = 131mb, virtual = 785mb peak = 797mb, topics = 11</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='05.04.2018 21:30:03.587'/>
+
+<Message time='05.04.2018 21:30:04.223'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='05.04.2018 21:30:04.422'>
+  <Text>Выполняем стартовый скрипт: Update light_object Set obj_id = 100651 Where obj_id = 101371;
+Update light_link Set child_id = 100651 Where child_id = 101371;</Text>
+</Message>
+
+<Message time='05.04.2018 21:30:04.471'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='05.04.2018 21:30:04.483'>
+  <Text>Process: id = 7280 cpu = 00:02:21.7968750, page = 106mb peak = 131mb, virtual = 788mb peak = 797mb, topics = 0</Text>
+</Message>
+
+<Message time='05.04.2018 21:30:52.510'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='05.04.2018 21:30:52.510'>
+  <Text>Process: id = 7280 cpu = 00:02:23.1718750, page = 109mb peak = 131mb, virtual = 789mb peak = 797mb, topics = 11</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='05.04.2018 21:30:56.408'/>
+
+<Message time='05.04.2018 21:30:57.148'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='05.04.2018 21:30:57.341'>
+  <Text>Выполняем стартовый скрипт: Update light_object Set obj_id = 100651 Where obj_id = 101371;
+Update light_link Set child_id = 100651 Where child_id = 101371;</Text>
+</Message>
+
+<Message time='05.04.2018 21:30:57.414'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='05.04.2018 21:30:57.594'>
+  <Text>Process: id = 7280 cpu = 00:02:24.6718750, page = 109mb peak = 131mb, virtual = 792mb peak = 797mb, topics = 0</Text>
+</Message>
+
+<Message time='05.04.2018 21:31:06.676'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='05.04.2018 21:31:06.676'>
+  <Text>Process: id = 7280 cpu = 00:02:26.2656250, page = 109mb peak = 131mb, virtual = 792mb peak = 797mb, topics = 11</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='05.04.2018 21:31:09.413'/>
+
+<Message time='05.04.2018 21:31:10.221'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='05.04.2018 21:31:10.462'>
+  <Text>Выполняем стартовый скрипт: Update light_object Set obj_id = 100651 Where obj_id = 101371;
+Update light_link Set child_id = 100651 Where child_id = 101371;</Text>
+</Message>
+
+<Message time='05.04.2018 21:31:10.525'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='05.04.2018 21:31:10.555'>
+  <Text>Process: id = 7280 cpu = 00:02:27.8125000, page = 110mb peak = 131mb, virtual = 795mb peak = 797mb, topics = 0</Text>
+</Message>
+
+<Message time='05.04.2018 21:32:24.015'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='05.04.2018 21:32:24.017'>
+  <Text>Process: id = 7280 cpu = 00:02:29.7968750, page = 104mb peak = 131mb, virtual = 783mb peak = 797mb, topics = 23</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='05.04.2018 21:32:27.393'/>
+
+<Message time='05.04.2018 21:32:28.013'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='05.04.2018 21:32:28.220'>
+  <Text>Выполняем стартовый скрипт: Update light_object Set obj_id = 100651 Where obj_id = 101371;
+Update light_link Set child_id = 100651 Where child_id = 101371;</Text>
+</Message>
+
+<Message time='05.04.2018 21:32:28.288'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='05.04.2018 21:32:28.302'>
+  <Text>Process: id = 7280 cpu = 00:02:31.2343750, page = 101mb peak = 131mb, virtual = 785mb peak = 797mb, topics = 0</Text>
+</Message>
+
+<Message time='05.04.2018 21:34:12.856'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='05.04.2018 21:34:12.858'>
+  <Text>Process: id = 7280 cpu = 00:02:33.0156250, page = 108mb peak = 131mb, virtual = 786mb peak = 797mb, topics = 23</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='05.04.2018 21:34:14.689'/>
+
+<Message time='05.04.2018 21:34:15.453'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='05.04.2018 21:34:15.690'>
+  <Text>Выполняем стартовый скрипт: Update light_object Set obj_id = 100651 Where obj_id = 101371;
+Update light_link Set child_id = 100651 Where child_id = 101371;</Text>
+</Message>
+
+<Message time='05.04.2018 21:34:15.748'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='05.04.2018 21:34:15.767'>
+  <Text>Process: id = 7280 cpu = 00:02:34.5625000, page = 105mb peak = 131mb, virtual = 789mb peak = 797mb, topics = 0</Text>
+</Message>
+
+<Message time='05.04.2018 21:36:29.732'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='05.04.2018 21:36:29.732'>
+  <Text>Process: id = 7280 cpu = 00:02:36.0781250, page = 113mb peak = 131mb, virtual = 790mb peak = 797mb, topics = 23</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='05.04.2018 21:36:31.392'/>
+
+<Message time='05.04.2018 21:36:32.105'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='05.04.2018 21:36:32.339'>
+  <Text>Выполняем стартовый скрипт: Update light_object Set obj_id = 100651 Where obj_id = 101371;
+Update light_link Set child_id = 100651 Where child_id = 101371;</Text>
+</Message>
+
+<Message time='05.04.2018 21:36:32.404'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='05.04.2018 21:36:32.418'>
+  <Text>Process: id = 7280 cpu = 00:02:37.5781250, page = 111mb peak = 131mb, virtual = 792mb peak = 797mb, topics = 0</Text>
+</Message>
+
+<Message time='05.04.2018 21:36:42.643'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='05.04.2018 21:36:42.645'>
+  <Text>Process: id = 7280 cpu = 00:02:39.0937500, page = 118mb peak = 131mb, virtual = 792mb peak = 797mb, topics = 23</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='05.04.2018 21:36:45.157'/>
+
+<Message time='05.04.2018 21:36:45.814'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='05.04.2018 21:36:46.018'>
+  <Text>Выполняем стартовый скрипт: Update light_object Set obj_id = 100651 Where obj_id = 101371;
+Update light_link Set child_id = 100651 Where child_id = 101371;</Text>
+</Message>
+
+<Message time='05.04.2018 21:36:46.075'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='05.04.2018 21:36:46.086'>
+  <Text>Process: id = 7280 cpu = 00:02:40.4687500, page = 116mb peak = 131mb, virtual = 795mb peak = 797mb, topics = 0</Text>
+</Message>
+
+<Message time='05.04.2018 21:38:08.016'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='05.04.2018 21:38:08.018'>
+  <Text>Process: id = 7280 cpu = 00:02:42.2500000, page = 107mb peak = 131mb, virtual = 783mb peak = 797mb, topics = 23</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='05.04.2018 21:38:11.927'/>
+
+<Message time='05.04.2018 21:38:12.423'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='05.04.2018 21:38:12.586'>
+  <Text>Выполняем стартовый скрипт: Update light_object Set obj_id = 100651 Where obj_id = 101371;
+Update light_link Set child_id = 100651 Where child_id = 101371;</Text>
+</Message>
+
+<Message time='05.04.2018 21:38:12.629'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='05.04.2018 21:38:12.640'>
+  <Text>Process: id = 7280 cpu = 00:02:43.4218750, page = 98mb peak = 131mb, virtual = 785mb peak = 797mb, topics = 0</Text>
+</Message>
+
+<Message time='05.04.2018 21:38:28.722'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='05.04.2018 21:38:28.722'>
+  <Text>Process: id = 7280 cpu = 00:02:44.8125000, page = 106mb peak = 131mb, virtual = 787mb peak = 797mb, topics = 23</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='05.04.2018 21:38:31.219'/>
+
+<Message time='05.04.2018 21:38:31.900'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='05.04.2018 21:38:32.106'>
+  <Text>Выполняем стартовый скрипт: Update light_object Set obj_id = 100651 Where obj_id = 101371;
+Update light_link Set child_id = 100651 Where child_id = 101371;</Text>
+</Message>
+
+<Message time='05.04.2018 21:38:32.163'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='05.04.2018 21:38:32.182'>
+  <Text>Process: id = 7280 cpu = 00:02:46.3125000, page = 103mb peak = 131mb, virtual = 788mb peak = 797mb, topics = 0</Text>
+</Message>
+
+<Message time='05.04.2018 21:39:14.121'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='05.04.2018 21:39:14.121'>
+  <Text>Process: id = 7280 cpu = 00:02:48.2656250, page = 101mb peak = 131mb, virtual = 783mb peak = 797mb, topics = 23</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='05.04.2018 21:39:17.211'/>
+
+<Message time='05.04.2018 21:39:17.813'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='05.04.2018 21:39:18.015'>
+  <Text>Выполняем стартовый скрипт: Update light_object Set obj_id = 100651 Where obj_id = 101371;
+Update light_link Set child_id = 100651 Where child_id = 101371;</Text>
+</Message>
+
+<Message time='05.04.2018 21:39:18.068'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='05.04.2018 21:39:18.078'>
+  <Text>Process: id = 7280 cpu = 00:02:49.7031250, page = 98mb peak = 131mb, virtual = 785mb peak = 797mb, topics = 0</Text>
+</Message>
+
+<Message time='05.04.2018 22:39:18.074'>
+  <Text>Process: id = 7280 cpu = 00:02:51.6718750, page = 98mb peak = 131mb, virtual = 781mb peak = 797mb, topics = 23</Text>
+</Message>
+
+<Message time='05.04.2018 23:39:18.077'>
+  <Text>Process: id = 7280 cpu = 00:02:51.7656250, page = 99mb peak = 131mb, virtual = 781mb peak = 797mb, topics = 23</Text>
+</Message>
+
+<Message time='06.04.2018 00:39:18.079'>
+  <Text>Process: id = 7280 cpu = 00:02:51.9375000, page = 99mb peak = 131mb, virtual = 781mb peak = 797mb, topics = 23</Text>
+</Message>
+
+<Message time='06.04.2018 01:39:18.080'>
+  <Text>Process: id = 7280 cpu = 00:02:52.1718750, page = 99mb peak = 131mb, virtual = 781mb peak = 797mb, topics = 23</Text>
+</Message>
+
+<Message time='06.04.2018 10:32:45.665'>
+  <Text>Process: id = 7280 cpu = 00:02:52.2968750, page = 99mb peak = 131mb, virtual = 781mb peak = 797mb, topics = 23</Text>
+</Message>
+
+<Message time='06.04.2018 11:32:45.739'>
+  <Text>Process: id = 7280 cpu = 00:02:52.3750000, page = 99mb peak = 131mb, virtual = 781mb peak = 797mb, topics = 23</Text>
+</Message>
+
+<Message time='06.04.2018 11:54:21.269'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='06.04.2018 11:54:21.271'>
+  <Text>Process: id = 7280 cpu = 00:02:52.5781250, page = 99mb peak = 131mb, virtual = 784mb peak = 797mb, topics = 23</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='06.04.2018 13:33:46.581'/>
+
+<Message time='06.04.2018 13:33:48.664'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='06.04.2018 13:33:49.911'>
+  <Text>Выполняем стартовый скрипт: Update light_object Set obj_id = 100651 Where obj_id = 101371;
+Update light_link Set child_id = 100651 Where child_id = 101371;</Text>
+</Message>
+
+<Message time='06.04.2018 13:33:50.104'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='06.04.2018 13:33:50.530'>
+  <Text>Process: id = 7280 cpu = 00:02:53.5468750, page = 94mb peak = 131mb, virtual = 779mb peak = 797mb, topics = 0</Text>
+</Message>
+
+<Message time='06.04.2018 13:36:50.806'>
+  <Text>sitemap.xml успешно обновлен</Text>
+</Message>
+
+<Message time='06.04.2018 14:33:50.213'>
+  <Text>Process: id = 7280 cpu = 00:02:54.9843750, page = 103mb peak = 131mb, virtual = 781mb peak = 797mb, topics = 11</Text>
+</Message>
+
+<Message time='06.04.2018 15:33:50.234'>
+  <Text>Process: id = 7280 cpu = 00:02:55.2187500, page = 99mb peak = 131mb, virtual = 777mb peak = 797mb, topics = 23</Text>
+</Message>
+
+<Message time='06.04.2018 16:33:50.215'>
+  <Text>Process: id = 7280 cpu = 00:02:56.7500000, page = 100mb peak = 131mb, virtual = 778mb peak = 797mb, topics = 23</Text>
+</Message>
+
+<Message time='06.04.2018 17:33:50.215'>
+  <Text>Process: id = 7280 cpu = 00:02:57.7500000, page = 100mb peak = 131mb, virtual = 777mb peak = 797mb, topics = 23</Text>
+</Message>
+
+<Message time='06.04.2018 18:33:50.214'>
+  <Text>Process: id = 7280 cpu = 00:02:57.7968750, page = 101mb peak = 131mb, virtual = 777mb peak = 797mb, topics = 23</Text>
+</Message>
+
+<Message time='06.04.2018 19:33:50.222'>
+  <Text>Process: id = 7280 cpu = 00:02:58.1406250, page = 100mb peak = 131mb, virtual = 778mb peak = 797mb, topics = 23</Text>
+</Message>
+
+<Message time='06.04.2018 20:33:50.254'>
+  <Text>Process: id = 7280 cpu = 00:02:58.1718750, page = 100mb peak = 131mb, virtual = 778mb peak = 797mb, topics = 23</Text>
+</Message>
+
+<Message time='06.04.2018 21:33:50.223'>
+  <Text>Process: id = 7280 cpu = 00:02:59.0781250, page = 101mb peak = 131mb, virtual = 777mb peak = 797mb, topics = 23</Text>
+</Message>
+
+<Message time='06.04.2018 22:33:50.224'>
+  <Text>Process: id = 7280 cpu = 00:02:59.2343750, page = 101mb peak = 131mb, virtual = 778mb peak = 797mb, topics = 23</Text>
+</Message>
+
+<Message time='06.04.2018 23:33:50.224'>
+  <Text>Process: id = 7280 cpu = 00:02:59.4375000, page = 101mb peak = 131mb, virtual = 777mb peak = 797mb, topics = 23</Text>
+</Message>
+
+<Message time='07.04.2018 00:33:50.225'>
+  <Text>Process: id = 7280 cpu = 00:02:59.5000000, page = 102mb peak = 131mb, virtual = 778mb peak = 797mb, topics = 23</Text>
+</Message>
+
+<Message time='07.04.2018 10:33:07.573'>
+  <Text>Process: id = 7280 cpu = 00:02:59.5781250, page = 102mb peak = 131mb, virtual = 779mb peak = 797mb, topics = 23</Text>
+</Message>
+
+<Message time='07.04.2018 14:32:10.208'>
+  <Text>Process: id = 7280 cpu = 00:03:00.1718750, page = 102mb peak = 131mb, virtual = 778mb peak = 797mb, topics = 23</Text>
+</Message>
+
+<Message time='07.04.2018 15:32:10.207'>
+  <Text>Process: id = 7280 cpu = 00:03:01.3750000, page = 102mb peak = 131mb, virtual = 779mb peak = 797mb, topics = 23</Text>
+</Message>
+
+<Message time='07.04.2018 16:32:10.206'>
+  <Text>Process: id = 7280 cpu = 00:03:01.7031250, page = 102mb peak = 131mb, virtual = 779mb peak = 797mb, topics = 23</Text>
+</Message>
+
+<Message time='07.04.2018 17:32:10.206'>
+  <Text>Process: id = 7280 cpu = 00:03:01.7343750, page = 103mb peak = 131mb, virtual = 779mb peak = 797mb, topics = 23</Text>
+</Message>
+
+<Message time='07.04.2018 18:32:10.208'>
+  <Text>Process: id = 7280 cpu = 00:03:01.7968750, page = 103mb peak = 131mb, virtual = 780mb peak = 797mb, topics = 23</Text>
+</Message>
+
+<Message time='07.04.2018 19:32:10.207'>
+  <Text>Process: id = 7280 cpu = 00:03:01.8593750, page = 103mb peak = 131mb, virtual = 779mb peak = 797mb, topics = 23</Text>
+</Message>
+
+<Message time='07.04.2018 20:32:10.207'>
+  <Text>Process: id = 7280 cpu = 00:03:03, page = 103mb peak = 131mb, virtual = 778mb peak = 797mb, topics = 23</Text>
+</Message>
+
+<Message time='07.04.2018 21:32:10.206'>
+  <Text>Process: id = 7280 cpu = 00:03:09.3437500, page = 104mb peak = 131mb, virtual = 779mb peak = 797mb, topics = 23</Text>
+</Message>
+
+<Message time='07.04.2018 22:32:10.209'>
+  <Text>Process: id = 7280 cpu = 00:03:09.6093750, page = 104mb peak = 131mb, virtual = 779mb peak = 797mb, topics = 23</Text>
+</Message>
+
+<Message time='07.04.2018 23:32:10.208'>
+  <Text>Process: id = 7280 cpu = 00:03:09.7031250, page = 105mb peak = 131mb, virtual = 779mb peak = 797mb, topics = 23</Text>
+</Message>
+
+<Message time='08.04.2018 00:32:10.208'>
+  <Text>Process: id = 7280 cpu = 00:03:09.8281250, page = 104mb peak = 131mb, virtual = 778mb peak = 797mb, topics = 23</Text>
+</Message>
+
+<Message time='08.04.2018 09:43:27.110'>
+  <Text>Process: id = 7280 cpu = 00:03:09.8750000, page = 105mb peak = 131mb, virtual = 779mb peak = 797mb, topics = 23</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='13.04.2018 14:15:28.320'/>
+
+<Message time='13.04.2018 14:15:33.387'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='13.04.2018 14:15:33.987'>
+  <Text>Выполняем стартовый скрипт: Update light_object Set obj_id = 100651 Where obj_id = 101371;
+Update light_link Set child_id = 100651 Where child_id = 101371;</Text>
+</Message>
+
+<Message time='13.04.2018 14:15:34.152'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='13.04.2018 14:15:34.181'>
+  <Text>Process: id = 10844 cpu = 00:00:01.9687500, page = 55mb peak = 55mb, virtual = 747mb peak = 748mb, topics = 0</Text>
+</Message>
+
+<Message time='13.04.2018 14:18:34.130'>
+  <Text>sitemap.xml успешно обновлен</Text>
+</Message>
+
+<Message time='13.04.2018 14:20:51.547'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='13.04.2018 14:20:51.578'>
+  <Text>Process: id = 10844 cpu = 00:00:04.0781250, page = 74mb peak = 74mb, virtual = 763mb peak = 764mb, topics = 24</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='13.04.2018 14:21:03.325'/>
+
+<Message time='13.04.2018 14:21:04.399'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='13.04.2018 14:21:04.592'>
+  <Text>Выполняем стартовый скрипт: Update light_object Set obj_id = 100651 Where obj_id = 101371;
+Update light_link Set child_id = 100651 Where child_id = 101371;</Text>
+</Message>
+
+<Message time='13.04.2018 14:21:04.634'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='13.04.2018 14:21:04.644'>
+  <Text>Process: id = 10844 cpu = 00:00:05.2656250, page = 72mb peak = 74mb, virtual = 765mb peak = 766mb, topics = 0</Text>
+</Message>
+
+<Message time='13.04.2018 14:24:20.426'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='13.04.2018 14:24:20.426'>
+  <Text>Process: id = 10844 cpu = 00:00:07.7343750, page = 82mb peak = 83mb, virtual = 763mb peak = 766mb, topics = 24</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='13.04.2018 14:24:23.309'/>
+
+<Message time='13.04.2018 14:24:23.857'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='13.04.2018 14:24:24.039'>
+  <Text>Выполняем стартовый скрипт: Update light_object Set obj_id = 100651 Where obj_id = 101371;
+Update light_link Set child_id = 100651 Where child_id = 101371;</Text>
+</Message>
+
+<Message time='13.04.2018 14:24:24.082'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='13.04.2018 14:24:24.281'>
+  <Text>Process: id = 10844 cpu = 00:00:09, page = 79mb peak = 83mb, virtual = 765mb peak = 766mb, topics = 0</Text>
+</Message>
+
+<Message time='13.04.2018 14:24:26.066'>
+  <Text>EndIndices: 509, -1, -1</Text>
+</Message>
+
+<Message time='13.04.2018 14:24:27.216'>
+  <Text>EndIndices: 509, -1, -1</Text>
+</Message>
+
+<Message time='13.04.2018 14:24:58.607'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='13.04.2018 14:24:58.607'>
+  <Text>Process: id = 10844 cpu = 00:00:10.7031250, page = 83mb peak = 84mb, virtual = 766mb peak = 767mb, topics = 11</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='13.04.2018 14:25:01.992'/>
+
+<Message time='13.04.2018 14:25:02.584'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='13.04.2018 14:25:02.756'>
+  <Text>Выполняем стартовый скрипт: Update light_object Set obj_id = 100651 Where obj_id = 101371;
+Update light_link Set child_id = 100651 Where child_id = 101371;</Text>
+</Message>
+
+<Message time='13.04.2018 14:25:02.808'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='13.04.2018 14:25:02.819'>
+  <Text>Process: id = 10844 cpu = 00:00:12.1406250, page = 83mb peak = 84mb, virtual = 768mb peak = 769mb, topics = 0</Text>
+</Message>
+
+<Message time='13.04.2018 14:25:03.520'>
+  <Text>EndIndices: 509, -1, -1</Text>
+</Message>
+
+<Message time='13.04.2018 14:25:04.693'>
+  <Text>EndIndices: 509, -1, -1</Text>
+</Message>
+
+<Message time='13.04.2018 14:25:46.807'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='13.04.2018 14:25:46.807'>
+  <Text>Process: id = 10844 cpu = 00:00:14.2343750, page = 83mb peak = 91mb, virtual = 763mb peak = 770mb, topics = 11</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='13.04.2018 14:25:49.059'/>
+
+<Message time='13.04.2018 14:25:49.606'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='13.04.2018 14:25:49.792'>
+  <Text>Выполняем стартовый скрипт: Update light_object Set obj_id = 100651 Where obj_id = 101371;
+Update light_link Set child_id = 100651 Where child_id = 101371;</Text>
+</Message>
+
+<Message time='13.04.2018 14:25:49.832'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='13.04.2018 14:25:49.841'>
+  <Text>Process: id = 10844 cpu = 00:00:15.7187500, page = 82mb peak = 91mb, virtual = 765mb peak = 770mb, topics = 0</Text>
+</Message>
+
+<Message time='13.04.2018 14:25:50.511'>
+  <Text>EndIndices: &lt;p&gt;Центровой &amp;quot;Филадельфии&amp;quot; Джоэл&amp;nbsp;Эмбиид не сыграет до конца регулярного чемпионата НБА и рискует пропустить первый раунд плей-офф из-за операции, которая понадобилась в связи с переломом глазницы, информирует инсайдер ESPN Зак Лоу.&amp;nbsp;&lt;br /&gt;
+&lt;br /&gt;
+Эмбиид получил повреждение в недавнем матче регулярного чемпионата НБА против &amp;quot;Нью-Йорк Никс&amp;quot; (118:101) после того, как столкнулся со своим одноклубником Маркеллом Фульцем. Отмечается, что Эмбиид также перенес сотрясение мозга.&amp;nbsp;&lt;/p&gt;
+, 509, -1, -1</Text>
+</Message>
+
+<Message time='13.04.2018 14:25:51.668'>
+  <Text>EndIndices: &lt;p&gt;Центровой &amp;quot;Филадельфии&amp;quot; Джоэл&amp;nbsp;Эмбиид не сыграет до конца регулярного чемпионата НБА и рискует пропустить первый раунд плей-офф из-за операции, которая понадобилась в связи с переломом глазницы, информирует инсайдер ESPN Зак Лоу.&amp;nbsp;&lt;br /&gt;
+&lt;br /&gt;
+Эмбиид получил повреждение в недавнем матче регулярного чемпионата НБА против &amp;quot;Нью-Йорк Никс&amp;quot; (118:101) после того, как столкнулся со своим одноклубником Маркеллом Фульцем. Отмечается, что Эмбиид также перенес сотрясение мозга.&amp;nbsp;&lt;/p&gt;
+, 509, -1, -1</Text>
+</Message>
+
+<Message time='13.04.2018 14:26:47.551'>
+  <Text>Process: id = 10844 cpu = 00:00:17.7500000, page = 86mb peak = 91mb, virtual = 766mb peak = 770mb, topics = 11</Text>
+</Message>
+
+<Message time='13.04.2018 14:26:47.551'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='13.04.2018 14:26:49.487'/>
+
+<Message time='13.04.2018 14:26:50.151'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='13.04.2018 14:26:50.419'>
+  <Text>Выполняем стартовый скрипт: Update light_object Set obj_id = 100651 Where obj_id = 101371;
+Update light_link Set child_id = 100651 Where child_id = 101371;</Text>
+</Message>
+
+<Message time='13.04.2018 14:26:50.467'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='13.04.2018 14:26:50.478'>
+  <Text>Process: id = 10844 cpu = 00:00:19.2343750, page = 85mb peak = 91mb, virtual = 769mb peak = 770mb, topics = 0</Text>
+</Message>
+
+<Message time='13.04.2018 14:26:51.070'>
+  <Text>EndIndices: &lt;p&gt;Центровой &amp;quot;Филадельфии&amp;quot; Джоэл&amp;nbsp;Эмбиид не сыграет до конца регулярного чемпионата НБА и рискует пропустить первый раунд плей-офф из-за операции, которая понадобилась в связи с переломом глазницы, информирует инсайдер ESPN Зак Лоу.&amp;nbsp;&lt;br /&gt;
+&lt;br /&gt;
+Эмбиид получил повреждение в недавнем матче регулярного чемпионата НБА против &amp;quot;Нью-Йорк Никс&amp;quot; (118:101) после того, как столкнулся со своим одноклубником Маркеллом Фульцем. Отмечается, что Эмбиид также перенес сотрясение мозга.&amp;nbsp;&lt;/p&gt;
+, 509, -1, -1</Text>
+</Message>
+
+<Message time='13.04.2018 14:26:52.140'>
+  <Text>EndIndices: &lt;p&gt;Центровой &amp;quot;Филадельфии&amp;quot; Джоэл&amp;nbsp;Эмбиид не сыграет до конца регулярного чемпионата НБА и рискует пропустить первый раунд плей-офф из-за операции, которая понадобилась в связи с переломом глазницы, информирует инсайдер ESPN Зак Лоу.&amp;nbsp;&lt;br /&gt;
+&lt;br /&gt;
+Эмбиид получил повреждение в недавнем матче регулярного чемпионата НБА против &amp;quot;Нью-Йорк Никс&amp;quot; (118:101) после того, как столкнулся со своим одноклубником Маркеллом Фульцем. Отмечается, что Эмбиид также перенес сотрясение мозга.&amp;nbsp;&lt;/p&gt;
+, 509, -1, -1</Text>
+</Message>
+
+<Message time='13.04.2018 14:28:03.513'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='13.04.2018 14:28:03.513'>
+  <Text>Process: id = 10844 cpu = 00:00:21.0468750, page = 91mb peak = 92mb, virtual = 770mb peak = 770mb, topics = 11</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='13.04.2018 14:28:06.086'/>
+
+<Message time='13.04.2018 14:28:06.707'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='13.04.2018 14:28:06.911'>
+  <Text>Выполняем стартовый скрипт: Update light_object Set obj_id = 100651 Where obj_id = 101371;
+Update light_link Set child_id = 100651 Where child_id = 101371;</Text>
+</Message>
+
+<Message time='13.04.2018 14:28:06.963'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='13.04.2018 14:28:06.972'>
+  <Text>Process: id = 10844 cpu = 00:00:22.4062500, page = 91mb peak = 92mb, virtual = 772mb peak = 773mb, topics = 0</Text>
+</Message>
+
+<Message time='13.04.2018 14:28:07.560'>
+  <Text>EndIndices: &lt;p&gt;Центровой &amp;quot;Филадельфии&amp;quot; Джоэл&amp;nbsp;Эмбиид не сыграет до конца регулярного чемпионата НБА и рискует пропустить первый раунд плей-офф из-за операции, которая понадобилась в связи с переломом глазницы, информирует инсайдер ESPN Зак Лоу.&amp;nbsp;&lt;br /&gt;
+&lt;br /&gt;
+Эмбиид получил повреждение в недавнем матче регулярного чемпионата НБА против &amp;quot;Нью-Йорк Никс&amp;quot; (118:101) после того, как столкнулся со своим одноклубником Маркеллом Фульцем. Отмечается, что Эмбиид также перенес сотрясение мозга.&amp;nbsp;&lt;/p&gt;
+, 509, -1, 252</Text>
+</Message>
+
+<Message time='13.04.2018 14:28:08.808'>
+  <Text>EndIndices: &lt;p&gt;Центровой &amp;quot;Филадельфии&amp;quot; Джоэл&amp;nbsp;Эмбиид не сыграет до конца регулярного чемпионата НБА и рискует пропустить первый раунд плей-офф из-за операции, которая понадобилась в связи с переломом глазницы, информирует инсайдер ESPN Зак Лоу.&amp;nbsp;&lt;br /&gt;
+&lt;br /&gt;
+Эмбиид получил повреждение в недавнем матче регулярного чемпионата НБА против &amp;quot;Нью-Йорк Никс&amp;quot; (118:101) после того, как столкнулся со своим одноклубником Маркеллом Фульцем. Отмечается, что Эмбиид также перенес сотрясение мозга.&amp;nbsp;&lt;/p&gt;
+, 509, -1, 252</Text>
+</Message>
+
+<Message time='13.04.2018 15:28:06.968'>
+  <Text>Process: id = 10844 cpu = 00:00:24.4687500, page = 87mb peak = 99mb, virtual = 762mb peak = 774mb, topics = 11</Text>
+</Message>
+
+<Message time='13.04.2018 15:34:39.193'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='13.04.2018 15:34:39.193'>
+  <Text>Process: id = 10844 cpu = 00:00:24.5468750, page = 87mb peak = 99mb, virtual = 763mb peak = 774mb, topics = 11</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='13.04.2018 15:34:49.837'/>
+
+<Message time='13.04.2018 15:34:50.382'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='13.04.2018 15:34:50.552'>
+  <Text>Выполняем стартовый скрипт: Update light_object Set obj_id = 100651 Where obj_id = 101371;
+Update light_link Set child_id = 100651 Where child_id = 101371;</Text>
+</Message>
+
+<Message time='13.04.2018 15:34:50.594'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='13.04.2018 15:34:50.603'>
+  <Text>Process: id = 10844 cpu = 00:00:25.8750000, page = 85mb peak = 99mb, virtual = 765mb peak = 774mb, topics = 0</Text>
+</Message>
+
+<Message time='13.04.2018 15:35:13.571'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='13.04.2018 15:35:13.576'>
+  <Text>Process: id = 10844 cpu = 00:00:27.4843750, page = 90mb peak = 99mb, virtual = 768mb peak = 774mb, topics = 10</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='13.04.2018 15:35:16.074'/>
+
+<Message time='13.04.2018 15:35:16.935'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='13.04.2018 15:35:17.137'>
+  <Text>Выполняем стартовый скрипт: Update light_object Set obj_id = 100651 Where obj_id = 101371;
+Update light_link Set child_id = 100651 Where child_id = 101371;</Text>
+</Message>
+
+<Message time='13.04.2018 15:35:17.180'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='13.04.2018 15:35:17.193'>
+  <Text>Process: id = 10844 cpu = 00:00:29.0156250, page = 88mb peak = 99mb, virtual = 769mb peak = 774mb, topics = 0</Text>
+</Message>
+
+<Message time='13.04.2018 15:36:38.854'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='13.04.2018 15:36:38.856'>
+  <Text>Process: id = 10844 cpu = 00:00:30.7656250, page = 100mb peak = 100mb, virtual = 778mb peak = 780mb, topics = 23</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='13.04.2018 15:36:40.666'/>
+
+<Message time='13.04.2018 15:36:41.328'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='13.04.2018 15:36:41.541'>
+  <Text>Выполняем стартовый скрипт: Update light_object Set obj_id = 100651 Where obj_id = 101371;
+Update light_link Set child_id = 100651 Where child_id = 101371;</Text>
+</Message>
+
+<Message time='13.04.2018 15:36:41.595'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='13.04.2018 15:36:41.607'>
+  <Text>Process: id = 10844 cpu = 00:00:32.1562500, page = 99mb peak = 100mb, virtual = 781mb peak = 782mb, topics = 0</Text>
+</Message>
+
+<Message time='13.04.2018 15:37:19.937'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='13.04.2018 15:37:19.937'>
+  <Text>Process: id = 10844 cpu = 00:00:34.0937500, page = 108mb peak = 109mb, virtual = 782mb peak = 783mb, topics = 23</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='13.04.2018 15:37:21.875'/>
+
+<Message time='13.04.2018 15:37:22.541'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='13.04.2018 15:37:22.791'>
+  <Text>Выполняем стартовый скрипт: Update light_object Set obj_id = 100651 Where obj_id = 101371;
+Update light_link Set child_id = 100651 Where child_id = 101371;</Text>
+</Message>
+
+<Message time='13.04.2018 15:37:22.855'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='13.04.2018 15:37:22.869'>
+  <Text>Process: id = 10844 cpu = 00:00:35.5312500, page = 107mb peak = 109mb, virtual = 784mb peak = 785mb, topics = 0</Text>
+</Message>
+
+<Message time='13.04.2018 15:37:47.717'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='13.04.2018 15:37:47.717'>
+  <Text>Process: id = 10844 cpu = 00:00:37.3750000, page = 117mb peak = 118mb, virtual = 784mb peak = 786mb, topics = 23</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='13.04.2018 15:37:49.909'/>
+
+<Message time='13.04.2018 15:37:50.715'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='13.04.2018 15:37:50.960'>
+  <Text>Выполняем стартовый скрипт: Update light_object Set obj_id = 100651 Where obj_id = 101371;
+Update light_link Set child_id = 100651 Where child_id = 101371;</Text>
+</Message>
+
+<Message time='13.04.2018 15:37:51.033'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='13.04.2018 15:37:51.047'>
+  <Text>Process: id = 10844 cpu = 00:00:38.8437500, page = 119mb peak = 119mb, virtual = 788mb peak = 788mb, topics = 0</Text>
+</Message>
+
+<Message time='13.04.2018 15:38:00.497'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='13.04.2018 15:38:00.497'>
+  <Text>Process: id = 10844 cpu = 00:00:40.3125000, page = 125mb peak = 126mb, virtual = 788mb peak = 790mb, topics = 10</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='13.04.2018 15:38:02.514'/>
+
+<Message time='13.04.2018 15:38:03.232'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='13.04.2018 15:38:03.444'>
+  <Text>Выполняем стартовый скрипт: Update light_object Set obj_id = 100651 Where obj_id = 101371;
+Update light_link Set child_id = 100651 Where child_id = 101371;</Text>
+</Message>
+
+<Message time='13.04.2018 15:38:03.485'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='13.04.2018 15:38:03.494'>
+  <Text>Process: id = 10844 cpu = 00:00:41.8437500, page = 129mb peak = 129mb, virtual = 790mb peak = 791mb, topics = 0</Text>
+</Message>
+
+<Message time='13.04.2018 15:38:33.155'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='13.04.2018 15:38:33.155'>
+  <Text>Process: id = 10844 cpu = 00:00:43.7656250, page = 148mb peak = 148mb, virtual = 791mb peak = 792mb, topics = 23</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='13.04.2018 15:38:35.030'/>
+
+<Message time='13.04.2018 15:38:35.711'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='13.04.2018 15:38:35.927'>
+  <Text>Выполняем стартовый скрипт: Update light_object Set obj_id = 100651 Where obj_id = 101371;
+Update light_link Set child_id = 100651 Where child_id = 101371;</Text>
+</Message>
+
+<Message time='13.04.2018 15:38:35.968'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='13.04.2018 15:38:35.979'>
+  <Text>Process: id = 10844 cpu = 00:00:45.2500000, page = 148mb peak = 149mb, virtual = 794mb peak = 795mb, topics = 0</Text>
+</Message>
+
+<Message time='13.04.2018 15:41:35.983'>
+  <Text>sitemap.xml успешно обновлен</Text>
+</Message>
+
+<Message time='13.04.2018 15:46:59.701'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='13.04.2018 15:46:59.701'>
+  <Text>Process: id = 10844 cpu = 00:00:47.0156250, page = 137mb peak = 160mb, virtual = 781mb peak = 795mb, topics = 23</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='13.04.2018 15:47:01.466'/>
+
+<Message time='13.04.2018 15:47:02.285'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='13.04.2018 15:47:02.515'>
+  <Text>Выполняем стартовый скрипт: Update light_object Set obj_id = 100651 Where obj_id = 101371;
+Update light_link Set child_id = 100651 Where child_id = 101371;</Text>
+</Message>
+
+<Message time='13.04.2018 15:47:02.565'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='13.04.2018 15:47:02.872'>
+  <Text>Process: id = 10844 cpu = 00:00:48.4843750, page = 132mb peak = 160mb, virtual = 783mb peak = 795mb, topics = 0</Text>
+</Message>
+
+<Message time='13.04.2018 15:53:32.506'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='13.04.2018 15:53:32.521'>
+  <Text>Process: id = 10844 cpu = 00:00:50.0312500, page = 137mb peak = 160mb, virtual = 784mb peak = 795mb, topics = 23</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='13.04.2018 15:53:36.055'/>
+
+<Message time='13.04.2018 15:53:36.754'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='13.04.2018 15:53:37.037'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='13.04.2018 15:53:37.046'>
+  <Text>Process: id = 10844 cpu = 00:00:51.5625000, page = 136mb peak = 160mb, virtual = 786mb peak = 795mb, topics = 0</Text>
+</Message>
+
+<Message time='13.04.2018 15:54:34.021'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='13.04.2018 15:54:34.021'>
+  <Text>Process: id = 10844 cpu = 00:00:53.0156250, page = 141mb peak = 160mb, virtual = 787mb peak = 795mb, topics = 23</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='13.04.2018 15:54:36.639'/>
+
+<Message time='13.04.2018 15:54:37.345'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='13.04.2018 15:54:37.593'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='13.04.2018 15:54:37.601'>
+  <Text>Process: id = 10844 cpu = 00:00:54.5468750, page = 140mb peak = 160mb, virtual = 790mb peak = 795mb, topics = 0</Text>
+</Message>
+
+<Message time='13.04.2018 15:54:53.450'>
+  <Text>Tags: 881</Text>
+</Message>
+
+<Message time='13.04.2018 15:54:53.451'>
+  <Text>Дубль тега: адриатическая лига, 101741, 101487</Text>
+</Message>
+
+<Message time='13.04.2018 15:54:53.451'>
+  <Text>Дубль тега: асвел, 101617, 101058</Text>
+</Message>
+
+<Message time='13.04.2018 15:54:53.454'>
+  <Text>Дубль тега: единая лига втб, 101678, 100732</Text>
+</Message>
+
+<Message time='13.04.2018 15:54:53.454'>
+  <Text>Дубль тега: зенит-фарм, 101029, 100900</Text>
+</Message>
+
+<Message time='13.04.2018 15:54:53.455'>
+  <Text>Дубль тега: лига чемпионов фиба, 102174, 101967</Text>
+</Message>
+
+<Message time='13.04.2018 15:54:53.456'>
+  <Text>Дубль тега: лига чемпионов, 100906, 101033</Text>
+</Message>
+
+<Message time='13.04.2018 15:54:53.459'>
+  <Text>Дубль тега: уникс, 101062, 101518</Text>
+</Message>
+
+<Message time='13.04.2018 15:54:53.460'>
+  <Text>Дубль тега: лига чемпионов, 100906, 101998</Text>
+</Message>
+
+<Message time='13.04.2018 15:54:53.461'>
+  <Text>Дубль тега: нба, 100651, 101373</Text>
+</Message>
+
+<Message time='13.04.2018 15:54:53.461'>
+  <Text>Дубль тега: плей-офф, 101743, 100907</Text>
+</Message>
+
+<Message time='13.04.2018 15:54:53.462'>
+  <Text>Дубль тега: рекорды, 100981, 100866</Text>
+</Message>
+
+<Message time='13.04.2018 15:54:53.462'>
+  <Text>Дубль тега: сборная россии, 102181, 100683</Text>
+</Message>
+
+<Message time='13.04.2018 15:54:53.462'>
+  <Text>Дубль тега: чемпионат европы, 101850, 100648</Text>
+</Message>
+
+<Message time='13.04.2018 15:54:53.463'>
+  <Text>Дубль тега: чемпионат италии, 101619, 100871</Text>
+</Message>
+
+<Message time='13.04.2018 15:54:53.463'>
+  <Text>Дубль тега: чемпионат турции, 100940, 100682</Text>
+</Message>
+
+<Message time='13.04.2018 15:54:53.463'>
+  <Text>Дубль тега: чемпионат мира, 100644, 101132</Text>
+</Message>
+
+<Message time='13.04.2018 15:58:03.132'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='13.04.2018 15:58:03.132'>
+  <Text>Process: id = 10844 cpu = 00:00:56.2031250, page = 146mb peak = 160mb, virtual = 790mb peak = 795mb, topics = 23</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='13.04.2018 15:58:06.016'/>
+
+<Message time='13.04.2018 15:58:06.730'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='13.04.2018 15:58:06.972'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='13.04.2018 15:58:07.004'>
+  <Text>Process: id = 10844 cpu = 00:00:57.6562500, page = 144mb peak = 160mb, virtual = 793mb peak = 795mb, topics = 0</Text>
+</Message>
+
+<Message time='13.04.2018 15:58:07.605'>
+  <Text>Tags: 881</Text>
+</Message>
+
+<Message time='13.04.2018 15:58:07.606'>
+  <Text>Дубль тега: адриатическая лига, 101741, 101487, Адриатическая Лига, Адриатическая лига</Text>
+</Message>
+
+<Message time='13.04.2018 15:58:07.607'>
+  <Text>Дубль тега: асвел, 101617, 101058, АСВЕЛ, Асвел</Text>
+</Message>
+
+<Message time='13.04.2018 15:58:07.610'>
+  <Text>Дубль тега: единая лига втб, 101678, 100732, Единая Лига ВТБ, Единая лига ВТБ</Text>
+</Message>
+
+<Message time='13.04.2018 15:58:07.611'>
+  <Text>Дубль тега: зенит-фарм, 101029, 100900, Зенит-Фарм, Зенит-фарм</Text>
+</Message>
+
+<Message time='13.04.2018 15:58:07.612'>
+  <Text>Дубль тега: лига чемпионов фиба, 102174, 101967, Лига Чемпионов ФИБА, Лига чемпионов ФИБА</Text>
+</Message>
+
+<Message time='13.04.2018 15:58:07.612'>
+  <Text>Дубль тега: лига чемпионов, 100906, 101033, Лига Чемпионов, Лига чемпионов</Text>
+</Message>
+
+<Message time='13.04.2018 15:58:07.616'>
+  <Text>Дубль тега: уникс, 101062, 101518, УНИКС, Уникс</Text>
+</Message>
+
+<Message time='13.04.2018 15:58:07.618'>
+  <Text>Дубль тега: лига чемпионов, 100906, 101998, Лига Чемпионов, лига Чемпионов</Text>
+</Message>
+
+<Message time='13.04.2018 15:58:07.619'>
+  <Text>Дубль тега: нба, 100651, 101373, НБА, нба</Text>
+</Message>
+
+<Message time='13.04.2018 15:58:07.619'>
+  <Text>Дубль тега: плей-офф, 101743, 100907, Плей-офф, плей-офф</Text>
+</Message>
+
+<Message time='13.04.2018 15:58:07.620'>
+  <Text>Дубль тега: рекорды, 100981, 100866, Рекорды, рекорды</Text>
+</Message>
+
+<Message time='13.04.2018 15:58:07.620'>
+  <Text>Дубль тега: сборная россии, 102181, 100683, Сборная России, сборная России</Text>
+</Message>
+
+<Message time='13.04.2018 15:58:07.620'>
+  <Text>Дубль тега: чемпионат европы, 101850, 100648, Чемпионат Европы, чемпионат Европы</Text>
+</Message>
+
+<Message time='13.04.2018 15:58:07.621'>
+  <Text>Дубль тега: чемпионат италии, 101619, 100871, Чемпионат Италии, чемпионат Италии</Text>
+</Message>
+
+<Message time='13.04.2018 15:58:07.621'>
+  <Text>Дубль тега: чемпионат турции, 100940, 100682, Чемпионат Турции, чемпионат Турции</Text>
+</Message>
+
+<Message time='13.04.2018 15:58:07.622'>
+  <Text>Дубль тега: чемпионат мира, 100644, 101132, Чемпионат мира, чемпионат мира</Text>
+</Message>
+
+<Message time='13.04.2018 16:27:11.130'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='13.04.2018 16:27:11.130'>
+  <Text>Process: id = 10844 cpu = 00:00:59.6875000, page = 127mb peak = 160mb, virtual = 779mb peak = 795mb, topics = 10</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='13.04.2018 16:27:14.412'/>
+
+<Message time='13.04.2018 16:27:15.031'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='13.04.2018 16:27:15.309'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='13.04.2018 16:27:15.320'>
+  <Text>Process: id = 10844 cpu = 00:01:01.0937500, page = 124mb peak = 160mb, virtual = 781mb peak = 795mb, topics = 0</Text>
+</Message>
+
+<Message time='13.04.2018 16:27:15.984'>
+  <Text>Tags: 881</Text>
+</Message>
+
+<Message time='13.04.2018 16:27:15.985'>
+  <Text>Дубль тега: адриатическая лига, 101741, 101487, Адриатическая Лига, Адриатическая лига</Text>
+</Message>
+
+<Message time='13.04.2018 16:27:15.985'>
+  <Text>Дубль тега: асвел, 101617, 101058, АСВЕЛ, Асвел</Text>
+</Message>
+
+<Message time='13.04.2018 16:27:15.987'>
+  <Text>Дубль тега: единая лига втб, 101678, 100732, Единая Лига ВТБ, Единая лига ВТБ</Text>
+</Message>
+
+<Message time='13.04.2018 16:27:15.988'>
+  <Text>Дубль тега: зенит-фарм, 101029, 100900, Зенит-Фарм, Зенит-фарм</Text>
+</Message>
+
+<Message time='13.04.2018 16:27:15.989'>
+  <Text>Дубль тега: лига чемпионов фиба, 102174, 101967, Лига Чемпионов ФИБА, Лига чемпионов ФИБА</Text>
+</Message>
+
+<Message time='13.04.2018 16:27:15.989'>
+  <Text>Дубль тега: лига чемпионов, 100906, 101033, Лига Чемпионов, Лига чемпионов</Text>
+</Message>
+
+<Message time='13.04.2018 16:27:15.991'>
+  <Text>Дубль тега: уникс, 101062, 101518, УНИКС, Уникс</Text>
+</Message>
+
+<Message time='13.04.2018 16:27:15.992'>
+  <Text>Дубль тега: лига чемпионов, 100906, 101998, Лига Чемпионов, лига Чемпионов</Text>
+</Message>
+
+<Message time='13.04.2018 16:27:15.993'>
+  <Text>Дубль тега: нба, 100651, 101373, НБА, нба</Text>
+</Message>
+
+<Message time='13.04.2018 16:27:15.993'>
+  <Text>Дубль тега: плей-офф, 101743, 100907, Плей-офф, плей-офф</Text>
+</Message>
+
+<Message time='13.04.2018 16:27:15.993'>
+  <Text>Дубль тега: рекорды, 100981, 100866, Рекорды, рекорды</Text>
+</Message>
+
+<Message time='13.04.2018 16:27:15.993'>
+  <Text>Дубль тега: сборная россии, 102181, 100683, Сборная России, сборная России</Text>
+</Message>
+
+<Message time='13.04.2018 16:27:15.994'>
+  <Text>Дубль тега: чемпионат европы, 101850, 100648, Чемпионат Европы, чемпионат Европы</Text>
+</Message>
+
+<Message time='13.04.2018 16:27:15.994'>
+  <Text>Дубль тега: чемпионат италии, 101619, 100871, Чемпионат Италии, чемпионат Италии</Text>
+</Message>
+
+<Message time='13.04.2018 16:27:15.995'>
+  <Text>Дубль тега: чемпионат турции, 100940, 100682, Чемпионат Турции, чемпионат Турции</Text>
+</Message>
+
+<Message time='13.04.2018 16:27:15.995'>
+  <Text>Дубль тега: чемпионат мира, 100644, 101132, Чемпионат мира, чемпионат мира</Text>
+</Message>
+
+<Message time='13.04.2018 16:43:35.720'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='13.04.2018 16:43:35.736'>
+  <Text>Process: id = 10844 cpu = 00:01:03.4531250, page = 130mb peak = 160mb, virtual = 784mb peak = 795mb, topics = 10</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='13.04.2018 16:43:38.172'/>
+
+<Message time='13.04.2018 16:43:38.769'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='13.04.2018 16:43:38.979'>
+  <Text>Выполняем стартовый скрипт: Update light_link Set child_id = 101487 Where child_id = 101741;
+Update light_link Set child_id = 101058 Where child_id = 101617;
+Update light_link Set child_id = 100732 Where child_id = 101678;
+Update light_link Set child_id = 101029 Where child_id = 100900;
+Update light_link Set child_id = 101967 Where child_id = 102174;
+Update light_link Set child_id = 101033 Where child_id = 100906;
+Update light_link Set child_id = 101518 Where child_id = 101062;
+Update light_link Set child_id = 101033 Where child_id = 101998;
+Update light_link Set child_id = 100651 Where child_id = 101373;
+Update light_link Set child_id = 100907 Where child_id = 101743;
+Update light_link Set child_id = 100866 Where child_id = 100981;
+Update light_link Set child_id = 100683 Where child_id = 102181;
+Update light_link Set child_id = 100648 Where child_id = 101850;
+Update light_link Set child_id = 100871 Where child_id = 101619;
+Update light_link Set child_id = 100682 Where child_id = 100940;
+Update light_link Set child_id = 101132 Where child_id = 100644;
+Delete From light_object Where obj_id in (101741, 101617, 101678, 100900, 102174, 100906, 101062, 101998, 101373);
+Delete From light_object Where obj_id in (101743, 100981, 102181, 102181, 101850, 101619, 100940, 100644);</Text>
+</Message>
+
+<Message time='13.04.2018 16:43:39.124'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='13.04.2018 16:43:39.136'>
+  <Text>Process: id = 10844 cpu = 00:01:04.7656250, page = 127mb peak = 160mb, virtual = 786mb peak = 795mb, topics = 0</Text>
+</Message>
+
+<Message time='13.04.2018 16:43:56.697'>
+  <Text>Tags: 865</Text>
+</Message>
+
+<Message time='13.04.2018 16:46:39.133'>
+  <Text>sitemap.xml успешно обновлен</Text>
+</Message>
+
+<Message time='13.04.2018 16:47:37.991'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='13.04.2018 16:47:37.991'>
+  <Text>Process: id = 10844 cpu = 00:01:07.2968750, page = 145mb peak = 160mb, virtual = 786mb peak = 795mb, topics = 71</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='13.04.2018 16:47:40.554'/>
+
+<Message time='13.04.2018 16:47:41.305'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='13.04.2018 16:47:41.486'>
+  <Text>Выполняем стартовый скрипт: Update light_link Set child_id = 101487 Where child_id = 101741;
+Update light_link Set child_id = 101058 Where child_id = 101617;
+Update light_link Set child_id = 100732 Where child_id = 101678;
+Update light_link Set child_id = 101029 Where child_id = 100900;
+Update light_link Set child_id = 101967 Where child_id = 102174;
+Update light_link Set child_id = 101033 Where child_id = 100906;
+Update light_link Set child_id = 101518 Where child_id = 101062;
+Update light_link Set child_id = 101033 Where child_id = 101998;
+Update light_link Set child_id = 100651 Where child_id = 101373;
+Update light_link Set child_id = 100907 Where child_id = 101743;
+Update light_link Set child_id = 100866 Where child_id = 100981;
+Update light_link Set child_id = 100683 Where child_id = 102181;
+Update light_link Set child_id = 100648 Where child_id = 101850;
+Update light_link Set child_id = 100871 Where child_id = 101619;
+Update light_link Set child_id = 100682 Where child_id = 100940;
+Update light_link Set child_id = 101132 Where child_id = 100644;
+Delete From light_object Where obj_id in (101741, 101617, 101678, 100900, 102174, 100906, 101062, 101998, 101373);
+Delete From light_object Where obj_id in (101743, 100981, 102181, 102181, 101850, 101619, 100940, 100644);</Text>
+</Message>
+
+<Message time='13.04.2018 16:47:41.543'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='13.04.2018 16:47:41.552'>
+  <Text>Process: id = 10844 cpu = 00:01:08.7812500, page = 141mb peak = 160mb, virtual = 789mb peak = 795mb, topics = 0</Text>
+</Message>
+
+<Message time='13.04.2018 16:49:10.469'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='13.04.2018 16:49:10.472'>
+  <Text>Process: id = 10844 cpu = 00:01:10.3593750, page = 128mb peak = 160mb, virtual = 780mb peak = 795mb, topics = 18</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='13.04.2018 17:47:47.791'/>
+
+<Message time='13.04.2018 17:47:48.700'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='13.04.2018 17:47:49.130'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='13.04.2018 17:47:49.146'>
+  <Text>Process: id = 10844 cpu = 00:01:11.2031250, page = 124mb peak = 160mb, virtual = 776mb peak = 795mb, topics = 0</Text>
+</Message>
+
+<Message time='13.04.2018 17:50:49.184'>
+  <Text>sitemap.xml успешно обновлен</Text>
+</Message>
+
+<Message time='13.04.2018 18:47:49.132'>
+  <Text>Process: id = 10844 cpu = 00:01:13.1093750, page = 108mb peak = 160mb, virtual = 774mb peak = 795mb, topics = 18</Text>
+</Message>
+
+<Message time='13.04.2018 19:47:49.132'>
+  <Text>Process: id = 10844 cpu = 00:01:13.6562500, page = 109mb peak = 160mb, virtual = 775mb peak = 795mb, topics = 18</Text>
+</Message>
+
+<Message time='13.04.2018 20:47:49.132'>
+  <Text>Process: id = 10844 cpu = 00:01:13.7031250, page = 109mb peak = 160mb, virtual = 775mb peak = 795mb, topics = 18</Text>
+</Message>
+
+<Message time='13.04.2018 21:47:49.131'>
+  <Text>Process: id = 10844 cpu = 00:01:13.7500000, page = 109mb peak = 160mb, virtual = 775mb peak = 795mb, topics = 18</Text>
+</Message>
+
+<Message time='13.04.2018 22:47:49.130'>
+  <Text>Process: id = 10844 cpu = 00:01:14.8593750, page = 109mb peak = 160mb, virtual = 776mb peak = 795mb, topics = 18</Text>
+</Message>
+
+<Message time='13.04.2018 23:47:49.131'>
+  <Text>Process: id = 10844 cpu = 00:01:16.1718750, page = 109mb peak = 160mb, virtual = 776mb peak = 795mb, topics = 18</Text>
+</Message>
+
+<Message time='14.04.2018 00:47:49.131'>
+  <Text>Process: id = 10844 cpu = 00:01:16.2187500, page = 109mb peak = 160mb, virtual = 776mb peak = 795mb, topics = 18</Text>
+</Message>
+
+<Message time='14.04.2018 10:32:25.057'>
+  <Text>Process: id = 10844 cpu = 00:01:16.2656250, page = 109mb peak = 160mb, virtual = 774mb peak = 795mb, topics = 18</Text>
+</Message>
+
+<Message time='14.04.2018 11:32:25.056'>
+  <Text>Process: id = 10844 cpu = 00:01:16.4531250, page = 112mb peak = 160mb, virtual = 775mb peak = 795mb, topics = 19</Text>
+</Message>
+
+<Message time='14.04.2018 12:32:25.057'>
+  <Text>Process: id = 10844 cpu = 00:01:16.5312500, page = 112mb peak = 160mb, virtual = 776mb peak = 795mb, topics = 19</Text>
+</Message>
+
+<Message time='14.04.2018 13:32:25.057'>
+  <Text>Process: id = 10844 cpu = 00:01:16.6718750, page = 113mb peak = 160mb, virtual = 776mb peak = 795mb, topics = 19</Text>
+</Message>
+
+<Message time='14.04.2018 14:32:25.056'>
+  <Text>Process: id = 10844 cpu = 00:01:16.7968750, page = 114mb peak = 160mb, virtual = 776mb peak = 795mb, topics = 19</Text>
+</Message>
+
+<Message time='14.04.2018 15:32:25.056'>
+  <Text>Process: id = 10844 cpu = 00:01:16.9218750, page = 113mb peak = 160mb, virtual = 777mb peak = 795mb, topics = 19</Text>
+</Message>
+
+<Message time='14.04.2018 16:32:25.998'>
+  <Text>Process: id = 10844 cpu = 00:01:17.1093750, page = 113mb peak = 160mb, virtual = 777mb peak = 795mb, topics = 19</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='24.04.2018 14:17:07.681'/>
+
+<Message time='24.04.2018 14:17:11.349'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='24.04.2018 14:17:11.674'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='24.04.2018 14:17:11.682'>
+  <Text>Process: id = 5440 cpu = 00:00:02, page = 55mb peak = 55mb, virtual = 746mb peak = 746mb, topics = 0</Text>
+</Message>
+
+<Message time='24.04.2018 14:20:11.671'>
+  <Text>sitemap.xml успешно обновлен</Text>
+</Message>
+
+<Message time='24.04.2018 14:20:27.196'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='24.04.2018 14:20:27.215'>
+  <Text>Process: id = 5440 cpu = 00:00:04.9375000, page = 85mb peak = 85mb, virtual = 765mb peak = 767mb, topics = 23</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='24.04.2018 14:31:13.388'/>
+
+<Message time='24.04.2018 14:31:14.022'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='24.04.2018 14:31:14.253'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='24.04.2018 14:31:14.261'>
+  <Text>Process: id = 5440 cpu = 00:00:06.1875000, page = 78mb peak = 85mb, virtual = 764mb peak = 767mb, topics = 0</Text>
+</Message>
+
+<Message time='24.04.2018 14:54:05.847'>
+  <Text>System.ArgumentNullException: Значение не может быть неопределенным.
+Имя параметра: address
+   в System.Net.Mail.MailAddress..ctor(String address, String displayName, Encoding displayNameEncoding)
+   в Commune.Html.AuthHlp.SendMail(SmtpClient client, String from, String mailto, String caption, String messageAsHtml, Attachment attach)
+   в Basketball.ViewHlp.&lt;&gt;c__DisplayClass7_0.&lt;GetRestorePasswordView&gt;b__0(JsonData json) в d:\Projects\Basketball\Basketball\View\ViewHlp.cs:строка 169</Text>
+</Message>
+
+<Message time='24.04.2018 15:05:57.891'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='24.04.2018 15:05:57.893'>
+  <Text>Process: id = 5440 cpu = 00:00:13.7812500, page = 105mb peak = 106mb, virtual = 767mb peak = 768mb, topics = 23</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='24.04.2018 15:06:05.129'/>
+
+<Message time='24.04.2018 15:06:05.677'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='24.04.2018 15:06:05.900'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='24.04.2018 15:06:05.908'>
+  <Text>Process: id = 5440 cpu = 00:00:15.1250000, page = 102mb peak = 106mb, virtual = 768mb peak = 769mb, topics = 0</Text>
+</Message>
+
+<Message time='24.04.2018 15:06:06.316'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='24.04.2018 15:06:07.307'>
+  <Text>CurrentUser: False</Text>
+</Message>
+
+<Message time='24.04.2018 15:06:22.768'>
+  <Text>CurrentUser: False</Text>
+</Message>
+
+<Message time='24.04.2018 15:06:22.786'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='24.04.2018 15:06:42.867'>
+  <Text>CurrentUser: False</Text>
+</Message>
+
+<Message time='24.04.2018 15:06:42.875'>
+  <Text>CurrentUser: False</Text>
+</Message>
+
+<Message time='24.04.2018 15:08:17.634'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='24.04.2018 15:08:17.636'>
+  <Text>Process: id = 5440 cpu = 00:00:16.9687500, page = 109mb peak = 109mb, virtual = 771mb peak = 771mb, topics = 10</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='24.04.2018 15:08:21.750'/>
+
+<Message time='24.04.2018 15:08:22.429'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='24.04.2018 15:08:22.653'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='24.04.2018 15:08:22.660'>
+  <Text>Process: id = 5440 cpu = 00:00:18.3750000, page = 111mb peak = 111mb, virtual = 772mb peak = 773mb, topics = 0</Text>
+</Message>
+
+<Message time='24.04.2018 15:08:23.122'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='24.04.2018 15:08:23.125'>
+  <Text>CurrentUser2: True</Text>
+</Message>
+
+<Message time='24.04.2018 15:08:24.076'>
+  <Text>CurrentUser: False</Text>
+</Message>
+
+<Message time='24.04.2018 15:08:24.076'>
+  <Text>CurrentUser2: False</Text>
+</Message>
+
+<Message time='24.04.2018 15:08:29.424'>
+  <Text>CurrentUser: False</Text>
+</Message>
+
+<Message time='24.04.2018 15:08:29.424'>
+  <Text>CurrentUser2: False</Text>
+</Message>
+
+<Message time='24.04.2018 15:08:29.442'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='24.04.2018 15:08:29.442'>
+  <Text>CurrentUser2: True</Text>
+</Message>
+
+<Message time='24.04.2018 15:08:45.192'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='24.04.2018 15:08:45.193'>
+  <Text>CurrentUser2: True</Text>
+</Message>
+
+<Message time='24.04.2018 15:08:45.527'>
+  <Text>CurrentUser: False</Text>
+</Message>
+
+<Message time='24.04.2018 15:08:45.528'>
+  <Text>CurrentUser2: False</Text>
+</Message>
+
+<Message time='24.04.2018 15:11:06.738'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='24.04.2018 15:11:06.739'>
+  <Text>CurrentUser2: True</Text>
+</Message>
+
+<Message time='24.04.2018 15:11:07.426'>
+  <Text>CurrentUser: False</Text>
+</Message>
+
+<Message time='24.04.2018 15:11:07.427'>
+  <Text>CurrentUser2: False</Text>
+</Message>
+
+<Message time='24.04.2018 15:11:12.598'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='24.04.2018 15:11:12.600'>
+  <Text>Process: id = 5440 cpu = 00:00:20.3906250, page = 119mb peak = 120mb, virtual = 781mb peak = 782mb, topics = 23</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='24.04.2018 15:11:16.146'/>
+
+<Message time='24.04.2018 15:11:16.713'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='24.04.2018 15:11:16.999'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='24.04.2018 15:11:17.012'>
+  <Text>Process: id = 5440 cpu = 00:00:21.8125000, page = 117mb peak = 120mb, virtual = 784mb peak = 785mb, topics = 0</Text>
+</Message>
+
+<Message time='24.04.2018 15:11:17.399'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='24.04.2018 15:11:17.403'>
+  <Text>CurrentUser2: True</Text>
+</Message>
+
+<Message time='24.04.2018 15:11:18.417'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='24.04.2018 15:11:18.417'>
+  <Text>CurrentUser2: True</Text>
+</Message>
+
+<Message time='24.04.2018 15:11:23.136'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='24.04.2018 15:11:23.136'>
+  <Text>CurrentUser2: True</Text>
+</Message>
+
+<Message time='24.04.2018 15:11:23.326'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='24.04.2018 15:11:23.326'>
+  <Text>CurrentUser2: True</Text>
+</Message>
+
+<Message time='24.04.2018 15:11:25.966'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='24.04.2018 15:11:25.966'>
+  <Text>CurrentUser2: True</Text>
+</Message>
+
+<Message time='24.04.2018 15:11:26.200'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='24.04.2018 15:11:26.201'>
+  <Text>CurrentUser2: True</Text>
+</Message>
+
+<Message time='24.04.2018 15:14:56.954'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='24.04.2018 15:14:56.956'>
+  <Text>Process: id = 5440 cpu = 00:00:23.7500000, page = 135mb peak = 136mb, virtual = 784mb peak = 785mb, topics = 23</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='24.04.2018 15:15:21.469'/>
+
+<Message time='24.04.2018 15:15:22.124'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='24.04.2018 15:15:22.370'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='24.04.2018 15:15:22.392'>
+  <Text>Process: id = 5440 cpu = 00:00:25.0625000, page = 136mb peak = 136mb, virtual = 784mb peak = 785mb, topics = 0</Text>
+</Message>
+
+<Message time='24.04.2018 15:15:22.866'>
+  <Text>CurrentUser: False</Text>
+</Message>
+
+<Message time='24.04.2018 15:15:22.867'>
+  <Text>CurrentUser2: False</Text>
+</Message>
+
+<Message time='24.04.2018 15:15:23.866'>
+  <Text>CurrentUser: False</Text>
+</Message>
+
+<Message time='24.04.2018 15:15:23.867'>
+  <Text>CurrentUser2: False</Text>
+</Message>
+
+<Message time='24.04.2018 15:15:34.284'>
+  <Text>CurrentUser: False</Text>
+</Message>
+
+<Message time='24.04.2018 15:15:34.284'>
+  <Text>CurrentUser2: False</Text>
+</Message>
+
+<Message time='24.04.2018 15:15:34.305'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='24.04.2018 15:15:34.305'>
+  <Text>CurrentUser2: True</Text>
+</Message>
+
+<Message time='24.04.2018 15:15:35.885'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='24.04.2018 15:15:35.885'>
+  <Text>CurrentUser2: True</Text>
+</Message>
+
+<Message time='24.04.2018 15:15:35.891'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='24.04.2018 15:15:35.891'>
+  <Text>CurrentUser2: True</Text>
+</Message>
+
+<Message time='24.04.2018 15:15:38.640'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='24.04.2018 15:15:38.640'>
+  <Text>CurrentUser2: True</Text>
+</Message>
+
+<Message time='24.04.2018 15:15:38.990'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='24.04.2018 15:15:38.991'>
+  <Text>CurrentUser2: True</Text>
+</Message>
+
+<Message time='24.04.2018 15:16:16.483'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='24.04.2018 15:16:16.484'>
+  <Text>Process: id = 5440 cpu = 00:00:27.3437500, page = 147mb peak = 147mb, virtual = 790mb peak = 790mb, topics = 23</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='24.04.2018 15:16:20.724'/>
+
+<Message time='24.04.2018 15:16:21.531'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='24.04.2018 15:16:21.853'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='24.04.2018 15:16:21.868'>
+  <Text>Process: id = 5440 cpu = 00:00:28.9687500, page = 121mb peak = 147mb, virtual = 778mb peak = 790mb, topics = 0</Text>
+</Message>
+
+<Message time='24.04.2018 15:16:22.216'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='24.04.2018 15:16:22.219'>
+  <Text>CurrentUser2: True</Text>
+</Message>
+
+<Message time='24.04.2018 15:16:23.207'>
+  <Text>CurrentUser: False</Text>
+</Message>
+
+<Message time='24.04.2018 15:16:23.207'>
+  <Text>CurrentUser2: False</Text>
+</Message>
+
+<Message time='24.04.2018 15:16:32.419'>
+  <Text>CurrentUser: False</Text>
+</Message>
+
+<Message time='24.04.2018 15:16:32.419'>
+  <Text>CurrentUser2: False</Text>
+</Message>
+
+<Message time='24.04.2018 15:16:32.446'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='24.04.2018 15:16:32.447'>
+  <Text>CurrentUser2: True</Text>
+</Message>
+
+<Message time='24.04.2018 15:16:36.367'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='24.04.2018 15:16:36.367'>
+  <Text>CurrentUser2: True</Text>
+</Message>
+
+<Message time='24.04.2018 15:16:36.658'>
+  <Text>CurrentUser: False</Text>
+</Message>
+
+<Message time='24.04.2018 15:16:36.658'>
+  <Text>CurrentUser2: False</Text>
+</Message>
+
+<Message time='24.04.2018 15:19:50.001'>
+  <Text>CurrentUser: False</Text>
+</Message>
+
+<Message time='24.04.2018 15:19:50.001'>
+  <Text>CurrentUser2: False</Text>
+</Message>
+
+<Message time='24.04.2018 15:19:50.008'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='24.04.2018 15:19:50.009'>
+  <Text>CurrentUser2: True</Text>
+</Message>
+
+<Message time='24.04.2018 15:19:53.714'>
+  <Text>CurrentUser: False</Text>
+</Message>
+
+<Message time='24.04.2018 15:19:53.714'>
+  <Text>CurrentUser2: False</Text>
+</Message>
+
+<Message time='24.04.2018 15:19:53.721'>
+  <Text>CurrentUser: False</Text>
+</Message>
+
+<Message time='24.04.2018 15:19:53.721'>
+  <Text>CurrentUser2: False</Text>
+</Message>
+
+<Message time='24.04.2018 15:20:01.502'>
+  <Text>CurrentUser: False</Text>
+</Message>
+
+<Message time='24.04.2018 15:20:01.502'>
+  <Text>CurrentUser2: False</Text>
+</Message>
+
+<Message time='24.04.2018 15:20:01.509'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='24.04.2018 15:20:01.509'>
+  <Text>CurrentUser2: True</Text>
+</Message>
+
+<Message time='24.04.2018 15:20:03.278'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='24.04.2018 15:20:03.278'>
+  <Text>CurrentUser2: True</Text>
+</Message>
+
+<Message time='24.04.2018 15:20:03.529'>
+  <Text>CurrentUser: False</Text>
+</Message>
+
+<Message time='24.04.2018 15:20:03.530'>
+  <Text>CurrentUser2: False</Text>
+</Message>
+
+<Message time='24.04.2018 15:26:22.954'>
+  <Text>CurrentUser: False</Text>
+</Message>
+
+<Message time='24.04.2018 15:26:22.954'>
+  <Text>CurrentUser2: False</Text>
+</Message>
+
+<Message time='24.04.2018 15:26:22.969'>
+  <Text>CurrentUser: False</Text>
+</Message>
+
+<Message time='24.04.2018 15:26:22.969'>
+  <Text>CurrentUser2: False</Text>
+</Message>
+
+<Message time='24.04.2018 15:26:24.241'>
+  <Text>CurrentUser: False</Text>
+</Message>
+
+<Message time='24.04.2018 15:26:24.241'>
+  <Text>CurrentUser2: False</Text>
+</Message>
+
+<Message time='24.04.2018 15:26:24.256'>
+  <Text>CurrentUser: False</Text>
+</Message>
+
+<Message time='24.04.2018 15:26:24.256'>
+  <Text>CurrentUser2: False</Text>
+</Message>
+
+<Message time='24.04.2018 15:26:45.762'>
+  <Text>CurrentUser: False</Text>
+</Message>
+
+<Message time='24.04.2018 15:26:45.762'>
+  <Text>CurrentUser2: False</Text>
+</Message>
+
+<Message time='24.04.2018 15:26:45.776'>
+  <Text>CurrentUser: False</Text>
+</Message>
+
+<Message time='24.04.2018 15:26:45.776'>
+  <Text>CurrentUser2: False</Text>
+</Message>
+
+<Message time='24.04.2018 15:26:46.752'>
+  <Text>CurrentUser: False</Text>
+</Message>
+
+<Message time='24.04.2018 15:26:46.752'>
+  <Text>CurrentUser2: False</Text>
+</Message>
+
+<Message time='24.04.2018 15:26:46.767'>
+  <Text>CurrentUser: False</Text>
+</Message>
+
+<Message time='24.04.2018 15:26:46.767'>
+  <Text>CurrentUser2: False</Text>
+</Message>
+
+<Message time='24.04.2018 15:31:40.355'>
+  <Text>Process: id = 5440 cpu = 00:00:31.5000000, page = 126mb peak = 147mb, virtual = 776mb peak = 790mb, topics = 23</Text>
+</Message>
+
+<Message time='24.04.2018 15:31:40.356'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='24.04.2018 15:31:49.963'/>
+
+<Message time='24.04.2018 15:31:50.528'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='24.04.2018 15:31:50.752'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='24.04.2018 15:31:50.770'>
+  <Text>Process: id = 5440 cpu = 00:00:32.8125000, page = 122mb peak = 147mb, virtual = 778mb peak = 790mb, topics = 0</Text>
+</Message>
+
+<Message time='24.04.2018 15:31:51.160'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='24.04.2018 15:31:52.142'>
+  <Text>CurrentUser: False</Text>
+</Message>
+
+<Message time='24.04.2018 15:34:50.857'>
+  <Text>sitemap.xml успешно обновлен</Text>
+</Message>
+
+<Message time='24.04.2018 16:31:50.764'>
+  <Text>Process: id = 5440 cpu = 00:00:34.7343750, page = 123mb peak = 147mb, virtual = 773mb peak = 790mb, topics = 23</Text>
+</Message>
+
+<Message time='24.04.2018 16:36:43.416'>
+  <Text>CurrentUser: False</Text>
+</Message>
+
+<Message time='24.04.2018 16:36:48.000'>
+  <Text>CurrentUser: False</Text>
+</Message>
+
+<Message time='24.04.2018 16:36:59.725'>
+  <Text>CurrentUser: False</Text>
+</Message>
+
+<Message time='24.04.2018 16:36:59.749'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='24.04.2018 16:37:01.870'>
+  <Text>CurrentUser: False</Text>
+</Message>
+
+<Message time='24.04.2018 16:37:02.721'>
+  <Text>CurrentUser: False</Text>
+</Message>
+
+<Message time='24.04.2018 16:37:05.141'>
+  <Text>CurrentUser: False</Text>
+</Message>
+
+<Message time='24.04.2018 16:37:05.329'>
+  <Text>CurrentUser: False</Text>
+</Message>
+
+<Message time='24.04.2018 17:31:50.767'>
+  <Text>Process: id = 5440 cpu = 00:00:35.2812500, page = 126mb peak = 147mb, virtual = 774mb peak = 790mb, topics = 23</Text>
+</Message>
+
+<Message time='24.04.2018 17:37:05.375'>
+  <Text>CurrentUser: False</Text>
+</Message>
+
+<Message time='24.04.2018 18:31:50.764'>
+  <Text>Process: id = 5440 cpu = 00:00:35.3906250, page = 127mb peak = 147mb, virtual = 775mb peak = 790mb, topics = 23</Text>
+</Message>
+
+<Message time='24.04.2018 18:37:05.377'>
+  <Text>CurrentUser: False</Text>
+</Message>
+
+<Message time='24.04.2018 19:31:50.768'>
+  <Text>Process: id = 5440 cpu = 00:00:35.5625000, page = 127mb peak = 147mb, virtual = 773mb peak = 790mb, topics = 23</Text>
+</Message>
+
+<Message time='24.04.2018 19:37:05.596'>
+  <Text>CurrentUser: False</Text>
+</Message>
+
+<Message time='24.04.2018 20:31:50.766'>
+  <Text>Process: id = 5440 cpu = 00:00:35.8593750, page = 127mb peak = 147mb, virtual = 772mb peak = 790mb, topics = 23</Text>
+</Message>
+
+<Message time='24.04.2018 20:37:05.389'>
+  <Text>CurrentUser: False</Text>
+</Message>
+
+<Message time='24.04.2018 21:31:50.765'>
+  <Text>Process: id = 5440 cpu = 00:00:38.7812500, page = 127mb peak = 147mb, virtual = 774mb peak = 790mb, topics = 23</Text>
+</Message>
+
+<Message time='24.04.2018 21:37:05.417'>
+  <Text>CurrentUser: False</Text>
+</Message>
+
+<Message time='24.04.2018 22:31:50.767'>
+  <Text>Process: id = 5440 cpu = 00:00:42.4843750, page = 127mb peak = 147mb, virtual = 773mb peak = 790mb, topics = 23</Text>
+</Message>
+
+<Message time='24.04.2018 22:37:05.356'>
+  <Text>CurrentUser: False</Text>
+</Message>
+
+<Message time='24.04.2018 23:31:50.767'>
+  <Text>Process: id = 5440 cpu = 00:00:46.8750000, page = 128mb peak = 147mb, virtual = 774mb peak = 790mb, topics = 23</Text>
+</Message>
+
+<Message time='24.04.2018 23:37:05.397'>
+  <Text>CurrentUser: False</Text>
+</Message>
+
+<Message time='25.04.2018 00:31:50.767'>
+  <Text>Process: id = 5440 cpu = 00:00:51.2187500, page = 128mb peak = 147mb, virtual = 774mb peak = 790mb, topics = 23</Text>
+</Message>
+
+<Message time='25.04.2018 00:37:05.377'>
+  <Text>CurrentUser: False</Text>
+</Message>
+
+<Message time='25.04.2018 10:27:35.520'>
+  <Text>Process: id = 5440 cpu = 00:00:52.7343750, page = 128mb peak = 147mb, virtual = 772mb peak = 790mb, topics = 23</Text>
+</Message>
+
+<Message time='25.04.2018 10:37:05.397'>
+  <Text>CurrentUser: False</Text>
+</Message>
+
+<Message time='25.04.2018 11:27:35.522'>
+  <Text>Process: id = 5440 cpu = 00:00:52.9062500, page = 129mb peak = 147mb, virtual = 775mb peak = 790mb, topics = 23</Text>
+</Message>
+
+<Message time='25.04.2018 11:37:05.398'>
+  <Text>CurrentUser: False</Text>
+</Message>
+
+<Message time='25.04.2018 11:45:14.605'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='25.04.2018 11:45:14.607'>
+  <Text>Process: id = 5440 cpu = 00:00:52.9843750, page = 129mb peak = 147mb, virtual = 776mb peak = 790mb, topics = 23</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='25.04.2018 11:45:30.218'/>
+
+<Message time='25.04.2018 11:45:31.530'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='25.04.2018 11:45:31.849'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='25.04.2018 11:45:31.947'>
+  <Text>Process: id = 5440 cpu = 00:00:54.2812500, page = 127mb peak = 147mb, virtual = 776mb peak = 790mb, topics = 0</Text>
+</Message>
+
+<Message time='25.04.2018 11:45:32.133'>
+  <Text>System.Security.Cryptography.CryptographicException: Ошибка при выполнении криптографической операции.
+   в System.Web.Security.Cryptography.HomogenizingCryptoServiceWrapper.HomogenizeErrors(Func`2 func, Byte[] input)
+   в System.Web.Security.Cryptography.HomogenizingCryptoServiceWrapper.Unprotect(Byte[] protectedData)
+   в System.Web.Security.FormsAuthentication.Decrypt(String encryptedTicket)
+   в Commune.Html.AuthHlp.SetUserFromCookie(HttpContext context)</Text>
+</Message>
+
+<Message time='25.04.2018 11:45:32.640'>
+  <Text>CurrentUser: False</Text>
+</Message>
+
+<Message time='25.04.2018 11:45:34.528'>
+  <Text>CurrentUser: False</Text>
+</Message>
+
+<Message time='25.04.2018 11:47:21.798'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='25.04.2018 11:47:21.801'>
+  <Text>Process: id = 5440 cpu = 00:00:55.9531250, page = 133mb peak = 147mb, virtual = 779mb peak = 790mb, topics = 23</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='25.04.2018 11:47:27.446'/>
+
+<Message time='25.04.2018 11:47:28.390'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='25.04.2018 11:47:28.698'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='25.04.2018 11:47:28.760'>
+  <Text>Process: id = 5440 cpu = 00:00:57.5937500, page = 131mb peak = 147mb, virtual = 782mb peak = 790mb, topics = 0</Text>
+</Message>
+
+<Message time='25.04.2018 11:47:28.881'>
+  <Text>System.Security.Cryptography.CryptographicException: Ошибка при выполнении криптографической операции.
+   в System.Web.Security.Cryptography.HomogenizingCryptoServiceWrapper.HomogenizeErrors(Func`2 func, Byte[] input)
+   в System.Web.Security.Cryptography.HomogenizingCryptoServiceWrapper.Unprotect(Byte[] protectedData)
+   в System.Web.Security.FormsAuthentication.Decrypt(String encryptedTicket)
+   в Commune.Html.AuthHlp.SetUserFromCookie(HttpContext context)</Text>
+</Message>
+
+<Message time='25.04.2018 11:47:28.881'>
+  <Text>System.Security.Cryptography.CryptographicException: Ошибка при выполнении криптографической операции.
+   в System.Web.Security.Cryptography.HomogenizingCryptoServiceWrapper.HomogenizeErrors(Func`2 func, Byte[] input)
+   в System.Web.Security.Cryptography.HomogenizingCryptoServiceWrapper.Unprotect(Byte[] protectedData)
+   в System.Web.Security.FormsAuthentication.Decrypt(String encryptedTicket)
+   в Commune.Html.AuthHlp.SetUserFromCookie(HttpContext context)</Text>
+</Message>
+
+<Message time='25.04.2018 11:47:28.883'>
+  <Text>Cookie: 572BE6B9972F339EAF1C9ACD3D11C24F89059B4E3B6642F1F4A3030850DF901714B291849F882AA264B8523CC09D34276D0732863846F48816AE03CE13FCE52A3DFFCC317BCF529184CC14D25CDFBD8B1B18CC130D96403B4BE6E1912416CD2A698AF50CF15D648E216E7554CC86C046105E7BC4D1C792322BA926EC708240F8</Text>
+</Message>
+
+<Message time='25.04.2018 11:47:28.883'>
+  <Text>Cookie: 572BE6B9972F339EAF1C9ACD3D11C24F89059B4E3B6642F1F4A3030850DF901714B291849F882AA264B8523CC09D34276D0732863846F48816AE03CE13FCE52A3DFFCC317BCF529184CC14D25CDFBD8B1B18CC130D96403B4BE6E1912416CD2A698AF50CF15D648E216E7554CC86C046105E7BC4D1C792322BA926EC708240F8</Text>
+</Message>
+
+<Message time='25.04.2018 11:47:29.132'>
+  <Text>CurrentUser: False</Text>
+</Message>
+
+<Message time='25.04.2018 11:47:30.530'>
+  <Text>CurrentUser: False</Text>
+</Message>
+
+<Message time='25.04.2018 11:48:16.796'>
+  <Text>CurrentUser: False</Text>
+</Message>
+
+<Message time='25.04.2018 11:48:16.838'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='25.04.2018 11:48:22.290'>
+  <Text>System.Security.Cryptography.CryptographicException: Ошибка при выполнении криптографической операции.
+   в System.Web.Security.Cryptography.HomogenizingCryptoServiceWrapper.HomogenizeErrors(Func`2 func, Byte[] input)
+   в System.Web.Security.Cryptography.HomogenizingCryptoServiceWrapper.Unprotect(Byte[] protectedData)
+   в System.Web.Security.FormsAuthentication.Decrypt(String encryptedTicket)
+   в Commune.Html.AuthHlp.SetUserFromCookie(HttpContext context)</Text>
+</Message>
+
+<Message time='25.04.2018 11:48:22.290'>
+  <Text>Cookie: 572BE6B9972F339EAF1C9ACD3D11C24F89059B4E3B6642F1F4A3030850DF901714B291849F882AA264B8523CC09D34276D0732863846F48816AE03CE13FCE52A3DFFCC317BCF529184CC14D25CDFBD8B1B18CC130D96403B4BE6E1912416CD2A698AF50CF15D648E216E7554CC86C046105E7BC4D1C792322BA926EC708240F8</Text>
+</Message>
+
+<Message time='25.04.2018 11:48:22.397'>
+  <Text>CurrentUser: False</Text>
+</Message>
+
+<Message time='25.04.2018 11:48:22.829'>
+  <Text>CurrentUser: False</Text>
+</Message>
+
+<Message time='25.04.2018 11:49:07.952'>
+  <Text>System.Security.Cryptography.CryptographicException: Ошибка при выполнении криптографической операции.
+   в System.Web.Security.Cryptography.HomogenizingCryptoServiceWrapper.HomogenizeErrors(Func`2 func, Byte[] input)
+   в System.Web.Security.Cryptography.HomogenizingCryptoServiceWrapper.Unprotect(Byte[] protectedData)
+   в System.Web.Security.FormsAuthentication.Decrypt(String encryptedTicket)
+   в Commune.Html.AuthHlp.SetUserFromCookie(HttpContext context)</Text>
+</Message>
+
+<Message time='25.04.2018 11:49:08.638'>
+  <Text>Cookie: 572BE6B9972F339EAF1C9ACD3D11C24F89059B4E3B6642F1F4A3030850DF901714B291849F882AA264B8523CC09D34276D0732863846F48816AE03CE13FCE52A3DFFCC317BCF529184CC14D25CDFBD8B1B18CC130D96403B4BE6E1912416CD2A698AF50CF15D648E216E7554CC86C046105E7BC4D1C792322BA926EC708240F8</Text>
+</Message>
+
+<Message time='25.04.2018 11:49:08.642'>
+  <Text>CurrentUser: False</Text>
+</Message>
+
+<Message time='25.04.2018 11:49:10.112'>
+  <Text>System.Security.Cryptography.CryptographicException: Ошибка при выполнении криптографической операции.
+   в System.Web.Security.Cryptography.HomogenizingCryptoServiceWrapper.HomogenizeErrors(Func`2 func, Byte[] input)
+   в System.Web.Security.Cryptography.HomogenizingCryptoServiceWrapper.Unprotect(Byte[] protectedData)
+   в System.Web.Security.FormsAuthentication.Decrypt(String encryptedTicket)
+   в Commune.Html.AuthHlp.SetUserFromCookie(HttpContext context)</Text>
+</Message>
+
+<Message time='25.04.2018 11:49:10.112'>
+  <Text>Cookie: 572BE6B9972F339EAF1C9ACD3D11C24F89059B4E3B6642F1F4A3030850DF901714B291849F882AA264B8523CC09D34276D0732863846F48816AE03CE13FCE52A3DFFCC317BCF529184CC14D25CDFBD8B1B18CC130D96403B4BE6E1912416CD2A698AF50CF15D648E216E7554CC86C046105E7BC4D1C792322BA926EC708240F8</Text>
+</Message>
+
+<Message time='25.04.2018 11:49:10.116'>
+  <Text>CurrentUser: False</Text>
+</Message>
+
+<Message time='25.04.2018 11:49:10.409'>
+  <Text>CurrentUser: False</Text>
+</Message>
+
+<Message time='25.04.2018 11:49:21.353'>
+  <Text>Process: id = 5440 cpu = 00:00:59.7968750, page = 138mb peak = 147mb, virtual = 792mb peak = 792mb, topics = 23</Text>
+</Message>
+
+<Message time='25.04.2018 11:49:21.354'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='25.04.2018 11:49:25.352'/>
+
+<Message time='25.04.2018 11:49:26.240'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='25.04.2018 11:49:26.503'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='25.04.2018 11:49:26.540'>
+  <Text>Process: id = 5440 cpu = 00:01:01.5468750, page = 136mb peak = 147mb, virtual = 794mb peak = 795mb, topics = 0</Text>
+</Message>
+
+<Message time='25.04.2018 11:49:26.622'>
+  <Text>System.Security.Cryptography.CryptographicException: Ошибка при выполнении криптографической операции.
+   в System.Web.Security.Cryptography.HomogenizingCryptoServiceWrapper.HomogenizeErrors(Func`2 func, Byte[] input)
+   в System.Web.Security.Cryptography.HomogenizingCryptoServiceWrapper.Unprotect(Byte[] protectedData)
+   в System.Web.Security.FormsAuthentication.Decrypt(String encryptedTicket)
+   в Commune.Html.AuthHlp.SetUserFromCookie(HttpContext context)</Text>
+</Message>
+
+<Message time='25.04.2018 11:49:26.622'>
+  <Text>System.Security.Cryptography.CryptographicException: Ошибка при выполнении криптографической операции.
+   в System.Web.Security.Cryptography.HomogenizingCryptoServiceWrapper.HomogenizeErrors(Func`2 func, Byte[] input)
+   в System.Web.Security.Cryptography.HomogenizingCryptoServiceWrapper.Unprotect(Byte[] protectedData)
+   в System.Web.Security.FormsAuthentication.Decrypt(String encryptedTicket)
+   в Commune.Html.AuthHlp.SetUserFromCookie(HttpContext context)</Text>
+</Message>
+
+<Message time='25.04.2018 11:49:26.623'>
+  <Text>Cookie: 572BE6B9972F339EAF1C9ACD3D11C24F89059B4E3B6642F1F4A3030850DF901714B291849F882AA264B8523CC09D34276D0732863846F48816AE03CE13FCE52A3DFFCC317BCF529184CC14D25CDFBD8B1B18CC130D96403B4BE6E1912416CD2A698AF50CF15D648E216E7554CC86C046105E7BC4D1C792322BA926EC708240F8</Text>
+</Message>
+
+<Message time='25.04.2018 11:49:26.623'>
+  <Text>Cookie: 572BE6B9972F339EAF1C9ACD3D11C24F89059B4E3B6642F1F4A3030850DF901714B291849F882AA264B8523CC09D34276D0732863846F48816AE03CE13FCE52A3DFFCC317BCF529184CC14D25CDFBD8B1B18CC130D96403B4BE6E1912416CD2A698AF50CF15D648E216E7554CC86C046105E7BC4D1C792322BA926EC708240F8</Text>
+</Message>
+
+<Message time='25.04.2018 11:49:26.873'>
+  <Text>CurrentUser: False</Text>
+</Message>
+
+<Message time='25.04.2018 11:49:27.823'>
+  <Text>System.Security.Cryptography.CryptographicException: Ошибка при выполнении криптографической операции.
+   в System.Web.Security.Cryptography.HomogenizingCryptoServiceWrapper.HomogenizeErrors(Func`2 func, Byte[] input)
+   в System.Web.Security.Cryptography.HomogenizingCryptoServiceWrapper.Unprotect(Byte[] protectedData)
+   в System.Web.Security.FormsAuthentication.Decrypt(String encryptedTicket)
+   в Commune.Html.AuthHlp.SetUserFromCookie(HttpContext context)</Text>
+</Message>
+
+<Message time='25.04.2018 11:49:27.824'>
+  <Text>Cookie: 572BE6B9972F339EAF1C9ACD3D11C24F89059B4E3B6642F1F4A3030850DF901714B291849F882AA264B8523CC09D34276D0732863846F48816AE03CE13FCE52A3DFFCC317BCF529184CC14D25CDFBD8B1B18CC130D96403B4BE6E1912416CD2A698AF50CF15D648E216E7554CC86C046105E7BC4D1C792322BA926EC708240F8</Text>
+</Message>
+
+<Message time='25.04.2018 11:49:28.101'>
+  <Text>CurrentUser: False</Text>
+</Message>
+
+<Message time='25.04.2018 11:50:05.673'>
+  <Text>System.Security.Cryptography.CryptographicException: Ошибка при выполнении криптографической операции.
+   в System.Web.Security.Cryptography.HomogenizingCryptoServiceWrapper.HomogenizeErrors(Func`2 func, Byte[] input)
+   в System.Web.Security.Cryptography.HomogenizingCryptoServiceWrapper.Unprotect(Byte[] protectedData)
+   в System.Web.Security.FormsAuthentication.Decrypt(String encryptedTicket)
+   в Commune.Html.AuthHlp.SetUserFromCookie(HttpContext context)</Text>
+</Message>
+
+<Message time='25.04.2018 11:50:05.677'>
+  <Text>Cookie: 572BE6B9972F339EAF1C9ACD3D11C24F89059B4E3B6642F1F4A3030850DF901714B291849F882AA264B8523CC09D34276D0732863846F48816AE03CE13FCE52A3DFFCC317BCF529184CC14D25CDFBD8B1B18CC130D96403B4BE6E1912416CD2A698AF50CF15D648E216E7554CC86C046105E7BC4D1C792322BA926EC708240F8</Text>
+</Message>
+
+<Message time='25.04.2018 11:50:05.682'>
+  <Text>CurrentUser: False</Text>
+</Message>
+
+<Message time='25.04.2018 11:50:06.128'>
+  <Text>System.Security.Cryptography.CryptographicException: Ошибка при выполнении криптографической операции.
+   в System.Web.Security.Cryptography.HomogenizingCryptoServiceWrapper.HomogenizeErrors(Func`2 func, Byte[] input)
+   в System.Web.Security.Cryptography.HomogenizingCryptoServiceWrapper.Unprotect(Byte[] protectedData)
+   в System.Web.Security.FormsAuthentication.Decrypt(String encryptedTicket)
+   в Commune.Html.AuthHlp.SetUserFromCookie(HttpContext context)</Text>
+</Message>
+
+<Message time='25.04.2018 11:50:06.129'>
+  <Text>Cookie: 572BE6B9972F339EAF1C9ACD3D11C24F89059B4E3B6642F1F4A3030850DF901714B291849F882AA264B8523CC09D34276D0732863846F48816AE03CE13FCE52A3DFFCC317BCF529184CC14D25CDFBD8B1B18CC130D96403B4BE6E1912416CD2A698AF50CF15D648E216E7554CC86C046105E7BC4D1C792322BA926EC708240F8</Text>
+</Message>
+
+<Message time='25.04.2018 11:50:06.133'>
+  <Text>CurrentUser: False</Text>
+</Message>
+
+<Message time='25.04.2018 11:50:13.989'>
+  <Text>System.Security.Cryptography.CryptographicException: Ошибка при выполнении криптографической операции.
+   в System.Web.Security.Cryptography.HomogenizingCryptoServiceWrapper.HomogenizeErrors(Func`2 func, Byte[] input)
+   в System.Web.Security.Cryptography.HomogenizingCryptoServiceWrapper.Unprotect(Byte[] protectedData)
+   в System.Web.Security.FormsAuthentication.Decrypt(String encryptedTicket)
+   в Commune.Html.AuthHlp.SetUserFromCookie(HttpContext context)</Text>
+</Message>
+
+<Message time='25.04.2018 11:50:13.989'>
+  <Text>Cookie: 572BE6B9972F339EAF1C9ACD3D11C24F89059B4E3B6642F1F4A3030850DF901714B291849F882AA264B8523CC09D34276D0732863846F48816AE03CE13FCE52A3DFFCC317BCF529184CC14D25CDFBD8B1B18CC130D96403B4BE6E1912416CD2A698AF50CF15D648E216E7554CC86C046105E7BC4D1C792322BA926EC708240F8</Text>
+</Message>
+
+<Message time='25.04.2018 11:50:14.058'>
+  <Text>CurrentUser: False</Text>
+</Message>
+
+<Message time='25.04.2018 11:50:14.112'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='25.04.2018 11:50:17.258'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='25.04.2018 11:50:17.592'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='25.04.2018 11:51:32.214'>
+  <Text>Process: id = 5440 cpu = 00:01:03.4218750, page = 144mb peak = 147mb, virtual = 795mb peak = 796mb, topics = 23</Text>
+</Message>
+
+<Message time='25.04.2018 11:51:32.218'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='25.04.2018 11:51:37.045'/>
+
+<Message time='25.04.2018 11:51:37.857'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='25.04.2018 11:51:38.141'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='25.04.2018 11:51:38.166'>
+  <Text>Process: id = 5440 cpu = 00:01:05.0625000, page = 141mb peak = 147mb, virtual = 797mb peak = 797mb, topics = 0</Text>
+</Message>
+
+<Message time='25.04.2018 11:51:38.563'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='25.04.2018 11:51:41.000'>
+  <Text>CurrentUser: False</Text>
+</Message>
+
+<Message time='25.04.2018 11:51:59.235'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='25.04.2018 11:51:59.531'>
+  <Text>CurrentUser: False</Text>
+</Message>
+
+<Message time='25.04.2018 11:52:18.380'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='25.04.2018 11:52:18.629'>
+  <Text>CurrentUser: False</Text>
+</Message>
+
+<Message time='25.04.2018 11:52:29.877'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='25.04.2018 11:52:30.183'>
+  <Text>CurrentUser: False</Text>
+</Message>
+
+<Message time='25.04.2018 11:54:38.152'>
+  <Text>sitemap.xml успешно обновлен</Text>
+</Message>
+
+<Message time='25.04.2018 12:04:27.887'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='25.04.2018 12:04:27.890'>
+  <Text>Process: id = 5440 cpu = 00:01:07.3125000, page = 127mb peak = 147mb, virtual = 785mb peak = 798mb, topics = 23</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='25.04.2018 12:04:39.866'/>
+
+<Message time='25.04.2018 12:04:40.483'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='25.04.2018 12:04:40.737'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='25.04.2018 12:04:40.766'>
+  <Text>Process: id = 5440 cpu = 00:01:08.8281250, page = 117mb peak = 147mb, virtual = 787mb peak = 798mb, topics = 0</Text>
+</Message>
+
+<Message time='25.04.2018 12:04:40.893'>
+  <Text>AuthenticateRequest: 77E8CD4117140407864B566F5E390926186B16C72B7A8E42A6E94DD321D7192E60C55CC8C8288D25402881D328FC22D203FBEB52D730B91DB1F49E9F58BEB16B9B460F180B806C41BA58BAF225FA3032F7E190B9EC8E9547A0FEA038857CE883AF1DB3027CF4B8316850CC2C25C3026A231D8747</Text>
+</Message>
+
+<Message time='25.04.2018 12:04:40.893'>
+  <Text>AuthenticateRequest: 77E8CD4117140407864B566F5E390926186B16C72B7A8E42A6E94DD321D7192E60C55CC8C8288D25402881D328FC22D203FBEB52D730B91DB1F49E9F58BEB16B9B460F180B806C41BA58BAF225FA3032F7E190B9EC8E9547A0FEA038857CE883AF1DB3027CF4B8316850CC2C25C3026A231D8747</Text>
+</Message>
+
+<Message time='25.04.2018 12:04:40.893'>
+  <Text>AuthenticateRequest: 77E8CD4117140407864B566F5E390926186B16C72B7A8E42A6E94DD321D7192E60C55CC8C8288D25402881D328FC22D203FBEB52D730B91DB1F49E9F58BEB16B9B460F180B806C41BA58BAF225FA3032F7E190B9EC8E9547A0FEA038857CE883AF1DB3027CF4B8316850CC2C25C3026A231D8747</Text>
+</Message>
+
+<Message time='25.04.2018 12:04:41.385'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='25.04.2018 12:04:42.697'>
+  <Text>AuthenticateRequest: </Text>
+</Message>
+
+<Message time='25.04.2018 12:04:42.908'>
+  <Text>CurrentUser: False</Text>
+</Message>
+
+<Message time='25.04.2018 12:07:51.395'>
+  <Text>AuthenticateRequest: 77E8CD4117140407864B566F5E390926186B16C72B7A8E42A6E94DD321D7192E60C55CC8C8288D25402881D328FC22D203FBEB52D730B91DB1F49E9F58BEB16B9B460F180B806C41BA58BAF225FA3032F7E190B9EC8E9547A0FEA038857CE883AF1DB3027CF4B8316850CC2C25C3026A231D8747</Text>
+</Message>
+
+<Message time='25.04.2018 12:07:51.418'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='25.04.2018 12:07:52.006'>
+  <Text>AuthenticateRequest: </Text>
+</Message>
+
+<Message time='25.04.2018 12:07:52.011'>
+  <Text>CurrentUser: False</Text>
+</Message>
+
+<Message time='25.04.2018 12:08:45.449'>
+  <Text>AuthenticateRequest: </Text>
+</Message>
+
+<Message time='25.04.2018 12:08:45.558'>
+  <Text>CurrentUser: False</Text>
+</Message>
+
+<Message time='25.04.2018 12:08:45.581'>
+  <Text>CurrentUser: False</Text>
+</Message>
+
+<Message time='25.04.2018 12:08:48.018'>
+  <Text>AuthenticateRequest: </Text>
+</Message>
+
+<Message time='25.04.2018 12:08:48.026'>
+  <Text>AuthenticateRequest: </Text>
+</Message>
+
+<Message time='25.04.2018 12:08:48.030'>
+  <Text>CurrentUser: False</Text>
+</Message>
+
+<Message time='25.04.2018 12:08:48.030'>
+  <Text>CurrentUser: False</Text>
+</Message>
+
+<Message time='25.04.2018 12:08:48.037'>
+  <Text>CurrentUser: False</Text>
+</Message>
+
+<Message time='25.04.2018 12:08:48.042'>
+  <Text>CurrentUser: False</Text>
+</Message>
+
+<Message time='25.04.2018 12:08:48.136'>
+  <Text>AuthenticateRequest: </Text>
+</Message>
+
+<Message time='25.04.2018 12:08:48.140'>
+  <Text>CurrentUser: False</Text>
+</Message>
+
+<Message time='25.04.2018 12:09:05.837'>
+  <Text>AuthenticateRequest: </Text>
+</Message>
+
+<Message time='25.04.2018 12:09:05.841'>
+  <Text>CurrentUser: False</Text>
+</Message>
+
+<Message time='25.04.2018 12:09:05.853'>
+  <Text>CurrentUser: False</Text>
+</Message>
+
+<Message time='25.04.2018 12:09:20.801'>
+  <Text>AuthenticateRequest: </Text>
+</Message>
+
+<Message time='25.04.2018 12:09:20.808'>
+  <Text>CurrentUser: False</Text>
+</Message>
+
+<Message time='25.04.2018 12:09:20.808'>
+  <Text>AuthenticateRequest: </Text>
+</Message>
+
+<Message time='25.04.2018 12:09:20.812'>
+  <Text>CurrentUser: False</Text>
+</Message>
+
+<Message time='25.04.2018 12:09:20.820'>
+  <Text>CurrentUser: False</Text>
+</Message>
+
+<Message time='25.04.2018 12:09:20.821'>
+  <Text>CurrentUser: False</Text>
+</Message>
+
+<Message time='25.04.2018 12:09:20.888'>
+  <Text>AuthenticateRequest: </Text>
+</Message>
+
+<Message time='25.04.2018 12:09:20.894'>
+  <Text>CurrentUser: False</Text>
+</Message>
+
+<Message time='25.04.2018 12:10:05.757'>
+  <Text>Process: id = 5440 cpu = 00:01:11.8906250, page = 118mb peak = 147mb, virtual = 785mb peak = 798mb, topics = 10</Text>
+</Message>
+
+<Message time='25.04.2018 12:10:05.758'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='25.04.2018 12:10:12.329'/>
+
+<Message time='25.04.2018 12:10:13.215'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='25.04.2018 12:10:13.476'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='25.04.2018 12:10:13.485'>
+  <Text>Process: id = 5440 cpu = 00:01:13.5000000, page = 117mb peak = 147mb, virtual = 788mb peak = 798mb, topics = 0</Text>
+</Message>
+
+<Message time='25.04.2018 12:10:13.642'>
+  <Text>AuthenticateRequest: 77E8CD4117140407864B566F5E390926186B16C72B7A8E42A6E94DD321D7192E60C55CC8C8288D25402881D328FC22D203FBEB52D730B91DB1F49E9F58BEB16B9B460F180B806C41BA58BAF225FA3032F7E190B9EC8E9547A0FEA038857CE883AF1DB3027CF4B8316850CC2C25C3026A231D8747</Text>
+</Message>
+
+<Message time='25.04.2018 12:10:13.642'>
+  <Text>AuthenticateRequest: 77E8CD4117140407864B566F5E390926186B16C72B7A8E42A6E94DD321D7192E60C55CC8C8288D25402881D328FC22D203FBEB52D730B91DB1F49E9F58BEB16B9B460F180B806C41BA58BAF225FA3032F7E190B9EC8E9547A0FEA038857CE883AF1DB3027CF4B8316850CC2C25C3026A231D8747</Text>
+</Message>
+
+<Message time='25.04.2018 12:10:13.946'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='25.04.2018 12:10:15.041'>
+  <Text>AuthenticateRequest: 77E8CD4117140407864B566F5E390926186B16C72B7A8E42A6E94DD321D7192E60C55CC8C8288D25402881D328FC22D203FBEB52D730B91DB1F49E9F58BEB16B9B460F180B806C41BA58BAF225FA3032F7E190B9EC8E9547A0FEA038857CE883AF1DB3027CF4B8316850CC2C25C3026A231D8747</Text>
+</Message>
+
+<Message time='25.04.2018 12:10:15.309'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='25.04.2018 12:11:12.692'>
+  <Text>AuthenticateRequest: 77E8CD4117140407864B566F5E390926186B16C72B7A8E42A6E94DD321D7192E60C55CC8C8288D25402881D328FC22D203FBEB52D730B91DB1F49E9F58BEB16B9B460F180B806C41BA58BAF225FA3032F7E190B9EC8E9547A0FEA038857CE883AF1DB3027CF4B8316850CC2C25C3026A231D8747</Text>
+</Message>
+
+<Message time='25.04.2018 12:11:12.719'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='25.04.2018 12:11:13.239'>
+  <Text>AuthenticateRequest: 77E8CD4117140407864B566F5E390926186B16C72B7A8E42A6E94DD321D7192E60C55CC8C8288D25402881D328FC22D203FBEB52D730B91DB1F49E9F58BEB16B9B460F180B806C41BA58BAF225FA3032F7E190B9EC8E9547A0FEA038857CE883AF1DB3027CF4B8316850CC2C25C3026A231D8747</Text>
+</Message>
+
+<Message time='25.04.2018 12:11:13.243'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='25.04.2018 12:11:36.361'>
+  <Text>AuthenticateRequest: 77E8CD4117140407864B566F5E390926186B16C72B7A8E42A6E94DD321D7192E60C55CC8C8288D25402881D328FC22D203FBEB52D730B91DB1F49E9F58BEB16B9B460F180B806C41BA58BAF225FA3032F7E190B9EC8E9547A0FEA038857CE883AF1DB3027CF4B8316850CC2C25C3026A231D8747</Text>
+</Message>
+
+<Message time='25.04.2018 12:11:36.467'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='25.04.2018 12:11:36.492'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='25.04.2018 12:12:25.172'>
+  <Text>AuthenticateRequest: 77E8CD4117140407864B566F5E390926186B16C72B7A8E42A6E94DD321D7192E60C55CC8C8288D25402881D328FC22D203FBEB52D730B91DB1F49E9F58BEB16B9B460F180B806C41BA58BAF225FA3032F7E190B9EC8E9547A0FEA038857CE883AF1DB3027CF4B8316850CC2C25C3026A231D8747</Text>
+</Message>
+
+<Message time='25.04.2018 12:12:25.180'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='25.04.2018 12:12:25.186'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='25.04.2018 13:10:13.479'>
+  <Text>Process: id = 5440 cpu = 00:01:17.0937500, page = 110mb peak = 147mb, virtual = 783mb peak = 798mb, topics = 10</Text>
+</Message>
+
+<Message time='25.04.2018 13:11:13.269'>
+  <Text>AuthenticateRequest: 77E8CD4117140407864B566F5E390926186B16C72B7A8E42A6E94DD321D7192E60C55CC8C8288D25402881D328FC22D203FBEB52D730B91DB1F49E9F58BEB16B9B460F180B806C41BA58BAF225FA3032F7E190B9EC8E9547A0FEA038857CE883AF1DB3027CF4B8316850CC2C25C3026A231D8747</Text>
+</Message>
+
+<Message time='25.04.2018 13:11:13.550'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='25.04.2018 14:10:13.482'>
+  <Text>Process: id = 5440 cpu = 00:01:29.9218750, page = 110mb peak = 147mb, virtual = 784mb peak = 798mb, topics = 10</Text>
+</Message>
+
+<Message time='25.04.2018 14:11:13.289'>
+  <Text>AuthenticateRequest: 77E8CD4117140407864B566F5E390926186B16C72B7A8E42A6E94DD321D7192E60C55CC8C8288D25402881D328FC22D203FBEB52D730B91DB1F49E9F58BEB16B9B460F180B806C41BA58BAF225FA3032F7E190B9EC8E9547A0FEA038857CE883AF1DB3027CF4B8316850CC2C25C3026A231D8747</Text>
+</Message>
+
+<Message time='25.04.2018 14:11:13.329'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='25.04.2018 15:10:13.478'>
+  <Text>Process: id = 5440 cpu = 00:01:31.8281250, page = 110mb peak = 147mb, virtual = 784mb peak = 798mb, topics = 10</Text>
+</Message>
+
+<Message time='25.04.2018 15:11:13.258'>
+  <Text>AuthenticateRequest: 77E8CD4117140407864B566F5E390926186B16C72B7A8E42A6E94DD321D7192E60C55CC8C8288D25402881D328FC22D203FBEB52D730B91DB1F49E9F58BEB16B9B460F180B806C41BA58BAF225FA3032F7E190B9EC8E9547A0FEA038857CE883AF1DB3027CF4B8316850CC2C25C3026A231D8747</Text>
+</Message>
+
+<Message time='25.04.2018 15:11:13.310'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='25.04.2018 16:10:13.479'>
+  <Text>Process: id = 5440 cpu = 00:01:32.0937500, page = 110mb peak = 147mb, virtual = 784mb peak = 798mb, topics = 10</Text>
+</Message>
+
+<Message time='25.04.2018 16:11:13.282'>
+  <Text>AuthenticateRequest: 77E8CD4117140407864B566F5E390926186B16C72B7A8E42A6E94DD321D7192E60C55CC8C8288D25402881D328FC22D203FBEB52D730B91DB1F49E9F58BEB16B9B460F180B806C41BA58BAF225FA3032F7E190B9EC8E9547A0FEA038857CE883AF1DB3027CF4B8316850CC2C25C3026A231D8747</Text>
+</Message>
+
+<Message time='25.04.2018 16:11:13.332'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='25.04.2018 17:10:13.480'>
+  <Text>Process: id = 5440 cpu = 00:01:32.2812500, page = 110mb peak = 147mb, virtual = 783mb peak = 798mb, topics = 10</Text>
+</Message>
+
+<Message time='25.04.2018 17:11:13.284'>
+  <Text>AuthenticateRequest: 77E8CD4117140407864B566F5E390926186B16C72B7A8E42A6E94DD321D7192E60C55CC8C8288D25402881D328FC22D203FBEB52D730B91DB1F49E9F58BEB16B9B460F180B806C41BA58BAF225FA3032F7E190B9EC8E9547A0FEA038857CE883AF1DB3027CF4B8316850CC2C25C3026A231D8747</Text>
+</Message>
+
+<Message time='25.04.2018 17:11:13.324'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='25.04.2018 18:10:13.480'>
+  <Text>Process: id = 5440 cpu = 00:01:32.3281250, page = 110mb peak = 147mb, virtual = 780mb peak = 798mb, topics = 10</Text>
+</Message>
+
+<Message time='25.04.2018 18:11:13.247'>
+  <Text>AuthenticateRequest: 77E8CD4117140407864B566F5E390926186B16C72B7A8E42A6E94DD321D7192E60C55CC8C8288D25402881D328FC22D203FBEB52D730B91DB1F49E9F58BEB16B9B460F180B806C41BA58BAF225FA3032F7E190B9EC8E9547A0FEA038857CE883AF1DB3027CF4B8316850CC2C25C3026A231D8747</Text>
+</Message>
+
+<Message time='25.04.2018 18:11:13.250'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='25.04.2018 19:07:30.745'>
+  <Text>AuthenticateRequest: 77E8CD4117140407864B566F5E390926186B16C72B7A8E42A6E94DD321D7192E60C55CC8C8288D25402881D328FC22D203FBEB52D730B91DB1F49E9F58BEB16B9B460F180B806C41BA58BAF225FA3032F7E190B9EC8E9547A0FEA038857CE883AF1DB3027CF4B8316850CC2C25C3026A231D8747</Text>
+</Message>
+
+<Message time='25.04.2018 19:07:31.062'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='25.04.2018 19:07:39.633'>
+  <Text>AuthenticateRequest: 77E8CD4117140407864B566F5E390926186B16C72B7A8E42A6E94DD321D7192E60C55CC8C8288D25402881D328FC22D203FBEB52D730B91DB1F49E9F58BEB16B9B460F180B806C41BA58BAF225FA3032F7E190B9EC8E9547A0FEA038857CE883AF1DB3027CF4B8316850CC2C25C3026A231D8747</Text>
+</Message>
+
+<Message time='25.04.2018 19:07:39.636'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='25.04.2018 19:10:13.479'>
+  <Text>Process: id = 5440 cpu = 00:01:32.7031250, page = 113mb peak = 147mb, virtual = 781mb peak = 798mb, topics = 23</Text>
+</Message>
+
+<Message time='25.04.2018 20:07:39.649'>
+  <Text>AuthenticateRequest: 77E8CD4117140407864B566F5E390926186B16C72B7A8E42A6E94DD321D7192E60C55CC8C8288D25402881D328FC22D203FBEB52D730B91DB1F49E9F58BEB16B9B460F180B806C41BA58BAF225FA3032F7E190B9EC8E9547A0FEA038857CE883AF1DB3027CF4B8316850CC2C25C3026A231D8747</Text>
+</Message>
+
+<Message time='25.04.2018 20:07:39.689'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='25.04.2018 20:10:13.480'>
+  <Text>Process: id = 5440 cpu = 00:01:32.9687500, page = 113mb peak = 147mb, virtual = 780mb peak = 798mb, topics = 23</Text>
+</Message>
+
+<Message time='25.04.2018 21:07:39.651'>
+  <Text>AuthenticateRequest: 77E8CD4117140407864B566F5E390926186B16C72B7A8E42A6E94DD321D7192E60C55CC8C8288D25402881D328FC22D203FBEB52D730B91DB1F49E9F58BEB16B9B460F180B806C41BA58BAF225FA3032F7E190B9EC8E9547A0FEA038857CE883AF1DB3027CF4B8316850CC2C25C3026A231D8747</Text>
+</Message>
+
+<Message time='25.04.2018 21:07:39.697'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='25.04.2018 21:10:13.480'>
+  <Text>Process: id = 5440 cpu = 00:01:33.3437500, page = 114mb peak = 147mb, virtual = 780mb peak = 798mb, topics = 23</Text>
+</Message>
+
+<Message time='25.04.2018 22:07:39.673'>
+  <Text>AuthenticateRequest: 77E8CD4117140407864B566F5E390926186B16C72B7A8E42A6E94DD321D7192E60C55CC8C8288D25402881D328FC22D203FBEB52D730B91DB1F49E9F58BEB16B9B460F180B806C41BA58BAF225FA3032F7E190B9EC8E9547A0FEA038857CE883AF1DB3027CF4B8316850CC2C25C3026A231D8747</Text>
+</Message>
+
+<Message time='25.04.2018 22:07:39.714'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='25.04.2018 22:10:13.482'>
+  <Text>Process: id = 5440 cpu = 00:01:33.8593750, page = 114mb peak = 147mb, virtual = 780mb peak = 798mb, topics = 23</Text>
+</Message>
+
+<Message time='25.04.2018 23:07:39.667'>
+  <Text>AuthenticateRequest: 77E8CD4117140407864B566F5E390926186B16C72B7A8E42A6E94DD321D7192E60C55CC8C8288D25402881D328FC22D203FBEB52D730B91DB1F49E9F58BEB16B9B460F180B806C41BA58BAF225FA3032F7E190B9EC8E9547A0FEA038857CE883AF1DB3027CF4B8316850CC2C25C3026A231D8747</Text>
+</Message>
+
+<Message time='25.04.2018 23:07:39.707'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='25.04.2018 23:10:13.481'>
+  <Text>Process: id = 5440 cpu = 00:01:35.9843750, page = 115mb peak = 147mb, virtual = 783mb peak = 798mb, topics = 23</Text>
+</Message>
+
+<Message time='26.04.2018 00:07:39.659'>
+  <Text>AuthenticateRequest: 77E8CD4117140407864B566F5E390926186B16C72B7A8E42A6E94DD321D7192E60C55CC8C8288D25402881D328FC22D203FBEB52D730B91DB1F49E9F58BEB16B9B460F180B806C41BA58BAF225FA3032F7E190B9EC8E9547A0FEA038857CE883AF1DB3027CF4B8316850CC2C25C3026A231D8747</Text>
+</Message>
+
+<Message time='26.04.2018 00:07:39.661'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='26.04.2018 00:10:13.481'>
+  <Text>Process: id = 5440 cpu = 00:01:36.0781250, page = 115mb peak = 147mb, virtual = 782mb peak = 798mb, topics = 23</Text>
+</Message>
+
+<Message time='26.04.2018 01:07:39.714'>
+  <Text>AuthenticateRequest: 77E8CD4117140407864B566F5E390926186B16C72B7A8E42A6E94DD321D7192E60C55CC8C8288D25402881D328FC22D203FBEB52D730B91DB1F49E9F58BEB16B9B460F180B806C41BA58BAF225FA3032F7E190B9EC8E9547A0FEA038857CE883AF1DB3027CF4B8316850CC2C25C3026A231D8747</Text>
+</Message>
+
+<Message time='26.04.2018 01:07:39.775'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='26.04.2018 01:10:13.480'>
+  <Text>Process: id = 5440 cpu = 00:01:36.5781250, page = 114mb peak = 147mb, virtual = 780mb peak = 798mb, topics = 23</Text>
+</Message>
+
+<Message time='26.04.2018 10:24:49.986'>
+  <Text>Process: id = 5440 cpu = 00:01:43.6093750, page = 114mb peak = 147mb, virtual = 783mb peak = 798mb, topics = 23</Text>
+</Message>
+
+<Message time='26.04.2018 11:24:03.198'>
+  <Text>AuthenticateRequest: 77E8CD4117140407864B566F5E390926186B16C72B7A8E42A6E94DD321D7192E60C55CC8C8288D25402881D328FC22D203FBEB52D730B91DB1F49E9F58BEB16B9B460F180B806C41BA58BAF225FA3032F7E190B9EC8E9547A0FEA038857CE883AF1DB3027CF4B8316850CC2C25C3026A231D8747</Text>
+</Message>
+
+<Message time='26.04.2018 11:24:04.489'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='26.04.2018 11:24:50.020'>
+  <Text>Process: id = 5440 cpu = 00:01:43.7187500, page = 115mb peak = 147mb, virtual = 783mb peak = 798mb, topics = 23</Text>
+</Message>
+
+<Message time='26.04.2018 12:24:00.845'>
+  <Text>AuthenticateRequest: 77E8CD4117140407864B566F5E390926186B16C72B7A8E42A6E94DD321D7192E60C55CC8C8288D25402881D328FC22D203FBEB52D730B91DB1F49E9F58BEB16B9B460F180B806C41BA58BAF225FA3032F7E190B9EC8E9547A0FEA038857CE883AF1DB3027CF4B8316850CC2C25C3026A231D8747</Text>
+</Message>
+
+<Message time='26.04.2018 12:24:01.242'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='26.04.2018 12:24:50.018'>
+  <Text>Process: id = 5440 cpu = 00:01:43.8437500, page = 115mb peak = 147mb, virtual = 783mb peak = 798mb, topics = 23</Text>
+</Message>
+
+<Message time='26.04.2018 13:24:07.661'>
+  <Text>AuthenticateRequest: 77E8CD4117140407864B566F5E390926186B16C72B7A8E42A6E94DD321D7192E60C55CC8C8288D25402881D328FC22D203FBEB52D730B91DB1F49E9F58BEB16B9B460F180B806C41BA58BAF225FA3032F7E190B9EC8E9547A0FEA038857CE883AF1DB3027CF4B8316850CC2C25C3026A231D8747</Text>
+</Message>
+
+<Message time='26.04.2018 13:24:08.732'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='26.04.2018 13:24:50.084'>
+  <Text>Process: id = 5440 cpu = 00:01:43.9218750, page = 115mb peak = 147mb, virtual = 783mb peak = 798mb, topics = 23</Text>
+</Message>
+
+<Message time='26.04.2018 13:59:52.911'>
+  <Text>AuthenticateRequest: 77E8CD4117140407864B566F5E390926186B16C72B7A8E42A6E94DD321D7192E60C55CC8C8288D25402881D328FC22D203FBEB52D730B91DB1F49E9F58BEB16B9B460F180B806C41BA58BAF225FA3032F7E190B9EC8E9547A0FEA038857CE883AF1DB3027CF4B8316850CC2C25C3026A231D8747</Text>
+</Message>
+
+<Message time='26.04.2018 13:59:52.949'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='26.04.2018 14:00:02.067'>
+  <Text>AuthenticateRequest: 77E8CD4117140407864B566F5E390926186B16C72B7A8E42A6E94DD321D7192E60C55CC8C8288D25402881D328FC22D203FBEB52D730B91DB1F49E9F58BEB16B9B460F180B806C41BA58BAF225FA3032F7E190B9EC8E9547A0FEA038857CE883AF1DB3027CF4B8316850CC2C25C3026A231D8747</Text>
+</Message>
+
+<Message time='26.04.2018 14:00:02.109'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='26.04.2018 14:24:49.985'>
+  <Text>Process: id = 5440 cpu = 00:01:43.9687500, page = 116mb peak = 147mb, virtual = 783mb peak = 798mb, topics = 23</Text>
+</Message>
+
+<Message time='26.04.2018 15:00:02.030'>
+  <Text>AuthenticateRequest: 77E8CD4117140407864B566F5E390926186B16C72B7A8E42A6E94DD321D7192E60C55CC8C8288D25402881D328FC22D203FBEB52D730B91DB1F49E9F58BEB16B9B460F180B806C41BA58BAF225FA3032F7E190B9EC8E9547A0FEA038857CE883AF1DB3027CF4B8316850CC2C25C3026A231D8747</Text>
+</Message>
+
+<Message time='26.04.2018 15:00:02.166'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='26.04.2018 15:24:49.984'>
+  <Text>Process: id = 5440 cpu = 00:01:44.5937500, page = 117mb peak = 147mb, virtual = 783mb peak = 798mb, topics = 23</Text>
+</Message>
+
+<Message time='26.04.2018 16:00:02.041'>
+  <Text>AuthenticateRequest: 77E8CD4117140407864B566F5E390926186B16C72B7A8E42A6E94DD321D7192E60C55CC8C8288D25402881D328FC22D203FBEB52D730B91DB1F49E9F58BEB16B9B460F180B806C41BA58BAF225FA3032F7E190B9EC8E9547A0FEA038857CE883AF1DB3027CF4B8316850CC2C25C3026A231D8747</Text>
+</Message>
+
+<Message time='26.04.2018 16:00:02.113'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='26.04.2018 16:15:49.519'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='26.04.2018 16:15:49.539'>
+  <Text>Process: id = 5440 cpu = 00:01:44.7031250, page = 116mb peak = 147mb, virtual = 784mb peak = 798mb, topics = 23</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='26.04.2018 16:16:14.165'/>
+
+<Message time='26.04.2018 16:16:17.984'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='26.04.2018 16:16:18.789'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='26.04.2018 16:16:18.849'>
+  <Text>Process: id = 5440 cpu = 00:01:45.8750000, page = 108mb peak = 147mb, virtual = 784mb peak = 798mb, topics = 0</Text>
+</Message>
+
+<Message time='26.04.2018 16:16:19.422'>
+  <Text>AuthenticateRequest: 77E8CD4117140407864B566F5E390926186B16C72B7A8E42A6E94DD321D7192E60C55CC8C8288D25402881D328FC22D203FBEB52D730B91DB1F49E9F58BEB16B9B460F180B806C41BA58BAF225FA3032F7E190B9EC8E9547A0FEA038857CE883AF1DB3027CF4B8316850CC2C25C3026A231D8747</Text>
+</Message>
+
+<Message time='26.04.2018 16:16:19.435'>
+  <Text>AuthenticateRequest: 77E8CD4117140407864B566F5E390926186B16C72B7A8E42A6E94DD321D7192E60C55CC8C8288D25402881D328FC22D203FBEB52D730B91DB1F49E9F58BEB16B9B460F180B806C41BA58BAF225FA3032F7E190B9EC8E9547A0FEA038857CE883AF1DB3027CF4B8316850CC2C25C3026A231D8747</Text>
+</Message>
+
+<Message time='26.04.2018 16:16:20.426'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='26.04.2018 16:16:22.118'>
+  <Text>AuthenticateRequest: 77E8CD4117140407864B566F5E390926186B16C72B7A8E42A6E94DD321D7192E60C55CC8C8288D25402881D328FC22D203FBEB52D730B91DB1F49E9F58BEB16B9B460F180B806C41BA58BAF225FA3032F7E190B9EC8E9547A0FEA038857CE883AF1DB3027CF4B8316850CC2C25C3026A231D8747</Text>
+</Message>
+
+<Message time='26.04.2018 16:16:22.379'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='26.04.2018 16:16:31.121'>
+  <Text>AuthenticateRequest: 77E8CD4117140407864B566F5E390926186B16C72B7A8E42A6E94DD321D7192E60C55CC8C8288D25402881D328FC22D203FBEB52D730B91DB1F49E9F58BEB16B9B460F180B806C41BA58BAF225FA3032F7E190B9EC8E9547A0FEA038857CE883AF1DB3027CF4B8316850CC2C25C3026A231D8747</Text>
+</Message>
+
+<Message time='26.04.2018 16:16:31.270'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='26.04.2018 16:16:32.188'>
+  <Text>AuthenticateRequest: 77E8CD4117140407864B566F5E390926186B16C72B7A8E42A6E94DD321D7192E60C55CC8C8288D25402881D328FC22D203FBEB52D730B91DB1F49E9F58BEB16B9B460F180B806C41BA58BAF225FA3032F7E190B9EC8E9547A0FEA038857CE883AF1DB3027CF4B8316850CC2C25C3026A231D8747</Text>
+</Message>
+
+<Message time='26.04.2018 16:16:32.191'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='26.04.2018 16:16:36.914'>
+  <Text>AuthenticateRequest: 77E8CD4117140407864B566F5E390926186B16C72B7A8E42A6E94DD321D7192E60C55CC8C8288D25402881D328FC22D203FBEB52D730B91DB1F49E9F58BEB16B9B460F180B806C41BA58BAF225FA3032F7E190B9EC8E9547A0FEA038857CE883AF1DB3027CF4B8316850CC2C25C3026A231D8747</Text>
+</Message>
+
+<Message time='26.04.2018 16:16:37.061'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='26.04.2018 16:16:37.100'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='26.04.2018 16:16:53.343'>
+  <Text>AuthenticateRequest: 77E8CD4117140407864B566F5E390926186B16C72B7A8E42A6E94DD321D7192E60C55CC8C8288D25402881D328FC22D203FBEB52D730B91DB1F49E9F58BEB16B9B460F180B806C41BA58BAF225FA3032F7E190B9EC8E9547A0FEA038857CE883AF1DB3027CF4B8316850CC2C25C3026A231D8747</Text>
+</Message>
+
+<Message time='26.04.2018 16:16:53.370'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='26.04.2018 16:16:54.781'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='26.04.2018 16:16:57.923'>
+  <Text>AuthenticateRequest: 77E8CD4117140407864B566F5E390926186B16C72B7A8E42A6E94DD321D7192E60C55CC8C8288D25402881D328FC22D203FBEB52D730B91DB1F49E9F58BEB16B9B460F180B806C41BA58BAF225FA3032F7E190B9EC8E9547A0FEA038857CE883AF1DB3027CF4B8316850CC2C25C3026A231D8747</Text>
+</Message>
+
+<Message time='26.04.2018 16:16:57.926'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='26.04.2018 16:16:58.324'>
+  <Text>AuthenticateRequest: 77E8CD4117140407864B566F5E390926186B16C72B7A8E42A6E94DD321D7192E60C55CC8C8288D25402881D328FC22D203FBEB52D730B91DB1F49E9F58BEB16B9B460F180B806C41BA58BAF225FA3032F7E190B9EC8E9547A0FEA038857CE883AF1DB3027CF4B8316850CC2C25C3026A231D8747</Text>
+</Message>
+
+<Message time='26.04.2018 16:16:58.328'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='26.04.2018 16:17:05.292'>
+  <Text>AuthenticateRequest: 77E8CD4117140407864B566F5E390926186B16C72B7A8E42A6E94DD321D7192E60C55CC8C8288D25402881D328FC22D203FBEB52D730B91DB1F49E9F58BEB16B9B460F180B806C41BA58BAF225FA3032F7E190B9EC8E9547A0FEA038857CE883AF1DB3027CF4B8316850CC2C25C3026A231D8747</Text>
+</Message>
+
+<Message time='26.04.2018 16:17:05.309'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='26.04.2018 16:17:05.484'>
+  <Text>AuthenticateRequest: 77E8CD4117140407864B566F5E390926186B16C72B7A8E42A6E94DD321D7192E60C55CC8C8288D25402881D328FC22D203FBEB52D730B91DB1F49E9F58BEB16B9B460F180B806C41BA58BAF225FA3032F7E190B9EC8E9547A0FEA038857CE883AF1DB3027CF4B8316850CC2C25C3026A231D8747</Text>
+</Message>
+
+<Message time='26.04.2018 16:17:05.508'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='26.04.2018 16:17:08.043'>
+  <Text>AuthenticateRequest: 77E8CD4117140407864B566F5E390926186B16C72B7A8E42A6E94DD321D7192E60C55CC8C8288D25402881D328FC22D203FBEB52D730B91DB1F49E9F58BEB16B9B460F180B806C41BA58BAF225FA3032F7E190B9EC8E9547A0FEA038857CE883AF1DB3027CF4B8316850CC2C25C3026A231D8747</Text>
+</Message>
+
+<Message time='26.04.2018 16:17:08.053'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='26.04.2018 16:17:08.268'>
+  <Text>AuthenticateRequest: 77E8CD4117140407864B566F5E390926186B16C72B7A8E42A6E94DD321D7192E60C55CC8C8288D25402881D328FC22D203FBEB52D730B91DB1F49E9F58BEB16B9B460F180B806C41BA58BAF225FA3032F7E190B9EC8E9547A0FEA038857CE883AF1DB3027CF4B8316850CC2C25C3026A231D8747</Text>
+</Message>
+
+<Message time='26.04.2018 16:17:08.271'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='26.04.2018 16:17:40.052'>
+  <Text>AuthenticateRequest: </Text>
+</Message>
+
+<Message time='26.04.2018 16:17:40.495'>
+  <Text>CurrentUser: False</Text>
+</Message>
+
+<Message time='26.04.2018 16:17:47.109'>
+  <Text>AuthenticateRequest: </Text>
+</Message>
+
+<Message time='26.04.2018 16:17:47.112'>
+  <Text>CurrentUser: False</Text>
+</Message>
+
+<Message time='26.04.2018 16:17:58.588'>
+  <Text>AuthenticateRequest: </Text>
+</Message>
+
+<Message time='26.04.2018 16:17:58.605'>
+  <Text>CurrentUser: False</Text>
+</Message>
+
+<Message time='26.04.2018 16:17:58.844'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='26.04.2018 16:18:02.708'>
+  <Text>AuthenticateRequest: 09004A00F5F177E1DA2EE99A556F91A5CD3565923795C0576C547CD0138F534E88B821D2DCD777D05C3801222C19CFDCB1FC1363897E17561D69348BDF9A6EF3B8B38816C77E0421C0F433B351BAABE29CAD4CD2042761A50A1373CC8A465EF4DB74AB11EE482B1C992DD034A89D7D59C7EFA197</Text>
+</Message>
+
+<Message time='26.04.2018 16:18:02.711'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='26.04.2018 16:18:03.096'>
+  <Text>AuthenticateRequest: 09004A00F5F177E1DA2EE99A556F91A5CD3565923795C0576C547CD0138F534E88B821D2DCD777D05C3801222C19CFDCB1FC1363897E17561D69348BDF9A6EF3B8B38816C77E0421C0F433B351BAABE29CAD4CD2042761A50A1373CC8A465EF4DB74AB11EE482B1C992DD034A89D7D59C7EFA197</Text>
+</Message>
+
+<Message time='26.04.2018 16:18:03.099'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='26.04.2018 16:18:09.950'>
+  <Text>AuthenticateRequest: 09004A00F5F177E1DA2EE99A556F91A5CD3565923795C0576C547CD0138F534E88B821D2DCD777D05C3801222C19CFDCB1FC1363897E17561D69348BDF9A6EF3B8B38816C77E0421C0F433B351BAABE29CAD4CD2042761A50A1373CC8A465EF4DB74AB11EE482B1C992DD034A89D7D59C7EFA197</Text>
+</Message>
+
+<Message time='26.04.2018 16:18:09.952'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='26.04.2018 16:18:10.238'>
+  <Text>AuthenticateRequest: 09004A00F5F177E1DA2EE99A556F91A5CD3565923795C0576C547CD0138F534E88B821D2DCD777D05C3801222C19CFDCB1FC1363897E17561D69348BDF9A6EF3B8B38816C77E0421C0F433B351BAABE29CAD4CD2042761A50A1373CC8A465EF4DB74AB11EE482B1C992DD034A89D7D59C7EFA197</Text>
+</Message>
+
+<Message time='26.04.2018 16:18:10.242'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='26.04.2018 16:19:18.735'>
+  <Text>sitemap.xml успешно обновлен</Text>
+</Message>
+
+<Message time='26.04.2018 16:24:05.391'>
+  <Text>AuthenticateRequest: 77E8CD4117140407864B566F5E390926186B16C72B7A8E42A6E94DD321D7192E60C55CC8C8288D25402881D328FC22D203FBEB52D730B91DB1F49E9F58BEB16B9B460F180B806C41BA58BAF225FA3032F7E190B9EC8E9547A0FEA038857CE883AF1DB3027CF4B8316850CC2C25C3026A231D8747</Text>
+</Message>
+
+<Message time='26.04.2018 16:24:05.397'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='26.04.2018 16:24:05.651'>
+  <Text>AuthenticateRequest: 77E8CD4117140407864B566F5E390926186B16C72B7A8E42A6E94DD321D7192E60C55CC8C8288D25402881D328FC22D203FBEB52D730B91DB1F49E9F58BEB16B9B460F180B806C41BA58BAF225FA3032F7E190B9EC8E9547A0FEA038857CE883AF1DB3027CF4B8316850CC2C25C3026A231D8747</Text>
+</Message>
+
+<Message time='26.04.2018 16:24:05.654'>
+  <Text>CurrentUser: True</Text>
+</Message>
+
+<Message time='26.04.2018 16:37:00.305'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='26.04.2018 16:37:00.306'>
+  <Text>Process: id = 5440 cpu = 00:01:48.7500000, page = 128mb peak = 147mb, virtual = 788mb peak = 798mb, topics = 23</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='26.04.2018 16:37:05.528'/>
+
+<Message time='26.04.2018 16:37:06.823'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='26.04.2018 16:37:07.066'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='26.04.2018 16:37:07.087'>
+  <Text>Process: id = 5440 cpu = 00:01:50.2656250, page = 124mb peak = 147mb, virtual = 790mb peak = 798mb, topics = 0</Text>
+</Message>
+
+<Message time='26.04.2018 16:58:00.311'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='26.04.2018 16:58:00.311'>
+  <Text>Process: id = 5440 cpu = 00:01:53.3437500, page = 131mb peak = 147mb, virtual = 787mb peak = 798mb, topics = 51</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='26.04.2018 16:58:03.524'/>
+
+<Message time='26.04.2018 16:58:04.172'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='26.04.2018 16:58:04.449'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='26.04.2018 16:58:04.461'>
+  <Text>Process: id = 5440 cpu = 00:01:54.8750000, page = 117mb peak = 147mb, virtual = 788mb peak = 798mb, topics = 0</Text>
+</Message>
+
+<Message time='26.04.2018 16:58:51.395'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='26.04.2018 16:58:51.397'>
+  <Text>Process: id = 5440 cpu = 00:01:56.9531250, page = 123mb peak = 147mb, virtual = 785mb peak = 798mb, topics = 23</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='26.04.2018 16:58:54.415'/>
+
+<Message time='26.04.2018 16:58:55.215'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='26.04.2018 16:58:55.499'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='26.04.2018 16:58:55.511'>
+  <Text>Process: id = 5440 cpu = 00:01:58.5468750, page = 122mb peak = 147mb, virtual = 788mb peak = 798mb, topics = 0</Text>
+</Message>
+
+<Message time='26.04.2018 17:35:10.778'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='26.04.2018 17:35:10.780'>
+  <Text>Process: id = 5440 cpu = 00:02:01.3906250, page = 116mb peak = 147mb, virtual = 785mb peak = 798mb, topics = 10</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='26.04.2018 17:35:29.917'/>
+
+<Message time='26.04.2018 17:35:30.554'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='26.04.2018 17:35:30.823'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='26.04.2018 17:35:30.836'>
+  <Text>Process: id = 5440 cpu = 00:02:03.0156250, page = 110mb peak = 147mb, virtual = 786mb peak = 798mb, topics = 0</Text>
+</Message>
+
+<Message time='26.04.2018 17:35:32.101'>
+  <Text>Process: id = 5440 cpu = 00:02:04.4375000, page = 115mb peak = 147mb, virtual = 787mb peak = 798mb, topics = 23</Text>
+</Message>
+
+<Message time='26.04.2018 17:35:32.102'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='26.04.2018 17:35:34.488'/>
+
+<Message time='26.04.2018 17:35:35.079'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='26.04.2018 17:35:35.333'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='26.04.2018 17:35:35.342'>
+  <Text>Process: id = 5440 cpu = 00:02:05.8125000, page = 116mb peak = 147mb, virtual = 790mb peak = 798mb, topics = 0</Text>
+</Message>
+
+<Message time='26.04.2018 17:37:39.510'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='26.04.2018 17:37:39.513'>
+  <Text>Process: id = 5440 cpu = 00:02:08.9218750, page = 127mb peak = 147mb, virtual = 786mb peak = 798mb, topics = 51</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='26.04.2018 17:37:42.790'/>
+
+<Message time='26.04.2018 17:37:44.080'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='26.04.2018 17:37:45.110'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='26.04.2018 17:37:45.132'>
+  <Text>Process: id = 5440 cpu = 00:02:10.4687500, page = 113mb peak = 147mb, virtual = 787mb peak = 798mb, topics = 0</Text>
+</Message>
+
+<Message time='26.04.2018 17:38:23.163'>
+  <Text>Process: id = 5440 cpu = 00:02:12.6406250, page = 116mb peak = 147mb, virtual = 786mb peak = 798mb, topics = 10</Text>
+</Message>
+
+<Message time='26.04.2018 17:38:23.173'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='26.04.2018 17:38:26.044'/>
+
+<Message time='26.04.2018 17:38:26.872'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='26.04.2018 17:38:27.100'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='26.04.2018 17:38:27.122'>
+  <Text>Process: id = 5440 cpu = 00:02:14.2812500, page = 116mb peak = 147mb, virtual = 788mb peak = 798mb, topics = 0</Text>
+</Message>
+
+<Message time='26.04.2018 17:41:13.718'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='26.04.2018 17:41:13.720'>
+  <Text>Process: id = 5440 cpu = 00:02:16.6250000, page = 114mb peak = 147mb, virtual = 785mb peak = 798mb, topics = 10</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='26.04.2018 17:41:16.511'/>
+
+<Message time='26.04.2018 17:41:17.417'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='26.04.2018 17:41:17.673'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='26.04.2018 17:41:17.683'>
+  <Text>Process: id = 5440 cpu = 00:02:18.4062500, page = 113mb peak = 147mb, virtual = 787mb peak = 798mb, topics = 0</Text>
+</Message>
+
+<Message time='26.04.2018 17:41:35.168'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='26.04.2018 17:41:35.170'>
+  <Text>Process: id = 5440 cpu = 00:02:20.0625000, page = 119mb peak = 147mb, virtual = 790mb peak = 798mb, topics = 10</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='26.04.2018 17:41:37.406'/>
+
+<Message time='26.04.2018 17:41:38.351'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='26.04.2018 17:41:38.705'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='26.04.2018 17:41:38.718'>
+  <Text>Process: id = 5440 cpu = 00:02:21.7812500, page = 108mb peak = 147mb, virtual = 790mb peak = 798mb, topics = 0</Text>
+</Message>
+
+<Message time='26.04.2018 17:44:38.732'>
+  <Text>sitemap.xml успешно обновлен</Text>
+</Message>
+
+<Message time='26.04.2018 17:56:10.567'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='26.04.2018 17:56:10.569'>
+  <Text>Process: id = 5440 cpu = 00:02:24, page = 115mb peak = 147mb, virtual = 788mb peak = 798mb, topics = 10</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='26.04.2018 17:56:13.326'/>
+
+<Message time='26.04.2018 17:56:14.418'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='26.04.2018 17:56:15.006'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='26.04.2018 17:56:15.069'>
+  <Text>Process: id = 5440 cpu = 00:02:25.8750000, page = 108mb peak = 147mb, virtual = 789mb peak = 798mb, topics = 0</Text>
+</Message>
+
+<Message time='26.04.2018 17:59:00.810'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='26.04.2018 17:59:00.813'>
+  <Text>Process: id = 5440 cpu = 00:02:27.7656250, page = 116mb peak = 147mb, virtual = 790mb peak = 798mb, topics = 23</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='26.04.2018 17:59:03.823'/>
+
+<Message time='26.04.2018 17:59:04.738'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='26.04.2018 17:59:04.973'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='26.04.2018 17:59:04.983'>
+  <Text>Process: id = 5440 cpu = 00:02:29.5000000, page = 113mb peak = 147mb, virtual = 793mb peak = 798mb, topics = 0</Text>
+</Message>
+
+<Message time='26.04.2018 18:06:16.038'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='26.04.2018 18:06:16.042'>
+  <Text>Process: id = 5440 cpu = 00:02:32, page = 124mb peak = 147mb, virtual = 794mb peak = 798mb, topics = 51</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='26.04.2018 18:06:20.762'/>
+
+<Message time='26.04.2018 18:06:21.535'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='26.04.2018 18:06:21.867'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='26.04.2018 18:06:21.880'>
+  <Text>Process: id = 5440 cpu = 00:02:33.6406250, page = 123mb peak = 147mb, virtual = 796mb peak = 798mb, topics = 0</Text>
+</Message>
+
+<Message time='26.04.2018 18:09:03.528'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='26.04.2018 18:09:03.529'>
+  <Text>Process: id = 5440 cpu = 00:02:36.6406250, page = 131mb peak = 147mb, virtual = 788mb peak = 798mb, topics = 52</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='26.04.2018 18:24:29.250'/>
+
+<Message time='26.04.2018 18:24:30.130'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='26.04.2018 18:24:30.444'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='26.04.2018 18:24:30.458'>
+  <Text>Process: id = 5440 cpu = 00:02:38.3906250, page = 121mb peak = 147mb, virtual = 785mb peak = 798mb, topics = 0</Text>
+</Message>
+
+<Message time='26.04.2018 18:25:39.920'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='26.04.2018 18:25:39.923'>
+  <Text>Process: id = 5440 cpu = 00:02:40.0468750, page = 126mb peak = 147mb, virtual = 788mb peak = 798mb, topics = 23</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='26.04.2018 18:25:43.167'/>
+
+<Message time='26.04.2018 18:25:43.959'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='26.04.2018 18:25:44.288'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='26.04.2018 18:25:44.304'>
+  <Text>Process: id = 5440 cpu = 00:02:41.7031250, page = 124mb peak = 147mb, virtual = 791mb peak = 798mb, topics = 0</Text>
+</Message>
+
+<Message time='26.04.2018 18:26:21.843'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='26.04.2018 18:26:21.846'>
+  <Text>Process: id = 5440 cpu = 00:02:43.8906250, page = 127mb peak = 147mb, virtual = 792mb peak = 798mb, topics = 10</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='26.04.2018 18:30:00.585'/>
+
+<Message time='26.04.2018 18:30:01.369'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='26.04.2018 18:30:01.655'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='26.04.2018 18:30:01.673'>
+  <Text>Process: id = 5440 cpu = 00:02:45.6406250, page = 127mb peak = 147mb, virtual = 792mb peak = 798mb, topics = 0</Text>
+</Message>
+
+<Message time='26.04.2018 18:30:24.589'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='26.04.2018 18:30:24.592'>
+  <Text>Process: id = 5440 cpu = 00:02:47.7812500, page = 118mb peak = 147mb, virtual = 785mb peak = 798mb, topics = 10</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='26.04.2018 18:36:05.504'/>
+
+<Message time='26.04.2018 18:36:05.807'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='26.04.2018 18:36:06.085'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='26.04.2018 18:36:06.093'>
+  <Text>Process: id = 5440 cpu = 00:02:48.6093750, page = 113mb peak = 147mb, virtual = 783mb peak = 798mb, topics = 0</Text>
+</Message>
+
+<Message time='26.04.2018 19:06:20.273'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='26.04.2018 19:06:20.276'>
+  <Text>Process: id = 5440 cpu = 00:02:50.1562500, page = 118mb peak = 147mb, virtual = 785mb peak = 798mb, topics = 23</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='26.04.2018 19:06:30.559'/>
+
+<Message time='26.04.2018 19:06:31.138'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='26.04.2018 19:06:31.360'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='26.04.2018 19:06:31.380'>
+  <Text>Process: id = 5440 cpu = 00:02:51.5468750, page = 118mb peak = 147mb, virtual = 790mb peak = 798mb, topics = 0</Text>
+</Message>
+
+<Message time='26.04.2018 19:07:36.241'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='26.04.2018 19:07:36.244'>
+  <Text>Process: id = 5440 cpu = 00:02:53.5468750, page = 124mb peak = 147mb, virtual = 791mb peak = 798mb, topics = 23</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='26.04.2018 20:06:59.611'/>
+
+<Message time='26.04.2018 20:07:00.450'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='26.04.2018 20:07:01.011'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='26.04.2018 20:07:01.019'>
+  <Text>Process: id = 5440 cpu = 00:02:54.5312500, page = 108mb peak = 147mb, virtual = 779mb peak = 798mb, topics = 0</Text>
+</Message>
+
+<Message time='26.04.2018 20:10:01.262'>
+  <Text>sitemap.xml успешно обновлен</Text>
+</Message>
+
+<Message time='26.04.2018 21:07:01.018'>
+  <Text>Process: id = 5440 cpu = 00:02:56.6250000, page = 115mb peak = 147mb, virtual = 780mb peak = 798mb, topics = 10</Text>
+</Message>
+
+<Message time='26.04.2018 21:25:02.596'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='26.04.2018 21:25:02.621'>
+  <Text>Process: id = 5440 cpu = 00:02:56.6406250, page = 115mb peak = 147mb, virtual = 780mb peak = 798mb, topics = 10</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='26.04.2018 21:25:23.767'/>
+
+<Message time='26.04.2018 21:25:26.096'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='26.04.2018 21:25:26.374'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='26.04.2018 21:25:26.383'>
+  <Text>Process: id = 5440 cpu = 00:02:58, page = 113mb peak = 147mb, virtual = 784mb peak = 798mb, topics = 0</Text>
+</Message>
+
+<Message time='26.04.2018 21:25:52.422'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='26.04.2018 21:25:52.438'>
+  <Text>Process: id = 5440 cpu = 00:02:59.8437500, page = 119mb peak = 147mb, virtual = 787mb peak = 798mb, topics = 10</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='26.04.2018 22:25:44.111'/>
+
+<Message time='26.04.2018 22:25:45.190'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='26.04.2018 22:25:45.647'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='26.04.2018 22:25:45.922'>
+  <Text>Process: id = 5440 cpu = 00:03:01.2500000, page = 117mb peak = 147mb, virtual = 788mb peak = 798mb, topics = 0</Text>
+</Message>
+
+<Message time='26.04.2018 22:28:45.969'>
+  <Text>sitemap.xml успешно обновлен</Text>
+</Message>
+
+<Message time='26.04.2018 23:25:45.748'>
+  <Text>Process: id = 5440 cpu = 00:03:03.3593750, page = 115mb peak = 147mb, virtual = 783mb peak = 798mb, topics = 10</Text>
+</Message>
+
+<Message time='27.04.2018 00:25:45.748'>
+  <Text>Process: id = 5440 cpu = 00:03:03.5625000, page = 116mb peak = 147mb, virtual = 784mb peak = 798mb, topics = 10</Text>
+</Message>
+
+<Message time='27.04.2018 10:29:49.726'>
+  <Text>Process: id = 5440 cpu = 00:03:03.6406250, page = 116mb peak = 147mb, virtual = 785mb peak = 798mb, topics = 10</Text>
+</Message>
+
+<Message time='27.04.2018 11:29:47.927'>
+  <Text>Process: id = 5440 cpu = 00:03:03.8281250, page = 116mb peak = 147mb, virtual = 783mb peak = 798mb, topics = 10</Text>
+</Message>
+
+<Message time='27.04.2018 12:29:48.239'>
+  <Text>Process: id = 5440 cpu = 00:03:04.1718750, page = 116mb peak = 147mb, virtual = 783mb peak = 798mb, topics = 10</Text>
+</Message>
+
+<Message time='27.04.2018 13:29:47.738'>
+  <Text>Process: id = 5440 cpu = 00:03:04.3593750, page = 116mb peak = 147mb, virtual = 784mb peak = 798mb, topics = 10</Text>
+</Message>
+
+<Message time='27.04.2018 14:04:54.838'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='27.04.2018 14:04:55.171'>
+  <Text>Process: id = 5440 cpu = 00:03:04.3906250, page = 114mb peak = 147mb, virtual = 778mb peak = 798mb, topics = 10</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='27.04.2018 17:14:20.306'/>
+
+<Message time='27.04.2018 17:14:24.243'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='27.04.2018 17:14:24.632'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='27.04.2018 17:14:24.650'>
+  <Text>Process: id = 68 cpu = 00:00:02.4531250, page = 55mb peak = 55mb, virtual = 746mb peak = 746mb, topics = 0</Text>
+</Message>
+
+<Message time='27.04.2018 17:17:24.640'>
+  <Text>sitemap.xml успешно обновлен</Text>
+</Message>
+
+<Message time='27.04.2018 18:14:24.638'>
+  <Text>Process: id = 68 cpu = 00:00:05.6718750, page = 75mb peak = 79mb, virtual = 758mb peak = 764mb, topics = 23</Text>
+</Message>
+
+<Message time='27.04.2018 19:14:24.638'>
+  <Text>Process: id = 68 cpu = 00:00:05.7031250, page = 75mb peak = 79mb, virtual = 758mb peak = 764mb, topics = 23</Text>
+</Message>
+
+<Message time='27.04.2018 20:14:24.640'>
+  <Text>Process: id = 68 cpu = 00:00:05.8593750, page = 76mb peak = 79mb, virtual = 761mb peak = 764mb, topics = 23</Text>
+</Message>
+
+<Message time='27.04.2018 21:14:24.637'>
+  <Text>Process: id = 68 cpu = 00:00:06, page = 76mb peak = 79mb, virtual = 759mb peak = 764mb, topics = 23</Text>
+</Message>
+
+<Message time='27.04.2018 22:14:24.684'>
+  <Text>Process: id = 68 cpu = 00:00:06.5468750, page = 75mb peak = 79mb, virtual = 759mb peak = 764mb, topics = 23</Text>
+</Message>
+
+<Message time='27.04.2018 23:14:24.637'>
+  <Text>Process: id = 68 cpu = 00:00:06.7500000, page = 76mb peak = 79mb, virtual = 758mb peak = 764mb, topics = 23</Text>
+</Message>
+
+<Message time='28.04.2018 00:14:24.636'>
+  <Text>Process: id = 68 cpu = 00:00:06.8593750, page = 76mb peak = 79mb, virtual = 759mb peak = 764mb, topics = 23</Text>
+</Message>
+
+<Message time='28.04.2018 01:14:24.656'>
+  <Text>Process: id = 68 cpu = 00:00:06.9687500, page = 76mb peak = 79mb, virtual = 758mb peak = 764mb, topics = 23</Text>
+</Message>
+
+<Message time='28.04.2018 02:14:24.637'>
+  <Text>Process: id = 68 cpu = 00:00:07, page = 77mb peak = 79mb, virtual = 758mb peak = 764mb, topics = 23</Text>
+</Message>
+
+<Message time='28.04.2018 10:51:34.174'>
+  <Text>Process: id = 68 cpu = 00:00:07.0781250, page = 76mb peak = 79mb, virtual = 758mb peak = 764mb, topics = 23</Text>
+</Message>
+
+<Message time='28.04.2018 11:51:34.175'>
+  <Text>Process: id = 68 cpu = 00:00:07.1250000, page = 77mb peak = 79mb, virtual = 760mb peak = 765mb, topics = 23</Text>
+</Message>
+
+<Message time='28.04.2018 12:51:34.175'>
+  <Text>Process: id = 68 cpu = 00:00:07.2031250, page = 76mb peak = 79mb, virtual = 760mb peak = 765mb, topics = 23</Text>
+</Message>
+
+<Message time='28.04.2018 13:51:34.173'>
+  <Text>Process: id = 68 cpu = 00:00:07.3437500, page = 76mb peak = 79mb, virtual = 759mb peak = 765mb, topics = 23</Text>
+</Message>
+
+<Message time='28.04.2018 14:51:34.173'>
+  <Text>Process: id = 68 cpu = 00:00:07.6875000, page = 76mb peak = 79mb, virtual = 759mb peak = 765mb, topics = 23</Text>
+</Message>
+
+<Message time='28.04.2018 15:43:09.054'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='28.04.2018 15:43:09.273'>
+  <Text>Process: id = 68 cpu = 00:00:07.7187500, page = 76mb peak = 79mb, virtual = 763mb peak = 765mb, topics = 23</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='28.04.2018 15:48:39.697'/>
+
+<Message time='28.04.2018 15:48:43.334'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='28.04.2018 15:48:44.492'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='28.04.2018 15:48:44.606'>
+  <Text>Process: id = 68 cpu = 00:00:09.0781250, page = 72mb peak = 79mb, virtual = 762mb peak = 765mb, topics = 0</Text>
+</Message>
+
+<Message time='28.04.2018 15:48:50.938'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='28.04.2018 15:48:50.940'>
+  <Text>Process: id = 68 cpu = 00:00:09.3437500, page = 73mb peak = 79mb, virtual = 764mb peak = 765mb, topics = 0</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='28.04.2018 15:48:54.333'/>
+
+<Message time='28.04.2018 15:48:54.948'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='28.04.2018 15:48:55.219'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='28.04.2018 15:48:55.236'>
+  <Text>Process: id = 68 cpu = 00:00:10.8750000, page = 75mb peak = 79mb, virtual = 767mb peak = 768mb, topics = 0</Text>
+</Message>
+
+<Message time='28.04.2018 15:51:55.293'>
+  <Text>sitemap.xml успешно обновлен</Text>
+</Message>
+
+<Message time='28.04.2018 16:48:55.231'>
+  <Text>Process: id = 68 cpu = 00:00:45.7343750, page = 126mb peak = 129mb, virtual = 775mb peak = 778mb, topics = 23</Text>
+</Message>
+
+<Message time='28.04.2018 16:49:39.563'>
+  <Text>Завершен поток с меткой 'Service'</Text>
+</Message>
+
+<Message time='28.04.2018 16:49:39.566'>
+  <Text>Process: id = 68 cpu = 00:00:46.0937500, page = 126mb peak = 129mb, virtual = 776mb peak = 778mb, topics = 23</Text>
+</Message>
+
+<!--================================================================================-->
+
+<LogStarting time='28.04.2018 16:49:53.971'/>
+
+<Message time='28.04.2018 16:49:54.564'>
+  <Text>Подключения к базам данных успешно созданы</Text>
+</Message>
+
+<Message time='28.04.2018 16:49:54.787'>
+  <Text>SitemapXmlChecker стартовал: d:\Projects\Basketball\Basketball\sitemap.xml</Text>
+</Message>
+
+<Message time='28.04.2018 16:49:54.794'>
+  <Text>Process: id = 68 cpu = 00:00:47.3281250, page = 111mb peak = 129mb, virtual = 778mb peak = 779mb, topics = 0</Text>
+</Message>
+
+<Message time='28.04.2018 17:49:54.791'>
+  <Text>Process: id = 68 cpu = 00:01:16.6406250, page = 114mb peak = 129mb, virtual = 772mb peak = 780mb, topics = 10</Text>
+</Message>
+

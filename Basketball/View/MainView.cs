@@ -124,6 +124,8 @@ namespace Basketball
 
       LightObject currentUser = UserHlp.GetCurrentUser(httpContext, SiteContext.Default.UserStorage);
 
+      //Logger.AddMessage("CurrentUser: {0}", currentUser != null);
+
       if (currentUser != null && BasketballHlp.IsBanned(currentUser))
       {
         currentUser = null;
@@ -168,6 +170,7 @@ namespace Basketball
 
       HEventPanel mainPanel = new HEventPanel(
         new HPanel(
+          new HAnchor("top"),
           DecorEdit.AdminMainPanel(state.EditMode, state.SeoMode),
           ViewHeaderHlp.GetHeader(httpContext, state, currentUser, kind, id, isForum),
           adminSectionPanel,
@@ -189,9 +192,11 @@ namespace Basketball
             .MediaLaptop(new HStyle().PaddingRight(250))
             .MediaTablet(new HStyle().PaddingRight(15))
             .MediaSmartfon(new HStyle().PaddingLeft(5).PaddingRight(5))
-          ).PaddingBottom(200).MarginLeft(12).MarginRight(12).Background(Decor.panelBackground)
+          ).MarginLeft(12).MarginRight(12).PaddingBottom(160).Background(Decor.panelBackground)
+            .BoxSizing().HeightLimit("900px", "")
             .MediaTablet(new HStyle().MarginLeft(0).MarginRight(0))
         ),
+        ViewHlp.GetFooterView(kind == ""),
         dialogBox
         //popupPanel
       ).Width("100%").BoxSizing().Align(null).Background(Decor.pageBackground)
