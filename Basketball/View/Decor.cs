@@ -46,6 +46,12 @@ namespace Basketball
         .LinearGradient("to top right", "#dddddd", "#f1f1f1"); ;
     }
 
+    public static HButton ButtonMidi(string caption)
+    {
+      return new HButton(caption).FontBold().FontSize(12).Padding(2, 7).MarginRight(5)
+        .Color("#666666").Border("1px solid #e6e6e6").Background(Decor.pageBackground);
+    }
+
     public static HButton ButtonMini(string caption)
     {
       return new HButton(caption).Padding(0, 3, 1, 3).MarginRight(5)

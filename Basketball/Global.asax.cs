@@ -13,6 +13,7 @@ using System.Web.SessionState;
 using Commune.Html;
 using Shop.Engine;
 using Commune.Task;
+using NitroBolt.Wui;
 
 namespace Basketball
 {
@@ -50,6 +51,7 @@ namespace Basketball
         SQLiteDatabaseHlp.CheckAndCreateDataBoxTables(fabricConnection);
         MessageHlp.CheckAndCreateMessageTables(messageConnection);
         MessageHlp.CheckAndCreateMessageTables(forumConnection);
+        DialogueHlp.CheckAndCreateDialogueTables(forumConnection);
 
         MetaHlp.ReserveDiapasonForMetaProperty(fabricConnection);
 
@@ -63,7 +65,7 @@ namespace Basketball
         );
 
         EditorSelector unitEditorSelector = new EditorSelector(
-          new UnitTunes("reclame", "Рекламный блок").Thumb().ImageAlt().Link().Annotation()
+          new UnitTunes("reclame", "Рекламный блок").Tile().ImageAlt().Link().Annotation()
         );
 
         Shop.Engine.Site.Novosti = "news";
@@ -86,6 +88,12 @@ namespace Basketball
         SiteContext.Default.Pull.StartTask(Labels.Service, 
           MemoryChecker(SiteContext.Default)
         );
+
+        SiteContext.Default.Pull.StartTask(Labels.Service,
+          SiteTasks.CleaningSessions(SiteContext.Default, 
+            TimeSpan.FromHours(1), TimeSpan.FromMinutes(15), TimeSpan.FromMinutes(5)
+          )
+        );
       }
       catch (Exception ex)
       {
@@ -103,23 +111,35 @@ namespace Basketball
           ((BasketballContext)context).NewsStorages.TopicCount
         );
 
-        yield return new WaitStep(TimeSpan.FromMinutes(60));
+        yield return new WaitStep(TimeSpan.FromMinutes(5));
       }
     }
 
     static string ProcessInfoToString(Process process)
     {
-      return string.Format("id = {0} cpu = {1}, page = {2}mb peak = {3}mb, virtual = {4}mb peak = {5}mb",
-        process.Id, process.UserProcessorTime,
-        process.PagedMemorySize64 / 1000000, process.PeakPagedMemorySize64 / 1000000,
+      //PerformanceCounter counter = new PerformanceCounter("ASP.NET Applications", "Sessions Active", "__Total__");
+      //PerformanceCounter counter = new PerformanceCounter("ASP.NET", "Application Restarts");
+
+      return string.Format(
+        "id = {0} cpu = {1}, session = {2}, work = {3}mb peak = {4}mb, virtual = {5}mb peak = {6}mb",
+        process.Id, process.UserProcessorTime, HWebApiSynchronizeHandler.Frames.Count,
+        process.WorkingSet64 / 1000000, process.PeakWorkingSet64 / 1000000,
         process.VirtualMemorySize64 / 1000000, process.PeakVirtualMemorySize64 / 1000000
       );
     }
 
-    protected void Session_Start(object sender, EventArgs e)
-    {
+    //volatile static int sessionCount = 0;
 
-    }
+    //protected void Session_Start(object sender, EventArgs e)
+    //{
+    //  Logger.AddMessage("SessionStart");
+    //  sessionCount++;
+    //}
+
+    //protected void Session_End(object sender, EventArgs e)
+    //{
+    //  sessionCount--;
+    //}
 
     protected void Application_BeginRequest(object sender, EventArgs e)
     {
@@ -141,11 +161,6 @@ namespace Basketball
     }
 
     protected void Application_Error(object sender, EventArgs e)
-    {
-
-    }
-
-    protected void Session_End(object sender, EventArgs e)
     {
 
     }

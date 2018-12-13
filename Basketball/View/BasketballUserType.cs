@@ -15,6 +15,8 @@ namespace Basketball
     public readonly static RowPropertyBlank<string> AboutMe = DataBox.Create(1114, DataBox.StringValue);
     public readonly static RowPropertyBlank<string> CommunityMember = DataBox.Create(1115, DataBox.StringValue);
 
+    public readonly static RowPropertyBlank<bool> LockedUserIds = DataBox.Create(1120, DataBox.BoolValue);
+
     public readonly static RowPropertyBlank<bool> IsModerator = DataBox.Create(1201, DataBox.BoolValue);
     public readonly static RowPropertyBlank<DateTime?> BannedUntil = DataBox.Create(1202, DataBox.DateTimeNullableValue);
     public readonly static RowPropertyBlank<DateTime?> NotRedactorUntil = DataBox.Create(1203, DataBox.DateTimeNullableValue);
@@ -45,4 +47,10 @@ namespace Basketball
 
     public readonly static XmlDisplayName DisplayName = new XmlDisplayName();
   }
+
+  public class OptionType
+  {
+    public readonly static FieldBlank<int> CorrespondencePageIndex = new FieldBlank<int>("CorrespondencePageIndex");
+  }
+
 }

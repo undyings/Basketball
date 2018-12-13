@@ -51,7 +51,7 @@ namespace Basketball
                 new HLink(UrlHlp.ShopUrl("page", subSection.Id),
                   subSection.Get(SectionType.Title)
                 ).FontBold()
-              ).RelativeWidth(50).PaddingLeft(5).VAlign(8)
+              ).RelativeWidth(50).PaddingLeft(5).VAlign(true).PaddingTop(15)
                 .MediaTablet(new HStyle().Block().Width("auto")),
               new HPanel(
                 new HPanel(
@@ -71,7 +71,7 @@ namespace Basketball
                     new HImage("/images/full.gif")
                   ).Hide(lastMessage == null)
                 ).MarginBottom(7)
-              ).RelativeWidth(50).Padding(0, 5).BorderLeft(Decor.columnBorder)
+              ).RelativeWidth(50).Padding(0, 5).Height(45).BorderLeft(Decor.columnBorder)
                 .MediaTablet(new HStyle().Width("auto").Border("none"))
             );
           },
@@ -96,6 +96,9 @@ namespace Basketball
 
       return new HPanel(
         Decor.Title(section.Get(SectionType.Title)).MarginBottom(15),
+        new HPanel(
+          new HLink("/forum", "Форумы")
+        ).MarginBottom(25),
         //new HPanel(
         //  new HLink("/forum", "Форумы"),
         //  ArrowElement(),
@@ -234,7 +237,7 @@ namespace Basketball
       return new HPanel(
         Decor.Title(topic.Topic.Get(TopicType.Title)).MarginBottom(15),
         new HPanel(
-          new HLink("/forum", "Форум"),
+          new HLink("/forum", "Форумы"),
           ArrowElement(),
           new HLink(UrlHlp.ShopUrl("page", forumSectionId),
             forumSection?.Get(SectionType.Title)

@@ -10,10 +10,10 @@
   </PropertyGroup>
   <ItemGroup>
     <File Include="bin/Basketball.dll">
-      <publishTime>04/28/2018 16:49:39</publishTime>
+      <publishTime>12/02/2018 18:21:29</publishTime>
     </File>
     <File Include="bin/Commune.Basis.dll">
-      <publishTime>03/13/2018 15:41:01</publishTime>
+      <publishTime>05/24/2018 12:36:33</publishTime>
     </File>
     <File Include="bin/Commune.Data.dll">
       <publishTime>03/21/2018 17:37:04</publishTime>
@@ -22,7 +22,7 @@
       <publishTime>03/13/2018 15:21:06</publishTime>
     </File>
     <File Include="bin/Commune.Html.dll">
-      <publishTime>04/27/2018 17:10:44</publishTime>
+      <publishTime>08/25/2018 18:40:16</publishTime>
     </File>
     <File Include="bin/Commune.Task.dll">
       <publishTime>03/13/2018 15:41:02</publishTime>
@@ -40,7 +40,7 @@
       <publishTime>04/26/2018 14:26:50</publishTime>
     </File>
     <File Include="bin/Shop.Engine.dll">
-      <publishTime>04/24/2018 15:30:54</publishTime>
+      <publishTime>12/01/2018 15:09:37</publishTime>
     </File>
     <File Include="bin/System.Collections.Immutable.dll">
       <publishTime>07/03/2016 13:35:12</publishTime>
@@ -61,10 +61,10 @@
       <publishTime>09/06/2016 17:21:38</publishTime>
     </File>
     <File Include="Css/font-awesome.css">
-      <publishTime>01/07/2017 17:47:48</publishTime>
+      <publishTime>07/18/2018 21:54:10</publishTime>
     </File>
     <File Include="Css/static.css">
-      <publishTime>01/10/2018 16:24:46</publishTime>
+      <publishTime>07/18/2018 21:55:17</publishTime>
     </File>
     <File Include="Fonts/fontawesome-webfont.eot">
       <publishTime>01/07/2017 17:47:46</publishTime>
@@ -100,7 +100,7 @@
       <publishTime>04/28/2018 16:44:06</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>04/26/2018 18:09:05</publishTime>
+      <publishTime>07/18/2018 18:34:04</publishTime>
     </File>
   </ItemGroup>
 </Project>

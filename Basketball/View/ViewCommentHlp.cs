@@ -12,6 +12,8 @@ namespace Basketball
 {
   public class ViewCommentHlp
   {
+    readonly static object lockObj = new object();
+
     static BasketballContext context
     {
       get { return (BasketballContext)SiteContext.Default; }
@@ -28,31 +30,30 @@ namespace Basketball
         HPanel editPanel = null;
         if (state.BlockHint == "commentAdd")
         {
+          string commentValue = BasketballHlp.AddCommentFromCookie();
+
           editPanel = new HPanel(
-            new HTextArea("commentContent").Width("100%").Height("10em").MarginTop(5).MarginBottom(5),
-            Decor.Button("отправить").Event("comment_add_save", "commentData",
+            new HTextArea("commentContent", commentValue).Width("100%").Height("10em").MarginTop(5).MarginBottom(5),
+            Decor.Button("отправить")
+              .OnClick(BasketballHlp.AddCommentToCookieScript("commentContent"))
+              .Event("comment_add_save", "commentData",
               delegate (JsonData json)
               {
-                string content = json.GetText("commentContent");
-                if (StringHlp.IsEmpty(content))
-                  return;
+                lock (lockObj)
+                {
+                  string content = json.GetText("commentContent");
+                  if (StringHlp.IsEmpty(content))
+                    return;
 
-                if (BasketballHlp.IsDuplicate(topic, currentUser.Id, content))
-                  return;
+                  if (BasketballHlp.IsDuplicate(topic, currentUser.Id, content))
+                    return;
 
-                InsertMessageAndUpdate(commentConnection, topic, currentUser, null, content);
+                  InsertMessageAndUpdate(commentConnection, topic, currentUser, null, content);
 
-                state.BlockHint = "";
+                  state.BlockHint = "";
 
-                //// hack чтобы на форуме при добавлении комментария показывалась последняя страница
-                //if (topic.Topic.Get(ObjectType.TypeId) == TopicType.Topic)
-                //{
-                //  if (pageMessages.Length == ViewForumHlp.forumMessageCountOnPage)
-                //  {
-
-                //    state.RedirectUrl = "";
-                //  }
-                //}
+                  BasketballHlp.ResetAddComment();
+                }
               }
             ),
             new HElementControl(
@@ -82,7 +83,7 @@ namespace Basketball
       //RowLink[] allMessages = topic.MessageLink.AllRows;
       RowLink bottomMessage = null;
       if (pageMessages.Length > 0)
-        bottomMessage = pageMessages[Math.Max(0, pageMessages.Length - 4)];
+        bottomMessage = pageMessages[Math.Max(0, pageMessages.Length - 2)];
 
       return new HPanel(
         new HAnchor("comments"),
@@ -147,28 +148,33 @@ namespace Basketball
       IHtmlControl answerBlock = null;
       if (currentUser != null && state.BlockHint == answerHint)
       {
+        string commentValue = BasketballHlp.AddCommentFromCookie();
+
         answerBlock = new HPanel(
-          new HTextArea("answerContent").Width("100%").Height("10em").MarginTop(5).MarginBottom(5),
-          Decor.Button("отправить").Event("save_answer", "answerContainer",
-            delegate (JsonData json)
-            {
-              string content = json.GetText("answerContent");
-              if (StringHlp.IsEmpty(content))
-                return;
+          new HTextArea("answerContent", commentValue).Width("100%").Height("10em").MarginTop(5).MarginBottom(5),
+          Decor.Button("отправить")
+            .OnClick(BasketballHlp.AddCommentToCookieScript("answerContent"))
+            .Event("save_answer", "answerContainer",
+              delegate (JsonData json)
+              {
+                lock (lockObj)
+                {
+                  string content = json.GetText("answerContent");
+                  if (StringHlp.IsEmpty(content))
+                    return;
 
-              if (BasketballHlp.IsDuplicate(topic, currentUser.Id, content))
-                return;
+                  if (BasketballHlp.IsDuplicate(topic, currentUser.Id, content))
+                    return;
 
-              InsertMessageAndUpdate(commentConnection, topic, currentUser, commentId, content);
+                  InsertMessageAndUpdate(commentConnection, topic, currentUser, commentId, content);
 
-              //MessageHlp.InsertMessage(commentConnection, topic.TopicId, currentUser.Id, commentId, content);
-              //topic.UpdateMessages();
-              //context.UpdateLastComments(commentConnection == context.ForumConnection);
+                  state.BlockHint = "";
 
-              state.BlockHint = "";
-            },
-            commentId
-          ),
+                  BasketballHlp.ResetAddComment();
+                }
+              },
+              commentId
+            ),
           new HElementControl(
             h.Script(h.type("text/javascript"), "$('.answerContent').focus();"),
             ""

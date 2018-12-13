@@ -149,12 +149,78 @@ namespace Basketball
                 return null;
             }
           }
+        case "dialog":
+          {
+            if (currentUser == null)
+              return null;
+
+            if (id == null)
+            {
+              return ViewDialogueHlp.GetDialogueView(state,
+                context.ForumConnection, context.UserStorage, currentUser, out title
+              );
+            }
+
+            LightObject collocutor = context.UserStorage.FindUser(id.Value);
+            if (collocutor == null)
+              return null;
+
+            return ViewDialogueHlp.GetCorrespondenceView(state, context.ForumConnection,
+              currentUser, collocutor, out title
+            );
+          }
         case "passwordreset":
           title = "Восстановление пароля - basketball.ru.com";
           return ViewHlp.GetRestorePasswordView(state);
         case "register":
           title = "Регистрация - basketball.ru.com";
           return ViewHlp.GetRegisterView(state);
+        case "confirmation":
+          {
+            title = "Подтверждение аккаунта";
+
+            int? userId = httpContext.GetUInt("id");
+            string hash = httpContext.Get("hash");
+
+            if (userId == null)
+            {
+              return ViewUserHlp.GetMessageView(
+                "Вам выслано письмо с кодом активации. Чтобы завершить процедуру регистрации, пройдите по ссылке, указанной в письме, и учётная запись будет активирована. Если вы не получили письмо, то попробуйте войти на сайт со своим логином и паролем. Тогда письмо будет отправлено повторно."
+              );
+            }
+
+            if (StringHlp.IsEmpty(hash))
+              return null;
+
+            LightObject user = context.UserStorage.FindUser(userId.Value);
+            if (userId == null)
+              return null;
+
+            if (!user.Get(UserType.NotConfirmed))
+            {
+              return ViewUserHlp.GetMessageView("Пользователь успешно активирован");
+            }
+
+            string login = user.Get(UserType.Login);
+            string etalon = UserHlp.CalcConfirmationCode(user.Id, login, "bbbin");
+            if (hash?.ToLower() != etalon?.ToLower())
+            {
+              return ViewUserHlp.GetMessageView("Неверный хэш");
+            }
+
+            LightObject editUser = DataBox.LoadObject(context.UserConnection, UserType.User, user.Id);
+            editUser.Set(UserType.NotConfirmed, false);
+            editUser.Box.Update();
+
+            context.UserStorage.Update();
+
+            string xmlLogin = UserType.Login.CreateXmlIds("", login);
+            HttpContext.Current.SetUserAndCookie(xmlLogin);
+
+            state.RedirectUrl = "/";
+
+            return new HPanel();
+          }
       }
 
       return null;
@@ -274,6 +340,13 @@ namespace Basketball
               if (!operation.Validate(password != passwordRepeat, "Повтор не совпадает с паролем"))
                 return;
 
+              foreach (LightObject userObj in context.UserStorage.All)
+              {
+                if (!operation.Validate(userObj.Get(UserType.Email)?.ToLower() == email?.ToLower(),
+                  "Пользователь с такой электронной почтой уже существует"))
+                  return;
+              }
+
               ObjectBox box = new ObjectBox(context.UserConnection, "1=0");
 
               int? createUserId = box.CreateUniqueObject(UserType.User,
@@ -289,17 +362,34 @@ namespace Basketball
               user.Set(UserType.Email, email);
               user.Set(UserType.FirstName, name);
               user.Set(UserType.Password, password);
+              user.Set(UserType.NotConfirmed, true);
 
               box.Update();
 
               SiteContext.Default.UserStorage.Update();
 
-              string xmlLogin = UserType.Login.CreateXmlIds("", login);
-              HttpContext.Current.SetUserAndCookie(xmlLogin);
+              Logger.AddMessage("Зарегистрирован пользователь: {0}, {1}, {2}", user.Id, login, email);
+
+              try
+              {
+                BasketballHlp.SendRegistrationConfirmation(user.Id, login, email);
+
+                Logger.AddMessage("Отправлено письмо с подтверждением регистрации.");
+              }
+              catch (Exception ex)
+              {
+                Logger.WriteException(ex);
+
+                //operation.Validate(true, string.Format("Непредвиденная ошибка при отправке подтверждения: {0}", ex.Message));
+                //return;
+              }
+
+              //string xmlLogin = UserType.Login.CreateXmlIds("", login);
+              //HttpContext.Current.SetUserAndCookie(xmlLogin);
 
               //operation.Complete("Вы успешно зарегистрированы!", "");
 
-              state.RedirectUrl = "/";
+              state.RedirectUrl = "/confirmation";
             }
           )
         )
@@ -310,19 +400,27 @@ namespace Basketball
     {
       return new HPanel(
         new HPanel(
-          new HLink("#top",
-            new HLabel("Наверх").FontBold(),
-            new HBefore().ContentIcon(10, 15).BackgroundImage(UrlHlp.ImageUrl("footer_upstair.png"))
-            .VAlign(-3).MarginRight(5)
-          ),
           new HPanel(
             new HLabel("Создание сайта —").MarginRight(5).Color("#646565"),
-            new HLink("http://webkrokus.ru", "КРОКУС").TargetBlank()
-          ).PositionAbsolute().Top(0).Right(10)
-            .MediaSmartfon(new HStyle().Right(5))
-        ).PositionRelative().WidthLimit("", isMain ? "930px" : "1020px")
+            new HLink("http://webkrokus.ru", "webkrokus.ru").TargetBlank()
+          ).PositionAbsolute().Top("50%").Left(0).MarginTop(-7),
+          std.Upbutton(UrlHlp.ImageUrl("upbutton.png")).Right(20),
+          HtmlHlp.UpbuttonScript(100, 26)
+        ).PositionRelative().Height(46).PaddingRight(8).Align(false)
+        //new HPanel(
+        //  new HLink("#top",
+        //    new HLabel("Наверх").FontBold(),
+        //    new HBefore().ContentIcon(10, 15).BackgroundImage(UrlHlp.ImageUrl("footer_upstair.png"))
+        //    .VAlign(-3).MarginRight(5)
+        //  ),
+        //  new HPanel(
+        //    new HLabel("Создание сайта —").MarginRight(5).Color("#646565"),
+        //    new HLink("http://webkrokus.ru", "КРОКУС").TargetBlank()
+        //  ).PositionAbsolute().Top(0).Right(10)
+        //    .MediaSmartfon(new HStyle().Right(5))
+        //).PositionRelative().WidthLimit("", isMain ? "930px" : "1020px")
       ).Align(true).Background(Decor.panelBackground)
-        .MarginLeft(12).MarginRight(12).PaddingLeft(25).PaddingBottom(26)
+        .MarginLeft(12).MarginRight(12).PaddingLeft(25).PaddingBottom(10)
         .MediaTablet(new HStyle().PaddingLeft(10).MarginLeft(0).MarginRight(0));
 
       //return new HPanel(

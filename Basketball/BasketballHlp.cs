@@ -8,11 +8,64 @@ using Commune.Data;
 using Commune.Basis;
 using Shop.Engine;
 using System.Text;
+using System.Net.Mail;
 
 namespace Basketball
 {
   public class BasketballHlp
   {
+    static HBuilder h = null;
+
+    public static void SendRegistrationConfirmation(int userId, string login, string email)
+    {
+      string url = string.Format("http://basketball.ru.com/confirmation?id={0}&hash={1}",
+        userId, UserHlp.CalcConfirmationCode(userId, login, "bbbin")
+      );
+
+      HElement answer = h.Div(
+        h.P("Вы указали этот адрес при регистрации на basketball.ru.com"),
+        h.P("Чтобы завершить регистрацию, пожалуйста, перейдите по ссылке:"),
+        h.A(
+          h.href(url),
+          new HAttribute("target", "_blank"),
+          url
+        ),
+        h.P("Если вы не регистрировались на сайте, значит, произошла ошибка - просто проигнорируйте это письмо")
+      );
+
+      SiteSettings settings = SiteContext.Default.SiteSettings;
+      SmtpClient smtpClient = AuthHlp.CreateSmtpClient(
+        settings.SmtpHost, settings.SmtpPort, settings.SmtpUserName, settings.SmtpPassword);
+      AuthHlp.SendMail(smtpClient, settings.MailFrom, email,
+        "Подтвердите регистрацию на basketball.ru.com", answer.ToHtmlText()
+      );
+
+      Logger.AddMessage("Подтверждение регистрации: {0}", email);
+    }
+
+    public static string AddCommentFromCookie()
+    {
+      return HttpUtility.UrlDecode(HttpContext.Current.Request.Cookies["addComment"]?.Value);
+    }
+
+    public static string AddCommentToCookieScript(string commentEditClass)
+    {
+      return string.Format(
+        "document.cookie = 'addComment = ' + encodeURIComponent($('.{0}').val()) + '; path=/'",
+        commentEditClass
+      );
+    }
+
+    public static void ResetAddComment()
+    {
+      if (HttpContext.Current.Request.Cookies["addComment"] != null)
+      {
+        HttpCookie deleteCookie = new HttpCookie("addComment");
+        deleteCookie.Values.Clear();
+        HttpContext.Current.Response.Cookies.Add(deleteCookie);
+      }
+    }
+
     public static string GetDescriptionForNews(LightObject topic)
     {
       try
@@ -187,6 +240,9 @@ namespace Basketball
                 display = display.Substring(httpPrefix.Length);
               else if (display.StartsWith(httpsPrefix))
                 display = display.Substring(httpsPrefix.Length);
+
+              if (display.Length > 50)
+                display = display.Substring(0, 50);
 
               builder.AppendFormat(linkFormat, link.Value, display);
             }

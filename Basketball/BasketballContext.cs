@@ -11,8 +11,6 @@ namespace Basketball
 {
   public class BasketballContext : IContext
   {
-    public volatile static IContext Default = null;
-
     public readonly static object lockObj = new object();
 
     readonly SiteSettings siteSettings;
@@ -190,6 +188,23 @@ namespace Basketball
         tagChangeTick++;
     }
 
+    readonly RawCache<TableLink> unreadDialogCache;
+    public TableLink UnreadDialogLink
+    {
+      get
+      {
+        lock (lockObj)
+          return unreadDialogCache.Result;
+      }
+    }
+
+    long unreadChangeTick = 0;
+    public void UpdateUnreadDialogs()
+    {
+      lock (lockObj)
+        unreadChangeTick++;
+    }
+
     public readonly TopicStorageCache NewsStorages;
     public readonly TopicStorageCache ArticleStorages;
     public readonly ForumStorageCache Forum;
@@ -365,30 +380,17 @@ namespace Basketball
             tagIdByKey[tagKey] = tagId;
           }
 
-          //Logger.AddMessage("Tags: {0}", tagBox.AllObjectIds.Length);
-
-          //Dictionary<string, int> tagByKey = new Dictionary<string, int>();
-          //foreach (int tagId in tagBox.AllObjectIds)
-          //{
-          //  string tagName = TagType.DisplayName.Get(tagBox, tagId);
-          //  string tagKey = tagName.ToLower();
-
-          //  //Logger.AddMessage("Tag: {0}, {1}", tagName, tagKey);
-          //  if (tagByKey.ContainsKey(tagKey))
-          //  {
-          //    int tagId2 = tagByKey[tagKey];
-          //    Logger.AddMessage("Дубль тега: {0}, {1}, {2}, {3}, {4}", 
-          //      tagKey, tagId2, tagId, TagType.DisplayName.Get(tagBox, tagId2), tagName);
-          //    continue;
-          //  }
-
-          //  tagByKey[tagKey] = tagId;
-
-          //}
-
           return _.Tuple(tagBox, tagIdByKey);
         },
         delegate { return tagChangeTick; }
+      );
+
+      this.unreadDialogCache = new Cache<TableLink, long>(
+        delegate
+        {
+          return DialogueHlp.LoadUnreadLink(forumConnection);
+        },
+        delegate { return unreadChangeTick; }
       );
 
       Pull.StartTask(Labels.Service,

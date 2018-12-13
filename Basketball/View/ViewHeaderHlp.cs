@@ -45,7 +45,7 @@ namespace Basketball
           .Background(Decor.panelBackground)
           .MediaTablet(new HStyle().MarginLeft(0).MarginRight(0))
           .MediaSmartfon(new HStyle().PaddingLeft(5).PaddingRight(5)),
-        ViewHeaderHlp.GetMenu(state, kind, id, isForum)
+        ViewHeaderHlp.GetMenu(state, currentUser, kind, id, isForum)
       );
     }
 
@@ -78,6 +78,19 @@ namespace Basketball
               return;
             if (!operation.Validate(user.Get(UserType.Password) != password, "Неверный пароль"))
               return;
+
+            if (!operation.Validate(user.Get(UserType.NotConfirmed), "Ваш аккаунт не подтвержден через электронную почту. Письмо для подтверждения выслано вам на почту еще раз."))
+            {
+              try
+              {
+                BasketballHlp.SendRegistrationConfirmation(user.Id, login, user.Get(UserType.Email));
+              }
+              catch (Exception ex)
+              {
+                Logger.WriteException(ex);
+              }
+              return;
+            }
 
             if (!operation.Validate(BasketballHlp.IsBanned(user),
               string.Format("Вы заблокированы до {0} и не можете войти на сайт",
@@ -129,7 +142,7 @@ namespace Basketball
       ).InlineBlock().MarginTop(10);
     }
 
-    public static IHtmlControl GetMenu(SiteState state, string kind, int? id, bool isForum)
+    public static IHtmlControl GetMenu(SiteState state, LightObject currentUser, string kind, int? id, bool isForum)
     {
       LightSection main = store.Sections.FindMenu("main");
 
@@ -144,14 +157,6 @@ namespace Basketball
           isSelected = true;
         else if (designKind == "forum" && isForum)
           isSelected = true;
-        //else if (designKind == "forum" && kind == "topic")
-        //  isSelected = true;
-        //else if (designKind == "forum" && kind == "page")
-        //{
-        //  LightSection pageSection = store.Sections.FindSection(id);
-        //  if (pageSection != null && pageSection.Get(SectionType.DesignKind) == "forumSection")
-        //    isSelected = true;
-        //}
 
         items.Add(
           ViewHeaderHlp.GetMenuItem(state, section, isSelected)
@@ -161,17 +166,50 @@ namespace Basketball
       if (state.EditMode)
       {
         items.Add(DecorEdit.AdminGroupPanel(true, main.Id));
-        //items.Add(
-        //  new HPanel(
-        //    DecorEdit.AddIconButton(true, UrlHlp.EditUrl(main.Id, "page", null)),
-        //    DecorEdit.SortIconButton(true, UrlHlp.EditUrl(main.Id, "sorting_section", null))
-        //  ).InlineBlock().Background(Decor.pageBackground)
-        //);
       }
 
       return new HPanel(
-        items.ToArray()
-      ).Align(true).Padding(3, 2, 2, 2).Background(Decor.menuBackground);
+        new HPanel(
+          items.ToArray()
+        ),
+        GetDialogItem(state, currentUser, kind)
+      ).PositionRelative().Align(true).Padding(3, 2, 2, 2).Background(Decor.menuBackground);
+    }
+
+    static IHtmlControl GetDialogItem(SiteState state, LightObject currentUser, string kind)
+    {
+      if (currentUser == null)
+        return null;
+
+      RowLink unreadRow = context.UnreadDialogLink.FindRow(DialogReadType.UnreadByUserId, currentUser.Id);
+      HAfter after = null;
+      if (unreadRow != null)
+      {
+        after = new HAfter().Content(unreadRow.Get(DialogReadType.Count).ToString())
+          .Align(null).MarginLeft(8).FontBold().TextDecoration("none")
+          .InlineBlock().BoxSizing().Size(20, 20).LineHeight(18)
+          .BorderRadius("50%").Background(Decor.redColor);
+      }
+
+      HPanel labelPanel = new HPanel(
+        new HLabel("Личные сообщения", after, new HHover().TextDecoration("none"))
+          .Padding(7, 17, 8, 17).LineHeight(20).TextDecoration("underline")
+          .MediaSmartfon(new HStyle().Display("none")),
+        new HLabel("", std.BeforeAwesome(@"\f086", 0).FontSize(20).VAlign(-2), after)
+          .Padding(7, 17, 8, 17).LineHeight(20)
+          .Display("none").MediaSmartfon(new HStyle().InlineBlock())
+      ).InlineBlock();
+
+      if (kind != "dialog")
+        labelPanel.Color(Decor.menuColor);
+      else
+        labelPanel.Color(Decor.menuSelectedColor).FontBold().Background(Decor.menuSelectedBackground);
+
+      return new HPanel(
+        new HLink(UrlHlp.ShopUrl("dialog", null),
+          labelPanel
+        )
+      ).InlineBlock().PositionAbsolute().Right(2).Top(3);
     }
 
     public static IHtmlControl GetMenuItem(SiteState state, LightSection section, bool isSelected)

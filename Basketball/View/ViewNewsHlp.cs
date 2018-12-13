@@ -38,22 +38,25 @@ namespace Basketball
         if (state.Tag == null)
           state.Tag = new List<string>();
 
+        string unsaveText = BasketballHlp.AddCommentFromCookie();
+
         editBlock = new HPanel(
-          Decor.PropertyEdit("addNewsTitle", "Заголовок новости"),
+          Decor.PropertyEdit("newsTitle", "Заголовок новости"),
           new HPanel(
-            HtmlHlp.CKEditorCreate("addNewsText", "", "300px", true)
+            HtmlHlp.CKEditorCreate("newsText", unsaveText, "300px", true)
           ),
-          ViewTagHlp.GetEditTagsPanel(state, context.Tags, state.Tag as List<string>),
-          Decor.PropertyEdit("addNewsOriginName", "Источник"),
-          Decor.PropertyEdit("addNewsOriginUrl", "Ссылка"),
-          Decor.Button("Добавить новость").CKEditorOnUpdateAll().MarginTop(10)
+          ViewTagHlp.GetEditTagsPanel(state, context.Tags, state.Tag as List<string>, true),
+          Decor.PropertyEdit("newsOriginName", "Источник"),
+          Decor.PropertyEdit("newsOriginUrl", "Ссылка"),
+          Decor.Button("Добавить новость").MarginTop(10) //.CKEditorOnUpdateAll()
+            .OnClick(string.Format("CK_updateAll(); {0}", BasketballHlp.AddCommentToCookieScript("newsText")))
             .Event("save_news_add", "addNewsData",
               delegate (JsonData json)
               {
-                string title = json.GetText("addNewsTitle");
-                string text = json.GetText("addNewsText");
-                string originName = json.GetText("addNewsOriginName");
-                string originUrl = json.GetText("addNewsOriginUrl");
+                string title = json.GetText("newsTitle");
+                string text = json.GetText("newsText");
+                string originName = json.GetText("newsOriginName");
+                string originUrl = json.GetText("newsOriginUrl");
 
                 WebOperation operation = state.Operation;
 
@@ -81,6 +84,8 @@ namespace Basketball
 
                 state.BlockHint = "";
                 state.Tag = null;
+
+                BasketballHlp.ResetAddComment();
               }
             )
         ).EditContainer("addNewsData").Padding(5, 10).MarginTop(10).Background(Decor.pageBackground);
@@ -368,21 +373,21 @@ namespace Basketball
 
         redoPanel = new HPanel(
           deletePanel,
-          Decor.PropertyEdit("editNewsTitle", "Заголовок новости", news.Get(NewsType.Title)),
+          Decor.PropertyEdit("newsTitle", "Заголовок новости", news.Get(NewsType.Title)),
           new HPanel(
-            HtmlHlp.CKEditorCreate("editNewsText", news.Get(NewsType.Text), "300px", true)
+            HtmlHlp.CKEditorCreate("newsText", news.Get(NewsType.Text), "300px", true)
           ),
-          ViewTagHlp.GetEditTagsPanel(state, context.Tags, state.Tag as List<string>),
-          Decor.PropertyEdit("editNewsOriginName", "Источник", news.Get(NewsType.OriginName)),
-          Decor.PropertyEdit("editNewsOriginUrl", "Ссылка", news.Get(NewsType.OriginUrl)),
+          ViewTagHlp.GetEditTagsPanel(state, context.Tags, state.Tag as List<string>, false),
+          Decor.PropertyEdit("newsOriginName", "Источник", news.Get(NewsType.OriginName)),
+          Decor.PropertyEdit("newsOriginUrl", "Ссылка", news.Get(NewsType.OriginUrl)),
           Decor.Button("Изменить новость").CKEditorOnUpdateAll().MarginTop(10)
             .Event("save_news_edit", "editNewsData",
               delegate (JsonData json)
               {
-                string title = json.GetText("editNewsTitle");
-                string text = json.GetText("editNewsText");
-                string originName = json.GetText("editNewsOriginName");
-                string originUrl = json.GetText("editNewsOriginUrl");
+                string title = json.GetText("newsTitle");
+                string text = json.GetText("newsText");
+                string originName = json.GetText("newsOriginName");
+                string originUrl = json.GetText("newsOriginUrl");
 
                 WebOperation operation = state.Operation;
 

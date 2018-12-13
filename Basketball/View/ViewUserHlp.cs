@@ -18,6 +18,13 @@ namespace Basketball
       get { return (BasketballContext)SiteContext.Default; }
     }
 
+    public static IHtmlControl GetMessageView(string message)
+    {
+      return new HPanel(
+        Decor.Subtitle(message)
+      );
+    }
+
     public static IHtmlControl GetUserView(SiteState state, LightObject currentUser, LightObject user)
     {
       string communityMember = user.Get(BasketballUserType.CommunityMember);
@@ -82,6 +89,7 @@ namespace Basketball
             rows
           ).Padding(1).Border("1px solid #eeeeee")
         ).PositionRelative().BoxSizing().WidthLimit("", "480px").PaddingLeft(74),
+        ViewDialogueHlp.GetAddPanel(context, state, currentUser, user, true),
         redoAvatarPanel,
         editPanel,
         adminPanel,

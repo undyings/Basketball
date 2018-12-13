@@ -38,7 +38,7 @@ namespace Basketball
 
         LinkInfo link = null;
         if (kind == "news" || kind == "user" || (kind == "novosti" && id != null) || 
-          kind == "article" || kind == "topic" || kind == "tags")
+          kind == "article" || kind == "topic" || kind == "tags" || kind == "dialog" || kind == "confirmation")
         {
           link = new LinkInfo("", kind, id);
         }
@@ -62,6 +62,9 @@ namespace Basketball
           };
         }
 
+        if (jsons.Length > 0)
+          state.AccessTime = DateTime.UtcNow;
+
         foreach (JsonData json in jsons)
         {
           try
@@ -72,14 +75,25 @@ namespace Basketball
             try
             {
               string command = json.JPath("data", "command")?.ToString();
-              if (command != null && command.StartsWith("save_") && StringHlp.IsEmpty(state.BlockHint))
+              if (command != null && StringHlp.IsEmpty(state.BlockHint))
               {
-                object id1 = json.JPath("data", "id1");
+                if (command.StartsWith("save_"))
+                {
+                  object id1 = json.JPath("data", "id1");
 
-                string hint = command.Substring(5);
-                if (id != null)
-                  hint = string.Format("{0}_{1}", hint, id1);
-                state.BlockHint = hint;
+                  string hint = command.Substring(5);
+                  if (id != null)
+                    hint = string.Format("{0}_{1}", hint, id1);
+                  state.BlockHint = hint;
+
+                  Logger.AddMessage("Restore: {0}", hint);
+                }
+                else if (command == "tag_add" && kind == "")
+                {
+                  state.BlockHint = "news_add";
+
+                  Logger.AddMessage("Restore: news_add");
+                }
               }
             }
             catch (Exception ex)
@@ -124,9 +138,7 @@ namespace Basketball
 
       LightObject currentUser = UserHlp.GetCurrentUser(httpContext, SiteContext.Default.UserStorage);
 
-      //Logger.AddMessage("CurrentUser: {0}", currentUser != null);
-
-      if (currentUser != null && BasketballHlp.IsBanned(currentUser))
+      if (currentUser != null && (BasketballHlp.IsBanned(currentUser) || currentUser.Get(UserType.NotConfirmed)))
       {
         currentUser = null;
         httpContext.Logout();
@@ -134,6 +146,7 @@ namespace Basketball
 
       state.EditMode = httpContext.IsInRole("edit");
       state.SeoMode = httpContext.IsInRole("seo");
+      state.UserMode = currentUser != null;
 
       string title = "";
       string description = "";
@@ -161,17 +174,34 @@ namespace Basketball
           isForum = true;
       }
 
-      IHtmlControl centerView = ViewHlp.GetCenter(httpContext, 
+      IHtmlControl centerView = ViewHlp.GetCenter(httpContext,
         state, currentUser, kind, id, out title, out description, out schema
       );
 
-      if (centerView == null)
+      if (centerView == null && StringHlp.IsEmpty(state.RedirectUrl))
         return null;
+
+      BasketballContext context = (BasketballContext)SiteContext.Default;
+      try
+      {
+        if (currentUser != null && kind == "dialog" && id != null)
+        {
+          if (context.UnreadDialogLink.FindRow(DialogReadType.UnreadByUserId, currentUser.Id) != null)
+          {
+            DialogueHlp.MarkReadCorrespondence(context.ForumConnection, currentUser.Id, id.Value);
+            context.UpdateUnreadDialogs();
+          }
+        }
+      }
+      catch (Exception ex)
+      {
+        Logger.WriteException(ex);
+      }
 
       HEventPanel mainPanel = new HEventPanel(
         new HPanel(
           new HAnchor("top"),
-          DecorEdit.AdminMainPanel(state.EditMode, state.SeoMode),
+          DecorEdit.AdminMainPanel(SiteContext.Default.SiteSettings, httpContext),
           ViewHeaderHlp.GetHeader(httpContext, state, currentUser, kind, id, isForum),
           adminSectionPanel,
           new HPanel(
@@ -198,7 +228,7 @@ namespace Basketball
         ),
         ViewHlp.GetFooterView(kind == ""),
         dialogBox
-        //popupPanel
+      //popupPanel
       ).Width("100%").BoxSizing().Align(null).Background(Decor.pageBackground)
         .Padding(1)
         .FontFamily("Tahoma").FontSize(12); //.Color(Decor.textColor);
@@ -221,6 +251,15 @@ namespace Basketball
 
       SiteSettings settings = SiteContext.Default.SiteSettings;
 
+      //string blockHint = state.BlockHint;
+      //bool withCkeditor = false;
+      //if (!StringHlp.IsEmpty(blockHint))
+      //{
+      //  withCkeditor = blockHint == "news_add" || blockHint.StartsWith("article_edit_") ||
+      //    blockHint.StartsWith("news_edit_");
+      //}
+      //bool withFileuploader = kind == "user" || withCkeditor;
+
       return h.Html
       (
         h.Head(
@@ -229,9 +268,9 @@ namespace Basketball
           h.LinkCss(UrlHlp.FileUrl("/css/static.css")),
           h.LinkShortcutIcon("/images/favicon.ico"),
           h.Meta("viewport", "width=device-width"),
-          h.LinkCss("/css/font-awesome.css"),
+          //h.LinkCss("/css/font-awesome.css"),
+          //h.LinkCss("/css/fileuploader.css"),
           h.LinkScript("/scripts/fileuploader.js"),
-          h.LinkCss("/css/fileuploader.css"),
           h.LinkScript("/ckeditor/ckeditor.js"),
           HtmlHlp.CKEditorUpdateAll(),
           h.Raw(store.SeoWidgets.WidgetsCode),
@@ -244,9 +283,20 @@ namespace Basketball
         ),
         h.Body(
           h.Css(h.Raw(css.ToString())),
-          HtmlHlp.RedirectScript(state.RedirectUrl),
+          h.Div(
+            HtmlHlp.RedirectScript(state.RedirectUrl)
+          ),
+          //h.Div(
+          //  withFileuploader ? h.LinkScript("/scripts/fileuploader.js") : null,
+          //  withCkeditor ? h.LinkScript("/ckeditor/ckeditor.js") : null,
+          //  withCkeditor ? HtmlHlp.CKEditorUpdateAll() : null
+          //),
           mainElement
-          //HtmlHlp.SchemaOrg(schema),
+          //withEditor ? h.Script(h.type("text/javascript"), "console.log('withScript');") : null,
+          //!withFileuploader && withEditor ? h.LinkScript("/scripts/fileuploader.js") : null,
+          //withEditor ? h.LinkScript("/ckeditor/ckeditor.js") : null,
+          //withEditor ? HtmlHlp.CKEditorUpdateAll() : null
+        //HtmlHlp.SchemaOrg(schema),
         )
       );
     }

@@ -79,7 +79,8 @@ namespace Basketball
       ).MarginTop(10);
     }
 
-    public static IHtmlControl GetEditTagsPanel(SiteState state, ObjectHeadBox tagBox, List<string> tags)
+    public static IHtmlControl GetEditTagsPanel(SiteState state, 
+      ObjectHeadBox tagBox, List<string> tags, bool isAdd)
     {
       if (tags == null)
         return null;
@@ -108,6 +109,8 @@ namespace Basketball
       }
 
       string addTagName = string.Format("addTag_{0}", state.OperationCounter);
+      string onClick = !isAdd ? ";" :
+        string.Format("CK_updateAll(); {0}", BasketballHlp.AddCommentToCookieScript("newsText"));
 
       return new HPanel(
         new HPanel(
@@ -116,13 +119,8 @@ namespace Basketball
         new HPanel(
           new HTextEdit(addTagName).Width(400).MarginRight(5).MarginBottom(5)
             .MediaSmartfon(new HStyle().Width("100%")),
-          //new HComboEdit<int>("addTag", -1, delegate(int tagId)
-          //  {
-          //    return TagType.DisplayName.Get(tagBox, tagId);
-          //  },
-          //  tagBox.AllObjectIds
-          //),            
           Decor.Button("Добавить тэг").VAlign(-1).MarginBottom(5)
+            .OnClick(onClick)
             .Event("tag_add", "addTagData",
             delegate (JsonData json)
             {

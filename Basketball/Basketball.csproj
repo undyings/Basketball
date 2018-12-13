@@ -114,7 +114,6 @@
     <Content Include="Fonts\fontawesome-webfont.svg" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\fileuploader.js" />
-    <Content Include="Scripts\NitroBolt.Wui.2.0.14.js" />
     <Content Include="Scripts\NitroBolt.Wui.2.0.48.js" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -126,6 +125,8 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SiteController.cs" />
+    <Compile Include="Topic\DialogueHlp.cs" />
+    <Compile Include="Topic\DialogueType.cs" />
     <Compile Include="Topic\ForumStorageCache.cs" />
     <Compile Include="Topic\ForumSectionStorage.cs" />
     <Compile Include="Topic\TopicStorage.cs" />
@@ -135,6 +136,7 @@
     <Compile Include="View\MainView.cs" />
     <Compile Include="View\ViewArticleHlp.cs" />
     <Compile Include="View\ViewCommentHlp.cs" />
+    <Compile Include="View\ViewDialogueHlp.cs" />
     <Compile Include="View\ViewForumHlp.cs" />
     <Compile Include="View\ViewHeaderHlp.cs" />
     <Compile Include="View\ViewJumpHlp.cs" />
