@@ -148,9 +148,12 @@ namespace Basketball
       state.SeoMode = httpContext.IsInRole("seo");
       state.UserMode = currentUser != null;
 
-      string title = "";
-      string description = "";
-      SchemaOrg schema = null;
+			int[] foundTagIds = state.Option.Get(OptionType.FoundTagIds);
+			if (foundTagIds != null && foundTagIds.Length > 0)
+			{
+				kind = "search";
+				id = null;
+			}
 
       IHtmlControl adminSectionPanel = null;
       if (kind == "page")
@@ -174,8 +177,14 @@ namespace Basketball
           isForum = true;
       }
 
-      IHtmlControl centerView = ViewHlp.GetCenter(httpContext,
-        state, currentUser, kind, id, out title, out description, out schema
+
+			string title = "";
+			string description = "";
+			SchemaOrg schema = null;
+			bool wideContent;
+
+			IHtmlControl centerView = ViewHlp.GetCenter(httpContext,
+        state, currentUser, kind, id, out title, out description, out schema, out wideContent
       );
 
       if (centerView == null && StringHlp.IsEmpty(state.RedirectUrl))
@@ -213,7 +222,7 @@ namespace Basketball
                   .MediaTablet(new HStyle().InlineBlock().MarginRight(15))
                   .MediaSmartfon(new HStyle().Width("100%").MarginRight(0)),
                 ViewRightColumnHlp.GetReclameColumnView(state).InlineBlock().VAlign(true)
-              ).PositionAbsolute().Top(13).Right(15)
+              ).Hide(wideContent).PositionAbsolute().Top(13).Right(15)
                 .MediaTablet(new HStyle().Position("static").MarginTop(15))
             //.MediaSmartfon(new HStyle().Width("100%"))
             ).PositionRelative().Align(true)
@@ -271,7 +280,7 @@ namespace Basketball
           //h.LinkCss("/css/font-awesome.css"),
           //h.LinkCss("/css/fileuploader.css"),
           h.LinkScript("/scripts/fileuploader.js"),
-          h.LinkScript("/ckeditor/ckeditor.js"),
+          h.LinkScript("/ckeditor/ckeditor.js?v=4113"),
           HtmlHlp.CKEditorUpdateAll(),
           h.Raw(store.SeoWidgets.WidgetsCode),
           HtmlHlp.SchemaOrg(schema),

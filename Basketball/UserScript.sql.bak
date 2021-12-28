@@ -1,0 +1,1 @@
+update light_object set xml_ids = '<Login>temper</Login>' Where obj_id = 70;

@@ -61,6 +61,7 @@ namespace Basketball
           new SectionTunes("news", "Новости"),
           new SectionTunes("articles", "Статьи"),
           new SectionTunes("forum", "Форум"),
+					new SectionTunes("rules", "Правила").Link(),
           new SectionTunes("forumSection", "Раздел форума")
         );
 
@@ -70,15 +71,31 @@ namespace Basketball
 
         Shop.Engine.Site.Novosti = "news";
         Shop.Engine.Site.DirectPageLinks = true;
-        //Shop.Engine.Site.AddFolderForNews = true;
+				//Shop.Engine.Site.AddFolderForNews = true;
 
-        string scriptPath = Path.Combine(appPath, "ExecuteScript.sql");
-        if (File.Exists(scriptPath))
-        {
-          string script = File.ReadAllText(scriptPath);
-          Logger.AddMessage("Выполняем стартовый скрипт: {0}", script);
-          fabricConnection.GetScalar("", script);
-        }
+				try
+				{
+
+					string fabricScriptPath = Path.Combine(appPath, "FabricScript.sql");
+					if (File.Exists(fabricScriptPath))
+					{
+						string script = File.ReadAllText(fabricScriptPath);
+						Logger.AddMessage("Выполняем стартовый скрипт для fabric.db3: {0}", script);
+						fabricConnection.GetScalar("", script);
+					}
+
+					string userScriptPath = Path.Combine(appPath, "UserScript.sql");
+					if (File.Exists(userScriptPath))
+					{
+						string script = File.ReadAllText(userScriptPath);
+						Logger.AddMessage("Выполняем стартовый скрипт для user.db3: {0}", script);
+						userConnection.GetScalar("", script);
+					}
+				}
+				catch (Exception ex)
+				{
+					Logger.WriteException(ex, "Ошибка при выполнении стартового скрипта");
+				}
 
         SiteContext.Default = new BasketballContext(
           appPath, sectionEditorSelector, unitEditorSelector,
@@ -86,12 +103,12 @@ namespace Basketball
         );
 
         SiteContext.Default.Pull.StartTask(Labels.Service, 
-          MemoryChecker(SiteContext.Default)
+          MemoryChecker((BasketballContext)SiteContext.Default)
         );
 
         SiteContext.Default.Pull.StartTask(Labels.Service,
           SiteTasks.CleaningSessions(SiteContext.Default, 
-            TimeSpan.FromHours(1), TimeSpan.FromMinutes(15), TimeSpan.FromMinutes(5)
+            TimeSpan.FromHours(1), TimeSpan.FromMinutes(10), TimeSpan.FromMinutes(1)
           )
         );
       }
@@ -101,48 +118,49 @@ namespace Basketball
       }
     }
 
-    static IEnumerable<Step> MemoryChecker(IContext context)
+    static IEnumerable<Step> MemoryChecker(BasketballContext context)
     {
       while (!context.Pull.IsFinishing)
       {
         Process process = Process.GetCurrentProcess();
-        Logger.AddMessage("Process: {0}, topics = {1}",
-          ProcessInfoToString(process), 
-          ((BasketballContext)context).NewsStorages.TopicCount
-        );
+        Logger.AddMessage("Process: {0}", ProcessInfoToString(process, context));
 
         yield return new WaitStep(TimeSpan.FromMinutes(5));
       }
     }
 
-    static string ProcessInfoToString(Process process)
+    static string ProcessInfoToString(Process process, BasketballContext context)
     {
       //PerformanceCounter counter = new PerformanceCounter("ASP.NET Applications", "Sessions Active", "__Total__");
       //PerformanceCounter counter = new PerformanceCounter("ASP.NET", "Application Restarts");
 
       return string.Format(
-        "id = {0} cpu = {1}, session = {2}, work = {3}mb peak = {4}mb, virtual = {5}mb peak = {6}mb",
+				"id = {0} cpu = {1}, session = {2}, work = {3}mb, virtual = {4}mb, requests = {5}, topics = {6}, forum = {7}",
         process.Id, process.UserProcessorTime, HWebApiSynchronizeHandler.Frames.Count,
-        process.WorkingSet64 / 1000000, process.PeakWorkingSet64 / 1000000,
-        process.VirtualMemorySize64 / 1000000, process.PeakVirtualMemorySize64 / 1000000
-      );
+        process.WorkingSet64 / 1000000, process.VirtualMemorySize64 / 1000000,
+				requestCount,	context.NewsStorages.TopicCount, context.Forum.TopicsStorages.TopicCount
+			);
     }
 
-    //volatile static int sessionCount = 0;
+		//volatile static int sessionCount = 0;
 
-    //protected void Session_Start(object sender, EventArgs e)
-    //{
-    //  Logger.AddMessage("SessionStart");
-    //  sessionCount++;
-    //}
+		//protected void Session_Start(object sender, EventArgs e)
+		//{
+		//  Logger.AddMessage("SessionStart");
+		//  sessionCount++;
+		//}
 
-    //protected void Session_End(object sender, EventArgs e)
-    //{
-    //  sessionCount--;
-    //}
+		//protected void Session_End(object sender, EventArgs e)
+		//{
+		//  sessionCount--;
+		//}
+
+		static volatile int requestCount = 0;
 
     protected void Application_BeginRequest(object sender, EventArgs e)
     {
+			requestCount++;
+
       string path = (this.Context.Request.Path ?? "").ToLower();
 
       LightObject redirect = SiteContext.Default.Store.Redirects.Find(path);
@@ -171,9 +189,8 @@ namespace Basketball
 
       Process process = Process.GetCurrentProcess();
 
-      Logger.AddMessage("Process: {0}, topics = {1}",
-        ProcessInfoToString(process),
-        ((BasketballContext)SiteContext.Default).NewsStorages.TopicCount
+      Logger.AddMessage("Process: {0}",
+        ProcessInfoToString(process, (BasketballContext)SiteContext.Default)
       );
     }
   }

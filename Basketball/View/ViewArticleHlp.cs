@@ -236,6 +236,12 @@ namespace Basketball
               new HTextArea("editArticleAnnotation", article.Get(NewsType.Annotation))
                 .Width("100%").Height("4em").MarginBottom(5)
             ),
+						new HPanel(
+							new HInputCheck(
+								"editArticleWideContent", article.Get(ArticleType.WideContent),
+								new HAfter().Content("Таблицы шире колонки статьи").MarginLeft(18).MarginBottom(1)
+							).NoWrap()
+						).MarginBottom(5),
             HtmlHlp.CKEditorCreate("editArticleText", article.Get(NewsType.Text), "300px", true),
             Decor.PropertyEdit("editArticleAuthor", "Автор", article.Get(ArticleType.Author)),
             Decor.PropertyEdit("editArticleOriginName", "Источник (без префикса http://)", article.Get(NewsType.OriginName)),
@@ -246,6 +252,7 @@ namespace Basketball
                 {
                   string title = json.GetText("editArticleTitle");
                   string annotation = json.GetText("editArticleAnnotation");
+									bool wideContent = json.GetBool("editArticleWideContent");
                   string text = json.GetText("editArticleText");
                   string author = json.GetText("editArticleAuthor");
                   string originName = json.GetText("editArticleOriginName");
@@ -263,6 +270,7 @@ namespace Basketball
 
                   editNews.SetWithoutCheck(NewsType.Title, title);
 
+									editNews.Set(ArticleType.WideContent, wideContent);
                   editNews.Set(NewsType.Annotation, annotation);
                   editNews.Set(NewsType.Text, text);
                   editNews.Set(ArticleType.Author, author);
@@ -285,7 +293,7 @@ namespace Basketball
             EditElementHlp.GetImageThumb(article.Id)
           ),
           new HPanel(
-            EditElementHlp.GetDescriptionImagesPanel(article.Id)
+            EditElementHlp.GetDescriptionImagesPanel(state.Option, article.Id)
           )
         ).Padding(5, 10).MarginTop(10).Background(Decor.pageBackground);
       }

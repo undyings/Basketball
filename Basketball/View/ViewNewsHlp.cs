@@ -45,7 +45,7 @@ namespace Basketball
           new HPanel(
             HtmlHlp.CKEditorCreate("newsText", unsaveText, "300px", true)
           ),
-          ViewTagHlp.GetEditTagsPanel(state, context.Tags, state.Tag as List<string>, true),
+          ViewTagHlp.GetEditTagsPanel(state, context.Tags.TagBox, state.Tag as List<string>, true),
           Decor.PropertyEdit("newsOriginName", "Источник"),
           Decor.PropertyEdit("newsOriginUrl", "Ссылка"),
           Decor.Button("Добавить новость").MarginTop(10) //.CKEditorOnUpdateAll()
@@ -139,7 +139,41 @@ namespace Basketball
       return GetNewsItems(state, newsList);
     }
 
-    public static IHtmlControl GetTagListView(SiteState state, LightObject currentUser, 
+		public static IHtmlControl GetFoundTagListView(SiteState state, out string title)
+		{
+			title = string.Format("Найденные теги по запросу: {0}", state.Option.Get(OptionType.SearchQuery));
+
+			List<IHtmlControl> elements = new List<IHtmlControl>();
+
+			int[] foundTagIds = state.Option.Get(OptionType.FoundTagIds);
+			if (foundTagIds != null)
+			{
+				foreach (int tagId in foundTagIds)
+				{
+					RowLink tagRow = context.Tags.TagBox.ObjectById.AnyRow(tagId);
+					if (tagRow == null)
+						continue;
+
+					string tagDisplay = TagType.DisplayName.Get(tagRow);
+
+					elements.Add(
+						new HPanel(
+							new HLink(ViewTagHlp.TagUrl(tagId, 0), tagDisplay)
+						).MarginBottom(4)
+					);
+				}
+			}
+
+
+			return new HPanel(
+				Decor.Title(title),
+				new HPanel(
+					elements.ToArray()
+				)
+			);
+		}
+
+    public static IHtmlControl GetTagView(SiteState state, LightObject currentUser, 
       int? tagId, int pageNumber, out string title, out string description)
     {
       title = "";
@@ -148,7 +182,7 @@ namespace Basketball
       if (tagId == null)
         return null;
 
-      RowLink tagRow = context.Tags.ObjectById.AnyRow(tagId.Value);
+      RowLink tagRow = context.Tags.TagBox.ObjectById.AnyRow(tagId.Value);
       if (tagRow == null)
         return null;
 
@@ -242,7 +276,8 @@ namespace Basketball
       foreach (LightHead news in newsList)
       {
         DateTime localTime = (news.Get(ObjectType.ActFrom) ?? DateTime.UtcNow).ToLocalTime();
-        bool isFixed = localTime.Date > DateTime.UtcNow.ToLocalTime();
+				DateTime currentLocalTime = DateTime.UtcNow.ToLocalTime();
+				bool isFixed = localTime.Date > currentLocalTime.AddDays(1);
 
         if (prevTime.Date != localTime.Date)
         {
@@ -250,9 +285,12 @@ namespace Basketball
 
           if (!isFixed)
           {
+						string dateFormat = localTime.Year == currentLocalTime.Year ?
+							BasketballHlp.shortDateFormat : BasketballHlp.longDateFormat;
+
             items.Add(
               new HPanel(
-                new HLabel(localTime.ToString("dd MMMM")).FontBold()
+                new HLabel(localTime.ToString(dateFormat)).FontBold()
               ).Padding(1).MarginTop(15).MarginBottom(4)
             );
           }
@@ -300,16 +338,16 @@ namespace Basketball
 
       IHtmlControl moderatorPanel = GetModeratorPanel(state, currentUser, topic, localTime);
 
-      return new HPanel(
+			return new HPanel(
         Decor.Title(news.Get(NewsType.Title)),
         new HLabel(localTime.ToString(Decor.timeFormat)).Block().FontBold(),
-        new HTextView(news.Get(NewsType.Text)),
+        new HTextView(news.Get(NewsType.Text)).PositionRelative().Overflow("hidden"),
         new HPanel(
           new HLabel("Добавил:").MarginRight(5),
           new HLink(UrlHlp.ShopUrl("user", publisherId), publisher?.Get(UserType.Login))
         ),
         new HLink(news.Get(NewsType.OriginUrl), news.Get(NewsType.OriginName)),
-        ViewTagHlp.GetViewTagsPanel(context.Tags, topic.Topic),
+        ViewTagHlp.GetViewTagsPanel(context.Tags.TagBox, topic.Topic),
         editPanel,
         moderatorPanel,
         ViewCommentHlp.GetCommentsPanel(context.MessageConnection, state, currentUser, topic, topic.MessageLink.AllRows)
@@ -369,7 +407,7 @@ namespace Basketball
         }
 
         if (state.Tag == null)
-          state.Tag = ViewTagHlp.GetTopicDisplayTags(context.Tags, topic.Topic);
+          state.Tag = ViewTagHlp.GetTopicDisplayTags(context.Tags.TagBox, topic.Topic);
 
         redoPanel = new HPanel(
           deletePanel,
@@ -377,7 +415,7 @@ namespace Basketball
           new HPanel(
             HtmlHlp.CKEditorCreate("newsText", news.Get(NewsType.Text), "300px", true)
           ),
-          ViewTagHlp.GetEditTagsPanel(state, context.Tags, state.Tag as List<string>, false),
+          ViewTagHlp.GetEditTagsPanel(state, context.Tags.TagBox, state.Tag as List<string>, false),
           Decor.PropertyEdit("newsOriginName", "Источник", news.Get(NewsType.OriginName)),
           Decor.PropertyEdit("newsOriginUrl", "Ссылка", news.Get(NewsType.OriginUrl)),
           Decor.Button("Изменить новость").CKEditorOnUpdateAll().MarginTop(10)

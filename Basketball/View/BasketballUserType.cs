@@ -27,6 +27,7 @@ namespace Basketball
     public const int Article = 5010;
 
     public readonly static RowPropertyBlank<string> Author = DataBox.Create(5200, DataBox.StringValue);
+		public readonly static RowPropertyBlank<bool> WideContent = DataBox.Create(5210, DataBox.BoolValue);
   }
 
   public class TopicType : NewsType
@@ -51,6 +52,9 @@ namespace Basketball
   public class OptionType
   {
     public readonly static FieldBlank<int> CorrespondencePageIndex = new FieldBlank<int>("CorrespondencePageIndex");
+
+		public readonly static FieldBlank<string> SearchQuery = new FieldBlank<string>("SearchQuery");
+		public readonly static FieldBlank<int[]> FoundTagIds = new FieldBlank<int[]>("FindedTagIds");
   }
 
 }

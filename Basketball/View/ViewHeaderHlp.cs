@@ -151,15 +151,21 @@ namespace Basketball
       {
         bool isSelected = kind == "page" && id == section.Id;
         string designKind = section.Get(SectionType.DesignKind);
-        if (designKind == "news" && kind == "news")
-          isSelected = true;
-        else if (designKind == "articles" && kind == "article")
-          isSelected = true;
-        else if (designKind == "forum" && isForum)
-          isSelected = true;
+				if (designKind == "news" && kind == "news")
+					isSelected = true;
+				//hack захардкодена статья с правилами
+				else if (designKind == "articles" && kind == "article" && id != 118210)
+					isSelected = true;
+				else if (designKind == "forum" && isForum)
+					isSelected = true;
+				else if (designKind == "rules" && id == 118210)
+					isSelected = true;
 
-        items.Add(
-          ViewHeaderHlp.GetMenuItem(state, section, isSelected)
+				string url = designKind != "rules" ? UrlHlp.ShopUrl("page", section.Id) :
+					section.Get(SectionType.Link);
+
+				items.Add(
+          ViewHeaderHlp.GetMenuItem(state, section, url, isSelected)
         );
       }
 
@@ -168,15 +174,66 @@ namespace Basketball
         items.Add(DecorEdit.AdminGroupPanel(true, main.Id));
       }
 
+			items.Add(GetSearchPanel(state));
+
       return new HPanel(
         new HPanel(
           items.ToArray()
         ),
         GetDialogItem(state, currentUser, kind)
-      ).PositionRelative().Align(true).Padding(3, 2, 2, 2).Background(Decor.menuBackground);
+      ).PositionRelative().Align(true).Padding(3, 60, 2, 2).Background(Decor.menuBackground)
+			.Media(360, new HStyle().PaddingRight(20));
     }
 
-    static IHtmlControl GetDialogItem(SiteState state, LightObject currentUser, string kind)
+		static IHtmlControl GetSearchPanel(SiteState state)
+		{
+			string editName = "searchText";
+			string buttonName = "searchButton";
+			string contentName = "searchContent";
+
+			return new HPanel(
+				new HTextEdit(editName, new HPlaceholder(new HTone().Color("#ccc")).ToStyles())
+					.BoxSizing().Width(150).Placeholder("Поиск по тегам")
+					.Padding(6).TabIndex(1).Color("#fff").Border("none").Background("none")
+					.CssAttribute("user-select", "none").CssAttribute("outline", "none")
+					.OnKeyDown(string.Format("if (e.keyCode == 13) $('.{0}').click();", buttonName)),
+				new HButton(buttonName, " ",
+					std.BeforeAwesome(@"\f002", 0).FontSize(18).Color(Decor.menuColor)
+				).PositionAbsolute().Left(0).Top(5).MarginLeft(12)
+				.Title("Найти тег")
+				.Event("search_tag", contentName,
+					delegate (JsonData json)
+					{
+						string searchQuery = json.GetText(editName);
+						if (searchQuery == null || searchQuery.Length < 1)
+						{
+							state.Operation.Message = "Введите тег";
+							return;
+						}
+
+						int[] tagIds = context.Tags.SearchByTags(context.FabricConnection, searchQuery);
+						if (tagIds.Length == 0)
+						{
+							state.Operation.Message = "Ничего не найдено";
+							return;
+						}
+
+						if (tagIds.Length == 1)
+						{
+							state.RedirectUrl = ViewTagHlp.TagUrl(tagIds[0], 0);
+							return;
+						}
+
+						state.Option.Set(OptionType.SearchQuery, searchQuery);
+						state.Option.Set(OptionType.FoundTagIds, tagIds);
+					}
+				)
+			).InlineBlock().PositionRelative().EditContainer(contentName).FontSize(12)
+				.PaddingLeft(35).PaddingRight(10).MarginLeft(17).MarginBottom(4).MarginTop(3)
+				.Background("rgba(255,255,255,0.2)").Border("1px solid #aaa").BorderRadius(15);
+		}
+
+		static IHtmlControl GetDialogItem(SiteState state, LightObject currentUser, string kind)
     {
       if (currentUser == null)
         return null;
@@ -194,10 +251,10 @@ namespace Basketball
       HPanel labelPanel = new HPanel(
         new HLabel("Личные сообщения", after, new HHover().TextDecoration("none"))
           .Padding(7, 17, 8, 17).LineHeight(20).TextDecoration("underline")
-          .MediaSmartfon(new HStyle().Display("none")),
+          .Media(600, new HStyle().Display("none")),
         new HLabel("", std.BeforeAwesome(@"\f086", 0).FontSize(20).VAlign(-2), after)
           .Padding(7, 17, 8, 17).LineHeight(20)
-          .Display("none").MediaSmartfon(new HStyle().InlineBlock())
+          .Display("none").Media(600, new HStyle().InlineBlock())
       ).InlineBlock();
 
       if (kind != "dialog")
@@ -212,7 +269,7 @@ namespace Basketball
       ).InlineBlock().PositionAbsolute().Right(2).Top(3);
     }
 
-    public static IHtmlControl GetMenuItem(SiteState state, LightSection section, bool isSelected)
+    public static IHtmlControl GetMenuItem(SiteState state, LightSection section, string url, bool isSelected)
     {
       HLabel label = new HLabel(section.NameInMenu, new HHover().TextDecoration("none"))
         .Padding(10, 17, 12, 17).TextDecoration("underline");
@@ -222,7 +279,8 @@ namespace Basketball
         label.Color(Decor.menuSelectedColor).FontBold().Background(Decor.menuSelectedBackground);
 
       return new HPanel(
-        new HLink(UrlHlp.ShopUrl("page", section.Id),
+        //new HLink(UrlHlp.ShopUrl("page", section.Id),
+				new HLink(url,
           label
         )
       ).InlineBlock();

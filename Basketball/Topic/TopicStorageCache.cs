@@ -30,7 +30,16 @@ namespace Basketball
         if (!topicStorageById.TryGetValue(topicId, out storage))
         {
           storage = new TopicStorage(topicConnection, messageConnection, topicTypeId, topicId);
-          topicStorageById[topicId] = storage;
+
+					DateTime refTime = DateTime.UtcNow.AddDays(-7);
+					RowLink lastMessage = _.Last(storage.MessageLink.AllRows);
+
+					DateTime? topicTime = storage.Topic.Get(ObjectType.ActFrom);
+					if ((topicTime != null && topicTime.Value > refTime) ||
+						(lastMessage != null && lastMessage.Get(CorrespondenceType.CreateTime) > refTime))
+					{
+						topicStorageById[topicId] = storage;
+					}
         }
         return storage;
       }

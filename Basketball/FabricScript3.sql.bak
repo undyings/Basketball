@@ -1,0 +1,18 @@
+Update light_link Set child_id = 101487 Where child_id = 101741;
+Update light_link Set child_id = 101058 Where child_id = 101617;
+Update light_link Set child_id = 100732 Where child_id = 101678;
+Update light_link Set child_id = 101029 Where child_id = 100900;
+Update light_link Set child_id = 101967 Where child_id = 102174;
+Update light_link Set child_id = 101033 Where child_id = 100906;
+Update light_link Set child_id = 101518 Where child_id = 101062;
+Update light_link Set child_id = 101033 Where child_id = 101998;
+Update light_link Set child_id = 100651 Where child_id = 101373;
+Update light_link Set child_id = 100907 Where child_id = 101743;
+Update light_link Set child_id = 100866 Where child_id = 100981;
+Update light_link Set child_id = 100683 Where child_id = 102181;
+Update light_link Set child_id = 100648 Where child_id = 101850;
+Update light_link Set child_id = 100871 Where child_id = 101619;
+Update light_link Set child_id = 100682 Where child_id = 100940;
+Update light_link Set child_id = 101132 Where child_id = 100644;
+Delete From light_object Where obj_id in (101741, 101617, 101678, 100900, 102174, 100906, 101062, 101998, 101373);
+Delete From light_object Where obj_id in (101743, 100981, 102181, 102181, 101850, 101619, 100940, 100644);

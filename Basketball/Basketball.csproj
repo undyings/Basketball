@@ -22,6 +22,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -125,6 +126,7 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SiteController.cs" />
+    <Compile Include="TagStore.cs" />
     <Compile Include="Topic\DialogueHlp.cs" />
     <Compile Include="Topic\DialogueType.cs" />
     <Compile Include="Topic\ForumStorageCache.cs" />
@@ -142,7 +144,7 @@
     <Compile Include="View\ViewJumpHlp.cs" />
     <Compile Include="View\ViewNewsHlp.cs" />
     <Compile Include="View\ViewRightColumnHlp.cs" />
-    <Compile Include="View\TagHlp.cs" />
+    <Compile Include="View\ViewTagHlp.cs" />
     <Compile Include="View\ViewUserHlp.cs" />
     <Compile Include="View\ViewHlp.cs" />
     <Compile Include="WebApiConfig.cs" />

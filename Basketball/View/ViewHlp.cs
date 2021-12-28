@@ -28,11 +28,12 @@ namespace Basketball
 
     public static IHtmlControl GetCenter(HttpContext httpContext, SiteState state, 
       LightObject currentUser, string kind, int? id, 
-      out string title, out string description, out SchemaOrg schema)
+      out string title, out string description, out SchemaOrg schema, out bool wideContent)
     {
       title = "";
       description = "";
       schema = null;
+			wideContent = false;
 
       SiteSettings settings = context.SiteSettings;
 
@@ -87,6 +88,7 @@ namespace Basketball
               topic.Get(TopicType.OriginName), settings.Organization,
               logoUrl, description
             );
+						wideContent = topic.Get(ArticleType.WideContent);
             return ViewArticleHlp.GetArticleView(state, currentUser, topicStorage);
           }
         case "topic":
@@ -114,9 +116,13 @@ namespace Basketball
           {
             int? tagId = httpContext.GetUInt("tag");
             int pageNumber = httpContext.GetUInt("page") ?? 0;
-            return ViewNewsHlp.GetTagListView(state, currentUser, tagId, pageNumber, out title, out description);
+            return ViewNewsHlp.GetTagView(state, currentUser, tagId, pageNumber, out title, out description);
           }
-        case "user":
+				case "search":
+					{
+						return ViewNewsHlp.GetFoundTagListView(state, out title);
+					}
+				case "user":
           {
             LightObject user = context.UserStorage.FindUser(id ?? -1);
             if (user == null)
@@ -350,7 +356,7 @@ namespace Basketball
               ObjectBox box = new ObjectBox(context.UserConnection, "1=0");
 
               int? createUserId = box.CreateUniqueObject(UserType.User,
-                UserType.Login.CreateXmlIds("", login), DateTime.UtcNow);
+                UserType.Login.CreateXmlIds("", login), null);
               if (!operation.Validate(createUserId == null,
                 "Пользователь с таким логином уже существует"))
               {

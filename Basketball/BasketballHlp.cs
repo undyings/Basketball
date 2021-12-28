@@ -14,7 +14,10 @@ namespace Basketball
 {
   public class BasketballHlp
   {
-    static HBuilder h = null;
+		public const string shortDateFormat = "dd MMMM";
+		public const string longDateFormat = "dd MMMM yyyy";
+
+		static HBuilder h = null;
 
     public static void SendRegistrationConfirmation(int userId, string login, string email)
     {
