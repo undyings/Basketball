@@ -109,18 +109,21 @@ namespace Basketball
       }
 
       string addTagName = string.Format("addTag_{0}", state.OperationCounter);
-      string onClick = !isAdd ? ";" :
-        string.Format("CK_updateAll(); {0}", BasketballHlp.AddCommentToCookieScript("newsText"));
+			//string onClick = !isAdd ? ";" :
+			//	string.Format("CK_updateAll(); {0}",
+			//		BasketballHlp.SetLocalStorageScript("newsText")
+			//	);
+				//string.Format("CK_updateAll(); {0}", BasketballHlp.AddCommentToCookieScript("newsText"));
 
-      return new HPanel(
+			return new HPanel(
         new HPanel(
           tagElements.ToArray()
         ).MarginBottom(5),
         new HPanel(
           new HTextEdit(addTagName).Width(400).MarginRight(5).MarginBottom(5)
             .MediaSmartfon(new HStyle().Width("100%")),
-          Decor.Button("Добавить тэг").VAlign(-1).MarginBottom(5)
-            .OnClick(onClick)
+          Decor.Button("Добавить тег").VAlign(-1).MarginBottom(5)
+            //.OnClick(onClick)
             .Event("tag_add", "addTagData",
             delegate (JsonData json)
             {
@@ -168,9 +171,9 @@ namespace Basketball
       return tags.ToArray();
     }
 
-    public static void SaveTags(BasketballContext context, SiteState state, LightParent editTopic)
+    public static void SaveTags(BasketballContext context, List<string> tags, LightParent editTopic)
     {
-      List<string> tags = state.Tag as List<string>;
+      //List<string> tags = state.Tag as List<string>;
       if (tags == null)
         return;
 

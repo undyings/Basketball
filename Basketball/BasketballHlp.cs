@@ -21,8 +21,10 @@ namespace Basketball
 
     public static void SendRegistrationConfirmation(int userId, string login, string email)
     {
-      string url = string.Format("http://basketball.ru.com/confirmation?id={0}&hash={1}",
-        userId, UserHlp.CalcConfirmationCode(userId, login, "bbbin")
+			SiteSettings settings = SiteContext.Default.SiteSettings;
+
+			string url = string.Format("{0}/confirmation?id={1}&hash={2}",
+        settings.SiteHost, userId, UserHlp.CalcConfirmationCode(userId, login, "bbbin")
       );
 
       HElement answer = h.Div(
@@ -36,7 +38,6 @@ namespace Basketball
         h.P("Если вы не регистрировались на сайте, значит, произошла ошибка - просто проигнорируйте это письмо")
       );
 
-      SiteSettings settings = SiteContext.Default.SiteSettings;
       SmtpClient smtpClient = AuthHlp.CreateSmtpClient(
         settings.SmtpHost, settings.SmtpPort, settings.SmtpUserName, settings.SmtpPassword);
       AuthHlp.SendMail(smtpClient, settings.MailFrom, email,
@@ -46,28 +47,73 @@ namespace Basketball
       Logger.AddMessage("Подтверждение регистрации: {0}", email);
     }
 
-    public static string AddCommentFromCookie()
-    {
-      return HttpUtility.UrlDecode(HttpContext.Current.Request.Cookies["addComment"]?.Value);
-    }
+		//public static string AddCommentFromCookie()
+		//{
+		//	return HttpUtility.UrlDecode(HttpContext.Current.Request.Cookies["addComment"]?.Value);
+		//}
 
-    public static string AddCommentToCookieScript(string commentEditClass)
-    {
-      return string.Format(
-        "document.cookie = 'addComment = ' + encodeURIComponent($('.{0}').val()) + '; path=/'",
-        commentEditClass
-      );
-    }
+		//public static string AddCommentToCookieScript(string commentEditClass)
+		//{
+		//  return string.Format(
+		//    "document.cookie = 'addComment = ' + encodeURIComponent($('.{0}').val()) + '; path=/'",
+		//    commentEditClass
+		//  );
+		//}
 
-    public static void ResetAddComment()
-    {
-      if (HttpContext.Current.Request.Cookies["addComment"] != null)
-      {
-        HttpCookie deleteCookie = new HttpCookie("addComment");
-        deleteCookie.Values.Clear();
-        HttpContext.Current.Response.Cookies.Add(deleteCookie);
-      }
-    }
+		//public static void ResetAddComment()
+		//{
+		//	if (HttpContext.Current.Request.Cookies["addComment"] != null)
+		//	{
+		//		HttpCookie deleteCookie = new HttpCookie("addComment");
+		//		deleteCookie.Values.Clear();
+		//		HttpContext.Current.Response.Cookies.Add(deleteCookie);
+		//	}
+		//}
+
+		public static string SetLocalStorageScript(string itemKey, string commentEditClass)
+		{
+			return string.Format(
+				"localStorage.setItem('{0}', $('.{1}').val());",
+				itemKey, commentEditClass
+			);
+		}
+
+		public static IHtmlControl RemoveLocalStorageScriptControl(string itemKey)
+		{
+			return new HPanel(
+				new HElementControl(h.Script(
+						h.Raw(
+							string.Format("localStorage.removeItem('{0}');", itemKey
+							)
+						)
+					), "removeComment"
+				)
+			).EditContainer("removeComment");
+		}
+
+		public static IHtmlControl SetCommentFromLocalStorageScriptControl(string commentEditClass)
+		{
+			return new HPanel(
+				new HElementControl(h.Script(
+						h.Raw(
+							string.Format("$('.{0}').val(localStorage.getItem('addComment'));", commentEditClass)
+						)
+					), commentEditClass
+				)
+			).EditContainer(commentEditClass);
+		}
+
+		public static IHtmlControl SetCkeditorFromLocalStorageScriptControl(string textEditClass)
+		{
+			return new HPanel(
+				new HElementControl(h.Script(
+						h.Raw(
+							"CKEDITOR.instances.editor1.setData(localStorage.getItem('addText'));"
+						)
+					), textEditClass
+				)
+			).EditContainer(textEditClass);
+		}
 
     public static string GetDescriptionForNews(LightObject topic)
     {
@@ -175,7 +221,32 @@ namespace Basketball
       return tags.ToArray();
     }
 
-    public static bool IsDuplicate(TopicStorage topic, int currentUserId, string content)
+		public static void InsertMessageAndUpdate(BasketballContext context,
+			IDataLayer commentConnection, TopicStorage topic,
+			LightObject currentUser, int? whomId, string content)
+		{
+			MessageHlp.InsertMessage(commentConnection, topic.TopicId, currentUser.Id, whomId, content);
+			topic.UpdateMessages();
+
+			context.UpdateLastComments(commentConnection == context.ForumConnection);
+
+			//hack
+			if (commentConnection == context.ForumConnection)
+			{
+				context.FabricConnection.GetScalar("",
+					"Update light_object Set act_till=@modifyTime Where obj_id=@topicId",
+					new DbParameter("modifyTime", DateTime.UtcNow),
+					new DbParameter("topicId", topic.TopicId)
+				);
+
+				int? sectionId = topic.Topic.GetParentId(ForumSectionType.TopicLinks);
+
+				if (sectionId != null)
+					context.Forum.ForSection(sectionId.Value).Update();
+			}
+		}
+
+		public static bool IsDuplicate(TopicStorage topic, int currentUserId, string content)
     {
       RowLink[] messageRows = topic.MessageLink.AllRows;
       if (messageRows.Length == 0)
@@ -310,8 +381,10 @@ namespace Basketball
 
         nextIndex = index + 4;
 
-        if (index > 0 && (content[index - 1] == '\'' || content[index - 1] == '"'))
-          continue;
+				//hack чтобы не распознавались ссылки внутри фреймов
+				//if (index > 0 && content[index - 1] != ' ')
+				if (index > 0 && (content[index - 1] == '\'' || content[index - 1] == '"' || content[index - 1] == '='))
+					continue;
 
         int endIndex = content.Length;
         for (int i = index + 4; i < content.Length; ++i)

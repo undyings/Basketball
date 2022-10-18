@@ -32,29 +32,38 @@ namespace Basketball
       IHtmlControl[] items = ViewNewsHlp.GetNewsItems(state, context.ActualNews);
 
       HPanel editBlock = null;
-      string editHint = "news_add";
+      string editHint = "newsAdd";
       if (state.BlockHint == editHint)
       {
         if (state.Tag == null)
           state.Tag = new List<string>();
 
-        string unsaveText = BasketballHlp.AddCommentFromCookie();
+        //string unsaveText = BasketballHlp.AddCommentFromCookie();
 
         editBlock = new HPanel(
           Decor.PropertyEdit("newsTitle", "Заголовок новости"),
           new HPanel(
-            HtmlHlp.CKEditorCreate("newsText", unsaveText, "300px", true)
+            HtmlHlp.CKEditorCreate("newsText", "", "300px", true)
           ),
-          ViewTagHlp.GetEditTagsPanel(state, context.Tags.TagBox, state.Tag as List<string>, true),
-          Decor.PropertyEdit("newsOriginName", "Источник"),
+					BasketballHlp.SetCkeditorFromLocalStorageScriptControl("newsText"),
+					//ViewTagHlp.GetEditTagsPanel(state, context.Tags.TagBox, state.Tag as List<string>, true),
+					new HPanel(
+						new HLabel("Теги").FontBold(),
+						new HTextEdit("newsTags", "").Width("100%")
+					).MarginTop(5).MarginBottom(5),
+					Decor.PropertyEdit("newsOriginName", "Источник"),
           Decor.PropertyEdit("newsOriginUrl", "Ссылка"),
           Decor.Button("Добавить новость").MarginTop(10) //.CKEditorOnUpdateAll()
-            .OnClick(string.Format("CK_updateAll(); {0}", BasketballHlp.AddCommentToCookieScript("newsText")))
-            .Event("save_news_add", "addNewsData",
+						//.OnClick(string.Format("CK_updateAll(); {0}", BasketballHlp.AddCommentToCookieScript("newsText")))
+						.OnClick(string.Format("CK_updateAll(); {0}", 
+							BasketballHlp.SetLocalStorageScript("addText", "newsText")
+						))
+						.Event(Command.SaveNewsAdd, "addNewsData",
               delegate (JsonData json)
               {
                 string title = json.GetText("newsTitle");
                 string text = json.GetText("newsText");
+								string rawTags = json.GetText("newsTags");
                 string originName = json.GetText("newsOriginName");
                 string originUrl = json.GetText("newsOriginUrl");
 
@@ -76,7 +85,8 @@ namespace Basketball
                 editNews.Set(NewsType.OriginName, originName);
                 editNews.Set(NewsType.OriginUrl, originUrl);
 
-                ViewTagHlp.SaveTags(context, state, editNews);
+								string[] tags = rawTags.Split(',');
+								ViewTagHlp.SaveTags(context, new List<string>(tags), editNews);
 
                 editBox.Update();
 
@@ -85,7 +95,7 @@ namespace Basketball
                 state.BlockHint = "";
                 state.Tag = null;
 
-                BasketballHlp.ResetAddComment();
+                //BasketballHlp.ResetAddComment();
               }
             )
         ).EditContainer("addNewsData").Padding(5, 10).MarginTop(10).Background(Decor.pageBackground);
@@ -444,7 +454,7 @@ namespace Basketball
 
                 editNews.Set(ObjectType.ActTill, DateTime.UtcNow);
 
-                ViewTagHlp.SaveTags(context, state, editNews);
+                ViewTagHlp.SaveTags(context, state.Tag as List<string>, editNews);
 
                 editNews.Box.Update();
 

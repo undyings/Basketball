@@ -30,13 +30,15 @@ namespace Basketball
         HPanel editPanel = null;
         if (state.BlockHint == "commentAdd")
         {
-          string commentValue = BasketballHlp.AddCommentFromCookie();
+          //string commentValue = BasketballHlp.AddCommentFromCookie();
 
           editPanel = new HPanel(
-            new HTextArea("commentContent", commentValue).Width("100%").Height("10em").MarginTop(5).MarginBottom(5),
-            Decor.Button("отправить")
-              .OnClick(BasketballHlp.AddCommentToCookieScript("commentContent"))
-              .Event("comment_add_save", "commentData",
+            new HTextArea("commentContent").Width("100%").Height("10em").MarginTop(5).MarginBottom(5),
+						BasketballHlp.SetCommentFromLocalStorageScriptControl("commentContent"),
+						Decor.Button("отправить")
+              //.OnClick(BasketballHlp.AddCommentToCookieScript("commentContent"))
+							.OnClick(BasketballHlp.SetLocalStorageScript("addComment", "commentContent"))
+              .Event(Command.SaveCommentAdd, "commentData",
               delegate (JsonData json)
               {
                 lock (lockObj)
@@ -45,14 +47,18 @@ namespace Basketball
                   if (StringHlp.IsEmpty(content))
                     return;
 
-                  if (BasketballHlp.IsDuplicate(topic, currentUser.Id, content))
-                    return;
+									topic.InsertMessageAndUpdateWithCheckDuplicate(context, commentConnection,
+										currentUser, null, content
+									);
 
-                  InsertMessageAndUpdate(commentConnection, topic, currentUser, null, content);
+                  //if (BasketballHlp.IsDuplicate(topic, currentUser.Id, content))
+                  //  return;
+
+                  //InsertMessageAndUpdate(commentConnection, topic, currentUser, null, content);
 
                   state.BlockHint = "";
 
-                  BasketballHlp.ResetAddComment();
+                  //BasketballHlp.ResetAddComment();
                 }
               }
             ),
@@ -111,29 +117,29 @@ namespace Basketball
       );
     }
 
-    public static void InsertMessageAndUpdate(IDataLayer commentConnection, TopicStorage topic, 
-      LightObject currentUser, int? whomId, string content)
-    {
-      MessageHlp.InsertMessage(commentConnection, topic.TopicId, currentUser.Id, whomId, content);
-      topic.UpdateMessages();
+    //public static void InsertMessageAndUpdate(IDataLayer commentConnection, TopicStorage topic, 
+    //  LightObject currentUser, int? whomId, string content)
+    //{
+    //  MessageHlp.InsertMessage(commentConnection, topic.TopicId, currentUser.Id, whomId, content);
+    //  topic.UpdateMessages();
 
-      context.UpdateLastComments(commentConnection == context.ForumConnection);
+    //  context.UpdateLastComments(commentConnection == context.ForumConnection);
 
-      //hack
-      if (commentConnection == context.ForumConnection)
-      {
-        context.FabricConnection.GetScalar("",
-          "Update light_object Set act_till=@modifyTime Where obj_id=@topicId",
-          new DbParameter("modifyTime", DateTime.UtcNow),
-          new DbParameter("topicId", topic.TopicId)
-        );
+    //  //hack
+    //  if (commentConnection == context.ForumConnection)
+    //  {
+    //    context.FabricConnection.GetScalar("",
+    //      "Update light_object Set act_till=@modifyTime Where obj_id=@topicId",
+    //      new DbParameter("modifyTime", DateTime.UtcNow),
+    //      new DbParameter("topicId", topic.TopicId)
+    //    );
 
-        int? sectionId = topic.Topic.GetParentId(ForumSectionType.TopicLinks);
+    //    int? sectionId = topic.Topic.GetParentId(ForumSectionType.TopicLinks);
 
-        if (sectionId != null)
-          context.Forum.ForSection(sectionId.Value).Update();
-      }
-    }
+    //    if (sectionId != null)
+    //      context.Forum.ForSection(sectionId.Value).Update();
+    //  }
+    //}
 
     public static IHtmlControl GetCommentBlock(IDataLayer commentConnection, SiteState state,
       LightObject currentUser, TopicStorage topic, Dictionary<int, string> htmlRepresentByMessageId, RowLink comment)
@@ -148,13 +154,15 @@ namespace Basketball
       IHtmlControl answerBlock = null;
       if (currentUser != null && state.BlockHint == answerHint)
       {
-        string commentValue = BasketballHlp.AddCommentFromCookie();
+        //string commentValue = BasketballHlp.AddCommentFromCookie();
 
         answerBlock = new HPanel(
-          new HTextArea("answerContent", commentValue).Width("100%").Height("10em").MarginTop(5).MarginBottom(5),
-          Decor.Button("отправить")
-            .OnClick(BasketballHlp.AddCommentToCookieScript("answerContent"))
-            .Event("save_answer", "answerContainer",
+          new HTextArea("answerContent").Width("100%").Height("10em").MarginTop(5).MarginBottom(5),
+					BasketballHlp.SetCommentFromLocalStorageScriptControl("answerContent"),
+					Decor.Button("отправить")
+            //.OnClick(BasketballHlp.AddCommentToCookieScript("answerContent"))
+						.OnClick(BasketballHlp.SetLocalStorageScript("addComment", "answerContent"))
+            .Event(Command.SaveAnswer, "answerContainer",
               delegate (JsonData json)
               {
                 lock (lockObj)
@@ -163,14 +171,18 @@ namespace Basketball
                   if (StringHlp.IsEmpty(content))
                     return;
 
-                  if (BasketballHlp.IsDuplicate(topic, currentUser.Id, content))
-                    return;
+									topic.InsertMessageAndUpdateWithCheckDuplicate(context, commentConnection,
+										currentUser, commentId, content
+									);
 
-                  InsertMessageAndUpdate(commentConnection, topic, currentUser, commentId, content);
+									//if (BasketballHlp.IsDuplicate(topic, currentUser.Id, content))
+									//  return;
 
-                  state.BlockHint = "";
+									//InsertMessageAndUpdate(commentConnection, topic, currentUser, commentId, content);
 
-                  BasketballHlp.ResetAddComment();
+									state.BlockHint = "";
+
+                  //BasketballHlp.ResetAddComment();
                 }
               },
               commentId

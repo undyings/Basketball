@@ -121,6 +121,7 @@
   <ItemGroup>
     <Compile Include="BasketballContext.cs" />
     <Compile Include="BasketballHlp.cs" />
+    <Compile Include="Command.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

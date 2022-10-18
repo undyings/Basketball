@@ -29,7 +29,7 @@ namespace Basketball
         editBlock = new HPanel(
           Decor.PropertyEdit("addArticleTitle", "Заголовок статьи"),
           Decor.Button("Добавить статью").MarginTop(10)
-            .Event("article_add_save", "addArticleData",
+            .Event(Command.SaveArticleAdd, "addArticleData",
               delegate (JsonData json)
               {
                 string title = json.GetText("addArticleTitle");

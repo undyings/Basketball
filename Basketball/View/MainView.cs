@@ -65,6 +65,9 @@ namespace Basketball
         if (jsons.Length > 0)
           state.AccessTime = DateTime.UtcNow;
 
+				//hack Флажок, по которому добавляется очистка localStorage
+				string localStorageKey = "";
+
         foreach (JsonData json in jsons)
         {
           try
@@ -72,38 +75,58 @@ namespace Basketball
             if (state.IsRattling(json))
               continue;
 
+						//Logger.AddMessage(json.ToString());
+
             try
             {
               string command = json.JPath("data", "command")?.ToString();
-              if (command != null && StringHlp.IsEmpty(state.BlockHint))
-              {
-                if (command.StartsWith("save_"))
-                {
-                  object id1 = json.JPath("data", "id1");
+							if (command != null)
+							{
+								localStorageKey = Command.GetLocalStorageKey(command);
 
-                  string hint = command.Substring(5);
-                  if (id != null)
-                    hint = string.Format("{0}_{1}", hint, id1);
-                  state.BlockHint = hint;
+								if (StringHlp.IsEmpty(state.BlockHint))
+								{
+									object id1 = json.JPath("data", "id1");
+									string hint = Command.GetHint(command, id1);
+									if (!StringHlp.IsEmpty(hint))
+									{
+										state.BlockHint = hint;
+										Logger.AddMessage("RestoreCommand: {0}", hint);
+									}
+								}
+							}
 
-                  Logger.AddMessage("Restore: {0}", hint);
-                }
-                else if (command == "tag_add" && kind == "")
-                {
-                  state.BlockHint = "news_add";
+       //       if (command != null && StringHlp.IsEmpty(state.BlockHint))
+       //       {
+       //         if (command.StartsWith("save_"))
+       //         {
+							//		object id1 = json.JPath("data", "id1");
 
-                  Logger.AddMessage("Restore: news_add");
-                }
-              }
+							//		string hint = command.Substring(5);
+							//		if (id != null)
+							//			hint = string.Format("{0}_{1}", hint, id1);
+							//		state.BlockHint = hint;
+
+							//		Logger.AddMessage("Restore: {0}", hint);
+							//	}
+							//	else if (command == "tag_add" && kind == "")
+							//	{
+							//		state.BlockHint = "news_add";
+
+							//		Logger.AddMessage("Restore: news_add");
+							//	}
+							//}
             }
             catch (Exception ex)
             {
               Logger.WriteException(ex);
+
+							localStorageKey = "";
             }
 
             state.Operation.Reset();
 
-            HElement cachePage = Page(HttpContext.Current, state, link.Kind, link.Id);
+            HElement cachePage = Page(HttpContext.Current, state, link.Kind, link.Id, "");
 
             hevent eventh = cachePage.FindEvent(json, true);
             if (eventh != null)
@@ -115,10 +138,12 @@ namespace Basketball
           {
             Logger.WriteException(ex);
             state.Operation.Message = string.Format("Непредвиденная ошибка: {0}", ex.Message);
+
+						localStorageKey = "";
           }
         }
 
-        HElement page = Page(HttpContext.Current, state, link.Kind, link.Id);
+        HElement page = Page(HttpContext.Current, state, link.Kind, link.Id, localStorageKey);
         if (page == null)
         {
           return new HtmlResult
@@ -132,7 +157,8 @@ namespace Basketball
 
     static readonly HBuilder h = null;
 
-    static HElement Page(HttpContext httpContext, SiteState state, string kind, int? id)
+    static HElement Page(HttpContext httpContext, SiteState state, 
+			string kind, int? id, string localStorageKey)
     {
       UserHlp.DirectAuthorization(httpContext, SiteContext.Default.SiteSettings);
 
@@ -213,6 +239,8 @@ namespace Basketball
           DecorEdit.AdminMainPanel(SiteContext.Default.SiteSettings, httpContext),
           ViewHeaderHlp.GetHeader(httpContext, state, currentUser, kind, id, isForum),
           adminSectionPanel,
+					!StringHlp.IsEmpty(localStorageKey) ? 
+						BasketballHlp.RemoveLocalStorageScriptControl(localStorageKey) : null,
           new HPanel(
             new HPanel(
               centerView,

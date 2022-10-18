@@ -88,5 +88,24 @@ namespace Basketball
         delegate { return messageChangeTick; }
       );
     }
+
+		public bool InsertMessageAndUpdateWithCheckDuplicate(BasketballContext context,
+			IDataLayer commentConnection, LightObject currentUser, int? whomId, string content)
+		{
+			lock (lockObj)
+			{
+				if (BasketballHlp.IsDuplicate(this, currentUser.Id, content))
+				{
+					Logger.AddMessage("Дубликат комментария: {0}, {1}, {2}", currentUser.Id, whomId, content);
+					return false;
+				}
+
+				BasketballHlp.InsertMessageAndUpdate(context, commentConnection, this,
+					currentUser, whomId, content
+				);
+
+				return true;
+			}
+		}
   }
 }

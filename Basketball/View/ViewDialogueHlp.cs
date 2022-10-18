@@ -205,14 +205,16 @@ namespace Basketball
       IHtmlControl editPanel = null;
       if (state.BlockHint == "messageAdd")
       {
-        string commentValue = BasketballHlp.AddCommentFromCookie();
+        //string commentValue = BasketballHlp.AddCommentFromCookie();
 
         editPanel = new HPanel(
-          new HTextArea("messageContent", commentValue).BoxSizing().Width("100%")
+          new HTextArea("messageContent").BoxSizing().Width("100%")
             .Height("10em").MarginTop(5).MarginBottom(5),
-          Decor.Button("отправить")
-            .OnClick(BasketballHlp.AddCommentToCookieScript("messageContent"))
-            .Event("message_add_save", "messageData",
+					BasketballHlp.SetCommentFromLocalStorageScriptControl("messageContent"),
+					Decor.Button("отправить")
+            //.OnClick(BasketballHlp.AddCommentToCookieScript("messageContent"))
+						.OnClick(BasketballHlp.SetLocalStorageScript("addComment", "messageContent"))
+            .Event(Command.SaveMessageAdd, "messageData",
             delegate (JsonData json)
             {
               string content = json.GetText("messageContent");
@@ -223,7 +225,7 @@ namespace Basketball
 
               state.BlockHint = "";
 
-              BasketballHlp.ResetAddComment();
+              //BasketballHlp.ResetAddComment();
 
               if (sendFromUserView)
                 state.Operation.Message = "Сообщение успешно отправлено";
