@@ -131,18 +131,27 @@ namespace Basketball
               if (StringHlp.IsEmpty(addTag))
                 return;
 
-              if (tags.Contains(addTag))
-                return;
+							List<string> newTags = ParseTags(addTag);
+							foreach (string tag in newTags)
+							{
+								if (tags.Contains(tag))
+									continue;
+								tags.Add(tag);
+							}
 
-              string[] newTags = addTag.Split(',');
-              foreach (string rawTag in newTags)
-              {
-                string tag = rawTag.Trim();
-                if (!StringHlp.IsEmpty(tag))
-                  tags.Add(tag);
-              }
 
-              state.OperationCounter++;
+							//if (tags.Contains(addTag))
+							//  return;
+
+							//string[] newTags = addTag.Split(',');
+							//foreach (string rawTag in newTags)
+							//{
+							//  string tag = rawTag.Trim();
+							//  if (!StringHlp.IsEmpty(tag))
+							//    tags.Add(tag);
+							//}
+
+							state.OperationCounter++;
             })
         ).EditContainer("addTagData")
       ).MarginTop(5);
@@ -171,10 +180,26 @@ namespace Basketball
       return tags.ToArray();
     }
 
-    public static void SaveTags(BasketballContext context, List<string> tags, LightParent editTopic)
+		public static List<string> ParseTags(string rawTags)
+		{
+			List<string> tags = new List<string>();
+			if (StringHlp.IsEmpty(rawTags))
+				return tags;
+
+			string[] newTags = rawTags.Split(',');
+			foreach (string rawTag in newTags)
+			{
+				string tag = rawTag.Trim();
+				if (!StringHlp.IsEmpty(tag))
+					tags.Add(tag);
+			}
+			return tags;
+		}
+
+		public static void SaveTags(BasketballContext context, List<string> tags, LightParent editTopic)
     {
       //List<string> tags = state.Tag as List<string>;
-      if (tags == null)
+      if (tags == null || tags.Count == 0)
         return;
 
       ObjectHeadBox editBox = null;

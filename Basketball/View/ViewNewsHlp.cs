@@ -85,8 +85,9 @@ namespace Basketball
                 editNews.Set(NewsType.OriginName, originName);
                 editNews.Set(NewsType.OriginUrl, originUrl);
 
-								string[] tags = rawTags.Split(',');
-								ViewTagHlp.SaveTags(context, new List<string>(tags), editNews);
+								//string[] tags = rawTags.Split(',');
+								List<string> tags = ViewTagHlp.ParseTags(rawTags);
+								ViewTagHlp.SaveTags(context, tags, editNews);
 
                 editBox.Update();
 
