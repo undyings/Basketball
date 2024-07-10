@@ -7,13 +7,15 @@
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
     <_PublishTargetUrl>C:\Root\Basketball</_PublishTargetUrl>
+    <History>True|2024-05-22T11:36:09.7108691Z;True|2024-05-22T11:37:52.0710505+05:00;</History>
+    <LastFailureDetails />
   </PropertyGroup>
   <ItemGroup>
     <File Include="bin/Basketball.dll">
-      <publishTime>10/20/2022 11:00:20</publishTime>
+      <publishTime>05/22/2024 16:25:30</publishTime>
     </File>
     <File Include="bin/Basketball.pdb">
-      <publishTime>10/20/2022 11:00:20</publishTime>
+      <publishTime>05/22/2024 16:25:30</publishTime>
     </File>
     <File Include="bin/Commune.Basis.dll">
       <publishTime>05/24/2018 12:36:32</publishTime>
@@ -40,7 +42,7 @@
       <publishTime>03/07/2016 13:35:12</publishTime>
     </File>
     <File Include="bin/NitroBolt.Wui.dll">
-      <publishTime>06/23/2019 16:04:22</publishTime>
+      <publishTime>03/07/2023 18:46:46</publishTime>
     </File>
     <File Include="bin/Shop.Engine.dll">
       <publishTime>06/23/2019 18:40:34</publishTime>
@@ -100,10 +102,10 @@
       <publishTime>04/20/2018 20:40:21</publishTime>
     </File>
     <File Include="Scripts/NitroBolt.Wui.2.0.48.js">
-      <publishTime>04/28/2018 16:44:06</publishTime>
+      <publishTime>08/16/2023 01:02:54</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>01/05/2022 16:17:32</publishTime>
+      <publishTime>05/22/2024 11:37:51</publishTime>
     </File>
   </ItemGroup>
 </Project>

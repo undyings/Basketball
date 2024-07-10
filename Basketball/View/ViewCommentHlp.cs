@@ -58,6 +58,8 @@ namespace Basketball
 
                   state.BlockHint = "";
 
+                  state.Option.Set(OptionType.CommendAdded, true);
+
                   //BasketballHlp.ResetAddComment();
                 }
               }
@@ -182,8 +184,10 @@ namespace Basketball
 
 									state.BlockHint = "";
 
-                  //BasketballHlp.ResetAddComment();
-                }
+									state.Option.Set(OptionType.CommendAdded, true);
+
+									//BasketballHlp.ResetAddComment();
+								}
               },
               commentId
             ),

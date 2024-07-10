@@ -141,7 +141,7 @@ namespace Basketball
 
           CREATE INDEX correspondence_by_user_collocutor_time
             ON correspondence
-            (user_id, collocutor_id, create_time);
+            (user_id, collocutor_id, create_time); 
          "
       );
     }

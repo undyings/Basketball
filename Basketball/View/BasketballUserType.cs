@@ -55,6 +55,9 @@ namespace Basketball
 
 		public readonly static FieldBlank<string> SearchQuery = new FieldBlank<string>("SearchQuery");
 		public readonly static FieldBlank<int[]> FoundTagIds = new FieldBlank<int[]>("FindedTagIds");
+
+    public readonly static FieldBlank<bool> CommendAdded = new FieldBlank<bool>("CommentAdded");
+    public readonly static FieldBlank<bool> NewsAdded = new FieldBlank<bool>("NewsAdded");
   }
 
 }

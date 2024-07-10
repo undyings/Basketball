@@ -225,9 +225,11 @@ namespace Basketball
 
               state.BlockHint = "";
 
-              //BasketballHlp.ResetAddComment();
+							state.Option.Set(OptionType.CommendAdded, true);
 
-              if (sendFromUserView)
+							//BasketballHlp.ResetAddComment();
+
+							if (sendFromUserView)
                 state.Operation.Message = "Сообщение успешно отправлено";
             }
           ),

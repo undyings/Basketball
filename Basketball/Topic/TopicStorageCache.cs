@@ -31,15 +31,18 @@ namespace Basketball
         {
           storage = new TopicStorage(topicConnection, messageConnection, topicTypeId, topicId);
 
-					DateTime refTime = DateTime.UtcNow.AddDays(-7);
+					DateTime refTime = DateTime.UtcNow.AddDays(-3);
 					RowLink lastMessage = _.Last(storage.MessageLink.AllRows);
 
-					DateTime? topicTime = storage.Topic.Get(ObjectType.ActFrom);
-					if ((topicTime != null && topicTime.Value > refTime) ||
-						(lastMessage != null && lastMessage.Get(CorrespondenceType.CreateTime) > refTime))
-					{
-						topicStorageById[topicId] = storage;
-					}
+          if (storage.Topic.headBox.AllObjectIds.Length < 500)
+          {
+            DateTime? topicTime = storage.Topic.Get(ObjectType.ActFrom);
+            if ((topicTime != null && topicTime.Value > refTime) ||
+              (lastMessage != null && lastMessage.Get(CorrespondenceType.CreateTime) > refTime))
+            {
+              topicStorageById[topicId] = storage;
+            }
+          }
         }
         return storage;
       }

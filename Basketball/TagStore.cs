@@ -57,10 +57,6 @@ namespace Basketball
 			if (words.Length == 0)
 				return new int[0];
 
-			//IEnumerable<int> tagIds = DictionaryHlp.GetValueOrDefault(tagIdsByWord, words[0]);
-			//if (tagIds == null)
-			//	return new int[0];
-
 			IEnumerable<int> intersectTagIds = null;
 			foreach (string word in words)
 			{

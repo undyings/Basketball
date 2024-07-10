@@ -96,8 +96,10 @@ namespace Basketball
                 state.BlockHint = "";
                 state.Tag = null;
 
-                //BasketballHlp.ResetAddComment();
-              }
+								state.Option.Set(OptionType.NewsAdded, true);
+
+								//BasketballHlp.ResetAddComment();
+							}
             )
         ).EditContainer("addNewsData").Padding(5, 10).MarginTop(10).Background(Decor.pageBackground);
       }
@@ -174,7 +176,6 @@ namespace Basketball
 					);
 				}
 			}
-
 
 			return new HPanel(
 				Decor.Title(title),

@@ -196,7 +196,7 @@ namespace Basketball
 					.BoxSizing().Width(150).Placeholder("Поиск по тегам")
 					.Padding(6).TabIndex(1).Color("#fff").Border("none").Background("none")
 					.CssAttribute("user-select", "none").CssAttribute("outline", "none")
-					.OnKeyDown(string.Format("if (e.keyCode == 13) $('.{0}').click();", buttonName)),
+					.OnKeyDown(string.Format(";; if (e.keyCode == 13) $('.{0}').click();", buttonName)),
 				new HButton(buttonName, " ",
 					std.BeforeAwesome(@"\f002", 0).FontSize(18).Color(Decor.menuColor)
 				).PositionAbsolute().Left(0).Top(5).MarginLeft(12)
