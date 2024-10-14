@@ -399,3 +399,5 @@ FodyWeavers.xsd
 
 [Dd]ata/
 [Ii]mages/
+SiteSettings.config
+Web.config

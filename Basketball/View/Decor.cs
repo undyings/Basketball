@@ -89,7 +89,7 @@ namespace Basketball
     public static HPanel AuthEdit(IHtmlControl editControl, string caption)
     {
       return new HPanel(
-        new HLabel(caption).Block(),
+        new HLabel(caption).Block().MarginBottom(2),
         editControl.Width("100%")
       ).WidthLimit("", "380px").MarginBottom(15);
     }
