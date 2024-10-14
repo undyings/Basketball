@@ -225,8 +225,8 @@ namespace Basketball
           DecorEdit.AdminMainPanel(SiteContext.Default.SiteSettings, httpContext),
           ViewHeaderHlp.GetHeader(httpContext, state, currentUser, kind, id, isForum),
           adminSectionPanel,
-					commentAdded ? BasketballHlp.RemoveLocalStorageScriptControl("addComment").EditContainer("addComment") : null,
-          newsAdded ? BasketballHlp.RemoveLocalStorageScriptControl("addNews").EditContainer("addNews") : null,
+					commentAdded ? BasketballHlp.RemoveLocalStorageScriptControl("addComment") : null,
+          newsAdded ? BasketballHlp.RemoveLocalStorageScriptControl("addText") : null,
           new HPanel(
             new HPanel(
               centerView,

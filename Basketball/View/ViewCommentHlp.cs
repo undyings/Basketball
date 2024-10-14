@@ -149,7 +149,9 @@ namespace Basketball
       LightObject user = context.UserStorage.FindUser(comment.Get(MessageType.UserId));
       DateTime localTime = comment.Get(MessageType.CreateTime).ToLocalTime();
 
-      IHtmlControl whomBlock = GetWhomBlock(state, context.UserStorage, topic, htmlRepresentByMessageId, comment);
+      //Logger.AddMessage("CommentTime: {0}, {1}, {2}, {3}", comment.Get(MessageType.CreateTime).Hour, comment.Get(MessageType.CreateTime), localTime, localTime.ToString("dd.MM.yyyy HH:mm"));
+
+			IHtmlControl whomBlock = GetWhomBlock(state, context.UserStorage, topic, htmlRepresentByMessageId, comment);
 
       int commentId = comment.Get(MessageType.Id);
       string answerHint = string.Format("answer_{0}", commentId);

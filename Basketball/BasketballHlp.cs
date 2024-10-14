@@ -88,7 +88,7 @@ namespace Basketball
 						)
 					), "removeComment"
 				)
-			).EditContainer("removeComment");
+			).EditContainer(string.Format("removeComment_{0}", itemKey));
 		}
 
 		public static IHtmlControl SetCommentFromLocalStorageScriptControl(string commentEditClass)

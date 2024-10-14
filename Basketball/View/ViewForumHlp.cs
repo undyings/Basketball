@@ -64,8 +64,8 @@ namespace Basketball
                     lastUser?.Get(UserType.Login)
                   ),
                   new HLabel(
-                    lastMessage?.Get(MessageType.CreateTime).ToLocalTime().ToString(Decor.timeFormat)
-                  ).MarginLeft(7).MarginRight(7),
+										lastMessage?.Get(MessageType.CreateTime).ToLocalTime().ToString(Decor.timeFormat)
+									).MarginLeft(7).MarginRight(7),
                   new HLink(
                     string.Format("{0}?page=last#bottom", UrlHlp.ShopUrl("topic", lastTopic?.TopicId)),
                     new HImage("/images/full.gif")
@@ -134,9 +134,9 @@ namespace Basketball
                 new HLink(UrlHlp.ShopUrl("user", lastUser?.Id),
                   lastUser?.Get(UserType.Login)
                 ),
-                new HLabel( 
-                  lastMessage?.Get(MessageType.CreateTime).ToLocalTime().ToString(Decor.timeFormat)
-                ).MarginLeft(7).MarginRight(7),
+                new HLabel(
+									lastMessage?.Get(MessageType.CreateTime).ToLocalTime().ToString(Decor.timeFormat)
+								).MarginLeft(7).MarginRight(7),
                 new HLink(
                   string.Format("{0}?page=last#bottom", UrlHlp.ShopUrl("topic", topic.Id)),
                   new HImage("/images/full.gif")

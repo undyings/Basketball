@@ -14,12 +14,16 @@ using Commune.Html;
 using Shop.Engine;
 using Commune.Task;
 using NitroBolt.Wui;
+using System.Data;
+using System.Data.SQLite;
+using System.ComponentModel.Design;
+using System.Web.UI.WebControls;
 
 namespace Basketball
 {
   public class WebApiApplication : System.Web.HttpApplication
   {
-    const string connectionStringFormat = "Data Source={0};Pooling=true;FailIfMissing=false;UseUTF16Encoding=True;";
+    const string connectionStringFormat = "Data Source={0};Pooling=true;FailIfMissing=false;UseUTF16Encoding=True;datetimekind=Utc";
     protected void Application_Start(object sender, EventArgs e)
     {
       string appPath = HttpContext.Current.Server.MapPath("");
@@ -39,7 +43,7 @@ namespace Basketball
         IDataLayer fabricConnection = new SQLiteDataLayer(string.Format(
           connectionStringFormat, Path.Combine(databaseFolder, "fabric.db3")));
 
-        IDataLayer messageConnection = new SQLiteDataLayer(string.Format(
+				IDataLayer messageConnection = new SQLiteDataLayer(string.Format(
           connectionStringFormat, Path.Combine(databaseFolder, "message.db3")));
 
         IDataLayer forumConnection = new SQLiteDataLayer(string.Format(
@@ -57,7 +61,55 @@ namespace Basketball
 
         FabricHlp.CheckAndCreateMenu(fabricConnection, "main");
 
-        EditorSelector sectionEditorSelector = new EditorSelector(
+//        DataTable table = userConnection.GetTable("", "Select * From light_object");
+//        foreach (DataRow row in table.Rows)
+//        {
+//          DateTime createTime = (DateTime)row[3];
+//          DateTime? modifyTime = null;
+//          if (row[4] != DBNull.Value)
+//            modifyTime = (DateTime)row[4];
+
+//          userConnection.GetScalar("",
+//  "Update light_object Set act_from=@createTime, act_till=@modifyTime Where obj_id=@id",
+//  new DbParameter("createTime", createTime),
+//  new DbParameter("modifyTime", modifyTime),
+//  new DbParameter("id", row[0])
+//);
+//        }
+
+				//        DataTable table = fabricConnection.GetTable("", "Select * From light_object where type_id = 5000 and obj_id > 130170 order by obj_id asc");
+				//        foreach (DataRow row in table.Rows)
+				//        {
+				//          DateTime createTime = (DateTime)row[3];
+				//          DateTime? modifyTime = null;
+				//          if (row[4] != DBNull.Value)
+				//            modifyTime = (DateTime)row[4];
+
+				//          fabricConnection.GetScalar("",
+				//  "Update light_object Set act_from=@createTime, act_till=@modifyTime Where obj_id=@id",
+				//  new DbParameter("createTime", createTime),
+				//  new DbParameter("modifyTime", modifyTime),
+				//  new DbParameter("id", row[0])
+				//);
+				//}
+
+
+				//        DataTable table = forumConnection.GetTable("", "Select * From message Where id > 42683 order by id asc");
+				//        foreach (DataRow row in table.Rows)
+				//        {
+				//          DateTime createTime = (DateTime)row[5];
+				//          DateTime modifyTime = (DateTime)row[6];
+				//					forumConnection.GetScalar("",
+				//	"Update message Set create_time=@createTime, modify_time=@modifyTime Where id=@id",
+				//	new DbParameter("createTime", new DateTime(createTime.ToUniversalTime().Ticks, DateTimeKind.Unspecified)),
+				//	new DbParameter("modifyTime", new DateTime(modifyTime.ToUniversalTime().Ticks, DateTimeKind.Unspecified)),
+				//	new DbParameter("id", row[0])
+				//);
+
+				//				}
+
+
+				EditorSelector sectionEditorSelector = new EditorSelector(
           new SectionTunes("news", "Новости"),
           new SectionTunes("articles", "Статьи"),
           new SectionTunes("forum", "Форум"),

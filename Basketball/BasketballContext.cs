@@ -81,7 +81,14 @@ namespace Basketball
       get { return userStorage; }
     }
 
-    readonly RawCache<Tuple<ObjectHeadBox, LightHead[]>> newsCache;
+    readonly ContextTunes contextTunes;
+		public ContextTunes ContextTunes
+    {
+      get { return contextTunes; }
+    }
+
+
+		readonly RawCache<Tuple<ObjectHeadBox, LightHead[]>> newsCache;
     public ObjectHeadBox News
     {
       get
@@ -358,7 +365,7 @@ namespace Basketball
             "Select Distinct article_id From message order by create_time desc limit 7"
           );
 
-          List<RowLink> lastComments = new List<RowLink>(7);
+					List<RowLink> lastComments = new List<RowLink>(7);
           foreach (DataRow row in table.Rows)
           {
             int topicId = ConvertHlp.ToInt(row[0]) ?? -1;

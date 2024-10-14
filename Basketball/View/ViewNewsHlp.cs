@@ -350,6 +350,11 @@ namespace Basketball
 
       IHtmlControl moderatorPanel = GetModeratorPanel(state, currentUser, topic, localTime);
 
+      string originName = news.Get(NewsType.OriginName);
+      string originUrl = news.Get(NewsType.OriginUrl);
+      if (StringHlp.IsEmpty(originUrl) && !StringHlp.IsEmpty(originName))
+        originUrl = "https://" + originName;
+
 			return new HPanel(
         Decor.Title(news.Get(NewsType.Title)),
         new HLabel(localTime.ToString(Decor.timeFormat)).Block().FontBold(),
@@ -358,7 +363,7 @@ namespace Basketball
           new HLabel("Добавил:").MarginRight(5),
           new HLink(UrlHlp.ShopUrl("user", publisherId), publisher?.Get(UserType.Login))
         ),
-        new HLink(news.Get(NewsType.OriginUrl), news.Get(NewsType.OriginName)),
+        new HLink(originUrl, originName),
         ViewTagHlp.GetViewTagsPanel(context.Tags.TagBox, topic.Topic),
         editPanel,
         moderatorPanel,

@@ -7,30 +7,36 @@
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
     <_PublishTargetUrl>C:\Root\Basketball</_PublishTargetUrl>
-    <History>True|2024-05-22T11:36:09.7108691Z;True|2024-05-22T11:37:52.0710505+05:00;</History>
+    <History>True|2024-07-23T00:03:24.8411857Z;True|2024-07-22T21:22:26.2887007+05:00;True|2024-07-22T18:28:23.4015943+05:00;True|2024-07-19T14:33:08.2732605+05:00;True|2024-05-22T16:36:09.7108691+05:00;True|2024-05-22T11:37:52.0710505+05:00;</History>
     <LastFailureDetails />
   </PropertyGroup>
   <ItemGroup>
     <File Include="bin/Basketball.dll">
-      <publishTime>05/22/2024 16:25:30</publishTime>
+      <publishTime>07/23/2024 04:59:54</publishTime>
     </File>
     <File Include="bin/Basketball.pdb">
-      <publishTime>05/22/2024 16:25:30</publishTime>
+      <publishTime>07/23/2024 04:59:54</publishTime>
     </File>
     <File Include="bin/Commune.Basis.dll">
-      <publishTime>05/24/2018 12:36:32</publishTime>
+      <publishTime>08/26/2023 19:17:11</publishTime>
     </File>
     <File Include="bin/Commune.Data.dll">
-      <publishTime>03/21/2018 17:37:04</publishTime>
+      <publishTime>07/22/2024 23:09:21</publishTime>
     </File>
     <File Include="bin/Commune.Diagnostics.dll">
-      <publishTime>03/13/2018 15:21:06</publishTime>
+      <publishTime>08/26/2023 19:17:10</publishTime>
     </File>
     <File Include="bin/Commune.Html.dll">
-      <publishTime>04/24/2019 16:39:18</publishTime>
+      <publishTime>08/26/2023 19:17:11</publishTime>
     </File>
     <File Include="bin/Commune.Task.dll">
-      <publishTime>03/13/2018 15:41:02</publishTime>
+      <publishTime>08/26/2023 19:17:11</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>04/17/2020 01:38:42</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>04/17/2020 01:38:56</publishTime>
     </File>
     <File Include="bin/Krokus.dll">
       <publishTime>12/29/2017 17:51:16</publishTime>
@@ -42,16 +48,25 @@
       <publishTime>03/07/2016 13:35:12</publishTime>
     </File>
     <File Include="bin/NitroBolt.Wui.dll">
-      <publishTime>03/07/2023 18:46:46</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="bin/Shop.Engine.dll">
-      <publishTime>06/23/2019 18:40:34</publishTime>
+      <publishTime>07/22/2024 23:09:40</publishTime>
+    </File>
+    <File Include="bin/Shop.Engine.pdb">
+      <publishTime>07/22/2024 23:09:40</publishTime>
     </File>
     <File Include="bin/System.Collections.Immutable.dll">
       <publishTime>03/07/2016 13:35:12</publishTime>
     </File>
     <File Include="bin/System.Data.SQLite.dll">
-      <publishTime>01/20/2011 10:52:16</publishTime>
+      <publishTime>11/06/2023 01:56:42</publishTime>
+    </File>
+    <File Include="bin/System.Data.SQLite.EF6.dll">
+      <publishTime>11/06/2023 01:55:30</publishTime>
+    </File>
+    <File Include="bin/System.Data.SQLite.Linq.dll">
+      <publishTime>11/06/2023 01:56:06</publishTime>
     </File>
     <File Include="bin/System.Net.Http.Formatting.dll">
       <publishTime>03/07/2016 14:01:52</publishTime>
@@ -61,6 +76,12 @@
     </File>
     <File Include="bin/System.Web.Http.WebHost.dll">
       <publishTime>03/07/2016 14:01:52</publishTime>
+    </File>
+    <File Include="bin/x64/SQLite.Interop.dll">
+      <publishTime>11/06/2023 01:57:54</publishTime>
+    </File>
+    <File Include="bin/x86/SQLite.Interop.dll">
+      <publishTime>11/06/2023 01:57:18</publishTime>
     </File>
     <File Include="Css/fileuploader.css">
       <publishTime>06/09/2016 17:21:38</publishTime>
@@ -105,7 +126,7 @@
       <publishTime>08/16/2023 01:02:54</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>05/22/2024 11:37:51</publishTime>
+      <publishTime>07/19/2024 14:33:08</publishTime>
     </File>
   </ItemGroup>
 </Project>
