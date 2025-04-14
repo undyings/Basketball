@@ -61,15 +61,21 @@ namespace Basketball
 
         FabricHlp.CheckAndCreateMenu(fabricConnection, "main");
 
-//        DataTable table = userConnection.GetTable("", "Select * From light_object");
+//        DataTable table = fabricConnection.GetTable("", "Select * From light_object where type_id = 5000 and obj_id <= 130170 order by obj_id desc");
+//        Logger.AddMessage("Обновляется формат хранения дат у {0} новостей", table.Rows.Count);
+//        int newsIndex = 0;
 //        foreach (DataRow row in table.Rows)
 //        {
+//          newsIndex++;
+//          if (newsIndex % 5000 == 0)
+//            Logger.AddMessage("Обновлено {0} новостей", newsIndex);
+
 //          DateTime createTime = (DateTime)row[3];
 //          DateTime? modifyTime = null;
 //          if (row[4] != DBNull.Value)
 //            modifyTime = (DateTime)row[4];
 
-//          userConnection.GetScalar("",
+//          fabricConnection.GetScalar("",
 //  "Update light_object Set act_from=@createTime, act_till=@modifyTime Where obj_id=@id",
 //  new DbParameter("createTime", createTime),
 //  new DbParameter("modifyTime", modifyTime),
@@ -77,39 +83,23 @@ namespace Basketball
 //);
 //        }
 
-				//        DataTable table = fabricConnection.GetTable("", "Select * From light_object where type_id = 5000 and obj_id > 130170 order by obj_id asc");
-				//        foreach (DataRow row in table.Rows)
-				//        {
-				//          DateTime createTime = (DateTime)row[3];
-				//          DateTime? modifyTime = null;
-				//          if (row[4] != DBNull.Value)
-				//            modifyTime = (DateTime)row[4];
 
-				//          fabricConnection.GetScalar("",
-				//  "Update light_object Set act_from=@createTime, act_till=@modifyTime Where obj_id=@id",
-				//  new DbParameter("createTime", createTime),
-				//  new DbParameter("modifyTime", modifyTime),
-				//  new DbParameter("id", row[0])
-				//);
-				//}
+        //        DataTable table = forumConnection.GetTable("", "Select * From message Where id > 42683 order by id asc");
+        //        foreach (DataRow row in table.Rows)
+        //        {
+        //          DateTime createTime = (DateTime)row[5];
+        //          DateTime modifyTime = (DateTime)row[6];
+        //					forumConnection.GetScalar("",
+        //	"Update message Set create_time=@createTime, modify_time=@modifyTime Where id=@id",
+        //	new DbParameter("createTime", new DateTime(createTime.ToUniversalTime().Ticks, DateTimeKind.Unspecified)),
+        //	new DbParameter("modifyTime", new DateTime(modifyTime.ToUniversalTime().Ticks, DateTimeKind.Unspecified)),
+        //	new DbParameter("id", row[0])
+        //);
 
-
-				//        DataTable table = forumConnection.GetTable("", "Select * From message Where id > 42683 order by id asc");
-				//        foreach (DataRow row in table.Rows)
-				//        {
-				//          DateTime createTime = (DateTime)row[5];
-				//          DateTime modifyTime = (DateTime)row[6];
-				//					forumConnection.GetScalar("",
-				//	"Update message Set create_time=@createTime, modify_time=@modifyTime Where id=@id",
-				//	new DbParameter("createTime", new DateTime(createTime.ToUniversalTime().Ticks, DateTimeKind.Unspecified)),
-				//	new DbParameter("modifyTime", new DateTime(modifyTime.ToUniversalTime().Ticks, DateTimeKind.Unspecified)),
-				//	new DbParameter("id", row[0])
-				//);
-
-				//				}
+        //				}
 
 
-				EditorSelector sectionEditorSelector = new EditorSelector(
+        EditorSelector sectionEditorSelector = new EditorSelector(
           new SectionTunes("news", "Новости"),
           new SectionTunes("articles", "Статьи"),
           new SectionTunes("forum", "Форум"),

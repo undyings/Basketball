@@ -108,10 +108,14 @@ namespace Basketball
         new HGrid<LightHead>(topics, delegate(LightHead topic)
           {
             TopicStorage topicStorage = context.Forum.TopicsStorages.ForTopic(topic.Id);
-            //int publisherId = topicStorage.Topic.Get(TopicType.PublisherId);
-            //LightObject user = context.UserStorage.FindUser(publisherId);
 
-            RowLink lastMessage = _.Last(topicStorage.MessageLink.AllRows);
+            int messageCount = topicStorage.MessageLink.AllRows.Length;
+
+            //hack На случай если модератор удалил все комментарии из топика 
+            //if (messageCount == 0)
+            //  return new HPanel();
+
+						RowLink lastMessage = _.Last(topicStorage.MessageLink.AllRows);
             LightObject lastUser = FindUserForMessage(lastMessage);
 
             return new HPanel(
@@ -127,7 +131,7 @@ namespace Basketball
               //  ).FontBold()
               //).Align(null),
               new HPanel(
-                new HLabel(topicStorage.MessageLink.AllRows.Length)
+                new HLabel(messageCount)
               ).Align(null).RelativeWidth(10).PaddingTop(8).PaddingBottom(9).BorderRight(Decor.columnBorder)
                 .MediaTablet(new HStyle().Width(50).PaddingTop(0)),
               new HPanel(
@@ -229,10 +233,10 @@ namespace Basketball
         editPanel = GetTopicRedoPanel(state, currentUser, forumSection, topic);
 
       RowLink[] allMessages = topic.MessageLink.AllRows;
-      RowLink[] pageMessages = ViewJumpHlp.GetPageItems(allMessages, forumMessageCountOnPage, pageNumber);
+      RowLink[] pageMessages = ViewJumpHlp.GetPageItems(allMessages, forumMessageCountOnPage, pageNumber) ?? new RowLink[0];
 
-      if (pageMessages == null)
-        return null;
+      //if (pageMessages == null)
+      //  return null;
 
       return new HPanel(
         Decor.Title(topic.Topic.Get(TopicType.Title)).MarginBottom(15),

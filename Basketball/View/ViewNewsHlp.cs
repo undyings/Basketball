@@ -47,10 +47,11 @@ namespace Basketball
           ),
 					BasketballHlp.SetCkeditorFromLocalStorageScriptControl("newsText"),
 					//ViewTagHlp.GetEditTagsPanel(state, context.Tags.TagBox, state.Tag as List<string>, true),
-					new HPanel(
-						new HLabel("Теги").FontBold(),
-						new HTextEdit("newsTags", "").Width("100%")
-					).MarginTop(5).MarginBottom(5),
+					//new HPanel(
+					//	new HLabel("Теги").FontBold(),
+					//	new HTextEdit("newsTags", "").Width("100%")
+					//).MarginTop(5).MarginBottom(5),
+          Decor.PropertyEdit("newsTags", "Теги").MarginTop(5),
 					Decor.PropertyEdit("newsOriginName", "Источник"),
           Decor.PropertyEdit("newsOriginUrl", "Ссылка"),
           Decor.Button("Добавить новость").MarginTop(10) //.CKEditorOnUpdateAll()
@@ -352,7 +353,7 @@ namespace Basketball
 
       string originName = news.Get(NewsType.OriginName);
       string originUrl = news.Get(NewsType.OriginUrl);
-      if (StringHlp.IsEmpty(originUrl) && !StringHlp.IsEmpty(originName))
+      if (StringHlp.IsEmpty(originUrl) && !StringHlp.IsEmpty(originName) && !originName.Contains("basketball.ru.com"))
         originUrl = "https://" + originName;
 
 			return new HPanel(

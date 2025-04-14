@@ -7,6 +7,8 @@ using Commune.Html;
 using Commune.Data;
 using Shop.Engine;
 using NitroBolt.Wui;
+using Commune.Diagnostics;
+using System.Web.UI.WebControls;
 
 namespace Basketball
 {
@@ -56,64 +58,72 @@ namespace Basketball
       if (currentUser == null)
       {
         return new HPanel(
-          keyImage,
-          new HTextEdit("authLogin").Width(90).MarginRight(5),
-          new HPasswordEdit("authPassword").Width(90).MarginRight(5),
-          Decor.Button("Войти").Event("user_login", "loginData", delegate (JsonData json)
-          {
-            string login = json.GetText("authLogin");
-            string password = json.GetText("authPassword");
-
-            WebOperation operation = state.Operation;
-
-            if (!operation.Validate(login, "Введите логин"))
-              return;
-
-            if (!operation.Validate(password, "Введите пароль"))
-              return;
-
-            string xmlLogin = UserType.Login.CreateXmlIds("", login);
-            LightObject user = SiteContext.Default.UserStorage.FindUser(xmlLogin);
-            if (!operation.Validate(user == null, "Логин не найден"))
-              return;
-            if (!operation.Validate(user.Get(UserType.Password) != password, "Неверный пароль"))
-              return;
-
-            if (!operation.Validate(user.Get(UserType.NotConfirmed), "Ваш аккаунт не подтвержден через электронную почту. Письмо для подтверждения выслано вам на почту еще раз."))
-            {
-              try
-              {
-                BasketballHlp.SendRegistrationConfirmation(user.Id, login, user.Get(UserType.Email));
-              }
-              catch (Exception ex)
-              {
-                Logger.WriteException(ex);
-              }
-              return;
-            }
-
-            if (!operation.Validate(BasketballHlp.IsBanned(user),
-              string.Format("Вы заблокированы до {0} и не можете войти на сайт",
-                user.Get(BasketballUserType.BannedUntil)?.ToLocalTime().ToString("dd-MM-yyyy HH:mm")
-              )
-            ))
-              return;
-
-
-            httpContext.SetUserAndCookie(xmlLogin);
-          }
-          ),
-          new HPanel(
-            new HPanel(new HLink("/register", "Регистрация"))
-              .MediaSmartfon(new HStyle().InlineBlock()),
-            new HPanel(new HLink("/passwordreset", "Забыли пароль"))
-              .MediaSmartfon(new HStyle().InlineBlock().MarginLeft(10))
-          ).Align(true).InlineBlock().MarginLeft(5).FontSize("80%").VAlign(false)
-            .MediaSmartfon(new HStyle().Block().MarginLeft(18))
-        ).EditContainer("loginData").PositionRelative().InlineBlock().MarginTop(10)
-          .MediaTablet(new HStyle().MarginTop(5))
-          .MediaSmartfon(new HStyle().MarginTop(0));
+					Decor.Button("Войти").Event("user_login", "", delegate { state.PopupHint = PopupKind.Authentication; }),
+          Decor.ButtonGreen("Регистрация").MarginLeft(20).Event("user_register", "", delegate { state.PopupHint = PopupKind.Register; })
+				).PositionRelative().InlineBlock().MarginTop(6);
       }
+
+      //if (currentUser == null)
+      //{
+      //  return new HPanel(
+      //    keyImage,
+      //    new HTextEdit("authLogin").Width(90).MarginRight(5),
+      //    new HPasswordEdit("authPassword").Width(90).MarginRight(5),
+      //    Decor.Button("Войти").Event("user_login", "loginData", delegate (JsonData json)
+      //    {
+      //      string login = json.GetText("authLogin");
+      //      string password = json.GetText("authPassword");
+
+      //      WebOperation operation = state.Operation;
+
+      //      if (!operation.Validate(login, "Введите логин"))
+      //        return;
+
+      //      if (!operation.Validate(password, "Введите пароль"))
+      //        return;
+
+      //      string xmlLogin = UserType.Login.CreateXmlIds("", login);
+      //      LightObject user = SiteContext.Default.UserStorage.FindUser(xmlLogin);
+      //      if (!operation.Validate(user == null, "Логин не найден"))
+      //        return;
+      //      if (!operation.Validate(user.Get(UserType.Password) != password, "Неверный пароль"))
+      //        return;
+
+      //      if (!operation.Validate(user.Get(UserType.NotConfirmed), "Ваш аккаунт не подтвержден через электронную почту. Письмо для подтверждения выслано вам на почту еще раз."))
+      //      {
+      //        try
+      //        {
+      //          BasketballHlp.SendRegistrationConfirmation(user.Id, login, user.Get(UserType.Email));
+      //        }
+      //        catch (Exception ex)
+      //        {
+      //          Logger.WriteException(ex);
+      //        }
+      //        return;
+      //      }
+
+      //      if (!operation.Validate(BasketballHlp.IsBanned(user),
+      //        string.Format("Вы заблокированы до {0} и не можете войти на сайт",
+      //          user.Get(BasketballUserType.BannedUntil)?.ToLocalTime().ToString("dd-MM-yyyy HH:mm")
+      //        )
+      //      ))
+      //        return;
+
+
+      //      httpContext.SetUserAndCookie(xmlLogin);
+      //    }
+      //    ),
+      //    new HPanel(
+      //      new HPanel(new HLink("/register", "Регистрация"))
+      //        .MediaSmartfon(new HStyle().InlineBlock()),
+      //      new HPanel(new HLink("/passwordreset", "Забыли пароль"))
+      //        .MediaSmartfon(new HStyle().InlineBlock().MarginLeft(10))
+      //    ).Align(true).InlineBlock().MarginLeft(5).FontSize("80%").VAlign(false)
+      //      .MediaSmartfon(new HStyle().Block().MarginLeft(18))
+      //  ).EditContainer("loginData").PositionRelative().InlineBlock().MarginTop(10)
+      //    .MediaTablet(new HStyle().MarginTop(5))
+      //    .MediaSmartfon(new HStyle().MarginTop(0));
+      //}
 
       HButton moderatorButton = null;
       if (currentUser.Get(BasketballUserType.IsModerator))
@@ -182,7 +192,7 @@ namespace Basketball
         ),
         GetDialogItem(state, currentUser, kind)
       ).PositionRelative().Align(true).Padding(3, 60, 2, 2).Background(Decor.menuBackground)
-			.Media(360, new HStyle().PaddingRight(20));
+			.Media(480, new HStyle().PaddingRight(20));
     }
 
 		static IHtmlControl GetSearchPanel(SiteState state)
@@ -285,5 +295,167 @@ namespace Basketball
         )
       ).InlineBlock();
     }
-  }
+
+    public static IHtmlControl GetRegisterPopup(HttpContext httpContext, SiteState state)
+    {
+      return DecorEdit.GetPopupView(480,
+        new HPanel(
+				  Decor.Title("Регистрация"),
+					Decor.PopupCloseButton(state),
+					Decor.AuthEdit("Логин (*):", "login"),
+				  Decor.AuthEdit("Ваше имя (*):", "yourname"),
+				  Decor.AuthEdit("E-mail (*):", "email"),
+				  Decor.PropertyEdit("Пароль (*):", new HPasswordEdit("password")),
+				  Decor.PropertyEdit("Введите пароль ещё раз (*):", new HPasswordEdit("passwordRepeat")),
+				  new HPanel(
+					  Decor.Button("Зарегистрироваться").Event("user_registration", "registerData",
+						  delegate (JsonData json)
+						  {
+							  string login = json.GetText("login");
+							  string name = json.GetText("yourname");
+							  string email = json.GetText("email");
+							  string password = json.GetText("password");
+							  string passwordRepeat = json.GetText("passwordRepeat");
+
+							  WebOperation operation = state.Operation;
+
+							  if (!operation.Validate(login, "Не задан логин"))
+								  return;
+							  if (!operation.Validate(email, "Не задана электронная почта"))
+								  return;
+							  if (!operation.Validate(!email.Contains("@"), "Некорректный адрес электронной почты"))
+								  return;
+							  if (!operation.Validate(name, "Не задано имя"))
+								  return;
+							  if (!operation.Validate(password, "Не задан пароль"))
+								  return;
+							  if (!operation.Validate(password != passwordRepeat, "Повтор не совпадает с паролем"))
+								  return;
+
+							  foreach (LightObject userObj in context.UserStorage.All)
+							  {
+								  if (!operation.Validate(userObj.Get(UserType.Email)?.ToLower() == email?.ToLower(),
+									  "Пользователь с такой электронной почтой уже существует"))
+									  return;
+							  }
+
+							  ObjectBox box = new ObjectBox(context.UserConnection, "1=0");
+
+							  int? createUserId = box.CreateUniqueObject(UserType.User,
+								  UserType.Login.CreateXmlIds("", login), null);
+							  if (!operation.Validate(createUserId == null,
+								  "Пользователь с таким логином уже существует"))
+							  {
+								  return;
+							  }
+
+							  LightObject user = new LightObject(box, createUserId.Value);
+							  FabricHlp.SetCreateTime(user);
+							  user.Set(UserType.Email, email);
+							  user.Set(UserType.FirstName, name);
+							  user.Set(UserType.Password, password);
+							  user.Set(UserType.NotConfirmed, true);
+
+							  box.Update();
+
+							  SiteContext.Default.UserStorage.Update();
+
+							  Logger.AddMessage("Зарегистрирован пользователь: {0}, {1}, {2}", user.Id, login, email);
+
+							  try
+							  {
+								  BasketballHlp.SendRegistrationConfirmation(user.Id, login, email);
+
+								  Logger.AddMessage("Отправлено письмо с подтверждением регистрации.");
+							  }
+							  catch (Exception ex)
+							  {
+								  Logger.WriteException(ex);
+
+								  //operation.Validate(true, string.Format("Непредвиденная ошибка при отправке подтверждения: {0}", ex.Message));
+								  //return;
+							  }
+
+							  //string xmlLogin = UserType.Login.CreateXmlIds("", login);
+							  //HttpContext.Current.SetUserAndCookie(xmlLogin);
+
+							  //operation.Complete("Вы успешно зарегистрированы!", "");
+
+							  state.RedirectUrl = "/confirmation";
+						  }
+					  )
+				  ).PaddingTop(5)
+
+				).EditContainer("registerData").PositionRelative().Align(true).Padding(15, 25, 35, 25).Background(Decor.panelBackground)
+			);
+    }
+
+		public static IHtmlControl GetAuthenticationPopup(HttpContext httpContext, SiteState state)
+		{
+			return DecorEdit.GetPopupView(480,
+				new HPanel(
+					Decor.Title("Вход"),
+					Decor.PopupCloseButton(state),
+					Decor.AuthEdit("Логин", "authLogin"),
+					Decor.PropertyEdit("Пароль", new HPasswordEdit("authPassword")).MarginBottom(20),
+          new HPanel(
+					  Decor.Button("Войти").Align(null)
+						  .Event("user_authentication", "authenticationData", delegate (JsonData json)
+						  {
+							  string login = json.GetText("authLogin");
+							  string password = json.GetText("authPassword");
+
+							  WebOperation operation = state.Operation;
+
+							  if (!operation.Validate(login, "Введите логин"))
+								  return;
+
+							  if (!operation.Validate(password, "Введите пароль"))
+								  return;
+
+							  string xmlLogin = UserType.Login.CreateXmlIds("", login);
+							  LightObject user = SiteContext.Default.UserStorage.FindUser(xmlLogin);
+							  if (!operation.Validate(user == null, "Логин не найден"))
+								  return;
+							  if (!operation.Validate(user.Get(UserType.Password) != password, "Неверный пароль"))
+								  return;
+
+							  if (!operation.Validate(user.Get(UserType.NotConfirmed), "Ваш аккаунт не подтвержден через электронную почту. Письмо для подтверждения выслано вам на почту еще раз."))
+							  {
+								  try
+								  {
+									  BasketballHlp.SendRegistrationConfirmation(user.Id, login, user.Get(UserType.Email));
+								  }
+								  catch (Exception ex)
+								  {
+									  Logger.WriteException(ex);
+								  }
+								  return;
+							  }
+
+							  if (!operation.Validate(BasketballHlp.IsBanned(user),
+								  string.Format("Вы заблокированы до {0} и не можете войти на сайт",
+									  user.Get(BasketballUserType.BannedUntil)?.ToLocalTime().ToString("dd-MM-yyyy HH:mm")
+								  )
+							  ))
+								  return;
+
+
+							  httpContext.SetUserAndCookie(xmlLogin);
+
+							  state.ResetPopup();
+						  }),
+					  new HPanel(
+						  new HLink("/passwordreset", "Забыли пароль").FontWeight("600")
+						  //new HLink($"/{PageKind.PasswordReset}", "Забыли пароль?").FontWeight(600).MarginRight(3)
+						  //new HButton("Забыли пароль?").FontWeight("600").Color(Decor.linkColor).MarginRight(3)
+						  //	.Event("password_restore", "", delegate { state.PopupHint = PopupKind.PasswordRestore; })
+					  ).InlineBlock().Align(false)
+              .PositionAbsolute().Right(0).Top(3)
+          ).PositionRelative()
+
+				).EditContainer("authenticationData").PositionRelative().Align(true).Padding(15, 25, 35, 25).Background(Decor.panelBackground) //.BorderRadius(6)
+			);
+		}
+	}
 }

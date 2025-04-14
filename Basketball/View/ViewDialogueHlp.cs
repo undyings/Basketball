@@ -7,6 +7,7 @@ using Commune.Basis;
 using Commune.Html;
 using Commune.Data;
 using Shop.Engine;
+using System.ComponentModel.Design;
 
 namespace Basketball
 {
@@ -315,8 +316,63 @@ namespace Basketball
       LightObject user, LightObject collocutor, RowLink message, int messageIndex)
     {
       int messageId = message.Get(CorrespondenceType.Id);
-      LightObject author = message.Get(CorrespondenceType.Inbox) ? collocutor : user;
-      DateTime localTime = message.Get(CorrespondenceType.CreateTime).ToLocalTime();
+      bool inbox = message.Get(CorrespondenceType.Inbox);
+			LightObject author = inbox ? collocutor : user;
+      DateTime createTime = message.Get(CorrespondenceType.CreateTime);
+			DateTime localTime = createTime.ToLocalTime();
+
+      //todo сделать редактирование комментария. Комментарий хранится в двух копиях!
+      IHtmlControl editElement = null;
+			IHtmlControl redoBlock = null;
+			if (!inbox)
+      {
+        string redoHint = string.Format("edit_{0}", messageId);
+        editElement = new HButton("",
+          std.BeforeAwesome(@"\f044", 0).Color(Decor.linkColor)
+        ).MarginRight(8).Title("редактировать комментарий").FontSize(14).VAlign(-2)
+         .Event("edit_message", "", delegate { state.SetBlockHint(redoHint); }, messageId);
+
+        if (state.BlockHint == redoHint)
+        {
+					redoBlock = new HPanel(
+						new HTextArea("redoContent", message.Get(CorrespondenceType.Content))
+							.Width("100%").Height("10em").MarginTop(5).MarginBottom(5),
+						Decor.Button("изменить").Event("save_redo", "redoContainer",
+							delegate (JsonData json)
+							{
+                string content = json.GetText("redoContent");
+                if (StringHlp.IsEmpty(content))
+                  return;
+
+                DateTime modifyTime = DateTime.UtcNow;
+
+                forumConnection.GetScalar("",
+                  "Update correspondence Set content=@content Where id=@id",
+                  new DbParameter("content", content),
+                  new DbParameter("id", messageId)
+                );
+
+                //Logger.AddMessage("RedoContent: {0}, {1}, {2}", user.Id, collocutor.Id, createTime);
+
+                forumConnection.GetScalar("",
+                  "Update correspondence Set content=@content Where id=@id And user_id=@userId And collocutor_id=@collocutorId",
+                  new DbParameter("content", content),
+                  new DbParameter("id", messageId - 1),
+                  new DbParameter("userId", collocutor.Id),
+                  new DbParameter("collocutorId", user.Id)
+                );
+
+                state.BlockHint = "";
+							},
+							messageId
+						),
+						new HElementControl(
+							h.Script(h.type("text/javascript"), "$('.redoContent').focus();"),
+							""
+						)
+					).EditContainer("redoContainer");
+				}
+      }
 
       IHtmlControl deleteElement = null;
       if (state.BlockHint == "correspondence_moderation")
@@ -334,7 +390,7 @@ namespace Basketball
         );
       }
 
-      IHtmlControl messageBlock = new HPanel("", new IHtmlControl[] {
+			IHtmlControl messageBlock = new HPanel("", new IHtmlControl[] {
           new HPanel(
             ViewUserHlp.AvatarBlock(author)
           ).PositionAbsolute().Left(0).Top(0).Padding(7, 5, 10, 5),
@@ -346,13 +402,15 @@ namespace Basketball
               ).FontBold(),
               //new HLabel(author.Get(UserType.FirstName)).MarginLeft(5),
               new HPanel(
+                editElement,
                 new HLabel(localTime.ToString("dd.MM.yyyy HH:mm")).FontSize("90%").Color(Decor.minorColor),
                 deleteElement
               ).InlineBlock().PositionAbsolute().Right(5)                
             ).PositionRelative().MarginBottom(6),
             new HTextView(
               BasketballHlp.PreViewComment(message.Get(CorrespondenceType.Content))
-            ).Block().PaddingBottom(15).BorderBottom("1px solid silver").MarginBottom(5)
+            ).Block().PaddingBottom(15).BorderBottom("1px solid silver").MarginBottom(5),
+            redoBlock
           ).BoxSizing().Width("100%").BorderLeft(Decor.columnBorder).Padding(7, 5, 5, 5)
         }
       ).PositionRelative().PaddingLeft(64).BorderTop("2px solid #fff").Color(Decor.textColor);

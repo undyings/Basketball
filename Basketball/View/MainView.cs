@@ -171,7 +171,7 @@ namespace Basketball
 
       IHtmlControl dialogBox = null;
       if (!StringHlp.IsEmpty(state.Operation.Message))
-        dialogBox = DecorEdit.GetDialogBox(state);
+        dialogBox = ViewHlp.ShowDialog(state);
 
       bool isForum = kind == "topic";
       if (kind == "page")
@@ -250,7 +250,8 @@ namespace Basketball
             .MediaTablet(new HStyle().MarginLeft(0).MarginRight(0))
         ),
         ViewHlp.GetFooterView(kind == ""),
-        dialogBox
+				ViewHlp.GetPopupView(httpContext, state, currentUser),
+				dialogBox
       //popupPanel
       ).Width("100%").BoxSizing().Align(null).Background(Decor.pageBackground)
         .Padding(1)

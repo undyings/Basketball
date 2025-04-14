@@ -178,9 +178,9 @@ namespace Basketball
         case "passwordreset":
           title = "Восстановление пароля - basketball.ru.com";
           return ViewHlp.GetRestorePasswordView(state);
-        case "register":
-          title = "Регистрация - basketball.ru.com";
-          return ViewHlp.GetRegisterView(state);
+        //case "register":
+        //  title = "Регистрация - basketball.ru.com";
+        //  return ViewHlp.GetRegisterView(state);
         case "confirmation":
           {
             title = "Подтверждение аккаунта";
@@ -243,12 +243,28 @@ namespace Basketball
 
     static readonly HBuilder h = null;
 
-    public static IHtmlControl GetRestorePasswordView(SiteState state)
+		public static IHtmlControl GetPopupView(HttpContext httpContext, SiteState state, LightObject user)
+		{
+			if (state.PopupHint == null)
+				return null;
+
+			switch (state.PopupHint)
+			{
+				case PopupKind.Authentication:
+					return ViewHeaderHlp.GetAuthenticationPopup(httpContext, state);
+        case PopupKind.Register:
+          return ViewHeaderHlp.GetRegisterPopup(httpContext, state);
+				default:
+					return null;
+			}
+		}
+
+		public static IHtmlControl GetRestorePasswordView(SiteState state)
     {
       return new HPanel(
         Decor.Title("Восстановление пароля"),
-        Decor.AuthEdit("login", "Введите логин:"),
-        Decor.AuthEdit("email", "Или E-mail:"),
+        Decor.AuthEdit("Введите логин:", "login"),
+        Decor.AuthEdit("Или E-mail:", "email"),
         new HPanel(
           Decor.Button("Выслать пароль на почту").Event("user_restore", "restoreData",
             delegate (JsonData json)
@@ -283,7 +299,11 @@ namespace Basketball
               if (!operation.Validate(findUser == null, "Пользователь не найден"))
                 return;
 
-              try
+              Logger.AddMessage("Восстановление пароля пользователя: {0}, {1}",
+                findUser.Get(BasketballUserType.Login), findUser.Get(BasketballUserType.Email)
+              );
+
+							try
               {
                 HElement answer = h.Div(
                   h.P(string.Format("Ваш логин: {0}", findUser.Get(BasketballUserType.Login))),
@@ -294,7 +314,7 @@ namespace Basketball
                 SmtpClient smtpClient = AuthHlp.CreateSmtpClient(
                   settings.SmtpHost, settings.SmtpPort, settings.SmtpUserName, settings.SmtpPassword);
                 AuthHlp.SendMail(smtpClient, settings.MailFrom, findUser.Get(BasketballUserType.Email),
-                  "Восстановление пароля", answer.ToHtmlText()
+                  "Восстановление пароля на basketball.ru.com", answer.ToHtmlText()
                 );
               }
               catch (Exception ex)
@@ -309,100 +329,124 @@ namespace Basketball
             }
           )
         )
-      ).EditContainer("restoreData");
+      ).EditContainer("restoreData").WidthLimit("", "480px");
     }
 
-    public static IHtmlControl GetRegisterView(SiteState state)
-    {
-      return new HPanel(
-        Decor.Title("Регистрация"),
-        Decor.AuthEdit("login", "Логин (*):"),
-        Decor.AuthEdit("yourname", "Ваше имя (*):"),
-        Decor.AuthEdit("email", "E-mail (*):"),
-        Decor.AuthEdit(new HPasswordEdit("password"), "Пароль (*):"),
-        Decor.AuthEdit(new HPasswordEdit("passwordRepeat"), "Введите пароль ещё раз (*):"),
-        new HPanel(
-          Decor.Button("Зарегистрироваться").Event("user_register", "registerData",
-            delegate (JsonData json)
-            {
-              string login = json.GetText("login");
-              string name = json.GetText("yourname");
-              string email = json.GetText("email");
-              string password = json.GetText("password");
-              string passwordRepeat = json.GetText("passwordRepeat");
+		public static IHtmlControl ShowDialog(SiteState state)
+		{
+			if (StringHlp.IsEmpty(state.Operation.Message))
+				return null;
 
-              WebOperation operation = state.Operation;
+			return new HEventPanel(
+				new HTextView(state.Operation.Message).Color(Decor.menuColor), //.CursorDefault(),
+				new HButton("",
+					std.BeforeAwesome(@"\f00d", 0),
+					new HHover().Color("#ffd300")
+				).PositionAbsolute().Right(8).Top(5).Color(Decor.menuColor).FontSize(16)
+			).BoxSizing().Width(300).Align(true).ZIndex(2000)
+			.Background(Decor.menuBackground).BorderRadius(4)
+			.PaddingLeft(25).PaddingRight(25).PaddingTop(20).PaddingBottom(20)
+			.Position("fixed").Left(7).Bottom(7) //.Left("50%").MarginLeft(-140).Top(50)
+			.BoxShadow(Decor.boxShadow)
+			.OnClickWithStopPropagation()
+			.Event("dialog_close", "", delegate
+			{
+				state.Operation.Reset();
+			}
+			);
+		}
 
-              if (!operation.Validate(login, "Не задан логин"))
-                return;
-              if (!operation.Validate(email, "Не задана электронная почта"))
-                return;
-              if (!operation.Validate(!email.Contains("@"), "Некорректный адрес электронной почты"))
-                return;
-              if (!operation.Validate(name, "Не задано имя"))
-                return;
-              if (!operation.Validate(password, "Не задан пароль"))
-                return;
-              if (!operation.Validate(password != passwordRepeat, "Повтор не совпадает с паролем"))
-                return;
+		// public static IHtmlControl GetRegisterView(SiteState state)
+		// {
+		//   return new HPanel(
+		//     Decor.Title("Регистрация"),
+		//     Decor.AuthEdit("Логин (*):", "login"),
+		//     Decor.AuthEdit("Ваше имя (*):", "yourname"),
+		//     Decor.AuthEdit("E-mail (*):", "email"),
+		//     Decor.PropertyEdit("Пароль (*):", new HPasswordEdit("password")),
+		//     Decor.PropertyEdit("Введите пароль ещё раз (*):", new HPasswordEdit("passwordRepeat")),
+		//     new HPanel(
+		//       Decor.Button("Зарегистрироваться").Event("user_register", "registerData",
+		//         delegate (JsonData json)
+		//         {
+		//           string login = json.GetText("login");
+		//           string name = json.GetText("yourname");
+		//           string email = json.GetText("email");
+		//           string password = json.GetText("password");
+		//           string passwordRepeat = json.GetText("passwordRepeat");
 
-              foreach (LightObject userObj in context.UserStorage.All)
-              {
-                if (!operation.Validate(userObj.Get(UserType.Email)?.ToLower() == email?.ToLower(),
-                  "Пользователь с такой электронной почтой уже существует"))
-                  return;
-              }
+		//           WebOperation operation = state.Operation;
 
-              ObjectBox box = new ObjectBox(context.UserConnection, "1=0");
+		//           if (!operation.Validate(login, "Не задан логин"))
+		//             return;
+		//           if (!operation.Validate(email, "Не задана электронная почта"))
+		//             return;
+		//           if (!operation.Validate(!email.Contains("@"), "Некорректный адрес электронной почты"))
+		//             return;
+		//           if (!operation.Validate(name, "Не задано имя"))
+		//             return;
+		//           if (!operation.Validate(password, "Не задан пароль"))
+		//             return;
+		//           if (!operation.Validate(password != passwordRepeat, "Повтор не совпадает с паролем"))
+		//             return;
 
-              int? createUserId = box.CreateUniqueObject(UserType.User,
-                UserType.Login.CreateXmlIds("", login), null);
-              if (!operation.Validate(createUserId == null,
-                "Пользователь с таким логином уже существует"))
-              {
-                return;
-              }
+		//           foreach (LightObject userObj in context.UserStorage.All)
+		//           {
+		//             if (!operation.Validate(userObj.Get(UserType.Email)?.ToLower() == email?.ToLower(),
+		//               "Пользователь с такой электронной почтой уже существует"))
+		//               return;
+		//           }
 
-              LightObject user = new LightObject(box, createUserId.Value);
-              FabricHlp.SetCreateTime(user);
-              user.Set(UserType.Email, email);
-              user.Set(UserType.FirstName, name);
-              user.Set(UserType.Password, password);
-              user.Set(UserType.NotConfirmed, true);
+		//           ObjectBox box = new ObjectBox(context.UserConnection, "1=0");
 
-              box.Update();
+		//           int? createUserId = box.CreateUniqueObject(UserType.User,
+		//             UserType.Login.CreateXmlIds("", login), null);
+		//           if (!operation.Validate(createUserId == null,
+		//             "Пользователь с таким логином уже существует"))
+		//           {
+		//             return;
+		//           }
 
-              SiteContext.Default.UserStorage.Update();
+		//           LightObject user = new LightObject(box, createUserId.Value);
+		//           FabricHlp.SetCreateTime(user);
+		//           user.Set(UserType.Email, email);
+		//           user.Set(UserType.FirstName, name);
+		//           user.Set(UserType.Password, password);
+		//           user.Set(UserType.NotConfirmed, true);
 
-              Logger.AddMessage("Зарегистрирован пользователь: {0}, {1}, {2}", user.Id, login, email);
+		//           box.Update();
 
-              try
-              {
-                BasketballHlp.SendRegistrationConfirmation(user.Id, login, email);
+		//           SiteContext.Default.UserStorage.Update();
 
-                Logger.AddMessage("Отправлено письмо с подтверждением регистрации.");
-              }
-              catch (Exception ex)
-              {
-                Logger.WriteException(ex);
+		//           Logger.AddMessage("Зарегистрирован пользователь: {0}, {1}, {2}", user.Id, login, email);
 
-                //operation.Validate(true, string.Format("Непредвиденная ошибка при отправке подтверждения: {0}", ex.Message));
-                //return;
-              }
+		//           try
+		//           {
+		//             BasketballHlp.SendRegistrationConfirmation(user.Id, login, email);
 
-              //string xmlLogin = UserType.Login.CreateXmlIds("", login);
-              //HttpContext.Current.SetUserAndCookie(xmlLogin);
+		//             Logger.AddMessage("Отправлено письмо с подтверждением регистрации.");
+		//           }
+		//           catch (Exception ex)
+		//           {
+		//             Logger.WriteException(ex);
 
-              //operation.Complete("Вы успешно зарегистрированы!", "");
+		//             //operation.Validate(true, string.Format("Непредвиденная ошибка при отправке подтверждения: {0}", ex.Message));
+		//             //return;
+		//           }
 
-              state.RedirectUrl = "/confirmation";
-            }
-          )
-        )
-      ).EditContainer("registerData");
-    }
+		//           //string xmlLogin = UserType.Login.CreateXmlIds("", login);
+		//           //HttpContext.Current.SetUserAndCookie(xmlLogin);
 
-    public static IHtmlControl GetFooterView(bool isMain)
+		//           //operation.Complete("Вы успешно зарегистрированы!", "");
+
+		//           state.RedirectUrl = "/confirmation";
+		//         }
+		//       )
+		//	)
+		//).EditContainer("registerData");
+		// }
+
+		public static IHtmlControl GetFooterView(bool isMain)
     {
       return new HPanel(
         new HPanel(
